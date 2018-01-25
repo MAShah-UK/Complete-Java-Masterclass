@@ -21,7 +21,7 @@ Tim Buchalka covers various language fundamentals from the most basic concepts t
 * Section 9: Arrays, Java inbuilt lists, autoboxing and unboxing
 * Section 10: Inner classes, abstract classes, and interfaces
 * Section 11: Generics
-* Section 12: Naming conventions and packages / static and final Keywords
+* Section 12: Naming conventions and packages / static and final keywords
 * Section 13: Collections
 * Section 14: JavaFX
 * Section 15: Basic Input and output including java.util
