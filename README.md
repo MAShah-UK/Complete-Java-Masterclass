@@ -6,5 +6,6 @@
   * IntelliJ IDEA
   
   | Platform | Tools |
+  | --- | --- |
   | Windows | Java|
   | | IntelliJ IDEA |
