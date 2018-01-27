@@ -25,6 +25,11 @@ public class BankAccount {
         System.out.println("Default constructor called.");
     }
 
+    public BankAccount(String email, String phoneNumber, String name) {
+        // If some parameters are provided then pass those along with some default arguments.
+        this("", 0, email, phoneNumber, name);
+    }
+
     public BankAccount(String accountNumber, double balance, String email, String phoneNumber, String name) {
         this.accountNumber = accountNumber;
         this.balance = balance;
