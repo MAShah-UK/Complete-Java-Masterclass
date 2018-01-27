@@ -16,7 +16,7 @@ public class VIPCustomer {
     double creditLimit;
 
     public VIPCustomer() {
-        this("defName", "defEmail", 0.0);
+        this("defaultName", "defaultEmail", 0.0);
     }
 
     public VIPCustomer(String name, String emailAddress) {

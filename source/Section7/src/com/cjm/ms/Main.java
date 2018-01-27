@@ -66,7 +66,7 @@ public class Main {
         System.out.println();
 
         // Should not output any default parameters.
-        VIPCustomer jackDoe = new VIPCustomer("Jack Doe", "jackdoe@email.com", 50.0);
+        VIPCustomer jackDoe = new VIPCustomer("Jack Doe", "jackdoe@email.com", 25000.0);
         jackDoe.printState();
     }
 
