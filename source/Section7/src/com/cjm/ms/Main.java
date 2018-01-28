@@ -6,11 +6,11 @@ public class Main {
         createCar();
         createTransactions();
         createVIP();
+        createAnimal();
     }
 
     // Practice instantiating a class, and using getters and setters.
     public static void createCar() {
-
         System.out.println("\nBEGIN: createCar");
 
         Car porsche = new Car();
@@ -20,7 +20,6 @@ public class Main {
 
     // Practice using validation in methods, and constructors.
     public static void createTransactions() {
-
         System.out.println("\nBEGIN: createTransactions");
 
         // Create accounts using default constructor.
@@ -52,7 +51,6 @@ public class Main {
 
     //  Practice working with default/custom constructors.
     public static void createVIP() {
-
         System.out.println("\nBEGIN: createVIP");
 
         // Should output three default parameters.
@@ -70,4 +68,13 @@ public class Main {
         jackDoe.printState();
     }
 
+    // Practice working with inheritance/subclassing.
+    public static void createAnimal() {
+        System.out.println("\nBEGIN: createAnimal");
+
+        Animal animal = new Animal("Animal", 1, 1,5, 5);
+
+        Dog dog = new Dog("Yorkie", 8, 20, 2, 4, 1, 20, "long silky");
+        dog.eat(); // Will use Animal.eat() directly if Dog doesn't define it, due to inheritance.
+    }
 }
