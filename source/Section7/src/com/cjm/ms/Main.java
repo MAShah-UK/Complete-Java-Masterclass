@@ -15,7 +15,7 @@ public class Main {
         System.out.println("\nBEGIN: createCar");
 
         Car porsche = new Car();
-        porsche.setModel("911");
+        porsche.setModel("carrera");
         System.out.println("Model is " + porsche.getModel());
     }
 

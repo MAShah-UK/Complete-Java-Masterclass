@@ -1,0 +1,51 @@
+BEGIN: createCar
+Model is carrera
+
+BEGIN: createTransactions
+Default constructor called.
+John Doe: The old balance is: 0.0
+John Doe: The new balance is: 100.0
+
+Default constructor called.
+Jane Doe: The old balance is: 0.0
+Jane Doe: The new balance is: 50.0
+
+John Doe: New balance was over zero and saved.
+Jane Doe: New balance was under zero and discarded.
+Jack Doe: New balance was over zero and saved.
+
+BEGIN: createVIP
+Customer name: defaultName
+Customer email address:defaultEmail
+Customer credit limit: 0.0
+
+Customer name: Jane Doe
+Customer email address:janedoe@email.com
+Customer credit limit: 0.0
+
+Customer name: Jack Doe
+Customer email address:jackdoe@email.com
+Customer credit limit: 25000.0
+
+BEGIN: createAnimal
+Dog.eat() called.
+Dog.chew() called.
+Animal.eat() called.
+Dog.walk() called.
+Dog.move() called.
+Dog.moveLegs() called.
+Animal.move() called. Animal is moving at 5
+Dog.run() called.
+Dog.move() called.
+Dog.moveLegs() called.
+Animal.move() called. Animal is moving at 10
+
+BEGIN: createVehicle
+RING-RING!
+PEEP-PEEP!
+Hello from the other side.
+Bike is being pedalled.
+Vehicle velocity is 5.0 m/s.
+Motorbike is accelerating.
+Vehicle velocity is 100.0 m/s.
+Vehicle gear is 6.
