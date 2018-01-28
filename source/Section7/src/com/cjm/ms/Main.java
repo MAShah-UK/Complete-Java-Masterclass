@@ -7,6 +7,7 @@ public class Main {
         createTransactions();
         createVIP();
         createAnimal();
+        createVehicle();
     }
 
     // Practice instantiating a class, and using getters and setters.
@@ -78,5 +79,26 @@ public class Main {
         dog.eat(); // Will use Animal.eat() directly if Dog doesn't define it, due to inheritance.
         dog.walk();
         dog.run();
+    }
+
+    // Practice working with inheritance and overridden methods.
+    public static void createVehicle() {
+        System.out.println("\nBEGIN: createVehicle");
+
+        Bike bike = new Bike("Genesis", true);
+        Motorbike mbike = new Motorbike("Yamaha", 100, 180, 4, true);
+
+        // Overridden methods will make different sounds.
+        bike.makeSound();
+        mbike.makeSound();
+
+        // Only motorbike can play radio.
+        mbike.playRadio();
+
+        // Both make use of super method to move and turn.
+        bike.pedal(5);
+        bike.adjustSteering(185);
+        mbike.accelerate(100);
+        mbike.adjustSteering(5);
     }
 }

@@ -1,5 +1,9 @@
 package com.cjm.ms;
 
+/* When classes are created without the use of the extends keyword, they
+* implicitly extend from the Object class. Thus all classes within Java
+* are subclasses of Object. You can add extends Object to make it explicit,
+* but it gives the same result and is redundant. */
 public class Animal {
 
     // All animals, more or less, have these features.

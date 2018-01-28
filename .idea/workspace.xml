@@ -4,8 +4,6 @@
     <list default="true" id="6ba5a217-a7b6-4fa2-ba85-42a3ecbba759" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Animal.java" afterPath="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Animal.java" />
-      <change beforePath="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Dog.java" afterPath="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Dog.java" />
-      <change beforePath="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Main.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,42 +16,38 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5494506">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="78" column="8" lean-forward="false" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
+                <state relative-caret-position="356">
+                  <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
                   <folding>
                     <element signature="method#createCar#0;class#Main#0" expanded="false" />
                     <element signature="method#createTransactions#0;class#Main#0" expanded="false" />
                     <element signature="method#createVIP#0;class#Main#0" expanded="false" />
+                    <element signature="method#createAnimal#0;class#Main#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Animal.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Animal.java">
+          <file leaf-file-name="Vehicle.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Vehicle.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+                <state relative-caret-position="492">
+                  <caret line="66" column="62" lean-forward="false" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
                   <folding>
-                    <element signature="e#605#606#0" expanded="true" />
-                    <element signature="e#663#664#0" expanded="true" />
-                    <element signature="e#698#699#0" expanded="true" />
-                    <element signature="e#786#787#0" expanded="true" />
-                    <element signature="e#817#818#0" expanded="true" />
-                    <element signature="e#844#845#0" expanded="true" />
-                    <element signature="e#873#874#0" expanded="true" />
-                    <element signature="e#901#902#0" expanded="true" />
-                    <element signature="e#956#957#0" expanded="true" />
-                    <element signature="e#984#985#0" expanded="true" />
-                    <element signature="e#1011#1012#0" expanded="true" />
-                    <element signature="e#1041#1042#0" expanded="true" />
-                    <element signature="e#1070#1071#0" expanded="true" />
+                    <element signature="e#2619#2620#0" expanded="true" />
+                    <element signature="e#2647#2648#0" expanded="true" />
+                    <element signature="e#2682#2683#0" expanded="true" />
+                    <element signature="e#2713#2714#0" expanded="true" />
+                    <element signature="e#2745#2746#0" expanded="true" />
+                    <element signature="e#2773#2774#0" expanded="true" />
+                    <element signature="e#2801#2802#0" expanded="true" />
+                    <element signature="e#2828#2829#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -62,28 +56,35 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Dog.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Dog.java">
+        <leaf>
+          <file leaf-file-name="Bike.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Bike.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="444">
-                  <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+                <state relative-caret-position="51">
+                  <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding>
-                    <element signature="e#805#806#0" expanded="true" />
-                    <element signature="e#861#862#0" expanded="true" />
-                    <element signature="e#1374#1375#0" expanded="true" />
-                    <element signature="e#1434#1435#0" expanded="true" />
+                    <element signature="e#107#108#0" expanded="true" />
+                    <element signature="e#146#147#0" expanded="true" />
+                    <element signature="e#470#471#0" expanded="true" />
+                    <element signature="e#518#519#0" expanded="true" />
+                    <element signature="e#549#550#0" expanded="true" />
+                    <element signature="e#613#614#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Fish.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Fish.java">
+          <file leaf-file-name="Motorbike.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Motorbike.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="306">
+                  <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#114#115#0" expanded="true" />
+                    <element signature="e#153#154#0" expanded="true" />
+                    <element signature="e#1009#1010#0" expanded="true" />
+                    <element signature="e#1057#1058#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -99,6 +100,16 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>car</find>
+      <find>velocity</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>bike</replace>
+      <replace>speed</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -110,10 +121,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Animal.java" />
         <option value="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Dog.java" />
         <option value="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Fish.java" />
+        <option value="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Animal.java" />
+        <option value="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Bike.java" />
         <option value="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Main.java" />
+        <option value="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Motorbike.java" />
+        <option value="$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Vehicle.java" />
       </list>
     </option>
   </component>
@@ -373,6 +387,7 @@
             <element signature="method#createCar#0;class#Main#0" expanded="false" />
             <element signature="method#createTransactions#0;class#Main#0" expanded="false" />
             <element signature="method#createVIP#0;class#Main#0" expanded="false" />
+            <element signature="method#createAnimal#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -393,24 +408,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        <state relative-caret-position="-221">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
           <folding>
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1041#1042#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -423,27 +447,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="78" column="8" lean-forward="false" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
-          <folding>
-            <element signature="method#createCar#0;class#Main#0" expanded="false" />
-            <element signature="method#createTransactions#0;class#Main#0" expanded="false" />
-            <element signature="method#createVIP#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Dog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
+        <state relative-caret-position="935">
           <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
           <folding>
             <element signature="e#805#806#0" expanded="true" />
             <element signature="e#861#862#0" expanded="true" />
             <element signature="e#1374#1375#0" expanded="true" />
             <element signature="e#1434#1435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Bike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="method#createCar#0;class#Main#0" expanded="false" />
+            <element signature="method#createTransactions#0;class#Main#0" expanded="false" />
+            <element signature="method#createVIP#0;class#Main#0" expanded="false" />
+            <element signature="method#createAnimal#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Motorbike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#114#115#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Section7/src/com/cjm/ms/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="66" column="62" lean-forward="false" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
+          <folding>
+            <element signature="e#2619#2620#0" expanded="true" />
+            <element signature="e#2647#2648#0" expanded="true" />
+            <element signature="e#2682#2683#0" expanded="true" />
+            <element signature="e#2713#2714#0" expanded="true" />
+            <element signature="e#2745#2746#0" expanded="true" />
+            <element signature="e#2773#2774#0" expanded="true" />
+            <element signature="e#2801#2802#0" expanded="true" />
+            <element signature="e#2828#2829#0" expanded="true" />
           </folding>
         </state>
       </provider>
