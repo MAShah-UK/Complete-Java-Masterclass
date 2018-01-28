@@ -4,9 +4,9 @@ package com.cjm.ms;
 // Create a new class called VIPCustomer.
 // It should have three fields: name, credit limit, and email address.
 // Create three constructors:
-//  1st constructor empty should call the constructor with 3 parameters with default values.
-//  2nd constructor should pass on the 2 values it receives and add a default value for the 3rd.
-//  3rd constructor should save all fields.
+//    1st constructor empty should call the constructor with 3 parameters with default values.
+//    2nd constructor should pass on the 2 values it receives and add a default value for the 3rd.
+//    3rd constructor should save all fields.
 // Create getters only for this using code generation as setters will not be needed.
 // Test and confirm that it works.
 
