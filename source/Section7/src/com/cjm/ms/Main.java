@@ -11,7 +11,7 @@ public class Main {
     // Practice instantiating a class, and using getters and setters.
     public static void createCar() {
 
-        System.out.println("BEGIN: createCar");
+        System.out.println("\nBEGIN: createCar");
 
         Car porsche = new Car();
         porsche.setModel("911");
