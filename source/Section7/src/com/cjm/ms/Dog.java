@@ -22,6 +22,10 @@ public class Dog extends Animal {
         this.coat = coat;
     }
 
+    private void chew() {
+        System.out.println("Dog.chew() called.");
+    }
+
     @Override
     public void eat() {
         System.out.println("Dog.eat() called.");
@@ -29,7 +33,27 @@ public class Dog extends Animal {
         super.eat();
     }
 
-    private void chew() {
-        System.out.println("Dog.chew() called.");
+    public void walk() {
+        System.out.println("Dog.walk() called.");
+        /* It is better to leave move as move, and not as super.move(), as the
+        program will automatically use the 'latest' definition. */
+        move(5);
+    }
+
+    public void run() {
+        System.out.println("Dog.run() called.");
+        move(10);
+    }
+
+    public void moveLegs(int speed) {
+        System.out.println("Dog.moveLegs() called.");
+    }
+
+    @Override
+    public void move(int speed) {
+        System.out.println("Dog.move() called.");
+        moveLegs(speed);
+        // Have to use super.move() here, otherwise there will be infinite recursion.
+        super.move(speed);
     }
 }

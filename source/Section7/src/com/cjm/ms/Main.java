@@ -76,5 +76,7 @@ public class Main {
 
         Dog dog = new Dog("Yorkie", 8, 20, 2, 4, 1, 20, "long silky");
         dog.eat(); // Will use Animal.eat() directly if Dog doesn't define it, due to inheritance.
+        dog.walk();
+        dog.run();
     }
 }
