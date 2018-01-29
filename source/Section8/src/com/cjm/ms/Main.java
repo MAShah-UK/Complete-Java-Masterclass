@@ -8,6 +8,7 @@ public class Main {
         createPlayerBad();
         createPlayerGood();
         createPrinter();
+        createRandomMovies();
     }
 
     // Practice composition by building a PC.
@@ -80,4 +81,35 @@ public class Main {
         printer.print(50, false);
     }
 
+    // Practice polymorphism.
+    public static Movie createRandomMovie() {
+        // Returns integer in range 0 <= x <= 5.
+        int randomNumber = (int) (Math.random()*5 + 1);
+        System.out.println("Random number generated was " + randomNumber + ".");
+        switch (randomNumber) { // break statement is redundant since method returns anyway in each case.
+            case 1:
+                return new Jaws();
+            case 2:
+                return new IndependenceDay();
+            case 3:
+                return new MazeRunner();
+            case 4:
+                return new StarWars();
+            case 5:
+                return new Forgettable();
+        }
+
+        return null; // Should never be executed.
+    }
+
+    // Practice polymorphism.
+    public static void createRandomMovies() {
+        System.out.println("\nBEGIN: createRandomMovies");
+
+        for (int i = 0; i < 10; i++) {
+            Movie movie = createRandomMovie();
+            System.out.println("Movie #" + i + ": " + movie.getName() + "\n" +
+                                "Plot: " + movie.plot());
+        }
+    }
 }

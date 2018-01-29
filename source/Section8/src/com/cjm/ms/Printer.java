@@ -49,7 +49,7 @@ public class Printer {
             tonerLvl = newTonerLvl;
             System.out.println(pages + " pages successfully printed. Toner level is " + tonerLvl + ".");
         } else {
-            System.out.println("Error: Not enough toner left to print.");
+            System.out.println("Error: Not enough toner left to print all pages");
         }
 
         return isValid;
