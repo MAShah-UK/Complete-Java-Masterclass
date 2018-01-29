@@ -12,7 +12,7 @@ public class PlayerGood {
 
         // Health validation.
         if (health > 0 && health <= 100) {
-            this.health = health;
+            this.hitPoints = hitPoints;
         }
 
         this.weapon = weapon;

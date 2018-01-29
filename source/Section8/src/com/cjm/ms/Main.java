@@ -7,6 +7,7 @@ public class Main {
         createRoom();
         createPlayerBad();
         createPlayerGood();
+        createPrinter();
     }
 
     // Practice composition by building a PC.
@@ -45,6 +46,8 @@ public class Main {
 
     // Practice encapsulation - how not to do it.
     public static void createPlayerBad() {
+        System.out.println("\nBEGIN: createPlayerBad");
+
         PlayerBad player = new PlayerBad();
         player.name = "Tim";
         player.health = 20;
@@ -62,7 +65,19 @@ public class Main {
 
     // Practice encapsulation - how to do it.
     public static void createPlayerGood() {
+        System.out.println("\nBEGIN: createPlayerGood");
+
         PlayerGood player = new PlayerGood("Tim", 50, "Sword");
         System.out.println("Initial health is " + player.getHealth() + ".");
     }
+
+    // Practice encapsulation exercise.
+    public static void createPrinter() {
+        System.out.println("\nBEGIN: createPrinter");
+
+        Printer printer = new Printer(50, 0, true);
+        printer.print(190, true);
+        printer.print(50, false);
+    }
+
 }
