@@ -6,7 +6,7 @@
   * IntelliJ IDEA
 * **Sources**
   * [Udemy: Complete Java Masterclass](https://www.udemy.com/java-the-complete-java-developer-course/learn/v4/content)
-  * [My course notes](https://github.com/MAShah-UK/CompleteJavaMasterclass/blob/master/Notes/Notes.docx)
+  * [My course notes](https://github.com/MAShah-UK/CompleteJavaMasterclass/blob/master/notes/Notes.docx)
 
 ## Course Content
 Tim Buchalka covers various language fundamentals from the most basic concepts to the most difficult concepts:
