@@ -6,18 +6,18 @@
   * IntelliJ IDEA
 * **Sources**
   * [Udemy: Complete Java Masterclass](https://www.udemy.com/java-the-complete-java-developer-course/learn/v4/content)
-  * [My course notes](https://github.com/MAShah-UK/CompleteJavaMasterclass/blob/master/Notes/Notes.docx)
+  * [My course notes](https://github.com/MAShah-UK/CompleteJavaMasterclass/blob/master/notes/Notes.docx)
 
 ## Course Content
 Tim Buchalka covers various language fundamentals from the most basic concepts to the most difficult concepts:
-* Section 1: Introduction
-* Section 2: Setup
-* Section 3: First steps
-* Section 4: Variables, datatypes, and operators
-* Section 5: Expressions, statements, code blocks, methods, etc.
-* Section 6: Control flow statements
-* Section 7: OOP Part 1 - Classes, constructors, and inheritance
-* Section 8: OOP Part 2 - Composition, encapsulation, and polymorphism
+* ✓ Section 1: Introduction
+* ✓ Section 2: Setup
+* ✓ Section 3: First steps
+* ✓ Section 4: Variables, datatypes, and operators
+* ✓ Section 5: Expressions, statements, code blocks, methods, etc.
+* ✓ Section 6: Control flow statements
+* ✓ Section 7: OOP Part 1 - Classes, constructors, and inheritance
+* ✓ Section 8: OOP Part 2 - Composition, encapsulation, and polymorphism
 * Section 9: Arrays, Java inbuilt lists, autoboxing and unboxing
 * Section 10: Inner classes, abstract classes, and interfaces
 * Section 11: Generics
