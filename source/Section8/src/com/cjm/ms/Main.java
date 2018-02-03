@@ -9,6 +9,8 @@ public class Main {
         createPlayerGood();
         createPrinter();
         createRandomMovies();
+        createMotorbike();
+        createBurger();
     }
 
     // Practice composition by building a PC.
@@ -72,7 +74,7 @@ public class Main {
         System.out.println("Initial health is " + player.getHealth() + ".");
     }
 
-    // Practice encapsulation exercise.
+    // Practice encapsulation via exercise.
     public static void createPrinter() {
         System.out.println("\nBEGIN: createPrinter");
 
@@ -111,5 +113,51 @@ public class Main {
             System.out.println("Movie #" + i + ": " + movie.getName() + "\n" +
                                 "Plot: " + movie.plot());
         }
+    }
+
+    // Practice polymorphism via exercise.
+    public static void createMotorbike() {
+        System.out.println("\nBEGIN: createMotorbike");
+
+        Motorbike mbike = new Motorbike("General Motorbike", 4, false);
+        mbike.brake();
+        mbike.setEngineWorking(true);
+        mbike.accelerate(10.0, 2.5);
+        mbike.brake();
+        System.out.println();
+
+        BMWRNineTPure bmw = new BMWRNineTPure(true);
+        System.out.println(bmw.getName());
+        bmw.startEngine();
+        System.out.println();
+
+        IndianScoutBobber bobber = new IndianScoutBobber(true);
+        bobber.accelerate(5.1, 1.5);
+    }
+
+    // Practice OOP via exercise - encapsulation, inheritance, and polymorphism.
+    public static void createBurger() {
+        System.out.println("\nBEGIN: createBurger");
+
+        Hamburger burger = new Hamburger("basic", "chicken", 5.00, 0.5);
+        burger.addTopping("pickles");
+        burger.addTopping("lettuce");
+        burger.addTopping("tomato");
+        burger.addTopping("mayo");
+        burger.addTopping("ketchup");
+        System.out.println("Current toppings: " + burger.getToppings());
+        System.out.println("Burger price is: £" + burger.getTotalPrice());
+        System.out.println();
+
+        HealthyBurger healthyBurger = new HealthyBurger("beef", 5.00, 0.5);
+        healthyBurger.addTopping("cheese");
+        healthyBurger.addTopping("tomato");
+        System.out.println("Burger price is: £" + healthyBurger.getToppingPrice());
+        System.out.println();
+
+        DeluxeBurger delBurger = new DeluxeBurger("deluxe", "lamb", 6.00, 0.5);
+        System.out.println(delBurger.getToppings());
+        delBurger.addTopping("cheese");
+        System.out.println(delBurger.getTotalPrice());
     }
 }
