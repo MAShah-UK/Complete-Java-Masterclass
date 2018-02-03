@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28c82461-ace1-43ed-ae0c-a3349bbc7c40" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/DeluxeBurger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/HealthyBurger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
-    </list>
+    <list default="true" id="28c82461-ace1-43ed-ae0c-a3349bbc7c40" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
