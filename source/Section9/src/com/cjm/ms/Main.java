@@ -1,13 +1,17 @@
 package com.cjm.ms;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         //createArray();
         //createSortedArray();
-        createGroceryList();
+        //createGroceryList();
+        //createMobilePhone();
+        useAutoboxing();
     }
 
     // Practice creating array.
@@ -123,5 +127,110 @@ public class Main {
                     break;
             }
         }
+    }
+
+    // Practice ArrayList via exercise.
+    public static void createMobilePhone() {
+        System.out.println("\nBEGIN: createMobilePhone");
+
+        MobilePhone phone = new MobilePhone();
+        Scanner sc = new Scanner(System.in);
+
+        phone.printInstructions();
+
+        String name;
+        String number;
+        int choice = 0;
+        boolean quit = false;
+        while (!quit) {
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+
+            switch (choice) {
+                case 0:
+                    phone.printInstructions();
+                    break;
+                case 1:
+                    phone.listContacts();
+                    break;
+                case 2:
+                    System.out.print("Enter name and number: ");
+                    name = sc.next() + " " + sc.next();
+                    number = sc.next();
+                    phone.addContact(name, number);
+                    break;
+                case 3:
+                    System.out.print("Enter name and new number: ");
+                    name = sc.next() + " " + sc.next();
+                    number = sc.next();
+                    phone.modifyContact(name, number);
+                    break;
+                case 4:
+                    System.out.print("Enter name: ");
+                    name = sc.next() + " " + sc.next();
+                    phone.removeContact(name);
+                    break;
+                case 5:
+                    System.out.print("Enter name: ");
+                    name = sc.next() + " " + sc.next();
+                    phone.findNumber(name);
+                    break;
+                case 6:
+                    quit = true;
+                    break;
+            }
+        }
+    }
+
+    // Practice autoboxing.
+    public static void useAutoboxing() {
+        System.out.println("\nBEGIN: useAutoboxing");
+
+        int[] intArr = new int[5]; // Creates int array.
+        String[] strArr = new String[5]; // Creates string array.
+        //List<int> intList = new ArrayList<>(); // Error: can't use primitive type.
+        List<String> strList = new ArrayList<>(); // Creates string list.
+
+        // Autoboxing is when you convert a primitive type to its wrapper class.
+        Boolean booleanWC = Boolean.valueOf(true); // Autoboxes boolean.
+        Character charWC = Character.valueOf('c'); // Autoboxes char.
+        Byte byteWC = Byte.valueOf(2); // Autoboxes byte.
+        Short shortWC = Short.valueOf(5); // Autoboxes short.
+        Integer intWC = Integer.valueOf(5); // Autoboxes integer.
+        Long longWC = Long.valueOf(200); // Autoboxes long.
+        Float floatWC = Float.valueOf(5.0f); // Autoboxes float.
+        Double doubleWC = Double.valueOf(10.0); // Autoboxes double.
+
+        // Autoboxing shortcut. The compiler converts it to the above.
+        Boolean booleanWC2 = true; // Autoboxes boolean.
+        Character charWC2 = 'c'; // Autoboxes char.
+        Byte byteWC2 = 2; // Autoboxes byte.
+        Short shortWC2 = 5; // Autoboxes short.
+        Integer intWC2 = 5; // Autoboxes integer.
+        Long longWC2 = 200L; // Autoboxes long.
+        Float floatWC2 = 5.0f; // Autoboxes float.
+        Double doubleWC2 = 10.0; // Autoboxes double.
+
+        // Unboxing is when you convert a wrapper class to its primitive type.
+        boolean booleanPT = booleanWC.booleanValue(); // Unboxes boolean.
+        char charPT = charWC.charValue(); // Unboxes char.
+        byte bytePT = byteWC.byteValue(); // Unboxes byte.
+        short shortPT = shortWC.shortValue(); // Unboxes short.
+        int intPT = intWC.intValue(); // Unboxes integer.
+        long longPT = longWC.longValue(); // Unboxes long.
+        float floatPT = floatWC.floatValue(); // Unboxes float.
+        double doublePT = doubleWC.doubleValue(); // Unboxes double.
+
+        // Unboxing shortcut. The compiler converts it to the above.
+        boolean booleanPT2 = booleanWC2; // Unboxes boolean.
+        char charPT2 = charWC2; // Unboxes char.
+        byte bytePT2 = byteWC2; // Unboxes byte.
+        short shortPT2 = shortWC2; // Unboxes short.
+        int intPT2 = intWC2; // Unboxes integer.
+        long longPT2 = longWC2; // Unboxes long.
+        float floatPT2 = floatWC2; // Unboxes float.
+        double doublePT2 = doubleWC2; // Unboxes double.
+
+        List<Integer> intList = new ArrayList<>();
     }
 }
