@@ -194,8 +194,8 @@ public class Main {
         // Autoboxing is when you convert a primitive type to its wrapper class.
         Boolean booleanWC = Boolean.valueOf(true); // Autoboxes boolean.
         Character charWC = Character.valueOf('c'); // Autoboxes char.
-        Byte byteWC = Byte.valueOf(2); // Autoboxes byte.
-        Short shortWC = Short.valueOf(5); // Autoboxes short.
+        Byte byteWC = Byte.valueOf((byte)2); // Autoboxes byte.
+        Short shortWC = Short.valueOf((short)5); // Autoboxes short.
         Integer intWC = Integer.valueOf(5); // Autoboxes integer.
         Long longWC = Long.valueOf(200); // Autoboxes long.
         Float floatWC = Float.valueOf(5.0f); // Autoboxes float.
