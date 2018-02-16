@@ -1,9 +1,7 @@
 package com.cjm.ms;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +9,10 @@ public class Main {
         //createSortedArray();
         //createGroceryList();
         //createMobilePhone();
-        useAutoboxing();
+        //useAutoboxing();
+        //createBank();
+        //createCustomers();
+        createLinkedList();
     }
 
     // Practice creating array.
@@ -232,5 +233,75 @@ public class Main {
         double doublePT2 = doubleWC2; // Unboxes double.
 
         List<Integer> intList = new ArrayList<>();
+    }
+
+    // Practice autoboxing via exercise.
+    public static void createBank() {
+        System.out.println("\nBEGIN: createBank");
+
+        Bank bank = new Bank("NatWest Markets");
+        bank.addBranch("Tottenham Court Road");
+        bank.addBranch("Tavistock Square");
+
+        bank.addTransaction("Tottenham Court Road", "John Doe", 50);
+        bank.addTransaction("Tottenham Court Road", "Jane Doe", 100);
+        bank.addTransaction("Tavistock Square", "Jack Doe", 20);
+        bank.addTransaction("Tavistock Square", "Jo Doe", 15);
+        bank.addTransaction("Tottenham Court Road", "John Doe", 100);
+        bank.addTransaction("Tavistock Square", "Jack Doe", -5);
+        bank.addTransaction("Tavistock Square", "Bill Gates", 9999999);
+        bank.addTransaction("Tavistock Squares", "Jack Doe", -5); // Should fail.
+
+        System.out.println();
+        bank.listCustomers(true);
+    }
+
+    // Practice working with value types and reference types.
+    public static void createCustomers() {
+        System.out.println("\nBEGIN: createCustomers");
+
+        // new Customer creates Customer object in heap memory.
+        // Customer cust1 creates a reference variable type on the stack.
+        Customer cust1 = new Customer("John Doe", 50);
+        // cust2 points to the same memory location in the heap as cust1.
+        Customer cust2 = cust1;
+        // Since cust1 and cust2 point to the same location, changing one
+        // is the same as changing the other.
+        cust2.addTransaction(50);
+        System.out.println("cust1 balance: " + cust1.getBalance()); // Both print 100.
+        System.out.println("cust2 balance: " + cust2.getBalance());
+        // We can create a new Customer object in memory and have
+        // cust2 point to that instead so that it changes a different
+        // object to cust1.
+        cust2 = new Customer("Jane Doe", 200);
+        System.out.println("cust1 balance: " + cust1.getBalance()); // Prints John's balance.
+        System.out.println("cust2 balance: " + cust2.getBalance()); // Prints Jane's balance.
+        // When you pass a reference type (e.g. through a method) they both change the same
+        // object in memory. When you pass a value type a copy is made and doesn't
+        // affect the original. Value types and reference types exist on the stack,
+        // but a reference type points to an object in the heap.
+        int val1 = 10;
+        int val2 = val1; // Copies the value since it's a value type.
+        System.out.println("val1: " + val1);
+        System.out.println("val2: " + val2);
+        val2 = 20; // val2 changes independently to val1.
+        System.out.println("val1: " + val1);
+        System.out.println("val2: " + val2);
+        // Declaring a variable with a primitive datatype creates a value type.
+    }
+
+    // Practice LinkedLists.
+    public static void createLinkedList() {
+        List<String> places = new LinkedList<>();
+        places.add("Sydney");
+        places.add("Melbourne");
+        places.add("Brisbane");
+        places.add("Perth");
+        places.add("Canberra");
+        places.add("Adelaide");
+        places.add("Darwin");
+
+        Iterator<String> iter = places.iterator();
+
     }
 }

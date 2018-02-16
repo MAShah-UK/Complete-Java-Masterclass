@@ -50,12 +50,13 @@ public class ArraySorter {
         }
 
         // Implement descending bubble sort.
-        for (int i = 0; i < sort.length - 1; i++) {
+        int tmp;
+        for (int i = 0; i < sort.length-1; i++) {
             if (sort[i] < sort[i+1]) {
-                int tmp = sort[i];
+                tmp = sort[i];
                 sort[i] = sort[i+1];
                 sort[i+1] = tmp;
-                i = 0; // Restart loop if a local sort was required.
+                i = -1; // Restart loop if a local sort was required.
             }
         }
 

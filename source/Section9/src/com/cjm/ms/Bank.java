@@ -27,17 +27,52 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bank {
+    private String name;
     private List<Branch> branches = new ArrayList<>();
 
-    public void addBranch() {
-
+    public Bank(String name) {
+        this.name = name;
     }
 
-    public void addBranch(Customer cust) {
-
+    public void addBranch(String name) {
+        branches.add(new Branch(name));
     }
 
-    public void addTransaction(String name, String customer) {
+    private Branch findBranch(String branchName) {
+        for (Branch branch : branches) {
+            if (branch.getName().equals(branchName)) {
+                return branch;
+            }
+        }
+        return null;
+    }
 
+    public void addTransaction(String branchName, String custName, double transaction) {
+        Branch branch = findBranch(branchName);
+        if (branch != null) {
+            branch.addTransaction(custName, transaction);
+        } else {
+            System.out.println("Branch " + branchName + " doesn't exist.");
+        }
+    }
+
+    public void listCustomers(boolean showTransactions) {
+        System.out.println("Branches in " + getName());
+        for (Branch branch : branches) {
+            System.out.println("  Customers in " + branch.getName() + " branch:");
+            for (Customer cust : branch.getCustomers()) {
+                System.out.println("    • Balance for " + cust.getName() + " is " + cust.getBalance());
+                if (showTransactions) {
+                    for (double trans : cust.getTransactions()) {
+                        String type = trans > 0 ? "Deposit" : "Withdraw";
+                        System.out.println("      " + type + ": " + Math.abs(trans));
+                    }
+                }
+            }
+        }
+    }
+
+    public String getName() {
+        return name;
     }
 }
