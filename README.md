@@ -2,7 +2,7 @@
 * **Platform**
   * Windows
 * **Tools**
-  * Java
+  * Java 8/9
   * IntelliJ IDEA
 * **Sources**
   * [Udemy: Complete Java Masterclass](https://www.udemy.com/java-the-complete-java-developer-course/learn/v4/content)
@@ -31,4 +31,6 @@ Tim Buchalka covers various language fundamentals from the most basic concepts t
 * Section 19: Debugging and unit testing
 * Section 20: Databases
 * Section 21: Networking
-* Section 22: Bonus material
+* Seciion 22: Java 9 Module System
+* Section 23: Migrating Java Projects to Java 9
+* Section 24: Bonus material
