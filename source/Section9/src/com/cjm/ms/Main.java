@@ -12,7 +12,7 @@ public class Main {
         //useAutoboxing();
         //createBank();
         //createCustomers();
-        createLinkedList();
+        createPlaces();
     }
 
     // Practice creating array.
@@ -290,9 +290,12 @@ public class Main {
         // Declaring a variable with a primitive datatype creates a value type.
     }
 
-    // Practice LinkedLists.
-    public static void createLinkedList() {
-        List<String> places = new LinkedList<>();
+    // Practice using LinkedList.
+    public static void createPlaces() {
+        System.out.println("\nBEGIN: createPlaces");
+
+        // Create the list.
+        Places places = new Places();
         places.add("Sydney");
         places.add("Melbourne");
         places.add("Brisbane");
@@ -300,8 +303,43 @@ public class Main {
         places.add("Canberra");
         places.add("Adelaide");
         places.add("Darwin");
+        places.printList();
+        System.out.println();
 
-        Iterator<String> iter = places.iterator();
+        // Should add Alice Springs as the second element.
+        places.add(1, "Alice Springs");
+        places.printList();
+        System.out.println();
 
+        // Create an ordered list.
+        Places ordPlaces = new Places();
+        ordPlaces.addInOrder("Sydney");
+        ordPlaces.addInOrder("Melbourne");
+        ordPlaces.addInOrder("Brisbane");
+        ordPlaces.addInOrder("Perth");
+        ordPlaces.addInOrder("Canberra");
+        ordPlaces.addInOrder("Adelaide");
+        ordPlaces.addInOrder("Darwin");
+        ordPlaces.printList();
+        System.out.println();
+
+        // Won't add Sydney since it's already in the list.
+        ordPlaces.addInOrder("Sydney");
+        ordPlaces.addInOrder("Alice Springs");
+        ordPlaces.printList();
+    }
+
+    public static void visit(List<String> cities) {
+        Scanner scan = new Scanner(System.in);
+        boolean quit = false;
+        boolean goingForward = true;
+        ListIterator<String> iter = cities.listIterator();
+
+        if (cities.isEmpty()) {
+            System.out.println("No cities in the itinerary,");
+            return;
+        } else {
+            System.out.println("Now visiting: " + iter.next());
+        }
     }
 }
