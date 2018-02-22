@@ -1,6 +1,5 @@
 package com.cjm.ms;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Main {
@@ -12,7 +11,8 @@ public class Main {
         //useAutoboxing();
         //createBank();
         //createCustomers();
-        createPlaces();
+        //createPlaces();
+        createPlaylist();
     }
 
     // Practice creating array.
@@ -295,7 +295,7 @@ public class Main {
         System.out.println("\nBEGIN: createPlaces");
 
         // Create the list.
-        Places places = new Places();
+        CustomList places = new CustomList();
         places.add("Sydney");
         places.add("Melbourne");
         places.add("Brisbane");
@@ -312,7 +312,7 @@ public class Main {
         System.out.println();
 
         // Create an ordered list.
-        Places ordPlaces = new Places();
+        CustomList ordPlaces = new CustomList();
         ordPlaces.addInOrder("Sydney");
         ordPlaces.addInOrder("Melbourne");
         ordPlaces.addInOrder("Brisbane");
@@ -327,19 +327,14 @@ public class Main {
         ordPlaces.addInOrder("Sydney");
         ordPlaces.addInOrder("Alice Springs");
         ordPlaces.printList();
+        System.out.println();
+
+        // Let user process elements one by one.
+        ordPlaces.selectElement();
     }
 
-    public static void visit(List<String> cities) {
-        Scanner scan = new Scanner(System.in);
-        boolean quit = false;
-        boolean goingForward = true;
-        ListIterator<String> iter = cities.listIterator();
+    // Practice ListIterator via exercise.
+    public static void createPlaylist() {
 
-        if (cities.isEmpty()) {
-            System.out.println("No cities in the itinerary,");
-            return;
-        } else {
-            System.out.println("Now visiting: " + iter.next());
-        }
     }
 }
