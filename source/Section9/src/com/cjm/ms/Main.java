@@ -12,7 +12,7 @@ public class Main {
         //createBank();
         //createCustomers();
         //createPlaces();
-        createPlaylist();
+        createMusicManager();
     }
 
     // Practice creating array.
@@ -334,7 +334,10 @@ public class Main {
     }
 
     // Practice ListIterator via exercise.
-    public static void createPlaylist() {
+    public static void createMusicManager() {
+        System.out.println("\nBEGIN: createMusicManager");
 
+        MusicManager music = new MusicManager();
+        music.startInteractiveMenu();
     }
 }

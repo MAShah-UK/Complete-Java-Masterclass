@@ -30,19 +30,42 @@ public class MusicManager {
     private Scanner sc = new Scanner(System.in);
 
     public MusicManager() {
-        // TODO: Set albums.
+        addAlbums();
     }
 
-    public void interactiveMenu() {
+    private void addAlbums() {
+        Album lp_ht = new Album("Linkin Park", "Hybrid Theory");
+        lp_ht.add(new Song("Papercut", 184));
+        lp_ht.add(new Song("One Step Closer", 155));
+        lp_ht.add(new Song("With You", 203));
+        albums.add(lp_ht);
+
+        Album e_r = new Album("Eminem", "Revival");
+        e_r.add(new Song("Walk on Water", 304));
+        e_r.add(new Song("Believe", 315));
+        e_r.add(new Song("Chloraseptic", 301));
+        albums.add(e_r);
+
+        Album kl_d = new Album("Kendrick Lamar", "Damn");
+        kl_d.add(new Song("Blood", 118));
+        kl_d.add(new Song("DNA", 185));
+        kl_d.add(new Song("Yah", 160));
+        albums.add(kl_d);
+    }
+
+    public void startInteractiveMenu() {
         System.out.println("Welcome to the playlist manager.");
         printOptions();
 
         boolean quit = false;
         String arg;
         while(!quit) {
+            System.out.println();
             System.out.print("Pick an option: ");
             int option = sc.nextInt();
             sc.nextLine();
+            System.out.println();
+
             switch(option) {
                 case 1: // Print options.
                     printOptions();
@@ -73,7 +96,7 @@ public class MusicManager {
         }
     }
 
-    public void printOptions() {
+    private void printOptions() {
         System.out.println("Your options are:");
         System.out.println("1 - Print options.");
         System.out.println("2 - Add song.");
@@ -90,6 +113,7 @@ public class MusicManager {
         for (Album album : albums) {
             song = album.findSong(songName);
             if (song != null) {
+                // TODO/BUG: Assumes that song names are unique.
                 return song;
             }
         }
@@ -99,13 +123,6 @@ public class MusicManager {
     private void addSong() {
         System.out.print("Which song?");
         Song song = findSong(sc.nextLine());
-        boolean isValid = (song != null);
-
-        if (isValid) {
-            pList.add(song);
-            System.out.println("Song added to playlist: " + song.getName());
-        } else {
-            System.out.println("Song doesn't exist: " + songName);
-        }
+        pList.add(song);
     }
 }

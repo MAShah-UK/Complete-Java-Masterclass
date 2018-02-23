@@ -6,19 +6,30 @@ import java.util.ListIterator;
 public class Playlist {
     private LinkedList<Song> songs = new LinkedList<>();
     private ListIterator<Song> iter = songs.listIterator();
-    private boolean wentForward = true; // TODO: Implement.
+    private boolean wentForward = true;
 
     public void add(Song song) {
-        songs.add(song);
-    }
+        boolean isValid = (song != null);
 
-    public void removeSong() {
-        if (!songs.isEmpty()) {
-            iter.remove();
+        if (isValid) {
+            songs.add(song);
+            System.out.println("Song added to playlist: " + song.getName());
+        } else {
+            System.out.println("Song doesn't exist.");
         }
     }
 
-    public void adjustDirection(boolean goingForward) {
+    public void removeSong() {
+        if (songs.isEmpty()) {
+            System.out.println("Playlist is empty.");
+        } else {
+            iter.remove();
+            System.out.println("Song removed.");
+        }
+
+    }
+
+    private void adjustDirection(boolean goingForward) {
         // Direction is the same as before.
         if (goingForward == wentForward) {
             return;
@@ -70,13 +81,10 @@ public class Playlist {
 
     public void listSongs() {
         System.out.println("Songs in playlist include: ");
-
         int i = 0;
         for (Song song : songs) {
             i++;
-            System.out.println("Track " + i + ": " + song.getName()s);
+            System.out.println("Track " + i + ": " + song.getName());
         }
-
-        System.out.println();
     }
 }

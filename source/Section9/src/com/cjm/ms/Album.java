@@ -4,8 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Album {
+    private String band;
     private String name;
     private List<Song> songs = new ArrayList<>();
+
+    public Album(String band, String name) {
+        this.band = band;
+        this.name = name;
+    }
 
     public String getName() {
         return name;
@@ -46,8 +52,8 @@ public class Album {
 
     public void printSongsList() {
         for (int i = 0; i < songs.size(); i++) {
-            String name
-            System.out.println("Track " + i + ": " + songs.get(i).getName());
+            String name = songs.get(i).getName();
+            System.out.println("Track " + i + ": " + name);
         }
     }
 }
