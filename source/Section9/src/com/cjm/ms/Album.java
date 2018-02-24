@@ -13,12 +13,16 @@ public class Album {
         this.name = name;
     }
 
+    public String getBand() {
+        return band;
+    }
+
     public String getName() {
         return name;
     }
 
     public void add(Song song) {
-        song.setAlbum(name);
+        song.setAlbum(this);
         songs.add(song);
     }
 

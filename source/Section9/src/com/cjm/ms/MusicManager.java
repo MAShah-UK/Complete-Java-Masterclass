@@ -1,5 +1,6 @@
 package com.cjm.ms;
 
+import javax.swing.text.View;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -25,12 +26,26 @@ import java.util.Scanner;
 // (hint: ListIterator.remove()).
 
 public class MusicManager {
+    private List<String> options = new ArrayList<>(9);
     private List<Album> albums = new ArrayList<>();
     private Playlist pList = new Playlist();
     private Scanner sc = new Scanner(System.in);
 
     public MusicManager() {
+        addOptions();
         addAlbums();
+    }
+    
+    private void addOptions() {
+        options.add("1 - Print options.");
+        options.add("2 - Play playlist / Current Song.");
+        options.add("3 - Add song.");
+        options.add("4 - Remove song.");
+        options.add("5 - Skip forwards.");
+        options.add("6 - Skip backwards.");
+        options.add("7 - Replay song.");
+        options.add("8 - List songs.");
+        options.add("9 - Quit.");
     }
 
     private void addAlbums() {
@@ -60,35 +75,40 @@ public class MusicManager {
         boolean quit = false;
         String arg;
         while(!quit) {
+
             System.out.println();
-            System.out.print("Pick an option: ");
+            System.out.print("Pick an option (1 for help): ");
             int option = sc.nextInt();
             sc.nextLine();
+            System.out.println("You chose: " + options.get(option-1));
             System.out.println();
 
             switch(option) {
                 case 1: // Print options.
                     printOptions();
                     break;
-                case 2: // Add song.
+                case 2: // Play playlist.
+                    pList.play();
+                    break;
+                case 3: // Add song.
                     addSong();
                     break;
-                case 3: // Remove song.
+                case 4: // Remove song.
                     pList.removeSong();
                     break;
-                case 4: // Skip forwards.
+                case 5: // Skip forwards.
                     pList.skipForwards();
                     break;
-                case 5: // Skip backwards.
+                case 6: // Skip backwards.
                     pList.skipBackwards();
                     break;
-                case 6: // Replay song.
+                case 7: // Replay song.
                     pList.replaySong();
                     break;
-                case 7: // List songs.
+                case 8: // List songs.
                     pList.listSongs();
                     break;
-                case 8: // Quit.
+                case 9: // Quit.
                     System.out.println("Goodbye.");
                     quit = true;
                     break;
@@ -98,14 +118,9 @@ public class MusicManager {
 
     private void printOptions() {
         System.out.println("Your options are:");
-        System.out.println("1 - Print options.");
-        System.out.println("2 - Add song.");
-        System.out.println("3 - Remove song.");
-        System.out.println("4 - Skip forwards.");
-        System.out.println("5 - Skip backwards.");
-        System.out.println("6 - Replay song.");
-        System.out.println("7 - List songs.");
-        System.out.println("8 - Quit.");
+        for (String opt : options) {
+            System.out.println(opt);
+        }
     }
 
     private Song findSong(String songName) {

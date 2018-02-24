@@ -3,16 +3,11 @@ package com.cjm.ms;
 public class Song {
     private String name;
     private double duration;
-    private String album;
+    private Album album;
 
     public Song(String name, double duration) {
-        this(name, duration, "");
-    }
-
-    public Song(String name, double duration, String album) {
         this.name = name;
         this.duration = duration;
-        this.album = album;
     }
 
     public String getName() {
@@ -23,11 +18,11 @@ public class Song {
         return duration;
     }
 
-    public String getAlbum() {
+    public Album getAlbum() {
         return album;
     }
 
-    public void setAlbum(String album) {
+    public void setAlbum(Album album) {
         this.album = album;
     }
 }
