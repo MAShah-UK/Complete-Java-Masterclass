@@ -80,7 +80,8 @@ public class MusicManager {
             System.out.print("Pick an option (1 for help): ");
             int option = sc.nextInt();
             sc.nextLine();
-            System.out.println("You chose: " + options.get(option-1));
+            String confirmation = option > options.size() ? Integer.toString(option) : options.get(option-1);
+            System.out.println("You chose: " + confirmation);
             System.out.println();
 
             switch(option) {
@@ -111,6 +112,9 @@ public class MusicManager {
                 case 9: // Quit.
                     System.out.println("Goodbye.");
                     quit = true;
+                    break;
+                default:
+                    System.out.println("Invalid selection. Try again.");
                     break;
             }
         }
