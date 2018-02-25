@@ -132,7 +132,8 @@ public class MusicManager {
         for (Album album : albums) {
             song = album.findSong(songName);
             if (song != null) {
-                // TODO/BUG: Assumes that song names are unique.
+                // TODO/Bug: Assumes that song names are unique.
+                // TODO/BugFix: Could return an ArrayList of possible songs, and let user choose.
                 return song;
             }
         }

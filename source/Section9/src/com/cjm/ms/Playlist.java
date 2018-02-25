@@ -25,26 +25,29 @@ public class Playlist {
     }
 
     public void play() {
+        play(getCurrent());
+    }
+
+    private void play(Song song) {
         if (songs.isEmpty()) {
             System.out.println("There are no songs in your playlist.");
         } else if (iter == null) {
             iter = songs.listIterator();
-            Song song = iter.next();
+            song = iter.next();
             System.out.println("Currently playing: " + song.getName());
         } else {
-            Song song = getCurrent();
             System.out.println("Currently playing: " + song.getName());
         }
     }
 
     public void removeSong() {
-        // TODO/BUG: Can't remove two in a row.
         if (iter == null) {
             System.out.println("Play your playlist first.");
             return;
         } else {
             iter.remove();
             System.out.println("Song removed.");
+            skipForwards();
         }
     }
 
@@ -82,8 +85,8 @@ public class Playlist {
     }
 
     public void skipForwards() {
-        if (iter == null) {
-            System.out.println("Play your playlist first.");
+        if (iter == null || songs.isEmpty()) {
+            System.out.println("Add songs to your playlist then play it.");
             return;
         }
 
@@ -97,12 +100,12 @@ public class Playlist {
             song = iter.next();
         }
 
-        System.out.println("Now playing: " + song.getName());
+        play(song);
     }
 
     public void skipBackwards() {
-        if (iter == null) {
-            System.out.println("Play your playlist first.");
+        if (iter == null || songs.isEmpty()) {
+            System.out.println("Add songs to your playlist then play it.");
             return;
         }
 
@@ -116,12 +119,12 @@ public class Playlist {
             song = iter.previous();
         }
 
-        System.out.println("Now playing: " + song.getName());
+        play(song);
     }
 
     public void replaySong() {
         Song song = getCurrent();
-        System.out.println("Replaying: " + song.getName());
+        play(song);
     }
 
     public void listSongs() {
