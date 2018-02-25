@@ -1,0 +1,78 @@
+"C:\Program Files\Java\jdk-9\bin\java" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.3.3\lib\idea_rt.jar=54829:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.3.3\bin" -Dfile.encoding=UTF-8 -classpath "D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section8\out\production\Section8" com.cjm.ms.Main
+
+BEGIN: createPC
+Power button pressed.
+Drawing pixel at 1200,50 in color yellow.
+
+BEGIN: createRoom
+Everyone is sleeping on the bed.
+Too many people sleeping on the bed!
+5 people are enjoying the picture.
+
+BEGIN: createPlayerBad
+Remaining health 10
+Remaining health 189
+
+BEGIN: createPlayerGood
+Initial health is 100.
+
+BEGIN: createPrinter
+Error: Not enough toner left to print all pages
+50 pages successfully printed. Toner level is 25.0.
+
+BEGIN: createRandomMovies
+Random number generated was 1.
+Movie #0: Jaws
+Plot: A shark eats lots of people.
+Random number generated was 5.
+Movie #1: Forgettable
+Plot: No plot here.
+Random number generated was 4.
+Movie #2: Star Wars
+Plot: Imperial forces try to take over the universe.
+Random number generated was 2.
+Movie #3: Independence Day
+Plot: No plot here.
+Random number generated was 1.
+Movie #4: Jaws
+Plot: A shark eats lots of people.
+Random number generated was 1.
+Movie #5: Jaws
+Plot: A shark eats lots of people.
+Random number generated was 2.
+Movie #6: Independence Day
+Plot: No plot here.
+Random number generated was 4.
+Movie #7: Star Wars
+Plot: Imperial forces try to take over the universe.
+Random number generated was 5.
+Movie #8: Forgettable
+Plot: No plot here.
+Random number generated was 1.
+Movie #9: Jaws
+Plot: A shark eats lots of people.
+
+BEGIN: createMotorbike
+The engine isn't working, or the motorbike isn't moving.
+Motorbike velocity 25.0 m/s.
+Motorbike is braking to a stop.
+
+BMW R Nine T Pure
+BMW started up!
+
+The Bobber accelerates like a normal bike!
+Motorbike velocity 7.6499999999999995 m/s.
+
+BEGIN: createBurger
+Too many toppings in Hamburger.
+Current toppings: pickles lettuce tomato mayo 
+Burger price is: £7.0
+
+Too many toppings in HealthyBurger.
+Burger price is: £0.5
+
+chips drinks 
+DeluxeBurger can't have additional toppings.
+7.0
+
+Process finished with exit code 0

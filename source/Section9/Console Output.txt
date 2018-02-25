@@ -1,0 +1,353 @@
+"C:\Program Files\Java\jdk-9\bin\java" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.3.3\lib\idea_rt.jar=54778:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.3.3\bin" -Dfile.encoding=UTF-8 -classpath "D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section9\out\production\Section9" com.cjm.ms.Main
+
+BEGIN: createArray
+Third element of array is at index 2 and has value 7.
+vals1 contains the following values:
+5
+5
+7
+vals2 contains the following values:
+5
+5
+7
+How many values in the array? 
+5
+Enter value for index 0:
+4
+Enter value for index 1:
+7
+Enter value for index 2:
+2
+Enter value for index 3:
+6
+Enter value for index 4:
+9
+The average is: 5.6
+
+BEGIN: createSortedArray
+How many integers in the array?
+5
+Enter integer for index 0: 
+4
+Enter integer for index 1: 
+7
+Enter integer for index 2: 
+2
+Enter integer for index 3: 
+6
+Enter integer for index 4: 
+9
+Values of array are: 
+4
+7
+2
+6
+9
+
+Values of array are: 
+9
+7
+6
+4
+2
+
+BEGIN: createGroceryList
+
+Press 
+	 0 - To print choice options.
+	 1 - To print the list of grocery items.
+	 2 - To add an item to the list.
+	 3 - To modify an item in the list.
+	 4 - To remove an item from the list.
+	 5 - To search for an item in the list.
+	 6 - To quit the application.
+Enter your choice: 2
+Enter item: Milk
+Enter your choice: 2
+Enter item: Cheese
+Enter your choice: 2
+Enter item: Bread
+Enter your choice: 3
+Enter position, and item: 1 Egg
+Grocery item 2 has been modified.
+Enter your choice: 1
+You have 3 items in your grocery list.
+1) Milk
+2) Egg
+3) Bread
+Enter your choice: 5
+Enter item: Egg
+Egg was found at index 1.
+Enter your choice: 4
+Enter position: 1
+Enter your choice: 1
+You have 2 items in your grocery list.
+1) Milk
+2) Bread
+Enter your choice: 6
+
+BEGIN: createMobilePhone
+
+Press
+	 0 - To print options.
+	 1 - To print a list of contacts.
+	 2 - To add a contact.
+	 3 - To modify a contact.
+	 4 - To remove a contact.
+	 5 - To search for a contact.
+	 6 - To quit.
+Enter your choice: 2
+Enter name and number: John 07192837481
+
+07192837481
+New contact John 07192837481 was added with number 07192837481.
+Enter your choice: 4
+Enter name: John 07192837481
+Contact details for John 07192837481 were deleted.
+Enter your choice: 2
+Enter name and number: John Doe
+07192837481
+New contact John Doe was added with number 07192837481.
+Enter your choice: 2
+Enter name and number: Jane Doe
+07718293881
+New contact Jane Doe was added with number 07718293881.
+Enter your choice: 2
+Enter name and number: Jack Doe
+07234718231
+New contact Jack Doe was added with number 07234718231.
+Enter your choice: 1
+1) John Doe 07192837481
+2) Jane Doe 07718293881
+3) Jack Doe 07234718231
+Enter your choice: 0
+
+Press
+	 0 - To print options.
+	 1 - To print a list of contacts.
+	 2 - To add a contact.
+	 3 - To modify a contact.
+	 4 - To remove a contact.
+	 5 - To search for a contact.
+	 6 - To quit.
+Enter your choice: 3
+Enter name and new number: Jane Doe
+02081928377
+Jane Doe's old number 07718293881 has been replaced with 02081928377.
+Enter your choice: 4
+Enter name: Jack Doe
+Contact details for Jack Doe were deleted.
+Enter your choice: 1
+1) John Doe 07192837481
+2) Jane Doe 02081928377
+Enter your choice: 5
+Enter name: Jane Doe
+Jane Doe's number is: 02081928377
+Enter your choice: 6
+
+BEGIN: useAutoboxing
+
+BEGIN: createBank
+Transaction for John Doe was processed.
+Transaction for Jack Doe was processed.
+Branch Tavistock Squares doesn't exist.
+
+Branches in NatWest Markets
+  Customers in Tottenham Court Road branch:
+    • Balance for John Doe is 150.0
+      Deposit: 50.0
+      Deposit: 100.0
+    • Balance for Jane Doe is 100.0
+      Deposit: 100.0
+  Customers in Tavistock Square branch:
+    • Balance for Jack Doe is 15.0
+      Deposit: 20.0
+      Withdraw: 5.0
+    • Balance for Jo Doe is 15.0
+      Deposit: 15.0
+    • Balance for Bill Gates is 9999999.0
+      Deposit: 9999999.0
+
+BEGIN: createCustomers
+cust1 balance: 100.0
+cust2 balance: 100.0
+cust1 balance: 100.0
+cust2 balance: 200.0
+val1: 10
+val2: 10
+val1: 10
+val2: 20
+
+BEGIN: createPlaces
+Visiting: Sydney
+Visiting: Melbourne
+Visiting: Brisbane
+Visiting: Perth
+Visiting: Canberra
+Visiting: Adelaide
+Visiting: Darwin
+
+Visiting: Sydney
+Visiting: Alice Springs
+Visiting: Melbourne
+Visiting: Brisbane
+Visiting: Perth
+Visiting: Canberra
+Visiting: Adelaide
+Visiting: Darwin
+
+Visiting: Adelaide
+Visiting: Brisbane
+Visiting: Canberra
+Visiting: Darwin
+Visiting: Melbourne
+Visiting: Perth
+Visiting: Sydney
+
+Sydney already exists.
+Visiting: Adelaide
+Visiting: Alice Springs
+Visiting: Brisbane
+Visiting: Canberra
+Visiting: Darwin
+Visiting: Melbourne
+Visiting: Perth
+Visiting: Sydney
+
+Current element: Adelaide
+Enter a value to select the corresponding option:
+0 - To quit.
+1 - To see the next element.
+2 - To see the previous element.
+2
+You're already at the first element.
+1
+Current element: Alice Springs
+1
+Current element: Brisbane
+1
+Current element: Canberra
+1
+Current element: Darwin
+1
+Current element: Melbourne
+1
+Current element: Perth
+1
+Current element: Sydney
+2
+Current element: Perth
+1
+Current element: Sydney
+1
+You're already at the last element.
+0
+End of list.
+
+BEGIN: createMusicManager
+Welcome to the playlist manager.
+Your options are:
+1 - Print options.
+2 - Play playlist / Current Song.
+3 - Add song.
+4 - Remove song.
+5 - Skip forwards.
+6 - Skip backwards.
+7 - Replay song.
+8 - List songs.
+9 - Quit.
+
+Pick an option (1 for help): 3
+You chose: 3 - Add song.
+
+Which song?DNA
+Song added to playlist: DNA
+
+Pick an option (1 for help): 3
+You chose: 3 - Add song.
+
+Which song?Yah
+Song added to playlist: Yah
+
+Pick an option (1 for help): 3
+You chose: 3 - Add song.
+
+Which song?Believe
+Song added to playlist: Believe
+
+Pick an option (1 for help): 2
+You chose: 2 - Play playlist / Current Song.
+
+Currently playing: DNA
+
+Pick an option (1 for help): 3
+You chose: 3 - Add song.
+
+Which song?Papercut
+Song added to playlist: Papercut
+
+Pick an option (1 for help): 8
+You chose: 8 - List songs.
+
+Songs in playlist include: 
+> Track 1: Kendrick Lamar - Damn - DNA
+Track 2: Kendrick Lamar - Damn - Yah
+Track 3: Eminem - Revival - Believe
+Track 4: Linkin Park - Hybrid Theory - Papercut
+
+Pick an option (1 for help): 5
+You chose: 5 - Skip forwards.
+
+Currently playing: Yah
+
+Pick an option (1 for help): 7
+You chose: 7 - Replay song.
+
+Currently playing: Yah
+
+Pick an option (1 for help): 4
+You chose: 4 - Remove song.
+
+Song removed.
+Currently playing: Believe
+
+Pick an option (1 for help): 8
+You chose: 8 - List songs.
+
+Songs in playlist include: 
+Track 1: Kendrick Lamar - Damn - DNA
+> Track 2: Eminem - Revival - Believe
+Track 3: Linkin Park - Hybrid Theory - Papercut
+
+Pick an option (1 for help): 5
+You chose: 5 - Skip forwards.
+
+Currently playing: Papercut
+
+Pick an option (1 for help): 5
+You chose: 5 - Skip forwards.
+
+Currently playing: DNA
+
+Pick an option (1 for help): 6
+You chose: 6 - Skip backwards.
+
+Currently playing: Papercut
+
+Pick an option (1 for help): 4
+You chose: 4 - Remove song.
+
+Song removed.
+Currently playing: DNA
+
+Pick an option (1 for help): 2
+You chose: 2 - Play playlist / Current Song.
+
+Currently playing: DNA
+
+Pick an option (1 for help): 9
+You chose: 9 - Quit.
+
+Goodbye.
+
+Process finished with exit code 0

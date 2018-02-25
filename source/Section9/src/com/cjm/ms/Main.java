@@ -4,14 +4,14 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        //createArray();
-        //createSortedArray();
-        //createGroceryList();
-        //createMobilePhone();
-        //useAutoboxing();
-        //createBank();
-        //createCustomers();
-        //createPlaces();
+        createArray();
+        createSortedArray();
+        createGroceryList();
+        createMobilePhone();
+        useAutoboxing();
+        createBank();
+        createCustomers();
+        createPlaces();
         createMusicManager();
     }
 
