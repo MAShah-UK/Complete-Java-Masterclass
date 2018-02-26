@@ -24,9 +24,9 @@ package com.cjm.ms;
 // requires, and returns an ArrayList.
 // There is a whole Java I/O section later in the course where you will get to use files, etc.
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface ISaveable {
-    ArrayList getValues();
-    void setValues(ArrayList values);
+    void loadData(List<Integer> values);
+    List<Integer> saveData();
 }
