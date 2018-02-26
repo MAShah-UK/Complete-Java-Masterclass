@@ -31,6 +31,6 @@ Tim Buchalka covers various language fundamentals from the most basic concepts t
 * Section 19: Debugging and unit testing
 * Section 20: Databases
 * Section 21: Networking
-* Seciion 22: Java 9 Module System
+* Section 22: Java 9 Module System
 * Section 23: Migrating Java Projects to Java 9
 * Section 24: Bonus material
