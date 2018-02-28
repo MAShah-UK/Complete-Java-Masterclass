@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class ManageData {
     // Input from console since file I/O hasn't been covered yet.
-    public static List<Integer> loadData(int num) {
+    public static List<Integer> loadDataToObject(int num) {
         List<Integer> data = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
 
@@ -21,7 +21,7 @@ public class ManageData {
     }
 
     // Output to console since file I/O hasn't been covered yet.
-    public static void saveData(ISaveable obj) {
+    public static void saveDataFromObject(ISaveable obj) {
         List list = obj.saveData();
         for (int i = 0; i < list.size(); i++) {
             System.out.println("Index: " + i + " Value: " + list.get(i));
@@ -36,7 +36,7 @@ class BasicGame implements ISaveable {
     private int countRobots;
 
     public BasicGame() {
-        loadData(ManageData.loadData(3));
+        loadData(ManageData.loadDataToObject(3));
     }
 
     @Override
@@ -62,7 +62,7 @@ class BasicEngineeringOrder implements ISaveable {
     private int screwDrivers;
 
     public BasicEngineeringOrder() {
-        loadData(ManageData.loadData(5));
+        loadData(ManageData.loadDataToObject(5));
     }
 
     @Override
