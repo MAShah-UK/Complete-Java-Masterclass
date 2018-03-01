@@ -10,7 +10,8 @@ public class Main {
         //createPhones();
         //manageData();
         //createGearbox();
-        createButton();
+        //createButton();
+        createMusicManager();
     }
 
     // Practice working with interfaces.
@@ -101,5 +102,13 @@ public class Main {
 
         btnPrint.setOnClickListener(btnPrintAction);
         btnPrint.onClick();
+    }
+
+    // Practice inner classes via exercise.
+    public static void createMusicManager() {
+        System.out.println("\nBEGIN: createMusicManager");
+
+        MusicManager music = new MusicManager();
+        music.startInteractiveMenu();
     }
 }
