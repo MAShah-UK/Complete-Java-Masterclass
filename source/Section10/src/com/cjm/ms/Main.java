@@ -83,7 +83,7 @@ public class Main {
 
             @Override
             public void onClick(String title) {
-                System.out.println(title + " was clicked.");
+                System.out.println("(Local class) " + title + " was clicked.");
             }
         }
 
@@ -91,5 +91,15 @@ public class Main {
         btnPrint.onClick(); // Simulates button being pressed.
 
         // This is an anonymous class since it doesn't have a name.
+        // The generated anonymous class is a subclass of the interface, but it's nameless.
+        Button.IOnClickListener btnPrintAction = new Button.IOnClickListener() {
+            @Override
+            public void onClick(String title) {
+                System.out.println("(Anonymous class) " + title + " was clicked.");
+            }
+        };
+
+        btnPrint.setOnClickListener(btnPrintAction);
+        btnPrint.onClick();
     }
 }
