@@ -7,7 +7,8 @@ import java.util.List;
 public class Album {
     private String band;
     private String name;
-    //private List<Song> songs = new ArrayList<>();
+    // Original code that was replaced by inner class.
+    // private List<Song> songs = new ArrayList<>();
     private SongList songs = new SongList();
 
     // Private non-static inner class.

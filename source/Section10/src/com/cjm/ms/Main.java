@@ -11,7 +11,8 @@ public class Main {
         //manageData();
         //createGearbox();
         //createButton();
-        createMusicManager();
+        //createMusicManager();
+        //createDog();
     }
 
     // Practice working with interfaces.
@@ -110,5 +111,24 @@ public class Main {
 
         MusicManager music = new MusicManager();
         music.startInteractiveMenu();
+    }
+
+    // Practice abstract classes via exercise.
+    public static void createDog() {
+        System.out.println("\nBEGIN: createDog");
+
+        Dog dog = new Dog("Yorkie");
+        dog.breath();
+        dog.eat();
+        System.out.println();
+
+        Parrot parrot = new Parrot("Austrailian Ringneck");
+        parrot.breath();
+        parrot.eat();
+        parrot.fly();
+        System.out.println();
+
+        Penguin penguin = new Penguin("Emperor");
+        penguin.fly();
     }
 }
