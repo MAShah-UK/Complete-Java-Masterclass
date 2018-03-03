@@ -30,7 +30,6 @@ public class DoublyLinkedList {
                     curr.getNext().setPrevious(curr);
                     added = true;
                 }
-                added = true;
             } else { // comp == 0
 
                 added = true;
