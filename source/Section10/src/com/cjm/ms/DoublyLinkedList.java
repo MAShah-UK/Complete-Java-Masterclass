@@ -3,6 +3,56 @@ package com.cjm.ms;
 public class DoublyLinkedList {
     private ListItem root;
 
+    prviate void connectLinks(ListItem prev, ListItem next) {
+        prev.setNext(next);
+        next.setPrevious(prev);
+    }
+
+    private void connectLinks(ListItem prev, ListItem middle, ListItem next) {
+        connectLinks(prev, middle);
+        connectLinks(middle, next);
+    }
+
+    private boolean addSingle(String value) {
+        ListItem newItem = new Node(value);
+
+        if (root == null) {
+            root = newItem;
+            return true;
+        }
+
+        boolean done = false;
+        ListItem curr = root;
+        int prevComp = newItem.compareTo(curr);
+        while(!done) {
+            System.out.println(curr.getValue());
+            int comp = newItem.compareTo(curr);
+            if
+
+            if (comp < 0) { // Compare previous links.
+                if (curr.getPrevious() != null) { // Move to previous link.
+                    curr = curr.getPrevious();
+                } else { // Put newItem as first link.
+                    root = newItem;
+                    connectLinks(newItem, curr);
+                    done = true;
+                }
+            } else if (comp > 0) { // Compare next links.
+                if (curr.getNext() != null) { // Move to next link.
+                    curr = curr.getNext();
+                } else { // Put newItem as last link.
+                    connectLinks(curr, newItem);
+                    done = true;
+                }
+            } else { // comp = 0
+                // Do nothing. Duplicates not allowed.
+                done = true;
+            }
+        }
+
+        return done;
+    }
+
     public boolean add(String data) {
         if (data == null) {
             return false;
@@ -14,40 +64,6 @@ public class DoublyLinkedList {
             boolean added = addSingle(newValue);
             if (!added) {
                 done = false;
-            }
-        }
-
-        return done;
-    }
-
-    private boolean addSingle(String value) {
-        boolean done = false;
-        ListItem newItem = new Node(value);
-
-        if (root == null) {
-            root = newItem;
-            return done;
-        }
-
-        ListItem curr = root;
-        while(!done) {
-            int comp = newItem.compareTo(curr);
-            if (comp < 0) { // Put newItem between links.
-                newItem.setPrevious(curr.getPrevious());
-                newItem.setNext(curr);
-                curr.setPrevious(newItem);
-                done = true;
-            } else if (comp > 0) {
-                if (curr.getNext() != null) { // Move to next link.
-                    curr = curr.getNext();
-                } else { // Put newItem as last link.
-                    curr.setNext(newItem);
-                    newItem.setPrevious(curr);
-                    done = true;
-                }
-            } else { // comp = 0
-                // Do nothing. Duplicates not allowed.
-                done = true;
             }
         }
 

@@ -139,6 +139,6 @@ public class Main {
 
         DoublyLinkedList cities = new DoublyLinkedList();
         cities.add("London Budapest Karachi WashingtonDC Lahore Paris");
-        System.out.println(cities.toString());
+        //System.out.println(cities.toString());
     }
 }
