@@ -13,6 +13,7 @@ public class Main {
         //createButton();
         //createMusicManager();
         //createDog();
+        createDoubleLinkedList();
     }
 
     // Practice working with interfaces.
@@ -113,7 +114,7 @@ public class Main {
         music.startInteractiveMenu();
     }
 
-    // Practice abstract classes via exercise.
+    // Practice working with abstract classes.
     public static void createDog() {
         System.out.println("\nBEGIN: createDog");
 
@@ -130,5 +131,14 @@ public class Main {
 
         Penguin penguin = new Penguin("Emperor");
         penguin.fly();
+    }
+
+    // Practice abstract class via exercise.
+    public static void createDoubleLinkedList() {
+        System.out.println("\nBEGIN: createDoubleLinkedList");
+
+        DoublyLinkedList cities = new DoublyLinkedList();
+        cities.add("London Budapest Karachi WashingtonDC Lahore Paris");
+        System.out.println(cities.toString());
     }
 }
