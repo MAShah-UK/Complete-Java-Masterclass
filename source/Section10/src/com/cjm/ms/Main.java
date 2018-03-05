@@ -137,8 +137,19 @@ public class Main {
     public static void createDoubleLinkedList() {
         System.out.println("\nBEGIN: createDoubleLinkedList");
 
+        String citiesStr = "London Budapest Karachi WashingtonDC Lahore Paris";
+        System.out.println("Original cities string: " + citiesStr);
+
+        // Test sorted doubly linked list.
         DoublyLinkedList cities = new DoublyLinkedList();
-        cities.add("London Budapest Karachi WashingtonDC Lahore Paris");
-        System.out.println(cities.toString());
+        cities.add(citiesStr);
+        System.out.println("Sorted cities list: " + cities.toString());
+        System.out.println("3rd element in list: " + cities.get(2));
+        cities.remove(2);
+        System.out.println("Sorted cities list (3rd element removed): " + cities.toString());
+        System.out.println();
+
+        // Test binary search tree.
+
     }
 }
