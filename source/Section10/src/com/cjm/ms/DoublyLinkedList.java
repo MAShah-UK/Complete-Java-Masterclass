@@ -3,7 +3,7 @@ package com.cjm.ms;
 public class DoublyLinkedList {
     private ListItem root;
 
-    prviate void connectLinks(ListItem prev, ListItem next) {
+    private void connectLinks(ListItem prev, ListItem next) {
         prev.setNext(next);
         next.setPrevious(prev);
     }
@@ -25,21 +25,26 @@ public class DoublyLinkedList {
         ListItem curr = root;
         int prevComp = newItem.compareTo(curr);
         while(!done) {
-            System.out.println(curr.getValue());
             int comp = newItem.compareTo(curr);
-            if
-
-            if (comp < 0) { // Compare previous links.
-                if (curr.getPrevious() != null) { // Move to previous link.
-                    curr = curr.getPrevious();
+            // If sorting sign changed.
+            if (comp * prevComp < 0) { // Put newItem between links.
+                if (comp > 0) {
+                    connectLinks(curr, newItem, curr.getNext());
+                } else { // comp < prevComp
+                    connectLinks(curr.getPrevious(), newItem, curr);
+                }
+                done = true;
+            } else if (comp < 0) { // Compare previous links.
+                if (curr.getPrevious() != null) {
+                    curr = curr.getPrevious(); // Move to previous link.
                 } else { // Put newItem as first link.
-                    root = newItem;
                     connectLinks(newItem, curr);
+                    root = newItem;
                     done = true;
                 }
             } else if (comp > 0) { // Compare next links.
-                if (curr.getNext() != null) { // Move to next link.
-                    curr = curr.getNext();
+                if (curr.getNext() != null) {
+                    curr = curr.getNext(); // Move to next link.
                 } else { // Put newItem as last link.
                     connectLinks(curr, newItem);
                     done = true;
@@ -48,8 +53,8 @@ public class DoublyLinkedList {
                 // Do nothing. Duplicates not allowed.
                 done = true;
             }
+            prevComp = comp;
         }
-
         return done;
     }
 
@@ -110,11 +115,9 @@ public class DoublyLinkedList {
         StringBuilder output = new StringBuilder();
 
         ListItem curr = root;
-        if (curr == null) {
-            return null;
-        }
-        while (curr.getNext() != null) {
+        while (curr != null) {
             output.append(curr.getValue());
+            output.append(" ");
             curr = curr.getNext();
         }
 
