@@ -137,7 +137,7 @@ public class Main {
     public static void createDoubleLinkedList() {
         System.out.println("\nBEGIN: createDoubleLinkedList");
 
-        String citiesStr = "London Budapest Karachi WashingtonDC Lahore Paris";
+        String citiesStr = "London Budapest Karachi WashingtonDC Lahore Paris Paris";
         System.out.println("Original cities string: " + citiesStr);
 
         // Test sorted doubly linked list.

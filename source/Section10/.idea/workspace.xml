@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb2867f-e79a-4512-bf96-e04b96c16a86" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/BinarySearchTree.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/ListItem.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/ListItem.java" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +20,8 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="577">
-                  <caret line="151" column="35" lean-forward="false" selection-start-line="151" selection-start-column="35" selection-end-line="151" selection-end-column="35" />
+                <state relative-caret-position="561">
+                  <caret line="139" column="83" lean-forward="false" selection-start-line="139" selection-start-column="83" selection-end-line="139" selection-end-column="83" />
                   <folding>
                     <element signature="method#createPhones#0;class#Main#0" expanded="false" />
                     <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -42,8 +41,8 @@
           <file leaf-file-name="DoublyLinkedList.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/DoublyLinkedList.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1929">
-                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="5" />
+                <state relative-caret-position="291">
+                  <caret line="101" column="21" lean-forward="false" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -52,9 +51,12 @@
           <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/BinarySearchTree.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="119">
+                  <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+                  <folding>
+                    <element signature="method#addSingle#0;class#BinarySearchTree#0" expanded="false" />
+                    <element signature="method#add#0;class#BinarySearchTree#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -66,17 +68,17 @@
           <file leaf-file-name="ListItem.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/ListItem.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="697">
-                  <caret line="68" column="52" lean-forward="true" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
+                <state relative-caret-position="734">
+                  <caret line="83" column="39" lean-forward="false" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
                   <folding>
-                    <element signature="e#3756#3757#0" expanded="true" />
-                    <element signature="e#3790#3791#0" expanded="true" />
-                    <element signature="e#3822#3823#0" expanded="true" />
-                    <element signature="e#3850#3851#0" expanded="true" />
-                    <element signature="e#3892#3893#0" expanded="true" />
-                    <element signature="e#3926#3927#0" expanded="true" />
-                    <element signature="e#3969#3970#0" expanded="true" />
-                    <element signature="e#4019#4020#0" expanded="true" />
+                    <element signature="e#3793#3794#0" expanded="true" />
+                    <element signature="e#3827#3828#0" expanded="true" />
+                    <element signature="e#3859#3860#0" expanded="true" />
+                    <element signature="e#3887#3888#0" expanded="true" />
+                    <element signature="e#3929#3930#0" expanded="true" />
+                    <element signature="e#3963#3964#0" expanded="true" />
+                    <element signature="e#4046#4047#0" expanded="true" />
+                    <element signature="e#4096#4097#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -154,18 +156,18 @@
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Bird.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/node.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Node.java" />
-        <option value="$PROJECT_DIR$/src/com/cjm/ms/ListItem.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/DoublyLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/com/cjm/ms/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/ListItem.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/BinarySearchTree.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
+    <option name="x" value="1932" />
     <option name="y" value="-8" />
-    <option name="width" value="1864" />
-    <option name="height" value="1096" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -286,7 +288,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-8" width="1864" height="1096" extended-state="6" />
+    <frame x="1974" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -302,7 +304,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15367965" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15285254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -594,25 +596,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/ListItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="68" column="52" lean-forward="true" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
+        <state relative-caret-position="734">
+          <caret line="83" column="39" lean-forward="false" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
           <folding>
-            <element signature="e#3756#3757#0" expanded="true" />
-            <element signature="e#3790#3791#0" expanded="true" />
-            <element signature="e#3822#3823#0" expanded="true" />
-            <element signature="e#3850#3851#0" expanded="true" />
-            <element signature="e#3892#3893#0" expanded="true" />
-            <element signature="e#3926#3927#0" expanded="true" />
-            <element signature="e#3969#3970#0" expanded="true" />
-            <element signature="e#4019#4020#0" expanded="true" />
+            <element signature="e#3793#3794#0" expanded="true" />
+            <element signature="e#3827#3828#0" expanded="true" />
+            <element signature="e#3859#3860#0" expanded="true" />
+            <element signature="e#3887#3888#0" expanded="true" />
+            <element signature="e#3929#3930#0" expanded="true" />
+            <element signature="e#3963#3964#0" expanded="true" />
+            <element signature="e#4046#4047#0" expanded="true" />
+            <element signature="e#4096#4097#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="151" column="35" lean-forward="false" selection-start-line="151" selection-start-column="35" selection-end-line="151" selection-end-column="35" />
+        <state relative-caret-position="561">
+          <caret line="139" column="83" lean-forward="false" selection-start-line="139" selection-start-column="83" selection-end-line="139" selection-end-column="83" />
           <folding>
             <element signature="method#createPhones#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -630,17 +632,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/DoublyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1929">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="291">
+          <caret line="101" column="21" lean-forward="false" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+          <folding>
+            <element signature="method#addSingle#0;class#BinarySearchTree#0" expanded="false" />
+            <element signature="method#add#0;class#BinarySearchTree#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -62,7 +62,7 @@ public abstract class ListItem {
     // TODO/Bug: How can I restrict the fields to just subclasses?
     protected ListItem previous;
     protected ListItem next;
-    protected String value;
+    protected String value; // Lecturer set data type to Object.
 
     public abstract ListItem getPrevious();
     public abstract ListItem getNext();
@@ -81,6 +81,7 @@ public abstract class ListItem {
         this.value = value;
     }
 
+    // Lecturer set method as abstract.
     public int compareTo(ListItem item) {
         return value.compareTo(item.value);
     }
