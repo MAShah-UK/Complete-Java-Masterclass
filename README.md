@@ -19,7 +19,7 @@ Tim Buchalka covers various language fundamentals from the most basic concepts t
 * ✓ Section 7: OOP Part 1 - Classes, constructors, and inheritance
 * ✓ Section 8: OOP Part 2 - Composition, encapsulation, and polymorphism
 * ✓ Section 9: Arrays, Java inbuilt lists, autoboxing and unboxing
-* Section 10: Inner classes, abstract classes, and interfaces
+* ✓ Section 10: Inner classes, abstract classes, and interfaces
 * Section 11: Generics
 * Section 12: Naming conventions and packages / static and final keywords
 * Section 13: Collections
