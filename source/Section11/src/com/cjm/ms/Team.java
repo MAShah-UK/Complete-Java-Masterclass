@@ -5,7 +5,7 @@ import java.util.ArrayList;
 // The <T> means that the class requires a type parameter argument  that will be stored as T.
 // class Team<T> {
 // Bounded type parameter that only allows subclasses of Player to be specified.
-class Team<T extends Player> {
+class Team<T extends Player> implements Comparable<Team<T>> {
     private String name;
     private int played;
     private int won;
@@ -45,21 +45,49 @@ class Team<T extends Player> {
         return members.size();
     }
 
-    public void matchResult(Team opponent, int ourScore, int theirScore) {
+    // The problem with this is that a team for one sport can be compared with a team for another sport.
+    // You only want teams within the same sport to be considered.
+    // public void matchResult(Team opponent, int ourScore, int theirScore) {
+    public void matchResult(Team<T> opponent, int ourScore, int theirScore) {
+        String message;
         if (ourScore > theirScore) {
             won++;
+            message = " beat ";
         } else if (ourScore < theirScore) {
             lost++;
+            message = " drew with ";
         } else {
             tied++;
+            message = " lost to ";
         }
         played++;
         if (opponent != null) { // Prevents infinite loop.
+            System.out.println(getName() + message + opponent.getName());
             opponent.matchResult(null, theirScore, ourScore);
         }
     }
 
     public int ranking() {
         return (won * 2) + tied;
+    }
+
+    @Override
+    public boolean equals(Object team) {
+
+        if (team instanceof Team<T>) {
+            return getName().equals( ((Team<T>) team).getName() );
+        }
+        return false;
+    }
+
+    @Override
+    public int compareTo(Team<T> team) {
+        if (ranking() > team.ranking()) {
+            return -1;
+        } else if (ranking() < team.ranking()) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 }

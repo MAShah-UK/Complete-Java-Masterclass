@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         printObjList();
         createTeam();
+
     }
 
     // Practice working with raw types.
@@ -44,14 +45,38 @@ public class Main {
         // adelaideCrows.addPlayer(pat); // Error since FootballPlayer was specified.
         // adelaideCrows.addPlayer(beckham); // Same as above.
 
-        Team<BaseballPlayer> chicagoCubs = new Team<>("Chicago Cubs");
-        chicagoCubs.addPlayer(pat);
+        Team<BaseballPlayer> baseballTeam = new Team<>("Chicago Cubs");
+        baseballTeam.addPlayer(pat);
 
-        Team<SoccerPlayer> UKTeam = new Team<>("UKTeam");
-        UKTeam.addPlayer(beckham);
-
-        // This code will execute without bounded type parameters.
+        // This code will execute without bounded type parameters, which is not what we want.
         // Team<String> brokenTeam = new Team<>("This won't work.");
-        // brokenTeam.addPlayer("no-one");
+        // brokenTeam.addPlayer(beckham);
+
+        Team<FootballPlayer> melbourne = new Team<>("Melbourne");
+        FootballPlayer banks = new FootballPlayer("Gordon");
+        melbourne.addPlayer(banks);
+
+        Team<FootballPlayer> hawthorn = new Team<>("Hawthorn");
+        Team<FootballPlayer> fremantle = new Team<>("Fremantle");
+
+        hawthorn.matchResult(fremantle, 1, 0);
+        hawthorn.matchResult(adelaideCrows, 3, 8);
+
+        adelaideCrows.matchResult(fremantle, 2, 1);
+        // Doesn't work since we specified that only teams within the same sport can be compared.
+        // adelaideCrows.matchResult(baseballTeam, 1, 1);
+
+        System.out.println("\nRankings");
+        System.out.println(adelaideCrows.getName() + ": " + adelaideCrows.ranking());
+        System.out.println(melbourne.getName() + ": " + melbourne.ranking());
+        System.out.println(fremantle.getName() + ": " + fremantle.ranking());
+        System.out.println(hawthorn.getName() + ": " + hawthorn.ranking());
+
+        // Overriding Comparable and implementing compareTo allows using Collections.sort() to
+        // automatically sort through collections containing Team objects.
+        System.out.println(adelaideCrows.compareTo(melbourne));
+        System.out.println(adelaideCrows.compareTo(hawthorn));
+        System.out.println(hawthorn.compareTo(adelaideCrows));
+        System.out.println(melbourne.compareTo(fremantle));
     }
 }
