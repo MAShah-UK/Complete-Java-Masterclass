@@ -18,7 +18,14 @@ class Team<T extends Player> implements Comparable<Team<T>> {
     private ArrayList<T> members = new ArrayList<>();
 
     public Team(String name) {
+        this(name, 0, 0, 0);
+    }
+
+    public Team(String name, int initialWon, int initialLost, int initialTied) {
         this.name = name;
+        this.won = initialWon;
+        this.lost = initialLost;
+        this.tied = initialTied;
     }
 
     public String getName() {
@@ -71,15 +78,16 @@ class Team<T extends Player> implements Comparable<Team<T>> {
         return (won * 2) + tied;
     }
 
+    // Used by List.contains() to determine if an equivalent element already exists.
     @Override
     public boolean equals(Object team) {
-
-        if (team instanceof Team<T>) {
-            return getName().equals( ((Team<T>) team).getName() );
+        if (team instanceof Team) {
+            return getName().equals( ((Team) team).getName() );
         }
         return false;
     }
 
+    // Used by Collections.sort() to sort elements in a specific order.
     @Override
     public int compareTo(Team<T> team) {
         if (ranking() > team.ranking()) {

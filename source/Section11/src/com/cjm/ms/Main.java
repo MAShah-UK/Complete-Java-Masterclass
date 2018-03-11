@@ -6,9 +6,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        printObjList();
-        createTeam();
-
+        //printObjList();
+        //createTeam();
+        createLeagueTables();
     }
 
     // Practice working with raw types.
@@ -78,5 +78,42 @@ public class Main {
         System.out.println(adelaideCrows.compareTo(hawthorn));
         System.out.println(hawthorn.compareTo(adelaideCrows));
         System.out.println(melbourne.compareTo(fremantle));
+    }
+
+    // Practice generics via exercise.
+    public static void createLeagueTables() {
+        System.out.println("\nBEGIN: createLeagueTables");
+
+        List<LeagueTable> tables = new ArrayList<>(3);
+
+        // Source: https://www.premierleague.com/tables @ 6:00PM 11/03/2018
+        LeagueTable<Team<FootballPlayer>> PremierLT = new LeagueTable<>("Premier League Table");
+        Team<FootballPlayer> manchesterCity = new Team<>("Manchester City", 25, 1, 3);
+        Team<FootballPlayer> manchesterUnited = new Team<>("Manchester United", 20, 5, 5);
+        Team<FootballPlayer> tottenhamHotspur = new Team<>("Tottenham Hotspur", 18, 5, 7);
+        Team<FootballPlayer> liverpool = new Team<>("Liverpool", 17, 4, 9);
+        Team<FootballPlayer> chelsea = new Team<>("Chelsea", 17, 8, 5);
+        PremierLT.addTeams(manchesterCity, manchesterUnited, tottenhamHotspur, liverpool, chelsea);
+        PremierLT.addTeams(manchesterCity); // Repeat is ignored.
+        System.out.println();
+
+        // Source Google - MLB standings - AL East @ 7:00PM 11/03/2018
+        LeagueTable<Team<BaseballPlayer>> AmericanLT = new LeagueTable<>("American League");
+        Team<BaseballPlayer> redSox = new Team<>("Red Sox", 93, 69, 0);
+        Team<BaseballPlayer> yankees = new Team<>("Yankees", 91, 71, 0);
+        Team<BaseballPlayer> rays = new Team<>("Rays", 80, 82, 0);
+        Team<BaseballPlayer> blueJays = new Team<>("Blue Jays", 76, 86, 0);
+        Team<BaseballPlayer> orioles= new Team<>("Orioles", 75, 87, 0);
+        AmericanLT.addTeams(redSox, yankees, rays, blueJays, orioles);
+        // AmericanLT.addTeams(manchesterCity); // Compilation error due to bounded type parameters.
+
+        tables.add(PremierLT);
+        tables.add(AmericanLT);
+
+        System.out.println();
+        for (LeagueTable table : tables) {
+            System.out.println("Rankings for: " + table.getName());
+            System.out.println(table.toString());
+        }
     }
 }
