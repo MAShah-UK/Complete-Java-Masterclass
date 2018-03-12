@@ -7,12 +7,12 @@ public class Main {
     private static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //createPhones();
-        //manageData();
-        //createGearbox();
-        //createButton();
-        //createMusicManager();
-        //createDog();
+        createPhones();
+        manageData();
+        createGearbox();
+        createButton();
+        createMusicManager();
+        createDog();
         createDoubleLinkedList();
     }
 

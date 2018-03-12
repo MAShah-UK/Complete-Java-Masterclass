@@ -1,0 +1,176 @@
+BEGIN: createPhones
+No action taken, desk phone does not have a power button.
+Ring ring
+Answering the desk phone.
+Mobile phone powered up.
+Melody ring
+Answering the mobile phone.
+
+BEGIN: manageData
+Loading values for BasicGame.
+Enter value for index 1/3: 5
+Enter value for index 2/3: 10
+Enter value for index 3/3: 15
+
+Loading values for BasicEngineeringOrder.
+Enter value for index 1/5: 5
+Enter value for index 2/5: 10
+Enter value for index 3/5: 15
+Enter value for index 4/5: 20
+Enter value for index 5/5: 25
+
+Saving BasicGame data.
+Index: 0 Value: 5
+Index: 1 Value: 10
+Index: 2 Value: 15
+
+Saving BaseEngineeringOrder data.
+Index: 0 Value: 5
+Index: 1 Value: 10
+Index: 2 Value: 15
+Index: 3 Value: 20
+Index: 4 Value: 25
+
+BEGIN: createGearbox
+Gear 1 selected.
+5300.0
+Grind.
+0.0
+Gear 3 selected.
+95399.99999999999
+I have been attached.
+(Local class) Print was clicked.
+(Anonymous class) Print was clicked.
+
+BEGIN: createMusicManager
+Welcome to the playlist manager.
+Your options are:
+1 - Print options.
+2 - Play playlist / Current Song.
+3 - Add song.
+4 - Remove song.
+5 - Skip forwards.
+6 - Skip backwards.
+7 - Replay song.
+8 - List songs.
+9 - Quit.
+
+Pick an option (1 for help): 3
+You chose: 3 - Add song.
+
+Which song?DNA
+Song added to playlist: DNA
+
+Pick an option (1 for help): 3
+You chose: 3 - Add song.
+
+Which song?Yah
+Song added to playlist: Yah
+
+Pick an option (1 for help): 3
+You chose: 3 - Add song.
+
+Which song?Blood
+Song added to playlist: Blood
+
+Pick an option (1 for help): 2
+You chose: 2 - Play playlist / Current Song.
+
+Currently playing: DNA
+
+Pick an option (1 for help): 2
+You chose: 2 - Play playlist / Current Song.
+
+Currently playing: DNA
+
+Pick an option (1 for help): 8
+You chose: 8 - List songs.
+
+Songs in playlist include: 
+> Track 1: Kendrick Lamar - Damn - DNA
+Track 2: Kendrick Lamar - Damn - Yah
+Track 3: Kendrick Lamar - Damn - Blood
+
+Pick an option (1 for help): 5
+You chose: 5 - Skip forwards.
+
+Currently playing: Yah
+
+Pick an option (1 for help): 3
+You chose: 3 - Add song.
+
+Which song?Paper
+Song doesn't exist.
+
+Pick an option (1 for help): 3
+You chose: 3 - Add song.
+
+Which song?Papercut
+Song added to playlist: Papercut
+
+Pick an option (1 for help): 8
+You chose: 8 - List songs.
+
+Songs in playlist include: 
+Track 1: Kendrick Lamar - Damn - DNA
+> Track 2: Kendrick Lamar - Damn - Yah
+Track 3: Kendrick Lamar - Damn - Blood
+Track 4: Linkin Park - Hybrid Theory - Papercut
+
+Pick an option (1 for help): 6
+You chose: 6 - Skip backwards.
+
+Currently playing: DNA
+
+Pick an option (1 for help): 6
+You chose: 6 - Skip backwards.
+
+Currently playing: Papercut
+
+Pick an option (1 for help): 8
+You chose: 8 - List songs.
+
+Songs in playlist include: 
+Track 1: Kendrick Lamar - Damn - DNA
+Track 2: Kendrick Lamar - Damn - Yah
+Track 3: Kendrick Lamar - Damn - Blood
+> Track 4: Linkin Park - Hybrid Theory - Papercut
+
+Pick an option (1 for help): 4
+You chose: 4 - Remove song.
+
+Song removed.
+Currently playing: DNA
+
+Pick an option (1 for help): 8
+You chose: 8 - List songs.
+
+Songs in playlist include: 
+> Track 1: Kendrick Lamar - Damn - DNA
+Track 2: Kendrick Lamar - Damn - Yah
+Track 3: Kendrick Lamar - Damn - Blood
+
+Pick an option (1 for help): 9
+You chose: 9 - Quit.
+
+Goodbye.
+
+BEGIN: createDog
+Breath in, breath out, repeat.
+Yorkie is eating.
+
+Breath in, breath out, repeat.
+Austrailian Ringneck is pecking.
+Austrailian Ringneck is flapping its wings.
+
+Emperor is flapping its wings.
+I'm not very good at that, can I go for a swim instead?
+
+BEGIN: createDoubleLinkedList
+Original cities string: London Budapest Karachi WashingtonDC Lahore Paris Paris
+Sorted cities list: Budapest Karachi Lahore London Paris WashingtonDC 
+3rd element in list: Lahore
+Sorted cities list (3rd element removed): Budapest Karachi London Paris WashingtonDC 
+
+
+Process finished with exit code 0

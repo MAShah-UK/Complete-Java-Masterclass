@@ -1,0 +1,55 @@
+BEGIN: printObjList
+1
+2
+3
+four
+5
+
+BEGIN: createTeam
+Joe picked for team Adelaide Crows
+Pat picked for team Chicago Cubs
+Gordon picked for team Melbourne
+Hawthorn beat Fremantle
+Hawthorn drew with Adelaide Crows
+Adelaide Crows beat Fremantle
+
+Rankings
+Adelaide Crows: 4
+Melbourne: 0
+Fremantle: 0
+Hawthorn: 2
+-1
+-1
+1
+0
+
+BEGIN: createLeagueTables
+Team Manchester City added to Premier League Table
+Team Manchester United added to Premier League Table
+Team Tottenham Hotspur added to Premier League Table
+Team Liverpool added to Premier League Table
+Team Chelsea added to Premier League Table
+Team Manchester City already exists in Premier League Table
+
+Team Red Sox added to American League
+Team Yankees added to American League
+Team Rays added to American League
+Team Blue Jays added to American League
+Team Orioles added to American League
+
+Rankings for: Premier League Table
+1) Manchester City: 53 points. 
+2) Manchester United: 45 points. 
+3) Tottenham Hotspur: 43 points. 
+4) Liverpool: 43 points. 
+5) Chelsea: 39 points. 
+
+Rankings for: American League
+1) Red Sox: 186 points. 
+2) Yankees: 182 points. 
+3) Rays: 160 points. 
+4) Blue Jays: 152 points. 
+5) Orioles: 150 points. 
+
+
+Process finished with exit code 0
