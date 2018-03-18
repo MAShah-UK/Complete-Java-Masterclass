@@ -19,6 +19,7 @@ public class Main {
         createHelloWorld();
         //manageData();
         useMathLib();
+        createScopeCheck();
     }
 
     // Practice importing packages.
@@ -99,6 +100,21 @@ public class Main {
         for (int i = 0; i <= 10; i++) {
             System.out.print(fibonacci(i) + " ");
         }
+    }
+
+    public static void createScopeCheck() {
+        System.out.println("\nBEGIN: createScopeCheck");
+
+        String privateVar = "this is private to main()";
+
+        ScopeCheck scopeInstance = new ScopeCheck();
+        System.out.println("scopeInstance privateVar is " + scopeInstance.getPrivateVar() + ".");
+        System.out.println(privateVar);
+        scopeInstance.timesTwo();
+        System.out.println();
+
+        ScopeCheck.InnerClass innerClass = scopeInstance.new InnerClass();
+        innerClass.timesTwo();
     }
 }
 
