@@ -24,8 +24,14 @@ public class ScopeCheck {
         // System.out.println("Value of i is now " + i);
     }
 
+    public void useInner() {
+        InnerClass innerClass = new InnerClass();
+        // Can access privateVar even though it's marked private.
+        System.out.println("privateVar from outer class: " + innerClass.privateVar);
+    }
+
     public class InnerClass {
-        public int privateVar = 3;
+        private int privateVar = 3;
 
         public InnerClass() {
             System.out.println("InnerClass created, privateVar is " + privateVar + ".");

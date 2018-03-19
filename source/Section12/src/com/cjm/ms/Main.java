@@ -115,6 +115,9 @@ public class Main {
 
         ScopeCheck.InnerClass innerClass = scopeInstance.new InnerClass();
         innerClass.timesTwo();
+
+        // Can access field within inner class from outside even though it's private.
+        scopeInstance.useInner();
     }
 }
 
