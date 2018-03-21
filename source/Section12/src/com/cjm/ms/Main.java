@@ -15,12 +15,13 @@ import static com.cjm.Math.Series.*;
 public class Main {
     public static void main(String[] args) {
         importPackages();
-        createWindow();
+        //createWindow();
         createHelloWorld();
         //manageData();
         useMathLib();
         createScopeCheck();
         createX();
+        createAccount();
     }
 
     // Practice importing packages.
@@ -113,6 +114,25 @@ public class Main {
 
         X x = new X();
         x.x();
+    }
+
+    // Practice access modifiers.
+    public static void createAccount() {
+        System.out.println("\nBEGIN: createAccount");
+
+        Account timsAccount = new Account("Tim");
+        timsAccount.deposit(1000);
+        timsAccount.withdraw(500);
+        timsAccount.withdraw(-200);
+        timsAccount.deposit(-20);
+        timsAccount.calculateBalance();
+
+        // Bad code that allows fraud due to inappropriate use of public access modifier.
+        // Fields should be private.
+        // timsAccount.balance = 5000;
+        // System.out.println("Balance on account is " + timsAccount.getBalance() + ".");
+        // timsAccount.transactions.add(4500);
+        // timsAccount.calculateBalance();
     }
 }
 
