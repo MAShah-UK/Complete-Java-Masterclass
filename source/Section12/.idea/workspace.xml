@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0415d16a-2a39-4fc2-b0b2-55c0b6e5c520" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Accessible.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Account.java" />
-      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/StaticTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
     </list>
@@ -23,15 +21,15 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="816">
-                  <caret line="134" column="42" lean-forward="true" selection-start-line="134" selection-start-column="42" selection-end-line="134" selection-end-column="42" />
+                <state relative-caret-position="238">
+                  <caret line="142" column="72" lean-forward="false" selection-start-line="142" selection-start-column="72" selection-end-line="142" selection-end-column="72" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-                    <element signature="e#873#887#0" expanded="false" />
+                    <element signature="e#903#917#0" expanded="false" />
                     <element signature="method#createWindow#0;class#Main#0" expanded="false" />
                     <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
                     <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -43,64 +41,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Accessible.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Accessible.java">
+          <file leaf-file-name="StaticTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/StaticTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Account.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+                <state relative-caret-position="374">
+                  <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
                   <folding>
-                    <element signature="e#334#335#0" expanded="true" />
-                    <element signature="e#364#365#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ScopeCheck.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/ScopeCheck.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#365#366#0" expanded="true" />
-                    <element signature="e#1214#1215#0" expanded="true" />
-                    <element signature="e#1313#1314#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="X.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/X.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="283">
-                  <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#967#968#0" expanded="true" />
-                    <element signature="e#1014#1015#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DataOutput.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/cjm/test/DataOutput.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#88#89#0" expanded="true" />
-                    <element signature="e#128#129#0" expanded="true" />
+                    <element signature="e#820#821#0" expanded="true" />
+                    <element signature="e#847#848#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -152,12 +100,13 @@
         <option value="$PROJECT_DIR$/src/com/cjm/Math/Series.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/ScopeCheck.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/X.java" />
-        <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Account.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/PrivateClass.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/TestClass.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/TCSub.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Accessible.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/StaticTest.java" />
       </list>
     </option>
   </component>
@@ -337,12 +286,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/cjm/ms/Main.java</url>
-          <line>75</line>
+          <line>76</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/cjm/ms/Main.java</url>
-          <line>112</line>
+          <line>113</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -359,7 +308,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#873#887#0" expanded="false" />
+            <element signature="e#903#917#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -410,7 +359,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#873#887#0" expanded="false" />
+            <element signature="e#903#917#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -449,7 +398,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#873#887#0" expanded="false" />
+            <element signature="e#903#917#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -488,7 +437,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#873#887#0" expanded="false" />
+            <element signature="e#903#917#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -527,7 +476,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#873#887#0" expanded="false" />
+            <element signature="e#903#917#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -545,7 +494,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#873#887#0" expanded="false" />
+            <element signature="e#903#917#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -563,7 +512,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#873#887#0" expanded="false" />
+            <element signature="e#903#917#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -581,7 +530,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#873#887#0" expanded="false" />
+            <element signature="e#903#917#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -599,7 +548,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#873#887#0" expanded="false" />
+            <element signature="e#903#917#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
@@ -680,40 +629,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/PrivateClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="134" column="42" lean-forward="true" selection-start-line="134" selection-start-column="42" selection-end-line="134" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#873#887#0" expanded="false" />
-            <element signature="method#createWindow#0;class#Main#0" expanded="false" />
-            <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
-            <element signature="method#manageData#0;class#Main#0" expanded="false" />
-            <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
-            <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
-            <element signature="method#createX#0;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,11 +653,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Accessible.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="306">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/StaticTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="142" column="72" lean-forward="false" selection-start-line="142" selection-start-column="72" selection-end-line="142" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#importPackages#0;class#Main#0" expanded="false" />
+            <element signature="e#903#917#0" expanded="false" />
+            <element signature="method#createWindow#0;class#Main#0" expanded="false" />
+            <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
+            <element signature="method#manageData#0;class#Main#0" expanded="false" />
+            <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
+            <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
+            <element signature="method#createX#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

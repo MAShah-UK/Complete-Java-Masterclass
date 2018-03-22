@@ -20,8 +20,9 @@ public class Main {
         //manageData();
         useMathLib();
         createScopeCheck();
-        createX();
+        //createX();
         createAccount();
+        createStaticTest();
     }
 
     // Practice importing packages.
@@ -133,6 +134,21 @@ public class Main {
         // System.out.println("Balance on account is " + timsAccount.getBalance() + ".");
         // timsAccount.transactions.add(4500);
         // timsAccount.calculateBalance();
+    }
+
+    // Practice working with static entities.
+    public static void createStaticTest() {
+        System.out.println("\nBEGIN: createStaticTest");
+
+        // Access static methods by typing ClassName.staticMethodName().
+        StaticTest firstInst = new StaticTest("1st Instance");
+        System.out.println(firstInst.getName() + " is instance number " + StaticTest.getNumInstances() + ".");
+
+        StaticTest secondInst = new StaticTest("2nd Instance");
+        System.out.println(secondInst.getName() + " is instance number " + StaticTest.getNumInstances() + ".");
+
+        StaticTest thirdInst = new StaticTest("3rd Instance");
+        System.out.println(thirdInst.getName() + " is instance number " + StaticTest.getNumInstances() + ".");
     }
 }
 
