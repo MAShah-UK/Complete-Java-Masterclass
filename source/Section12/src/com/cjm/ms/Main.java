@@ -23,6 +23,7 @@ public class Main {
         //createX();
         createAccount();
         createStaticTest();
+        createFinalTest();
     }
 
     // Practice importing packages.
@@ -149,6 +150,25 @@ public class Main {
 
         StaticTest thirdInst = new StaticTest("3rd Instance");
         System.out.println(thirdInst.getName() + " is instance number " + StaticTest.getNumInstances() + ".");
+    }
+
+    // Practice working with final entities.
+    public static void createFinalTest() {
+        System.out.println("\nBEGIN: createFinalTest");
+
+        FinalTest firstInst  = new FinalTest("One");
+        FinalTest secondInst = new FinalTest("Two");
+        FinalTest thirdInst  = new FinalTest("Three");
+        System.out.println();
+
+        int pw = 674312;
+        Password password = new Password(pw);
+        password.storePassword();
+        password.letMeIn(1);
+        password.letMeIn(523266);
+        password.letMeIn(0);
+        password.letMeIn(-1);
+        password.letMeIn(674312);
     }
 }
 

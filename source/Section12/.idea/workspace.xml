@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0415d16a-2a39-4fc2-b0b2-55c0b6e5c520" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/StaticTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/FinalTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Password.java" />
+      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
     </list>
@@ -24,18 +26,50 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="142" column="72" lean-forward="false" selection-start-line="142" selection-start-column="72" selection-end-line="142" selection-end-column="72" />
+                <state relative-caret-position="169">
+                  <caret line="161" column="27" lean-forward="false" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-                    <element signature="e#903#917#0" expanded="false" />
+                    <element signature="e#930#944#0" expanded="false" />
                     <element signature="method#createWindow#0;class#Main#0" expanded="false" />
                     <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
                     <element signature="method#manageData#0;class#Main#0" expanded="false" />
                     <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
                     <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
                     <element signature="method#createX#0;class#Main#0" expanded="false" />
+                    <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+                    <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FinalTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/FinalTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#668#669#0" expanded="true" />
+                    <element signature="e#705#706#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Password.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Password.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+                  <folding>
+                    <element signature="e#167#168#0" expanded="true" />
+                    <element signature="e#232#233#0" expanded="true" />
+                    <element signature="e#280#281#0" expanded="true" />
+                    <element signature="e#317#318#0" expanded="true" />
+                    <element signature="e#352#353#0" expanded="true" />
+                    <element signature="e#440#441#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -105,16 +139,17 @@
         <option value="$PROJECT_DIR$/src/com/cjm/ms/TestClass.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/TCSub.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Accessible.java" />
-        <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/StaticTest.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/FinalTest.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/Password.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1974" />
-    <option name="y" value="-8" />
-    <option name="width" value="1874" />
-    <option name="height" value="1096" />
+    <option name="x" value="1982" />
+    <option name="width" value="1830" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -286,12 +321,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/cjm/ms/Main.java</url>
-          <line>76</line>
+          <line>77</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/cjm/ms/Main.java</url>
-          <line>113</line>
+          <line>114</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -308,13 +343,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#903#917#0" expanded="false" />
+            <element signature="e#930#944#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
             <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
+            <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -324,8 +361,8 @@
         <state relative-caret-position="51">
           <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#88#89#0" expanded="false" />
+            <element signature="e#128#129#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -335,9 +372,9 @@
         <state relative-caret-position="459">
           <caret line="29" column="84" lean-forward="false" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
           <folding>
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1313#1314#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -359,13 +396,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#903#917#0" expanded="false" />
+            <element signature="e#930#944#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
             <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
+            <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -375,8 +414,8 @@
         <state relative-caret-position="51">
           <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#88#89#0" expanded="false" />
+            <element signature="e#128#129#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -398,13 +437,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#903#917#0" expanded="false" />
+            <element signature="e#930#944#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
             <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
+            <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -414,8 +455,8 @@
         <state relative-caret-position="51">
           <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#88#89#0" expanded="false" />
+            <element signature="e#128#129#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -437,13 +478,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#903#917#0" expanded="false" />
+            <element signature="e#930#944#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
             <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
+            <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -453,8 +496,8 @@
         <state relative-caret-position="51">
           <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#88#89#0" expanded="false" />
+            <element signature="e#128#129#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -476,13 +519,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#903#917#0" expanded="false" />
+            <element signature="e#930#944#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
             <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
+            <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -494,13 +539,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#903#917#0" expanded="false" />
+            <element signature="e#930#944#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
             <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
+            <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -512,13 +559,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#903#917#0" expanded="false" />
+            <element signature="e#930#944#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
             <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
+            <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -530,13 +579,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#903#917#0" expanded="false" />
+            <element signature="e#930#944#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
             <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
+            <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -548,13 +599,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#903#917#0" expanded="false" />
+            <element signature="e#930#944#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
             <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
+            <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -600,9 +653,9 @@
         <state relative-caret-position="187">
           <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1313#1314#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -612,8 +665,8 @@
         <state relative-caret-position="51">
           <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#88#89#0" expanded="false" />
+            <element signature="e#128#129#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -623,8 +676,8 @@
         <state relative-caret-position="283">
           <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="false" />
+            <element signature="e#1014#1015#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -658,8 +711,8 @@
         <state relative-caret-position="119">
           <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding>
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="false" />
+            <element signature="e#364#365#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -683,20 +736,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Password.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+          <folding>
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/FinalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="142" column="72" lean-forward="false" selection-start-line="142" selection-start-column="72" selection-end-line="142" selection-end-column="72" />
+        <state relative-caret-position="169">
+          <caret line="161" column="27" lean-forward="false" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
-            <element signature="e#903#917#0" expanded="false" />
+            <element signature="e#930#944#0" expanded="false" />
             <element signature="method#createWindow#0;class#Main#0" expanded="false" />
             <element signature="method#createHelloWorld#0;class#Main#0" expanded="false" />
             <element signature="method#manageData#0;class#Main#0" expanded="false" />
             <element signature="method#useMathLib#0;class#Main#0" expanded="false" />
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
+            <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
