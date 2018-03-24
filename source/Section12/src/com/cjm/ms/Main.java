@@ -150,6 +150,12 @@ public class Main {
 
         StaticTest thirdInst = new StaticTest("3rd Instance");
         System.out.println(thirdInst.getName() + " is instance number " + StaticTest.getNumInstances() + ".");
+
+        SIBTest sib = new SIBTest();
+        sib.someMethod();
+
+        SIBTest sib2 = new SIBTest();
+        sib2.someMethod();
     }
 
     // Practice working with final entities.
@@ -162,7 +168,7 @@ public class Main {
         System.out.println();
 
         int pw = 674312;
-        Password password = new Password(pw);
+        Password password = new ExtendedPassword(pw);
         password.storePassword();
         password.letMeIn(1);
         password.letMeIn(523266);

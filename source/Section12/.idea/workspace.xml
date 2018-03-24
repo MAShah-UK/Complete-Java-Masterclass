@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0415d16a-2a39-4fc2-b0b2-55c0b6e5c520" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/FinalTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Password.java" />
-      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/ExtendedPassword.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/SIBTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Password.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Password.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +26,8 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="169">
-                  <caret line="161" column="27" lean-forward="false" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
+                <state relative-caret-position="408">
+                  <caret line="157" column="12" lean-forward="false" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="12" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#importPackages#0;class#Main#0" expanded="false" />
@@ -39,20 +39,31 @@
                     <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
                     <element signature="method#createX#0;class#Main#0" expanded="false" />
                     <element signature="method#createAccount#0;class#Main#0" expanded="false" />
-                    <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FinalTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/FinalTest.java">
+          <file leaf-file-name="ExtendedPassword.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/ExtendedPassword.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+                <state relative-caret-position="238">
+                  <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SIBTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/SIBTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="9" column="63" lean-forward="false" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
                   <folding>
-                    <element signature="e#668#669#0" expanded="true" />
-                    <element signature="e#705#706#0" expanded="true" />
+                    <element signature="e#550#551#0" expanded="true" />
+                    <element signature="e#611#612#0" expanded="true" />
+                    <element signature="e#723#724#0" expanded="true" />
+                    <element signature="e#779#780#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -61,28 +72,15 @@
           <file leaf-file-name="Password.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Password.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+                <state relative-caret-position="238">
+                  <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
                   <folding>
                     <element signature="e#167#168#0" expanded="true" />
                     <element signature="e#232#233#0" expanded="true" />
                     <element signature="e#280#281#0" expanded="true" />
                     <element signature="e#317#318#0" expanded="true" />
-                    <element signature="e#352#353#0" expanded="true" />
-                    <element signature="e#440#441#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="StaticTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/StaticTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#820#821#0" expanded="true" />
-                    <element signature="e#847#848#0" expanded="true" />
+                    <element signature="e#410#411#0" expanded="true" />
+                    <element signature="e#498#499#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -141,13 +139,16 @@
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Accessible.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/StaticTest.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/FinalTest.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/ExtendedPassword.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Password.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/SIBTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1982" />
+    <option name="x" value="1984" />
+    <option name="y" value="-22" />
     <option name="width" value="1830" />
     <option name="height" value="1080" />
   </component>
@@ -351,7 +352,6 @@
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
-            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -404,7 +404,6 @@
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
-            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -445,7 +444,6 @@
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
-            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -486,7 +484,6 @@
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
-            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -527,7 +524,6 @@
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
-            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -547,7 +543,6 @@
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
-            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -567,7 +562,6 @@
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
-            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -587,7 +581,6 @@
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
-            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -607,7 +600,6 @@
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
-            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -736,21 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Password.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding>
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/FinalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -762,10 +739,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/ExtendedPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/SIBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="63" lean-forward="false" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Password.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="161" column="27" lean-forward="false" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
+        <state relative-caret-position="408">
+          <caret line="157" column="12" lean-forward="false" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importPackages#0;class#Main#0" expanded="false" />
@@ -777,7 +790,6 @@
             <element signature="method#createScopeCheck#0;class#Main#0" expanded="false" />
             <element signature="method#createX#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
-            <element signature="method#createStaticTest#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
