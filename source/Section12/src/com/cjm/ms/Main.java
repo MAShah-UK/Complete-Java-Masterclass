@@ -15,12 +15,12 @@ import static com.cjm.Math.Series.*;
 public class Main {
     public static void main(String[] args) {
         importPackages();
-        //createWindow();
+        createWindow();
         createHelloWorld();
-        //manageData();
+        manageData();
         useMathLib();
         createScopeCheck();
-        //createX();
+        createX();
         createAccount();
         createStaticTest();
         createFinalTest();

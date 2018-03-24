@@ -1,0 +1,114 @@
+BEGIN: importPackages
+
+BEGIN: createWindow
+
+BEGIN: createHelloWorld
+Hello World
+
+BEGIN: manageData
+Loading values for BasicGame.
+Enter value for index 1/3: 3
+Enter value for index 2/3: 2
+Enter value for index 3/3: 1
+
+Loading values for BasicEngineeringOrder.
+Enter value for index 1/5: 5
+Enter value for index 2/5: 6
+Enter value for index 3/5: 7
+Enter value for index 4/5: 8
+Enter value for index 5/5: 9
+
+Saving BasicGame data.
+Index: 0 Value: 3
+Index: 1 Value: 2
+Index: 2 Value: 1
+
+Saving BaseEngineeringOrder data.
+Index: 0 Value: 5
+Index: 1 Value: 6
+Index: 2 Value: 7
+Index: 3 Value: 8
+Index: 4 Value: 9
+
+BEGIN: useMathLib
+Sums for n=[0, 10] are: 
+0 1 3 6 10 15 21 28 36 45 55 
+Factorials for n=[0, 10] are: 
+0 1 2 6 24 120 720 5040 40320 362880 3628800 
+Fibonacci for n=[0, 10] are: 
+0 1 1 2 3 5 8 13 21 34 55 
+BEGIN: createScopeCheck
+ScopeCheck created: publicVar = 0, privateVar = 1
+scopeInstance privateVar is 1.
+this is private to main()
+0 times two is 0
+1 times two is 2
+2 times two is 4
+3 times two is 6
+4 times two is 8
+5 times two is 10
+6 times two is 12
+7 times two is 14
+8 times two is 16
+9 times two is 18
+
+InnerClass created, privateVar is 3.
+0 times two is 0
+1 times two is 3
+2 times two is 6
+3 times two is 9
+4 times two is 12
+5 times two is 15
+6 times two is 18
+7 times two is 21
+8 times two is 24
+9 times two is 27
+InnerClass created, privateVar is 3.
+privateVar from outer class: 3
+
+BEGIN: createX
+Enter value to get its multiplication table from 1 to 12: 5
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+5 x 11 = 55
+5 x 12 = 60
+
+BEGIN: createAccount
+1000 deposited. Balance is now 1000.
+500 withdrawn. Balance is now 500.
+Cannot withdraw positive sums.
+Cannot deposit negative sums.
+Calculated balance is 500.
+
+BEGIN: createStaticTest
+1st Instance is instance number 1.
+2nd Instance is instance number 2.
+3rd Instance is instance number 3.
+SIBTest static initialisation block called.
+2nd initiation block called.
+SIB constructor called.
+someMethod called.
+SIB constructor called.
+someMethod called.
+
+BEGIN: createFinalTest
+One created, instance is 1.
+Two created, instance is 2.
+Three created, instance is 3.
+
+Saving password as 747902050.
+Incorrect password.
+Incorrect password.
+Incorrect password.
+Incorrect password.
+Welcome.
+
+Process finished with exit code 0
