@@ -3,7 +3,7 @@
   * Windows
 * **Tools**
   * Java 8/9
-  * IntelliJ IDEA
+  * IntelliJ IDEA 2017
 * **Sources**
   * [Udemy: Complete Java Masterclass](https://www.udemy.com/java-the-complete-java-developer-course/learn/v4/content)
   * [My course notes](https://github.com/MAShah-UK/CompleteJavaMasterclass/blob/master/notes/Notes.docx)
