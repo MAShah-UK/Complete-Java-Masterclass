@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Theatre {
     private final String theatreName;
-    private List<Seat> seats = new LinkedList<>(); // Changed from List<Seat> seats = new ArrayList<>();
+    public List<Seat> seats = new LinkedList<>(); // Changed from List<Seat> seats = new ArrayList<>();
 
-    private class Seat implements Comparable<Seat> {
+    public class Seat implements Comparable<Seat> {
         private final String seatNumber;
         private boolean reserved = false;
 
@@ -90,5 +90,13 @@ public class Theatre {
         for (Seat seat : seats) {
             System.out.println(seat.getSeatNumber());
         }
+    }
+
+    public static void printSeats(List<Seat> seatList) {
+        for (Seat seat : seatList) {
+            System.out.println(" " + seat.getSeatNumber());
+        }
+        System.out.println();
+        System.out.println("==============================================================");
     }
 }
