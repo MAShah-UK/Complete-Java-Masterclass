@@ -1,13 +1,12 @@
 package com.cjm.ms;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
         createTheatre();
+        createMap();
     }
 
     // Practice using Collections.swap.
@@ -78,6 +77,37 @@ public class Main {
         priceSeats.add(theatre.new Seat("A00", 13.00));
         Collections.sort(priceSeats, Theatre.PRICE_ORDER);
         Theatre.printSeats(priceSeats);
+    }
 
+    // Practice working with
+    public static void createMap() {
+        System.out.println("\nBEGIN: createMap");
+
+        Map<String, String> languages = new HashMap<>();
+        // Use put() to add a key-value pair to the map.
+        // put() returns the last value associated with that key, in these cases it will be null.
+        System.out.println("Previous value for Java: " + languages.put("Java", "A compiled high level, object-oriented, platform independent language."));
+        languages.put("Python", "An interpreted, object-orientated, high-level programming language with dynamic semantics.");
+        languages.put("Algol", "An algorithmic language.");
+        languages.put("BASIC", "Beginners All Purposes Symbolic Instruction Code.");
+        languages.put("Lisp", "Therein lies madness.");
+
+        // Use get() to retrieve the value associated with a given key.
+        System.out.println(languages.get("Java"));
+        // If you enter a pre-existing key its value is overwritten.
+        // put() will return the previous value associated with "Java".
+        System.out.println("Previous value for Java: " + languages.put("Java", "This course is about Java."));
+
+        // Prevent accidental overwrites by checking if a key exists.
+        if (languages.containsKey("Java")) {
+            System.out.println("Java is already in the map.");
+        } else {
+            languages.put("Java", "This course is about Java.");
+        }
+
+        System.out.println("\nLoop through the map: ");
+        for (String key : languages.keySet()) {
+            System.out.println("[" + key + "] " + languages.get(key));
+        }
     }
 }
