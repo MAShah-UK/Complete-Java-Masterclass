@@ -105,6 +105,12 @@ public class Main {
             languages.put("Java", "This course is about Java.");
         }
 
+        // Removes a key-value pair based on key and value. Will return true if key-value pair was removed.
+        languages.remove("Lisp", "Another language.");
+        // Replaces a value for a given key.
+        languages.replace("Lisp", "Value replaced with a new value.");
+        // Removes a key-value pair based on key only.
+        languages.remove("Lisp");
         System.out.println("\nLoop through the map: ");
         for (String key : languages.keySet()) {
             System.out.println("[" + key + "] " + languages.get(key));
