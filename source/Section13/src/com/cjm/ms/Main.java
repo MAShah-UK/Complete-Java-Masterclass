@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         createTheatre();
         createMap();
+        createAdventure();
     }
 
     // Practice using Collections.swap.
@@ -79,7 +80,7 @@ public class Main {
         Theatre.printSeats(priceSeats);
     }
 
-    // Practice working with
+    // Practice working with maps.
     public static void createMap() {
         System.out.println("\nBEGIN: createMap");
 
@@ -115,5 +116,12 @@ public class Main {
         for (String key : languages.keySet()) {
             System.out.println("[" + key + "] " + languages.get(key));
         }
+    }
+
+    // Practice working with maps via exercise.
+    public static void createAdventure() {
+        System.out.println("\nBEGIN: createAdventure");
+
+        new Adventure();
     }
 }
