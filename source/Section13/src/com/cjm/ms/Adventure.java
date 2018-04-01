@@ -35,9 +35,10 @@ class Location {
 }
 
 public class Adventure {
+    private final Map<String, String> vocabulary;
     private Map<Integer, Location> locations = new HashMap<>();
 
-    public Adventure() {
+    public Adventure() {        
         locations.put(0, new Location(0, "You are sitting in front of a computer learning Java."));
         locations.put(1, new Location(1, "You are standing at the end of a road before a small brick building."));
         locations.put(2, new Location(2, "You are at the top of a hill."));
@@ -63,6 +64,14 @@ public class Adventure {
         start();
     }
 
+    // Exercise:
+    // Change the program to allow players to type full words, or phrases, then move to the
+    // correct location based upon their input.
+    // The player should be able to type commands such as "Go West", "run South", or just "East"
+    // and the program will move to the appropriate location if there is one.  As at present, an
+    // attempt to move in an invalid direction should print a message and remain in the same place.
+    //
+    // Single letter commands (N, W, S, E, Q) should still be available.
     public void start() {
         Scanner sc = new Scanner(System.in);
         int currLoc = 1;
@@ -77,13 +86,37 @@ public class Adventure {
             for (String exit: exits.keySet()) {
                 System.out.print(exit + ", ");
             }
-            System.out.println();
+            System.out.print(": ");
 
-            String dir = sc.nextLine().toUpperCase();
+            String dir = parseInput(sc.nextLine());
             if (exits.containsKey(dir)) {
                 currLoc = exits.get(dir);
             } else {
-                System.out.println("You cannot go in that direction.");
+                System.out.println("You cannot go in that direction.\n");
+            }
+        }
+    }
+
+    public String parseInput(String input) {
+        input = input.trim().toUpperCase();
+        String[] words = input.split(" ");
+        for (String word: words) {
+            switch (word) {
+                case "NORTH": case "N":
+                    return "N";
+                    break;
+                case "EAST":  case "E":
+                    return "E";
+                    break;
+                case "SOUTH": case "S":
+                    return "S";
+                    break;
+                case "WEST":  case "W":
+                    return "W";
+                    break;
+                case "QUIT":  case "Q":
+                    return "Q";
+                    break;
             }
         }
     }
