@@ -14,7 +14,7 @@ class Location {
         this.description = description;
         // To make a class immutable avoid setters and copy arguments rather than directly setting them.
         // The calling class may still have a reference to exits which would allow changing it after the fact.
-        this.exits = new HashMap<>(exits);
+        this.exits = exits == null ? new HashMap<>() : new HashMap<>(exits);
         this.exits.put("Q", 0);
     }
 
