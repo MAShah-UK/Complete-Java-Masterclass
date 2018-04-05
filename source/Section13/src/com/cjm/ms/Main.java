@@ -9,6 +9,7 @@ public class Main {
         createMap();
         //createAdventure();
         createHeavenlyBodies();
+        findSquaresCubes();
     }
 
     // Practice using Collections.swap.
@@ -228,5 +229,89 @@ public class Main {
 //            System.out.println("\t" + planet.getName() + ": " + planet.getOrbitalPeriod());
 //        }
 
+    }
+
+    // Practice working with sets.
+    public static void findSquaresCubes() {
+        System.out.println("\nBEGIN: findSquaresCubes");
+
+        Set<Integer> squares = new HashSet<>();
+        Set<Integer> cubes = new HashSet<>();
+        for (int i = 1; i < 100; i++) {
+            squares.add((int)Math.pow(i, 2));
+            cubes.add((int)Math.pow(i, 3));
+        }
+
+        // Combine sets.
+        Set<Integer> union = new HashSet<>(squares);
+        union.addAll(cubes);
+        System.out.println("Union contains: " + union.size() + " elements.");
+
+        // Find common elements in sets.
+        Set<Integer> intersection = new HashSet<>(squares);
+        intersection.retainAll(cubes);
+        System.out.println("Intersection contains: " + intersection.size() + " elements.");
+        for (int i: intersection) {
+            System.out.println(Math.cbrt(i) + " squared is " + Math.sqrt(i) + " and cubed is " + i + ".");
+        }
+
+        // String to set.
+        Set<String> words = new HashSet<>();
+        String sentence = "One day in the year of the fox.";
+        String[] wordsArr = sentence.split(" ");
+        words.addAll(Arrays.asList(wordsArr));
+        for (String s: words) {
+            // Sets don't print in any particular order.
+            System.out.print(s + " ");
+        }
+        System.out.println();
+
+        // Asymmetric difference between sets.
+        Set<String> nature = new HashSet<>();
+        String[] natureWords = {"all", "nature", "is", "but", "art", "unknown", "to", "thee"};
+        nature.addAll(Arrays.asList(natureWords));
+
+        Set<String> divine = new HashSet<>();
+        String[] divineWords = {"to", "err", "is", "Human", "to", "forgive", "divine"};
+        divine.addAll(Arrays.asList(divineWords));
+
+        System.out.print("Nature - Divine: ");
+        Set<String> diff1 = new HashSet<>(nature);
+        diff1.removeAll(divine);
+        for (String word: diff1) {
+            System.out.print(word + " ");
+        }
+        System.out.println();
+
+        System.out.print("Divine - Nature: ");
+        Set<String> diff2 = new HashSet<>(divine);
+        diff2.removeAll(nature);
+        for (String word: diff2) {
+            System.out.print(word + " ");
+        }
+        System.out.println();
+
+        // Symmetric difference between sets.
+        System.out.print("Symmetric difference: ");
+        Set<String> unionTest = new HashSet<>(nature);
+        unionTest.addAll(divine);
+        Set<String> intersectionTest = new HashSet<>(nature);
+        intersectionTest.retainAll(divine);
+        unionTest.removeAll(intersectionTest);
+        for (String word: unionTest) {
+            System.out.print(word + " ");
+        }
+        System.out.println();
+
+        // Determine if set is a superset/subset.
+        if (nature.containsAll(divine)) {
+            System.out.println("Divine is a subset of nature.");
+        }
+        if (nature.containsAll(intersectionTest)) {
+            System.out.println("Intersection is a subset of nature.");
+        }
+        if (divine.containsAll(intersectionTest)) {
+            System.out.println("Intersection is a subset of divine.");
+        }
     }
 }

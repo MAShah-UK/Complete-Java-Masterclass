@@ -24,7 +24,7 @@ public final class HeavenlyBody {
 
     @Override
     public int hashCode() {
-        return name.hashCode() + 57;
+        return name.hashCode() + 57 ;
     }
 
     public HeavenlyBody(String name, double orbitalPeriod) {

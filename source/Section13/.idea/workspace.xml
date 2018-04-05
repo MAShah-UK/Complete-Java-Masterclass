@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="909c5413-d187-491d-8e76-3de14ec91371" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/HeavenlyBody.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/HeavenlyBody.java" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
     </list>
@@ -15,36 +16,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+            <state relative-caret-position="2061">
+              <caret line="313" column="67" lean-forward="false" selection-start-line="313" selection-start-column="67" selection-end-line="313" selection-end-column="67" />
               <folding>
                 <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
                 <element signature="method#createMap#0;class#Main#0" expanded="false" />
+                <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeavenlyBody.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HeavenlyBody.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/HeavenlyBody.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+              <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
-                <element signature="e#896#897#0" expanded="true" />
-                <element signature="e#936#937#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
-                <element signature="e#1068#1069#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
-                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#973#974#0" expanded="true" />
+                <element signature="e#1021#1022#0" expanded="true" />
+                <element signature="e#1069#1070#0" expanded="true" />
+                <element signature="e#1118#1119#0" expanded="true" />
+                <element signature="e#1166#1167#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +123,8 @@
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Theatre.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Map.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Adventure.java" />
-        <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/HeavenlyBody.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
       </list>
     </option>
   </component>
@@ -299,6 +301,7 @@
           <folding>
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -340,6 +343,7 @@
           <folding>
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -382,6 +386,7 @@
           <folding>
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -409,6 +414,7 @@
           <folding>
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -436,6 +442,7 @@
           <folding>
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -463,6 +470,7 @@
           <folding>
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -490,6 +498,7 @@
           <folding>
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -517,6 +526,7 @@
           <folding>
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -615,33 +625,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/HeavenlyBody.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
           <folding>
-            <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
-            <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#973#974#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/HeavenlyBody.java">
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="364">
+          <caret line="4307" column="30" lean-forward="false" selection-start-line="4307" selection-start-column="30" selection-end-line="4307" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1068#1069#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#200641#200642#0" expanded="false" />
+            <element signature="e#200682#200683#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2061">
+          <caret line="313" column="67" lean-forward="false" selection-start-line="313" selection-start-column="67" selection-end-line="313" selection-end-column="67" />
+          <folding>
+            <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
+            <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
