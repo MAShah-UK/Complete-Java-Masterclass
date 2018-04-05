@@ -128,7 +128,7 @@ public class Main {
 
     // Practice working with sets.
     public static void createHeavenlyBodies() {
-        System.out.println("\nBEGIN: createAdventure");
+        System.out.println("\nBEGIN: createHeavenlyBodies");
 
         Map<String, HeavenlyBody> solarSystem = new HashMap<>();
         Set<HeavenlyBody> planets = new HashSet<>();
@@ -197,13 +197,13 @@ public class Main {
         solarSystem.put(tmp.getName(), tmp);
         planets.add(tmp);
 
-        System.out.println("Planets");
+        System.out.println("Planets:");
         for (HeavenlyBody planet: planets) {
             System.out.println("\t" + planet.getName());
         }
 
         HeavenlyBody body = solarSystem.get("Jupiter");
-        System.out.println("Moons of " + body.getName());
+        System.out.println("Moons of " + body.getName() + ":");
         for (HeavenlyBody jupiterMoon: body.getSatellites()) {
             System.out.println("\t" + jupiterMoon.getName());
         }
@@ -214,9 +214,19 @@ public class Main {
             moons.addAll(planet.getSatellites());
         }
 
-        System.out.println("All Moons");
+        System.out.println("All moons:");
         for (HeavenlyBody moon : moons) {
             System.out.println("\t" + moon.getName());
         }
+
+//        // Sets can only contain unique items, but because HeavenlyBody doesn't override Object.equals() to compare
+//        // the body's name Set has no way of knowing that the new HeavenlyBody already exists.
+//        HeavenlyBody pluto = new HeavenlyBody("Pluto", 842);
+//        planets.add(pluto);
+//        System.out.println("Planets:");
+//        for (HeavenlyBody planet: planets) {
+//            System.out.println("\t" + planet.getName() + ": " + planet.getOrbitalPeriod());
+//        }
+
     }
 }
