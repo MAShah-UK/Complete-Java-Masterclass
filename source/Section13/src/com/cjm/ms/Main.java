@@ -321,6 +321,7 @@ public class Main {
     public static void createBasket() {
         System.out.println("\nBEGIN: createBasket");
 
+        // Create stock list.
         StockList stockList = new StockList();
 
         StockItem tmp = new StockItem("Bread", 0.86, 100);
@@ -333,6 +334,8 @@ public class Main {
         stockList.addStock(tmp);
         tmp = new StockItem("Cup", 0.50, 200);
         stockList.addStock(tmp);
+        tmp = new StockItem("Cup", 0.45, 7);
+        stockList.addStock(tmp); // Increases cup count to 207.
         tmp = new StockItem("Door", 72.95, 4);
         stockList.addStock(tmp);
         tmp = new StockItem("Juice", 2.50, 36);
@@ -344,6 +347,40 @@ public class Main {
         tmp = new StockItem("Vase", 8.76, 40);
         stockList.addStock(tmp);
 
+//        tmp = new StockItem("Pen", 1.12);
+//        // Will throw an exception since getItems() returns an unmodifiable map.
+//        stockList.getItems().put(tmp.getName(), tmp);
+//        // Only collection is unmodifiable, elements can still be modified.
+//        // To prevent this reconsider directly returning the data.
+//        stockList.getItems().get("Car").adjustStock(2000);
+
         System.out.println(stockList);
+
+        // Create shopping basket.
+        Basket timsBasket = new Basket("Tim");
+        sellItem(stockList, timsBasket, "Car", 1);
+        sellItem(stockList, timsBasket, "Car", 1);
+        sellItem(stockList, timsBasket, "Car", 1);
+        sellItem(stockList, timsBasket, "Spanner", 5);
+        sellItem(stockList, timsBasket, "Juice", 4);
+        sellItem(stockList, timsBasket, "Cup", 12);
+        sellItem(stockList, timsBasket, "Bread", 1);
+        System.out.println(timsBasket);
+    }
+
+    public static int sellItem(StockList stockList, Basket basket, String item, int quantity) {
+        int output;
+        StockItem stockItem = stockList.get(item);
+        if (stockItem == null) {
+            System.out.println(item + " not sold.");
+            output = 0;
+        } else if (stockList.sellStock(item, quantity) == 0) {
+            System.out.println(item + " out of stock.");
+            output = 0;
+        } else {
+            basket.addToBasket(stockItem, quantity);
+            output = quantity;
+        }
+        return output;
     }
 }

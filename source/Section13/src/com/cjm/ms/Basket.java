@@ -1,20 +1,23 @@
 package com.cjm.ms;
 
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Basket {
     private final String name;
-    private final Map<StockItem, Integer> list = new HashMap<>();
+    // Puts keys in StockItem.compareTo() order.
+    private final Map<StockItem, Integer> list = new TreeMap<>();
 
     @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
-        output.append("Shopping basket, ").append(name).append(", contains ").append(list.size()).append(" items.");
+        String itemPlural = list.size() == 1 ? " item" : " items";
+        output.append("Shopping basket, ").append(name).append(", contains ");
+        output.append(list.size()).append(itemPlural).append(":\n");
         double totalCost = 0.0;
         for (Map.Entry<StockItem, Integer> pair: list.entrySet()) {
-            output.append(pair.getValue()).append("x ").append(pair.getKey()).append(" added.\n");
+            output.append('\t').append(pair.getValue()).append(" x ").append(pair.getKey()).append('\n');
             totalCost += pair.getKey().getPrice() * pair.getValue();
         }
         output.append("Total basket cost: ").append(totalCost).append('\n');
