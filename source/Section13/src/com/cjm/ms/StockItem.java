@@ -5,7 +5,7 @@ import java.util.Objects;
 public class StockItem implements Comparable<StockItem> {
     private final String name;
     private double price;
-    private int quantityStock = 0;
+    private int quantity = 0;
 
     @Override
     public boolean equals(Object obj) {
@@ -51,13 +51,13 @@ public class StockItem implements Comparable<StockItem> {
     }
 
     public StockItem(String name, double price) {
-        this(name, price);
+        this(name, price, 0);
     }
 
     public StockItem(String name, double price, int quantityStock) {
         this.name = name;
         this.price = price;
-        this.quantityStock = quantityStock;
+        this.quantity = quantityStock;
     }
 
     public String getName() {
@@ -68,8 +68,8 @@ public class StockItem implements Comparable<StockItem> {
         return price;
     }
 
-    public int getQuantityStock() {
-        return quantityStock;
+    public int getQuantity() {
+        return quantity;
     }
 
     public void setPrice(double price) {
@@ -79,9 +79,9 @@ public class StockItem implements Comparable<StockItem> {
     }
 
     public void adjustStock(int quantity) {
-        int newQuantity = quantityStock + quantity;
+        int newQuantity = this.quantity + quantity;
         if (newQuantity >= 0) {
-            quantityStock = newQuantity;
+            this.quantity = newQuantity;
         }
     }
 }
