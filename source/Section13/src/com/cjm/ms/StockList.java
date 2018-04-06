@@ -1,11 +1,12 @@
 package com.cjm.ms;
 
 import java.util.Collections;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class StockList {
-    private final Map<String, StockItem> list = new HashMap<>();;
+    // Will preserve insertion order.
+    private final Map<String, StockItem> list = new LinkedHashMap<>();
 
     @Override
     public String toString() {
@@ -17,9 +18,9 @@ public class StockList {
             double value = item.getPrice() * item.getQuantity();
             totalValue += value;
 
-            output.append("Item: ").append(item.getName());
-            output.append(" Quantity: ").append(item.getQuantity());
-            output.append(" Value: ").append(value);
+            output.append("[Item] ").append(item.getName());
+            output.append(" [Quantity] ").append(item.getQuantity());
+            output.append(" [Value] ").append(String.format("%.2f", value));
             output.append('\n');
         }
         output.append("Total stock value: ").append(totalValue).append('\n');

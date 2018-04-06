@@ -11,6 +11,7 @@ public class Main {
         //createAdventure();
         createHeavenlyBodies();
         findSquaresCubes();
+        createBasket();
     }
 
     // Practice using Collections.swap.
@@ -124,7 +125,6 @@ public class Main {
     // Practice working with maps via exercise.
     public static void createAdventure() {
         System.out.println("\nBEGIN: createAdventure");
-
         new Adventure();
     }
 
@@ -316,5 +316,34 @@ public class Main {
         if (divine.containsAll(intersectionTest)) {
             System.out.println("Intersection is a subset of divine.");
         }
+    }
+
+    public static void createBasket() {
+        System.out.println("\nBEGIN: createBasket");
+
+        StockList stockList = new StockList();
+
+        StockItem tmp = new StockItem("Bread", 0.86, 100);
+        stockList.addStock(tmp);
+        tmp = new StockItem("Cake", 1.10, 7);
+        stockList.addStock(tmp);
+        tmp = new StockItem("Car", 12.50, 2);
+        stockList.addStock(tmp);
+        tmp = new StockItem("Chair", 62.0, 10);
+        stockList.addStock(tmp);
+        tmp = new StockItem("Cup", 0.50, 200);
+        stockList.addStock(tmp);
+        tmp = new StockItem("Door", 72.95, 4);
+        stockList.addStock(tmp);
+        tmp = new StockItem("Juice", 2.50, 36);
+        stockList.addStock(tmp);
+        tmp = new StockItem("Phone", 96.99, 35);
+        stockList.addStock(tmp);
+        tmp = new StockItem("Towel", 2.40, 80);
+        stockList.addStock(tmp);
+        tmp = new StockItem("Vase", 8.76, 40);
+        stockList.addStock(tmp);
+
+        System.out.println(stockList);
     }
 }
