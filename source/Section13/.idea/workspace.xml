@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="909c5413-d187-491d-8e76-3de14ec91371" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/StockItem.java" />
+      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/HeavenlyBody.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/HeavenlyBody.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,82 +19,50 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="210" column="58" lean-forward="true" selection-start-line="210" selection-start-column="58" selection-end-line="210" selection-end-column="58" />
+            <state relative-caret-position="820">
+              <caret line="131" column="46" lean-forward="false" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
                 <element signature="method#createMap#0;class#Main#0" expanded="false" />
+                <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
                 <element signature="method#findSquaresCubes#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeavenlyBody.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/HeavenlyBody.java">
+      <file leaf-file-name="StockItem.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/StockItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="89" column="23" lean-forward="false" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+            <state relative-caret-position="391">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
-                <element signature="e#0#4990#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#2251#2252#0" expanded="true" />
-                <element signature="e#2289#2290#0" expanded="true" />
-                <element signature="e#3309#3310#0" expanded="true" />
-                <element signature="e#3356#3357#0" expanded="true" />
-                <element signature="e#3402#3403#0" expanded="true" />
-                <element signature="e#3470#3471#0" expanded="true" />
-                <element signature="e#3693#3694#0" expanded="true" />
-                <element signature="e#3720#3721#0" expanded="true" />
-                <element signature="e#3758#3759#0" expanded="true" />
-                <element signature="e#3789#3790#0" expanded="true" />
-                <element signature="e#3829#3830#0" expanded="true" />
-                <element signature="e#3865#3866#0" expanded="true" />
-                <element signature="e#3913#3914#0" expanded="true" />
-                <element signature="e#3961#3962#0" expanded="true" />
-                <element signature="e#3991#3992#0" expanded="true" />
-                <element signature="e#4037#4038#0" expanded="true" />
-                <element signature="e#4368#4369#0" expanded="true" />
-                <element signature="e#4426#4427#0" expanded="true" />
-                <element signature="e#4771#4772#0" expanded="true" />
-                <element signature="e#4831#4832#0" expanded="true" />
-                <element signature="e#4929#4930#0" expanded="true" />
-                <element signature="e#4987#4988#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
+                <element signature="e#987#988#0" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
+                <element signature="e#1388#1389#0" expanded="true" />
+                <element signature="e#1421#1422#0" expanded="true" />
+                <element signature="e#1626#1627#0" expanded="true" />
+                <element signature="e#1653#1654#0" expanded="true" />
+                <element signature="e#1685#1686#0" expanded="true" />
+                <element signature="e#1713#1714#0" expanded="true" />
+                <element signature="e#1750#1751#0" expanded="true" />
+                <element signature="e#1786#1787#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Adventure.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Adventure.java">
+      <file leaf-file-name="Objects.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/Objects.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="619">
+              <caret line="144" column="22" lean-forward="false" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Theatre.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Theatre.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-              <folding>
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#1252#1253#0" expanded="true" />
-                <element signature="e#1288#1289#0" expanded="true" />
-                <element signature="e#2585#2586#0" expanded="true" />
-                <element signature="e#2619#2620#0" expanded="true" />
-                <element signature="e#3460#3461#0" expanded="true" />
-                <element signature="e#3488#3489#0" expanded="true" />
+                <element signature="e#4990#4991#0" expanded="true" />
+                <element signature="e#5036#5037#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,6 +110,7 @@
         <option value="$PROJECT_DIR$/src/com/cjm/ms/SetChallenge.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/HeavenlyBody.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/StockItem.java" />
       </list>
     </option>
   </component>
@@ -281,7 +250,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -319,6 +288,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
             <element signature="method#findSquaresCubes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -362,6 +332,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
             <element signature="method#findSquaresCubes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -406,6 +377,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
             <element signature="method#findSquaresCubes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -435,6 +407,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
             <element signature="method#findSquaresCubes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -464,6 +437,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
             <element signature="method#findSquaresCubes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -493,6 +467,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
             <element signature="method#findSquaresCubes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -522,6 +497,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
             <element signature="method#findSquaresCubes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -551,6 +527,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
             <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
             <element signature="method#findSquaresCubes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -685,19 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="210" column="58" lean-forward="true" selection-start-line="210" selection-start-column="58" selection-end-line="210" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
-            <element signature="method#createMap#0;class#Main#0" expanded="false" />
-            <element signature="method#findSquaresCubes#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/HeavenlyBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
@@ -727,6 +691,60 @@
             <element signature="e#4831#4832#0" expanded="true" />
             <element signature="e#4929#4930#0" expanded="true" />
             <element signature="e#4987#4988#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="131" column="46" lean-forward="false" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createTheatre#0;class#Main#0" expanded="false" />
+            <element signature="method#createMap#0;class#Main#0" expanded="false" />
+            <element signature="method#createHeavenlyBodies#0;class#Main#0" expanded="false" />
+            <element signature="method#findSquaresCubes#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="144" column="22" lean-forward="false" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+          <folding>
+            <element signature="e#4990#4991#0" expanded="true" />
+            <element signature="e#5036#5037#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/StockItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1388#1389#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
+            <element signature="e#1685#1686#0" expanded="true" />
+            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#1786#1787#0" expanded="true" />
           </folding>
         </state>
       </provider>
