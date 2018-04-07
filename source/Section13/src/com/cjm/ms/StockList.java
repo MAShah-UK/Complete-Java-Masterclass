@@ -23,7 +23,7 @@ public class StockList {
             output.append(" [Value] ").append(String.format("%.2f", value));
             output.append('\n');
         }
-        output.append("Total stock value: ").append(String.format("%.2f", totalValue)).append('\n');
+        output.append("Total stock value: ").append(String.format("%.2f", totalValue));
         return output.toString();
     }
 

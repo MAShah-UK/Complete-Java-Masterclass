@@ -5,7 +5,8 @@ import java.util.Objects;
 public class StockItem implements Comparable<StockItem> {
     private final String name;
     private double price;
-    private int quantity = 0;
+    private int quantity;
+    private int reserve;
 
     @Override
     public boolean equals(Object obj) {
@@ -34,7 +35,7 @@ public class StockItem implements Comparable<StockItem> {
 
     @Override
     public String toString() {
-        return name + " price: " + price;
+        return name + " price: " + String.format("%.2f", price);
     }
 
     @Override
@@ -72,16 +73,38 @@ public class StockItem implements Comparable<StockItem> {
         return quantity;
     }
 
+    public int getAvailableQuantity() {
+        return quantity - reserve;
+    }
+
     public void setPrice(double price) {
         if (price > 0) {
             this.price = price;
         }
     }
 
-    public void adjustStock(int quantity) {
-        int newQuantity = this.quantity + quantity;
+    public void adjustStock(int addStock) {
+        int newQuantity = quantity + addStock;
         if (newQuantity >= 0) {
-            this.quantity = newQuantity;
+            quantity = newQuantity;
+            if (quantity < reserve) {
+                throw new IllegalArgumentException();
+            }
         }
+    }
+
+    public int adjustReserve(int addReserve) {
+        int reserved;
+        int newReserve = reserve + addReserve;
+        if (newReserve < 0) {
+            throw new IllegalArgumentException();
+        } else if (newReserve <= quantity) {
+            reserve = newReserve;
+            reserved = addReserve;
+        } else { // newReserve > quantity
+            reserved = quantity - reserve;
+            reserve = quantity;
+        }
+        return reserved;
     }
 }

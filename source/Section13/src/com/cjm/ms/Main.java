@@ -354,33 +354,29 @@ public class Main {
 //        // To prevent this reconsider directly returning the data.
 //        stockList.getItems().get("Car").adjustStock(2000);
 
+        // Check stock before purchase.
+        System.out.println("Stock before Tim's purchase:");
         System.out.println(stockList);
+        System.out.println();
 
         // Create shopping basket.
-        Basket timsBasket = new Basket("Tim");
-        sellItem(stockList, timsBasket, "Car", 1);
-        sellItem(stockList, timsBasket, "Car", 1);
-        sellItem(stockList, timsBasket, "Car", 1);
-        sellItem(stockList, timsBasket, "Spanner", 5);
-        sellItem(stockList, timsBasket, "Juice", 4);
-        sellItem(stockList, timsBasket, "Cup", 12);
-        sellItem(stockList, timsBasket, "Bread", 1);
+        Basket timsBasket = new Basket("Tim", stockList);
+        timsBasket.addToBasket("Car", 1);
+        timsBasket.addToBasket("Car", 1);
+        timsBasket.addToBasket("Car", 1);
+        timsBasket.addToBasket("Spanner", 5);
+        timsBasket.addToBasket("Juice", 4);
+        timsBasket.addToBasket("Cup", 12);
+        timsBasket.addToBasket("Bread", 1);
+        timsBasket.removeFromBasket("Cup", 13);
+        timsBasket.removeFromBasket("Cup", 7);
+        timsBasket.removeFromBasket("Cup", 5);
         System.out.println(timsBasket);
-    }
+        System.out.println();
 
-    public static int sellItem(StockList stockList, Basket basket, String item, int quantity) {
-        int output;
-        StockItem stockItem = stockList.get(item);
-        if (stockItem == null) {
-            System.out.println(item + " not sold.");
-            output = 0;
-        } else if (stockList.sellStock(item, quantity) == 0) {
-            System.out.println(item + " out of stock.");
-            output = 0;
-        } else {
-            basket.addToBasket(stockItem, quantity);
-            output = quantity;
-        }
-        return output;
+        // Check stock after purchase.
+        timsBasket.checkOut();
+        System.out.println("Stock after Tim's purhcase: ");
+        System.out.println(stockList);
     }
 }
