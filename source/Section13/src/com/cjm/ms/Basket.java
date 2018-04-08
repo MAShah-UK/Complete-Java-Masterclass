@@ -114,8 +114,7 @@ public class Basket {
         for (Map.Entry<StockItem, Integer> pair: list.entrySet()) {
             StockItem item = pair.getKey();
             int quantitySold = pair.getValue();
-            item.adjustReserve(-quantitySold);
-            item.adjustStock(-quantitySold);
+            stockList.sellStock(item.toString(), quantitySold);
         }
         list.clear();
     }

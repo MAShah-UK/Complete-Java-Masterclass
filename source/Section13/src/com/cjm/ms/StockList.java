@@ -42,11 +42,11 @@ public class StockList {
             StockItem inStock = items.getOrDefault(item.getName(), item);
             // If the item was already in the map, adjust its quantity.
             if (inStock != item) { // Directly comparing references to see if its the same object.
-                item.adjustStock(inStock.getQuantity());
+                item.adjustStock(inStock.getAvailableQuantity());
             }
             // Will either put new item or update existing item.
             items.put(item.getName(), item);
-            return item.getQuantity();
+            return item.getAvailableQuantity();
         }
         return 0;
     }
@@ -54,6 +54,7 @@ public class StockList {
     public int sellStock(String item, int quantity) {
         StockItem inStock = items.getOrDefault(item, null);
         if (inStock != null && quantity > 0 && inStock.getQuantity() >= quantity) {
+            inStock.adjustReserve(-quantity);
             inStock.adjustStock(-quantity);
             return quantity;
         } else {
