@@ -1,0 +1,102 @@
+BEGIN: createTheatre
+Seat H11 reserved.
+Please pay for H11.
+There is no seat B13.
+Seat already reserved.
+There is no seat B13.
+Seat already reserved.
+ H12 7.0 H11 7.0 H10 7.0 H09 7.0 H08 7.0 H07 7.0 H06 7.0 H05 7.0 H04 7.0 H03 7.0 H02 7.0 H01 7.0 G12 7.0 G11 7.0 G10 7.0 G09 7.0 G08 7.0 G07 7.0 G06 7.0 G05 7.0 G04 7.0 G03 7.0 G02 7.0 G01 7.0 F12 7.0 F11 7.0 F10 7.0 F09 12.0 F08 12.0 F07 12.0 F06 12.0 F05 12.0 F04 12.0 F03 7.0 F02 7.0 F01 7.0 E12 7.0 E11 7.0 E10 7.0 E09 12.0 E08 12.0 E07 12.0 E06 12.0 E05 12.0 E04 12.0 E03 7.0 E02 7.0 E01 7.0 D12 7.0 D11 7.0 D10 7.0 D09 12.0 D08 12.0 D07 12.0 D06 12.0 D05 12.0 D04 12.0 D03 7.0 D02 7.0 D01 7.0 C12 7.0 C11 7.0 C10 7.0 C09 14.0 C08 14.0 C07 14.0 C06 14.0 C05 14.0 C04 14.0 C03 7.0 C02 7.0 C01 7.0 B12 7.0 B11 7.0 B10 7.0 B09 14.0 B08 14.0 B07 14.0 B06 14.0 B05 14.0 B04 14.0 B03 7.0 B02 7.0 B01 7.0 A12 7.0 A11 7.0 A10 7.0 A09 14.0 A08 14.0 A07 14.0 A06 14.0 A05 14.0 A04 14.0 A03 7.0 A02 7.0 A01 7.0
+==============================================================
+ A01 7.0 A02 7.0 A03 7.0 A10 7.0 A11 7.0 A12 7.0 B01 7.0 B02 7.0 B03 7.0 B10 7.0 B11 7.0 B12 7.0 C01 7.0 C02 7.0 C03 7.0 C10 7.0 C11 7.0 C12 7.0 D01 7.0 D02 7.0 D03 7.0 D10 7.0 D11 7.0 D12 7.0 E01 7.0 E02 7.0 E03 7.0 E10 7.0 E11 7.0 E12 7.0 F01 7.0 F02 7.0 F03 7.0 F10 7.0 F11 7.0 F12 7.0 G01 7.0 G02 7.0 G03 7.0 G04 7.0 G05 7.0 G06 7.0 G07 7.0 G08 7.0 G09 7.0 G10 7.0 G11 7.0 G12 7.0 H01 7.0 H02 7.0 H03 7.0 H04 7.0 H05 7.0 H06 7.0 H07 7.0 H08 7.0 H09 7.0 H10 7.0 H11 7.0 H12 7.0 D04 12.0 D05 12.0 D06 12.0 D07 12.0 D08 12.0 D09 12.0 E04 12.0 E05 12.0 E06 12.0 E07 12.0 E08 12.0 E09 12.0 F04 12.0 F05 12.0 F06 12.0 F07 12.0 F08 12.0 F09 12.0 B00 13.0 A00 13.0 A04 14.0 A05 14.0 A06 14.0 A07 14.0 A08 14.0 A09 14.0 B04 14.0 B05 14.0 B06 14.0 B07 14.0 B08 14.0 B09 14.0 C04 14.0 C05 14.0 C06 14.0 C07 14.0 C08 14.0 C09 14.0
+==============================================================
+
+BEGIN: createMap
+Previous value for Java: null
+A compiled high level, object-oriented, platform independent language.
+Previous value for Java: A compiled high level, object-oriented, platform independent language.
+Java is already in the map.
+
+Loop through the map: 
+[Java] This course is about Java.
+[BASIC] Beginners All Purposes Symbolic Instruction Code.
+[Python] An interpreted, object-orientated, high-level programming language with dynamic semantics.
+[Algol] An algorithmic language.
+
+BEGIN: createAdventure
+You are standing at the end of a road before a small brick building.
+Available exits are: Q, S, E, N, W, : N
+You are in the forest.
+Available exits are: Q, S, W, : S
+You are standing at the end of a road before a small brick building.
+Available exits are: Q, S, E, N, W, : N
+You are in the forest.
+Available exits are: Q, S, W, : W
+You are at the top of a hill.
+Available exits are: Q, N, : N
+You are in the forest.
+Available exits are: Q, S, W, : W
+You are at the top of a hill.
+Available exits are: Q, N, : N
+You are in the forest.
+Available exits are: Q, S, W, : Q
+You are sitting in front of a computer learning Java.
+
+BEGIN: createHeavenlyBodies
+Planets: Jupiter Venus Pluto Neptune Earth Mercury Mars Saturn Uranus 
+Moons of Jupiter: Io Callisto Ganymede Europa 
+All moons: Moon Phobos Io Deimos Callisto Ganymede Europa 
+
+BEGIN: findSquaresCubes
+Union contains: 194 elements.
+Intersection contains: 4 elements.
+16.0 squared is 64.0 and cubed is 4096.
+1.0 squared is 1.0 and cubed is 1.
+4.0 squared is 8.0 and cubed is 64.
+9.0 squared is 27.0 and cubed is 729.
+the in year One of day fox. 
+Nature - Divine: all but art thee nature unknown 
+Divine - Nature: Human err forgive divine 
+Symmetric difference: all but Human art thee err nature forgive divine unknown 
+Intersection is a subset of nature.
+Intersection is a subset of divine.
+
+BEGIN: createBasket
+Stock before Tim's purchase:
+The following products are in stock:
+	[Item] Bread [Quantity] 100 [Value] 86.00
+	[Item] Cake [Quantity] 7 [Value] 7.70
+	[Item] Car [Quantity] 2 [Value] 25.00
+	[Item] Chair [Quantity] 10 [Value] 620.00
+	[Item] Cup [Quantity] 207 [Value] 93.15
+	[Item] Door [Quantity] 4 [Value] 291.80
+	[Item] Juice [Quantity] 36 [Value] 90.00
+	[Item] Phone [Quantity] 35 [Value] 3394.65
+	[Item] Towel [Quantity] 80 [Value] 192.00
+	[Item] Vase [Quantity] 40 [Value] 350.40
+Total stock value: 5150.70
+
+Car: need more stock.
+Spanner: not sold.
+You are trying to remove more Cups than you actually have.
+Shopping basket, Tim, contains 4 items:
+	1 x Bread price: 0.86
+	2 x Car price: 12.50
+	0 x Cup price: 0.45
+	4 x Juice price: 2.50
+Total basket cost: 35.86
+
+Stock after Tim's purhcase: 
+The following products are in stock:
+	[Item] Bread [Quantity] 100 [Value] 86.00
+	[Item] Cake [Quantity] 7 [Value] 7.70
+	[Item] Car [Quantity] 2 [Value] 25.00
+	[Item] Chair [Quantity] 10 [Value] 620.00
+	[Item] Cup [Quantity] 207 [Value] 93.15
+	[Item] Door [Quantity] 4 [Value] 291.80
+	[Item] Juice [Quantity] 36 [Value] 90.00
+	[Item] Phone [Quantity] 35 [Value] 3394.65
+	[Item] Towel [Quantity] 80 [Value] 192.00
+	[Item] Vase [Quantity] 40 [Value] 350.40
+Total stock value: 5150.70
+
+Process finished with exit code 0
