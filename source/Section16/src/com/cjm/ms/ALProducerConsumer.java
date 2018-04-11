@@ -4,7 +4,11 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class MyProducer implements Runnable {
+// The classes are designed to work with an ArrayList.
+class ALProducerConsumer {
+}
+
+class ALProducer implements Runnable {
     private List<String> buffer;
     private ReentrantLock bufferLock;
     private String color;
@@ -36,14 +40,14 @@ public class MyProducer implements Runnable {
         }
     }
 
-    public MyProducer(List<String> buffer, ReentrantLock bufferLock, String color) {
+    public ALProducer(List<String> buffer, ReentrantLock bufferLock, String color) {
         this.buffer = buffer;
         this.bufferLock = bufferLock;
         this.color = color;
     }
 }
 
-class MyConsumer implements Runnable {
+class ALConsumer implements Runnable {
     private List<String> buffer;
     private String color;
     private ReentrantLock bufferLock;
@@ -77,7 +81,8 @@ class MyConsumer implements Runnable {
                         counter = 0;
                         if(buffer.get(0).equals("EOF")) {
                             System.out.println(color + "Exiting");
-                            break;
+                            return;
+                            //break; // TODO: Doesn't exit loop. Why?
                         } else {
                             System.out.println(color + "Removed " + buffer.remove(0));
                         }
@@ -92,7 +97,7 @@ class MyConsumer implements Runnable {
         }
     }
 
-    public MyConsumer(List<String> buffer, ReentrantLock bufferLock, String color) {
+    public ALConsumer(List<String> buffer, ReentrantLock bufferLock, String color) {
         this.buffer = buffer;
         this.bufferLock = bufferLock;
         this.color = color;

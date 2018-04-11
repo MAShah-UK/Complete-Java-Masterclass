@@ -2,6 +2,7 @@ package com.cjm.ms;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.*;
 import java.util.concurrent.locks.ReentrantLock;
 
 import static com.cjm.ms.Colour.*;
@@ -12,7 +13,10 @@ public class Main {
         //createThreads();
         //createCountdown();
         //createReaderWriter();
-        createProducerConsumer();
+        //createProducerConsumer();
+        //createExecSrv();
+        //createBlockingQueue();
+        createDeadlock();
     }
 
     // Practice creating threads using various methods.
@@ -127,17 +131,118 @@ public class Main {
     }
 
     // Practice working with ReentrantLock to counter the disadvantages of using synchronized code.
-    public static void createProducerConsumer() {
+    public static void createProducerConsumer() throws InterruptedException {
         System.out.println(ANSI_RESET + "\nBEGIN createProducerConsumer");
 
         List<String> buffer = new ArrayList<>();
         ReentrantLock bufferLock = new ReentrantLock();
-        MyProducer producer = new MyProducer(buffer, bufferLock, ANSI_GREEN);
-        MyConsumer consumer1 = new MyConsumer(buffer, bufferLock, ANSI_BLUE);
-        MyConsumer consumer2 = new MyConsumer(buffer, bufferLock, ANSI_CYAN);
 
-        new Thread(producer).start();
-        new Thread(consumer1).start();
-        new Thread(consumer2).start();
+        ALProducer producer = new ALProducer(buffer, bufferLock, ANSI_GREEN);
+        ALConsumer consumer1 = new ALConsumer(buffer, bufferLock, ANSI_BLUE);
+        ALConsumer consumer2 = new ALConsumer(buffer, bufferLock, ANSI_CYAN);
+
+        Thread t1 = new Thread(producer); t1.start();
+        Thread t2 = new Thread(consumer1); t2.start();
+        Thread t3 = new Thread(consumer2); t3.start();
+
+        t1.join();
+        t2.join();
+        t3.join();
+    }
+
+    public static void joinExecutorService(ExecutorService srv) {
+        while(true) {
+            try {
+                if (srv.awaitTermination(Long.MAX_VALUE, TimeUnit.DAYS)) {
+                    break;
+                }
+            } catch(InterruptedException e) {
+
+            }
+        }
+    }
+
+    // Practice working with thread pools / executor service.
+    public static void createExecSrv() {
+        System.out.println(ANSI_RESET + "\nBEGIN createExecSrv");
+
+        List<String> buffer = new ArrayList<>();
+        ReentrantLock bufferLock = new ReentrantLock();
+
+        ExecutorService srv = Executors.newFixedThreadPool(4);
+        ALProducer producer = new ALProducer(buffer, bufferLock, ANSI_GREEN);
+        ALConsumer consumer1 = new ALConsumer(buffer, bufferLock, ANSI_BLUE);
+        ALConsumer consumer2 = new ALConsumer(buffer, bufferLock, ANSI_CYAN);
+
+        srv.execute(producer);
+        srv.execute(consumer1);
+        srv.execute(consumer2);
+
+        // Will wait for other threads to complete if nThreads is <= 3.
+        Future<String> future = srv.submit(new Callable<String>() {
+            @Override
+            public String call() {
+                return ANSI_GREEN + "This is the callable result.";
+            }
+        });
+
+        try {
+            // get() blocks the calling thread until a result is returned.
+            System.out.println(future.get());
+        } catch(ExecutionException e) {
+            System.out.println("Something went wrong.");
+        } catch(InterruptedException e) {
+            System.out.println("Thread running the task was interrupted.");
+        }
+
+        // Waits for threads to finish executing and doesn't accept new threads.
+        srv.shutdown();
+        joinExecutorService(srv);
+    }
+
+    // Practice working with ArrayBlockingQueue.
+    public static void createBlockingQueue() {
+        System.out.println(ANSI_RESET + "\nBEGIN: createBlockingQueue");
+
+        ArrayBlockingQueue<String> buffer = new ArrayBlockingQueue<>(6);
+
+        ExecutorService srv = Executors.newFixedThreadPool(4);
+        ABQProducer producer = new ABQProducer(buffer, ANSI_GREEN);
+        ABQConsumer consumer1 = new ABQConsumer(buffer, ANSI_BLUE);
+        ABQConsumer consumer2 = new ABQConsumer(buffer, ANSI_CYAN);
+
+        srv.execute(producer);
+        srv.execute(consumer1);
+        srv.execute(consumer2);
+
+        Future<String> future = srv.submit(new Callable<String>() {
+            @Override
+            public String call() {
+                return ANSI_GREEN + "This is the callable result.";
+            }
+        });
+
+        try {
+            System.out.println(future.get());
+        } catch(ExecutionException e) {
+            System.out.println("Something went wrong.");
+        } catch(InterruptedException e) {
+            System.out.println("Thread running the task was interrupted.");
+        }
+
+        srv.shutdown();
+        joinExecutorService(srv);
+    }
+
+    // Practice avoiding deadlocks.
+    public static void createDeadlock() {
+        System.out.println(ANSI_RESET + "\nBEGIN createDeadlock");
+
+        // Will result in two threads that each require an unobtainable lock - deadlock.
+        // To prevent deadlocks, use minimal locks, and make sure they're used in the same order,
+        // e.g. lock 1, then lock 2, etc.
+        new Deadlock.Thread1().start();
+        //new Deadlock.UnsafeThread2().start();
+        new Deadlock.SafeThread2().start();
     }
 }
