@@ -1,12 +1,18 @@
 package com.cjm.ms;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.locks.ReentrantLock;
+
 import static com.cjm.ms.Colour.*;
 import static com.cjm.ms.CountdownThread.CallMethod.*;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        createThreads();
-        createCountdown();
+        //createThreads();
+        //createCountdown();
+        //createReaderWriter();
+        createProducerConsumer();
     }
 
     // Practice creating threads using various methods.
@@ -59,7 +65,7 @@ public class Main {
         anonRunnable.start();
 
         // Assumes main won't be interrupted, not good practice.
-        // Could just join each thread instead.
+        // Should join each thread instead.
         Thread.sleep(4000);
     }
 
@@ -109,5 +115,29 @@ public class Main {
 
         t1.join();
         t2.join();
+    }
+
+    // Practice working with threads to implement producer-consumer architecture.
+    public static void createReaderWriter() {
+        System.out.println(ANSI_RESET + "\nBEGIN: createReaderWriter");
+
+        Message message = new Message();
+        new Thread(new Writer(message)).start();
+        new Thread(new Reader(message)).start();
+    }
+
+    // Practice working with ReentrantLock to counter the disadvantages of using synchronized code.
+    public static void createProducerConsumer() {
+        System.out.println(ANSI_RESET + "\nBEGIN createProducerConsumer");
+
+        List<String> buffer = new ArrayList<>();
+        ReentrantLock bufferLock = new ReentrantLock();
+        MyProducer producer = new MyProducer(buffer, bufferLock, ANSI_GREEN);
+        MyConsumer consumer1 = new MyConsumer(buffer, bufferLock, ANSI_BLUE);
+        MyConsumer consumer2 = new MyConsumer(buffer, bufferLock, ANSI_CYAN);
+
+        new Thread(producer).start();
+        new Thread(consumer1).start();
+        new Thread(consumer2).start();
     }
 }
