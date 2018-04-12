@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dcf8d1c-1418-495c-bab2-808272efe1c8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/ABQProducerConsumer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Deadlock.java" />
-      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/MyProducer.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/ALProducerConsumer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,23 +17,32 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="244" column="10" lean-forward="false" selection-start-line="244" selection-start-column="10" selection-end-line="244" selection-end-column="10" />
+            <state relative-caret-position="293">
+              <caret line="279" column="88" lean-forward="false" selection-start-line="279" selection-start-column="88" selection-end-line="279" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#createThreads#0;class#Main#0" expanded="false" />
-                <element signature="e#1554#1730#0" expanded="true" />
-                <element signature="e#1729#1730#0" expanded="true" />
+                <element signature="e#1654#1830#0" expanded="true" />
+                <element signature="e#1829#1830#0" expanded="true" />
                 <element signature="method#createCountdown#0;class#Main#0" expanded="false" />
                 <element signature="method#createReaderWriter#0;class#Main#0" expanded="false" />
                 <element signature="method#createProducerConsumer#0;class#Main#0" expanded="false" />
                 <element signature="method#joinExecutorService#0;class#Main#0" expanded="false" />
                 <element signature="method#createExecSrv#0;class#Main#0" expanded="false" />
-                <element signature="e#7266#7267#0" expanded="true" />
-                <element signature="e#7348#7349#0" expanded="true" />
+                <element signature="e#7366#7367#0" expanded="true" />
+                <element signature="e#7448#7449#0" expanded="true" />
                 <element signature="method#createBlockingQueue#0;class#Main#0" expanded="false" />
-                <element signature="e#8601#8602#0" expanded="true" />
-                <element signature="e#8683#8684#0" expanded="true" />
+                <element signature="e#8701#8702#0" expanded="true" />
+                <element signature="e#8783#8784#0" expanded="true" />
+                <element signature="class#9920:10569" expanded="false" />
+                <element signature="e#10025#10026#0" expanded="true" />
+                <element signature="e#10073#10074#0" expanded="true" />
+                <element signature="e#10111#10112#0" expanded="true" />
+                <element signature="e#10154#10155#0" expanded="true" />
+                <element signature="e#11096#11097#0" expanded="true" />
+                <element signature="e#11147#11148#0" expanded="true" />
+                <element signature="e#11258#11259#0" expanded="true" />
+                <element signature="e#11309#11310#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,8 +104,8 @@
         <option value="$PROJECT_DIR$/src/com/cjm/ms/MyProducer.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/ALProducerConsumer.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/ABQProducerConsumer.java" />
-        <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Deadlock.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
       </list>
     </option>
   </component>
@@ -247,7 +251,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -275,7 +279,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/cjm/ms/Main.java</url>
-          <line>127</line>
+          <line>129</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -292,18 +296,27 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createThreads#0;class#Main#0" expanded="false" />
-            <element signature="e#1554#1730#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1654#1830#0" expanded="true" />
+            <element signature="e#1829#1830#0" expanded="true" />
             <element signature="method#createCountdown#0;class#Main#0" expanded="false" />
             <element signature="method#createReaderWriter#0;class#Main#0" expanded="false" />
             <element signature="method#createProducerConsumer#0;class#Main#0" expanded="false" />
             <element signature="method#joinExecutorService#0;class#Main#0" expanded="false" />
             <element signature="method#createExecSrv#0;class#Main#0" expanded="false" />
-            <element signature="e#7266#7267#0" expanded="true" />
-            <element signature="e#7348#7349#0" expanded="true" />
+            <element signature="e#7366#7367#0" expanded="true" />
+            <element signature="e#7448#7449#0" expanded="true" />
             <element signature="method#createBlockingQueue#0;class#Main#0" expanded="false" />
-            <element signature="e#8601#8602#0" expanded="true" />
-            <element signature="e#8683#8684#0" expanded="true" />
+            <element signature="e#8701#8702#0" expanded="true" />
+            <element signature="e#8783#8784#0" expanded="true" />
+            <element signature="class#9920:10569" expanded="false" />
+            <element signature="e#10025#10026#0" expanded="true" />
+            <element signature="e#10073#10074#0" expanded="true" />
+            <element signature="e#10111#10112#0" expanded="true" />
+            <element signature="e#10154#10155#0" expanded="true" />
+            <element signature="e#11096#11097#0" expanded="true" />
+            <element signature="e#11147#11148#0" expanded="true" />
+            <element signature="e#11258#11259#0" expanded="true" />
+            <element signature="e#11309#11310#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -333,18 +346,27 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createThreads#0;class#Main#0" expanded="false" />
-            <element signature="e#1554#1730#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1654#1830#0" expanded="true" />
+            <element signature="e#1829#1830#0" expanded="true" />
             <element signature="method#createCountdown#0;class#Main#0" expanded="false" />
             <element signature="method#createReaderWriter#0;class#Main#0" expanded="false" />
             <element signature="method#createProducerConsumer#0;class#Main#0" expanded="false" />
             <element signature="method#joinExecutorService#0;class#Main#0" expanded="false" />
             <element signature="method#createExecSrv#0;class#Main#0" expanded="false" />
-            <element signature="e#7266#7267#0" expanded="true" />
-            <element signature="e#7348#7349#0" expanded="true" />
+            <element signature="e#7366#7367#0" expanded="true" />
+            <element signature="e#7448#7449#0" expanded="true" />
             <element signature="method#createBlockingQueue#0;class#Main#0" expanded="false" />
-            <element signature="e#8601#8602#0" expanded="true" />
-            <element signature="e#8683#8684#0" expanded="true" />
+            <element signature="e#8701#8702#0" expanded="true" />
+            <element signature="e#8783#8784#0" expanded="true" />
+            <element signature="class#9920:10569" expanded="false" />
+            <element signature="e#10025#10026#0" expanded="true" />
+            <element signature="e#10073#10074#0" expanded="true" />
+            <element signature="e#10111#10112#0" expanded="true" />
+            <element signature="e#10154#10155#0" expanded="true" />
+            <element signature="e#11096#11097#0" expanded="true" />
+            <element signature="e#11147#11148#0" expanded="true" />
+            <element signature="e#11258#11259#0" expanded="true" />
+            <element signature="e#11309#11310#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -456,23 +478,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="244" column="10" lean-forward="false" selection-start-line="244" selection-start-column="10" selection-end-line="244" selection-end-column="10" />
+        <state relative-caret-position="293">
+          <caret line="279" column="88" lean-forward="false" selection-start-line="279" selection-start-column="88" selection-end-line="279" selection-end-column="88" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createThreads#0;class#Main#0" expanded="false" />
-            <element signature="e#1554#1730#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1654#1830#0" expanded="true" />
+            <element signature="e#1829#1830#0" expanded="true" />
             <element signature="method#createCountdown#0;class#Main#0" expanded="false" />
             <element signature="method#createReaderWriter#0;class#Main#0" expanded="false" />
             <element signature="method#createProducerConsumer#0;class#Main#0" expanded="false" />
             <element signature="method#joinExecutorService#0;class#Main#0" expanded="false" />
             <element signature="method#createExecSrv#0;class#Main#0" expanded="false" />
-            <element signature="e#7266#7267#0" expanded="true" />
-            <element signature="e#7348#7349#0" expanded="true" />
+            <element signature="e#7366#7367#0" expanded="true" />
+            <element signature="e#7448#7449#0" expanded="true" />
             <element signature="method#createBlockingQueue#0;class#Main#0" expanded="false" />
-            <element signature="e#8601#8602#0" expanded="true" />
-            <element signature="e#8683#8684#0" expanded="true" />
+            <element signature="e#8701#8702#0" expanded="true" />
+            <element signature="e#8783#8784#0" expanded="true" />
+            <element signature="class#9920:10569" expanded="false" />
+            <element signature="e#10025#10026#0" expanded="true" />
+            <element signature="e#10073#10074#0" expanded="true" />
+            <element signature="e#10111#10112#0" expanded="true" />
+            <element signature="e#10154#10155#0" expanded="true" />
+            <element signature="e#11096#11097#0" expanded="true" />
+            <element signature="e#11147#11148#0" expanded="true" />
+            <element signature="e#11258#11259#0" expanded="true" />
+            <element signature="e#11309#11310#0" expanded="true" />
           </folding>
         </state>
       </provider>

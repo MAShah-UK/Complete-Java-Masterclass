@@ -16,7 +16,8 @@ public class Main {
         //createProducerConsumer();
         //createExecSrv();
         //createBlockingQueue();
-        createDeadlock();
+        createDeadlock1();
+        createDeadlock2();
     }
 
     // Practice creating threads using various methods.
@@ -25,6 +26,7 @@ public class Main {
 
         System.out.println(ANSI_PURPLE + "Hello from the main thread.");
 
+        // Must be marked final since its being used by an inner class.
         final AnotherThread anotherThread = new AnotherThread();
         anotherThread.setName("AnotherThread");
         // WRONG: Directly calls run() on the current thread since it's just a regular method call.
@@ -235,14 +237,59 @@ public class Main {
     }
 
     // Practice avoiding deadlocks.
-    public static void createDeadlock() {
+    public static void createDeadlock1() throws InterruptedException {
         System.out.println(ANSI_RESET + "\nBEGIN createDeadlock");
 
+        Thread t1 = new Deadlock.Thread1(); t1.start();
         // Will result in two threads that each require an unobtainable lock - deadlock.
         // To prevent deadlocks, use minimal locks, and make sure they're used in the same order,
         // e.g. lock 1, then lock 2, etc.
-        new Deadlock.Thread1().start();
         //new Deadlock.UnsafeThread2().start();
-        new Deadlock.SafeThread2().start();
+        Thread t2 = new Deadlock.SafeThread2(); t2.start();
+
+        t1.join();
+        t2.join();
+    }
+
+    // Practice avoiding deadlocks.
+    public static void createDeadlock2() {
+        System.out.println(ANSI_RESET + "\nBEGIN: createDeadlock2");
+
+        class PolitePerson {
+            private final String name;
+            public PolitePerson(String name) {
+                this.name = name;
+            }
+            public String getName() {
+                return name;
+            }
+            public synchronized void sayHello(PolitePerson otherP) {
+                System.out.format("%s: %s" + " has said hello to me.%n", name, otherP.name);
+                otherP.sayHelloBack(this);
+            }
+            public synchronized void sayHelloBack(PolitePerson otherP) {
+                System.out.format("%s: %s" + " has said hello back to me.%n", name, otherP.name);
+            }
+        }
+        // Marked final since they are being used by inner classes.
+        final PolitePerson jane = new PolitePerson("Jane");
+        final PolitePerson john = new PolitePerson("John");
+
+        // This results in a deadlock since each thread will be blocked by the other.
+        // This is because each thread is holding a lock the other needs.
+        // This could have been avoided if the locks weren't obtained in opposite order.
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                jane.sayHello(john);
+            }
+        }).start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                john.sayHello(jane);
+            }
+        }).start();
     }
 }
