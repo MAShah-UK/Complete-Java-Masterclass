@@ -16,8 +16,11 @@ public class Main {
         //createProducerConsumer();
         //createExecSrv();
         //createBlockingQueue();
-        createDeadlock1();
-        createDeadlock2();
+        //createDeadlock1();
+        //createDeadlock2();
+        createStarvation();
+        createFairLock();
+        createLivelock();
     }
 
     // Practice creating threads using various methods.
@@ -240,12 +243,15 @@ public class Main {
     public static void createDeadlock1() throws InterruptedException {
         System.out.println(ANSI_RESET + "\nBEGIN createDeadlock");
 
-        Thread t1 = new Deadlock.Thread1(); t1.start();
+        Thread t1 = new Deadlock.Thread1();
+        t1.start();
         // Will result in two threads that each require an unobtainable lock - deadlock.
         // To prevent deadlocks, use minimal locks, and make sure they're used in the same order,
         // e.g. lock 1, then lock 2, etc.
-        //new Deadlock.UnsafeThread2().start();
-        Thread t2 = new Deadlock.SafeThread2(); t2.start();
+        // Thread t2 = new Deadlock.UnsafeThread2();
+        // t2.start();
+        Thread t2 = new Deadlock.SafeThread2();
+        t2.start();
 
         t1.join();
         t2.join();
@@ -285,11 +291,135 @@ public class Main {
             }
         }).start();
 
-        new Thread(new Runnable() {
+          // Commented out to prevent deadlock, it's still here as an example.
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                john.sayHello(jane);
+//            }
+//        }).start();
+    }
+
+    // Practice working with thread priority.
+    public static void createStarvation() throws InterruptedException {
+        System.out.println(ANSI_RESET + "\nBEGIN: createStarvation");
+
+        Object lock = new Object();
+
+        class Worker implements Runnable {
+            private int runCount = 1;
+            private String threadColor;
+            public Worker(String threadColor) {
+                this.threadColor = threadColor;
+            }
             @Override
             public void run() {
-                john.sayHello(jane);
+                for(int i = 0; i < 10; i++) {
+                    synchronized(lock) {
+                        System.out.format(threadColor + "%s: runCount = %d\n", Thread.currentThread().getName(), runCount++);
+                        // Imagine this contains critical section of code.
+                    }
+                }
             }
-        }).start();
+        }
+
+        // All threads competing for one lock, called lock.
+        Thread[] t = new Thread[5];
+        t[0] = new Thread(new Worker(ANSI_RED), "Priority 10");
+        t[1] = new Thread(new Worker(ANSI_BLUE), "Priority 8");
+        t[2] = new Thread(new Worker(ANSI_GREEN), "Priority 6");
+        t[3] = new Thread(new Worker(ANSI_CYAN), "Priority 4");
+        t[4] = new Thread(new Worker(ANSI_PURPLE), "Priority 2");
+
+        // Sets priority 2 to 10 for threads 1 to 5.
+        // The priority is just a suggestion to the OS.
+        // There's no guarantee it'll run more often.
+        for(int i = 0; i < 5; i++) {
+            t[i].setPriority((i+1)*2);
+        }
+
+        for(Thread thread: t) {
+            thread.start();
+        }
+
+        for(Thread thread: t) {
+            thread.join();
+        }
+    }
+
+    // Practice working with fair reentrant lock.
+    public static void createFairLock() throws InterruptedException {
+        System.out.println(ANSI_RESET + "\nBEGIN: createFairLock");
+
+        // Sets the lock to be fair and provide the lock of a first come first serve basis.
+        // - tryLock() will ignore the fair argument.
+        // - Reduced performance for large number of threads. Class needs to decide which thread gets lock.
+        ReentrantLock lock = new ReentrantLock(true);
+
+        class Worker implements Runnable {
+            private int runCount = 1;
+            private String threadColor;
+            public Worker(String threadColor) {
+                this.threadColor = threadColor;
+            }
+            @Override
+            public void run() {
+                for(int i = 0; i < 10; i++) {
+                    lock.lock();
+                    try {
+                        System.out.format(threadColor + "%s: runCount = %d\n", Thread.currentThread().getName(), runCount++);
+                        // Imagine this contains critical section of code.
+                    } finally {
+                        lock.unlock();
+                    }
+                }
+            }
+        }
+
+        // All threads competing for one lock, called lock.
+        Thread[] t = new Thread[5];
+        t[0] = new Thread(new Worker(ANSI_RED), "Thread 1");
+        t[1] = new Thread(new Worker(ANSI_BLUE), "Thread 2");
+        t[2] = new Thread(new Worker(ANSI_GREEN), "Thread 3");
+        t[3] = new Thread(new Worker(ANSI_CYAN), "Thread 4");
+        t[4] = new Thread(new Worker(ANSI_PURPLE), "Thread 5");
+
+        for(Thread thread: t) {
+            thread.start();
+        }
+
+        for(Thread thread: t) {
+            thread.join();
+        }
+    }
+
+    // Practice avoiding live locks.
+    public static void createLivelock() throws InterruptedException {
+        System.out.println(ANSI_RESET + "\nBEGIN: createLiveLock");
+
+        final Worker worker1 = new Worker("Worker 1", true);
+        final Worker worker2 = new Worker("Worker 2", true);
+        final SharedResource sharedResource = new SharedResource(worker1);
+
+//        // Threads will get stuck in a livelock and both will keep passing the resource to each other
+//        // rather than completing. Commented out to allow program to complete.
+//        Thread t1 = new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                worker1.work(sharedResource, worker2);
+//            }
+//        });
+//        t1.start();
+//
+//        Thread t2 = new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                worker2.work(sharedResource, worker1);
+//            }
+//        });
+//        t2.start();
+//
+//        t1.join();
+//        t2.join();
     }
 }
