@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dcf8d1c-1418-495c-bab2-808272efe1c8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Worker.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/BankAccount.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Challenge7.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Challenge8.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Challenge9.java" />
       <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
@@ -20,61 +23,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="409" column="15" lean-forward="true" selection-start-line="409" selection-start-column="15" selection-end-line="409" selection-end-column="15" />
+            <state relative-caret-position="118">
+              <caret line="499" column="76" lean-forward="false" selection-start-line="499" selection-start-column="76" selection-end-line="499" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#createThreads#0;class#Main#0" expanded="false" />
-                <element signature="e#1738#1914#0" expanded="true" />
-                <element signature="e#1913#1914#0" expanded="true" />
+                <element signature="e#1877#2053#0" expanded="true" />
+                <element signature="e#2052#2053#0" expanded="true" />
                 <element signature="method#createCountdown#0;class#Main#0" expanded="false" />
                 <element signature="method#createReaderWriter#0;class#Main#0" expanded="false" />
                 <element signature="method#createProducerConsumer#0;class#Main#0" expanded="false" />
                 <element signature="method#joinExecutorService#0;class#Main#0" expanded="false" />
                 <element signature="method#createExecSrv#0;class#Main#0" expanded="false" />
-                <element signature="e#7450#7451#0" expanded="true" />
-                <element signature="e#7532#7533#0" expanded="true" />
+                <element signature="e#7589#7590#0" expanded="true" />
+                <element signature="e#7671#7672#0" expanded="true" />
                 <element signature="method#createBlockingQueue#0;class#Main#0" expanded="false" />
-                <element signature="e#8785#8786#0" expanded="true" />
-                <element signature="e#8867#8868#0" expanded="true" />
-                <element signature="class#10048:10697" expanded="false" />
-                <element signature="e#10153#10154#0" expanded="true" />
-                <element signature="e#10201#10202#0" expanded="true" />
-                <element signature="e#10239#10240#0" expanded="true" />
-                <element signature="e#10282#10283#0" expanded="true" />
-                <element signature="e#11224#11225#0" expanded="true" />
-                <element signature="e#11275#11276#0" expanded="true" />
+                <element signature="e#8924#8925#0" expanded="true" />
+                <element signature="e#9006#9007#0" expanded="true" />
+                <element signature="method#createDeadlock1#0;class#Main#0" expanded="false" />
+                <element signature="method#createDeadlock2#0;class#Main#0" expanded="false" />
+                <element signature="class#10187:10836" expanded="false" />
+                <element signature="e#10292#10293#0" expanded="true" />
+                <element signature="e#10340#10341#0" expanded="true" />
+                <element signature="e#10378#10379#0" expanded="true" />
+                <element signature="e#10421#10422#0" expanded="true" />
+                <element signature="e#11363#11364#0" expanded="true" />
+                <element signature="e#11414#11415#0" expanded="true" />
                 <element signature="method#createStarvation#0;class#Main#0" expanded="false" />
-                <element signature="e#11950#11951#0" expanded="true" />
-                <element signature="e#12012#12013#0" expanded="true" />
+                <element signature="e#12089#12090#0" expanded="true" />
+                <element signature="e#12151#12152#0" expanded="true" />
                 <element signature="method#createFairLock#0;class#Main#0" expanded="false" />
-                <element signature="e#13903#13904#0" expanded="true" />
-                <element signature="e#13965#13966#0" expanded="true" />
+                <element signature="e#14042#14043#0" expanded="true" />
+                <element signature="e#14104#14105#0" expanded="true" />
+                <element signature="method#createLivelock#0;class#Main#0" expanded="false" />
+                <element signature="method#createJointBankAccount#0;class#Main#0" expanded="false" />
+                <element signature="method#createBankAccounts#0;class#Main#0" expanded="false" />
+                <element signature="method#createTutorStudentPair#0;class#Main#0" expanded="false" />
+                <element signature="e#17893#17894#0" expanded="true" />
+                <element signature="e#17942#17943#0" expanded="true" />
+                <element signature="e#18068#18069#0" expanded="true" />
+                <element signature="e#18126#18127#0" expanded="true" />
+                <element signature="e#18650#18651#0" expanded="true" />
+                <element signature="e#18699#18700#0" expanded="true" />
+                <element signature="e#18825#18826#0" expanded="true" />
+                <element signature="e#18883#18884#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Worker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Worker.java">
+      <file leaf-file-name="Challenge9.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Challenge9.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="31" column="53" lean-forward="true" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
-              <folding>
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1200#1201#0" expanded="true" />
-                <element signature="e#1232#1233#0" expanded="true" />
-                <element signature="e#1260#1261#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
-                <element signature="e#1349#1350#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,6 +99,7 @@
       <find>run()</find>
       <find>start()</find>
       <find>lock</find>
+      <find>exer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,7 +124,11 @@
         <option value="$PROJECT_DIR$/src/com/cjm/ms/ABQProducerConsumer.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Deadlock.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Worker.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/BankAccount.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/Challenge7.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/Challenge8.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/Challenge9.java" />
       </list>
     </option>
   </component>
@@ -145,7 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,14 +179,22 @@
               <item name="Section16" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ms" type="462c0819:PsiDirectoryNode" />
-              <item name="Worker.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="Challenge7.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="Section16" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Section16" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ms" type="462c0819:PsiDirectoryNode" />
+              <item name="Challenge9.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -292,7 +310,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/cjm/ms/Main.java</url>
-          <line>132</line>
+          <line>136</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -304,36 +322,119 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="153" column="60" lean-forward="false" selection-start-line="153" selection-start-column="60" selection-end-line="153" selection-end-column="60" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createThreads#0;class#Main#0" expanded="false" />
-            <element signature="e#1738#1914#0" expanded="true" />
-            <element signature="e#1913#1914#0" expanded="true" />
+            <element signature="e#1877#2053#0" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
             <element signature="method#createCountdown#0;class#Main#0" expanded="false" />
             <element signature="method#createReaderWriter#0;class#Main#0" expanded="false" />
             <element signature="method#createProducerConsumer#0;class#Main#0" expanded="false" />
             <element signature="method#joinExecutorService#0;class#Main#0" expanded="false" />
             <element signature="method#createExecSrv#0;class#Main#0" expanded="false" />
-            <element signature="e#7450#7451#0" expanded="true" />
-            <element signature="e#7532#7533#0" expanded="true" />
+            <element signature="e#7589#7590#0" expanded="true" />
+            <element signature="e#7671#7672#0" expanded="true" />
             <element signature="method#createBlockingQueue#0;class#Main#0" expanded="false" />
-            <element signature="e#8785#8786#0" expanded="true" />
-            <element signature="e#8867#8868#0" expanded="true" />
-            <element signature="class#10048:10697" expanded="false" />
-            <element signature="e#10153#10154#0" expanded="true" />
-            <element signature="e#10201#10202#0" expanded="true" />
-            <element signature="e#10239#10240#0" expanded="true" />
-            <element signature="e#10282#10283#0" expanded="true" />
-            <element signature="e#11224#11225#0" expanded="true" />
-            <element signature="e#11275#11276#0" expanded="true" />
+            <element signature="e#8924#8925#0" expanded="true" />
+            <element signature="e#9006#9007#0" expanded="true" />
+            <element signature="method#createDeadlock1#0;class#Main#0" expanded="false" />
+            <element signature="method#createDeadlock2#0;class#Main#0" expanded="false" />
+            <element signature="class#10187:10836" expanded="false" />
+            <element signature="e#10292#10293#0" expanded="true" />
+            <element signature="e#10340#10341#0" expanded="true" />
+            <element signature="e#10378#10379#0" expanded="true" />
+            <element signature="e#10421#10422#0" expanded="true" />
+            <element signature="e#11363#11364#0" expanded="true" />
+            <element signature="e#11414#11415#0" expanded="true" />
             <element signature="method#createStarvation#0;class#Main#0" expanded="false" />
-            <element signature="e#11950#11951#0" expanded="true" />
-            <element signature="e#12012#12013#0" expanded="true" />
+            <element signature="e#12089#12090#0" expanded="true" />
+            <element signature="e#12151#12152#0" expanded="true" />
             <element signature="method#createFairLock#0;class#Main#0" expanded="false" />
-            <element signature="e#13903#13904#0" expanded="true" />
-            <element signature="e#13965#13966#0" expanded="true" />
+            <element signature="e#14042#14043#0" expanded="true" />
+            <element signature="e#14104#14105#0" expanded="true" />
+            <element signature="method#createLivelock#0;class#Main#0" expanded="false" />
+            <element signature="method#createJointBankAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createBankAccounts#0;class#Main#0" expanded="false" />
+            <element signature="method#createTutorStudentPair#0;class#Main#0" expanded="false" />
+            <element signature="e#17893#17894#0" expanded="true" />
+            <element signature="e#17942#17943#0" expanded="true" />
+            <element signature="e#18068#18069#0" expanded="true" />
+            <element signature="e#18126#18127#0" expanded="true" />
+            <element signature="e#18650#18651#0" expanded="true" />
+            <element signature="e#18699#18700#0" expanded="true" />
+            <element signature="e#18825#18826#0" expanded="true" />
+            <element signature="e#18883#18884#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="53" lean-forward="true" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding>
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#264#265#0" expanded="false" />
+            <element signature="e#297#298#0" expanded="false" />
+            <element signature="e#326#327#0" expanded="false" />
+            <element signature="e#1166#1167#0" expanded="false" />
+            <element signature="e#1200#1201#0" expanded="false" />
+            <element signature="e#1232#1233#0" expanded="false" />
+            <element signature="e#1260#1261#0" expanded="false" />
+            <element signature="e#1315#1316#0" expanded="false" />
+            <element signature="e#1349#1350#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="153" column="60" lean-forward="false" selection-start-line="153" selection-start-column="60" selection-end-line="153" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createThreads#0;class#Main#0" expanded="false" />
+            <element signature="e#1877#2053#0" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
+            <element signature="method#createCountdown#0;class#Main#0" expanded="false" />
+            <element signature="method#createReaderWriter#0;class#Main#0" expanded="false" />
+            <element signature="method#createProducerConsumer#0;class#Main#0" expanded="false" />
+            <element signature="method#joinExecutorService#0;class#Main#0" expanded="false" />
+            <element signature="method#createExecSrv#0;class#Main#0" expanded="false" />
+            <element signature="e#7589#7590#0" expanded="true" />
+            <element signature="e#7671#7672#0" expanded="true" />
+            <element signature="method#createBlockingQueue#0;class#Main#0" expanded="false" />
+            <element signature="e#8924#8925#0" expanded="true" />
+            <element signature="e#9006#9007#0" expanded="true" />
+            <element signature="method#createDeadlock1#0;class#Main#0" expanded="false" />
+            <element signature="method#createDeadlock2#0;class#Main#0" expanded="false" />
+            <element signature="class#10187:10836" expanded="false" />
+            <element signature="e#10292#10293#0" expanded="true" />
+            <element signature="e#10340#10341#0" expanded="true" />
+            <element signature="e#10378#10379#0" expanded="true" />
+            <element signature="e#10421#10422#0" expanded="true" />
+            <element signature="e#11363#11364#0" expanded="true" />
+            <element signature="e#11414#11415#0" expanded="true" />
+            <element signature="method#createStarvation#0;class#Main#0" expanded="false" />
+            <element signature="e#12089#12090#0" expanded="true" />
+            <element signature="e#12151#12152#0" expanded="true" />
+            <element signature="method#createFairLock#0;class#Main#0" expanded="false" />
+            <element signature="e#14042#14043#0" expanded="true" />
+            <element signature="e#14104#14105#0" expanded="true" />
+            <element signature="method#createLivelock#0;class#Main#0" expanded="false" />
+            <element signature="method#createJointBankAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createBankAccounts#0;class#Main#0" expanded="false" />
+            <element signature="method#createTutorStudentPair#0;class#Main#0" expanded="false" />
+            <element signature="e#17893#17894#0" expanded="true" />
+            <element signature="e#17942#17943#0" expanded="true" />
+            <element signature="e#18068#18069#0" expanded="true" />
+            <element signature="e#18126#18127#0" expanded="true" />
+            <element signature="e#18650#18651#0" expanded="true" />
+            <element signature="e#18699#18700#0" expanded="true" />
+            <element signature="e#18825#18826#0" expanded="true" />
+            <element signature="e#18883#18884#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -363,31 +464,45 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createThreads#0;class#Main#0" expanded="false" />
-            <element signature="e#1738#1914#0" expanded="true" />
-            <element signature="e#1913#1914#0" expanded="true" />
+            <element signature="e#1877#2053#0" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
             <element signature="method#createCountdown#0;class#Main#0" expanded="false" />
             <element signature="method#createReaderWriter#0;class#Main#0" expanded="false" />
             <element signature="method#createProducerConsumer#0;class#Main#0" expanded="false" />
             <element signature="method#joinExecutorService#0;class#Main#0" expanded="false" />
             <element signature="method#createExecSrv#0;class#Main#0" expanded="false" />
-            <element signature="e#7450#7451#0" expanded="true" />
-            <element signature="e#7532#7533#0" expanded="true" />
+            <element signature="e#7589#7590#0" expanded="true" />
+            <element signature="e#7671#7672#0" expanded="true" />
             <element signature="method#createBlockingQueue#0;class#Main#0" expanded="false" />
-            <element signature="e#8785#8786#0" expanded="true" />
-            <element signature="e#8867#8868#0" expanded="true" />
-            <element signature="class#10048:10697" expanded="false" />
-            <element signature="e#10153#10154#0" expanded="true" />
-            <element signature="e#10201#10202#0" expanded="true" />
-            <element signature="e#10239#10240#0" expanded="true" />
-            <element signature="e#10282#10283#0" expanded="true" />
-            <element signature="e#11224#11225#0" expanded="true" />
-            <element signature="e#11275#11276#0" expanded="true" />
+            <element signature="e#8924#8925#0" expanded="true" />
+            <element signature="e#9006#9007#0" expanded="true" />
+            <element signature="method#createDeadlock1#0;class#Main#0" expanded="false" />
+            <element signature="method#createDeadlock2#0;class#Main#0" expanded="false" />
+            <element signature="class#10187:10836" expanded="false" />
+            <element signature="e#10292#10293#0" expanded="true" />
+            <element signature="e#10340#10341#0" expanded="true" />
+            <element signature="e#10378#10379#0" expanded="true" />
+            <element signature="e#10421#10422#0" expanded="true" />
+            <element signature="e#11363#11364#0" expanded="true" />
+            <element signature="e#11414#11415#0" expanded="true" />
             <element signature="method#createStarvation#0;class#Main#0" expanded="false" />
-            <element signature="e#11950#11951#0" expanded="true" />
-            <element signature="e#12012#12013#0" expanded="true" />
+            <element signature="e#12089#12090#0" expanded="true" />
+            <element signature="e#12151#12152#0" expanded="true" />
             <element signature="method#createFairLock#0;class#Main#0" expanded="false" />
-            <element signature="e#13903#13904#0" expanded="true" />
-            <element signature="e#13965#13966#0" expanded="true" />
+            <element signature="e#14042#14043#0" expanded="true" />
+            <element signature="e#14104#14105#0" expanded="true" />
+            <element signature="method#createLivelock#0;class#Main#0" expanded="false" />
+            <element signature="method#createJointBankAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createBankAccounts#0;class#Main#0" expanded="false" />
+            <element signature="method#createTutorStudentPair#0;class#Main#0" expanded="false" />
+            <element signature="e#17893#17894#0" expanded="true" />
+            <element signature="e#17942#17943#0" expanded="true" />
+            <element signature="e#18068#18069#0" expanded="true" />
+            <element signature="e#18126#18127#0" expanded="true" />
+            <element signature="e#18650#18651#0" expanded="true" />
+            <element signature="e#18699#18700#0" expanded="true" />
+            <element signature="e#18825#18826#0" expanded="true" />
+            <element signature="e#18883#18884#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -476,16 +591,8 @@
         <state relative-caret-position="662">
           <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="53" column="54" lean-forward="false" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -499,56 +606,137 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Worker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="31" column="53" lean-forward="true" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        <state relative-caret-position="459">
+          <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
           <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#1166#1167#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#264#265#0" expanded="false" />
+            <element signature="e#297#298#0" expanded="false" />
+            <element signature="e#326#327#0" expanded="false" />
+            <element signature="e#1166#1167#0" expanded="false" />
+            <element signature="e#1200#1201#0" expanded="false" />
+            <element signature="e#1232#1233#0" expanded="false" />
+            <element signature="e#1260#1261#0" expanded="false" />
+            <element signature="e#1315#1316#0" expanded="false" />
+            <element signature="e#1349#1350#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Challenge7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/BankAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="52" column="38" lean-forward="false" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#1564#1565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Challenge8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2316.055/Challenge9.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="82" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="409" column="15" lean-forward="true" selection-start-line="409" selection-start-column="15" selection-end-line="409" selection-end-column="15" />
+        <state relative-caret-position="118">
+          <caret line="499" column="76" lean-forward="false" selection-start-line="499" selection-start-column="76" selection-end-line="499" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createThreads#0;class#Main#0" expanded="false" />
-            <element signature="e#1738#1914#0" expanded="true" />
-            <element signature="e#1913#1914#0" expanded="true" />
+            <element signature="e#1877#2053#0" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
             <element signature="method#createCountdown#0;class#Main#0" expanded="false" />
             <element signature="method#createReaderWriter#0;class#Main#0" expanded="false" />
             <element signature="method#createProducerConsumer#0;class#Main#0" expanded="false" />
             <element signature="method#joinExecutorService#0;class#Main#0" expanded="false" />
             <element signature="method#createExecSrv#0;class#Main#0" expanded="false" />
-            <element signature="e#7450#7451#0" expanded="true" />
-            <element signature="e#7532#7533#0" expanded="true" />
+            <element signature="e#7589#7590#0" expanded="true" />
+            <element signature="e#7671#7672#0" expanded="true" />
             <element signature="method#createBlockingQueue#0;class#Main#0" expanded="false" />
-            <element signature="e#8785#8786#0" expanded="true" />
-            <element signature="e#8867#8868#0" expanded="true" />
-            <element signature="class#10048:10697" expanded="false" />
-            <element signature="e#10153#10154#0" expanded="true" />
-            <element signature="e#10201#10202#0" expanded="true" />
-            <element signature="e#10239#10240#0" expanded="true" />
-            <element signature="e#10282#10283#0" expanded="true" />
-            <element signature="e#11224#11225#0" expanded="true" />
-            <element signature="e#11275#11276#0" expanded="true" />
+            <element signature="e#8924#8925#0" expanded="true" />
+            <element signature="e#9006#9007#0" expanded="true" />
+            <element signature="method#createDeadlock1#0;class#Main#0" expanded="false" />
+            <element signature="method#createDeadlock2#0;class#Main#0" expanded="false" />
+            <element signature="class#10187:10836" expanded="false" />
+            <element signature="e#10292#10293#0" expanded="true" />
+            <element signature="e#10340#10341#0" expanded="true" />
+            <element signature="e#10378#10379#0" expanded="true" />
+            <element signature="e#10421#10422#0" expanded="true" />
+            <element signature="e#11363#11364#0" expanded="true" />
+            <element signature="e#11414#11415#0" expanded="true" />
             <element signature="method#createStarvation#0;class#Main#0" expanded="false" />
-            <element signature="e#11950#11951#0" expanded="true" />
-            <element signature="e#12012#12013#0" expanded="true" />
+            <element signature="e#12089#12090#0" expanded="true" />
+            <element signature="e#12151#12152#0" expanded="true" />
             <element signature="method#createFairLock#0;class#Main#0" expanded="false" />
-            <element signature="e#13903#13904#0" expanded="true" />
-            <element signature="e#13965#13966#0" expanded="true" />
+            <element signature="e#14042#14043#0" expanded="true" />
+            <element signature="e#14104#14105#0" expanded="true" />
+            <element signature="method#createLivelock#0;class#Main#0" expanded="false" />
+            <element signature="method#createJointBankAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#createBankAccounts#0;class#Main#0" expanded="false" />
+            <element signature="method#createTutorStudentPair#0;class#Main#0" expanded="false" />
+            <element signature="e#17893#17894#0" expanded="true" />
+            <element signature="e#17942#17943#0" expanded="true" />
+            <element signature="e#18068#18069#0" expanded="true" />
+            <element signature="e#18126#18127#0" expanded="true" />
+            <element signature="e#18650#18651#0" expanded="true" />
+            <element signature="e#18699#18700#0" expanded="true" />
+            <element signature="e#18825#18826#0" expanded="true" />
+            <element signature="e#18883#18884#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="514" column="22" lean-forward="false" selection-start-line="514" selection-start-column="22" selection-end-line="514" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Challenge9.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>

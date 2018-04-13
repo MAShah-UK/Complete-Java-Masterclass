@@ -18,9 +18,13 @@ public class Main {
         //createBlockingQueue();
         //createDeadlock1();
         //createDeadlock2();
-        createStarvation();
-        createFairLock();
-        createLivelock();
+        //createStarvation();
+        //createFairLock();
+        //createLivelock();
+        createJointBankAccount();
+        createBankAccounts();
+        createTutorStudentPair();
+        createTutorStudentPair2();
     }
 
     // Practice creating threads using various methods.
@@ -421,5 +425,101 @@ public class Main {
 //
 //        t1.join();
 //        t2.join();
+    }
+
+    // Practice working with threads via challenges 1-6.
+    public static void createJointBankAccount() throws InterruptedException {
+        final BankAccount account = new BankAccount("12345-678", 1000.00);
+
+        Thread t1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                account.deposit(300);
+                account.withdraw(50);
+            }
+        });
+        t1.start();
+
+        Thread t2 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                account.deposit(203.75);
+                account.withdraw(100);
+            }
+        });
+        t2.start();
+
+        t1.join();
+        t2.join();
+    }
+
+    // Practice working with threads via challenge 7.
+    public static void createBankAccounts() throws InterruptedException {
+        System.out.println(ANSI_RESET + "\nBEGIN: createBankAccounts");
+
+        C7BankAccount account1 = new C7BankAccount("12345-678", 500.00);
+        C7BankAccount account2 = new C7BankAccount("98765-432", 1000.00);
+
+        Thread t1 = new Thread(new Transfer(account1, account2, 10.00), "Transfer1");
+        t1.start();
+        Thread t2 = new Thread(new Transfer(account2, account1, 55.88), "Transfer2");
+        t2.start();
+
+        t1.join();
+        t2.join();
+    }
+
+    // Practice working with threads via challenge 8.
+    public static void createTutorStudentPair() throws InterruptedException {
+        final Tutor tutor = new Tutor();
+        final Student student = new Student(tutor);
+        tutor.setStudent(student);
+
+        Thread tutorThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                tutor.studyTime();
+            }
+        });
+
+        Thread studentThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                student.handInAssignment();
+            }
+        });
+
+        tutorThread.start();
+        studentThread.start();
+
+        tutorThread.join();
+        studentThread.join();
+    }
+
+    // Practice working with threads via challenge 9.
+    public static void createTutorStudentPair2() throws InterruptedException {
+        final NewTutor tutor = new NewTutor();
+        final NewStudent student = new NewStudent(tutor);
+        tutor.setStudent(student);
+
+        Thread tutorThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                tutor.studyTime();
+            }
+        });
+
+        Thread studentThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                student.handInAssignment();
+            }
+        });
+
+        tutorThread.start();
+        studentThread.start();
+
+        tutorThread.join();
+        studentThread.join();
     }
 }
