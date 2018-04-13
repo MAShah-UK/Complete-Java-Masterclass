@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9dcf8d1c-1418-495c-bab2-808272efe1c8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/BankAccount.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Challenge7.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Challenge8.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Challenge9.java" />
-      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
-    </list>
+    <list default="true" id="9dcf8d1c-1418-495c-bab2-808272efe1c8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -272,7 +264,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-8" width="1864" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
