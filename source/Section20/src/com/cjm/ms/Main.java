@@ -1,23 +1,29 @@
 package com.cjm.ms;
 
+import com.cjm.ms.model.Artist;
+import com.cjm.ms.model.DataSource;
+
 import java.sql.*;
+import java.util.List;
 
 public class Main {
-    // Use constants to avoid having to rename strings everywhere.
-    private static final String DB_NAME = "testjava.db";
-    private static final String CONNECTION_STRING = "jdbc:sqlite:data\\" + DB_NAME;
-    private static final String TABLE_CONTACTS = "contacts";
-    private static final String COL_NAME = "name";
-    private static final String COL_PHONE = "phone";
-    private static final String COL_EMAIL = "email";
 
     public static void main(String[] args) {
         createTable();
+        useMVCPattern();
     }
 
     // Practice working with SQL via JDBC.
     public static void createTable() {
         System.out.println("BEGIN: createTable");
+
+        // Use constants to avoid having to rename strings everywhere.
+        final String DB_NAME = "testjava.db";
+        final String CONNECTION_STRING = "jdbc:sqlite:data\\" + DB_NAME;
+        final String TABLE_CONTACTS = "contacts";
+        final String COL_NAME = "name";
+        final String COL_PHONE = "phone";
+        final String COL_EMAIL = "email";
 
         class InsertData {
             private Statement stat;
@@ -78,5 +84,19 @@ public class Main {
         } catch(SQLException e) {
             System.out.println("Something went wrong: " + e.getMessage());
         }
+    }
+
+    public static void useMVCPattern() {
+        System.out.println("\nBEGIN: useMVCPattern");
+
+        DataSource dataSource = new DataSource();
+        dataSource.open();
+
+        List<Artist> artists = dataSource.queryArtist();
+        for(Artist artist: artists) {
+            System.out.println("ID: " + artist.getId() + ", Name: " + artist.getName());
+        }
+
+        dataSource.close();
     }
 }
