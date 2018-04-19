@@ -92,7 +92,7 @@ public class Main {
         DataSource dataSource = new DataSource();
         dataSource.open();
 
-        List<Artist> artists = dataSource.queryArtist();
+        List<Artist> artists = dataSource.queryArtist(DataSource.ORDER_BY_ASC);
         for(Artist artist: artists) {
             System.out.println("ID: " + artist.getId() + ", Name: " + artist.getName());
         }
