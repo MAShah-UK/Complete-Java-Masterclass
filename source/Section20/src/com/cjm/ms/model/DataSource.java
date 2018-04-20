@@ -110,7 +110,6 @@ public class DataSource {
         // Resources implement AutoCloseable.
         try(Statement statement = conn.createStatement();
             ResultSet results = statement.executeQuery(sb.toString())) {
-
             List<Artist> artists = new ArrayList<>();
             while(results.next()) {
                 Artist artist = new Artist();
@@ -118,12 +117,46 @@ public class DataSource {
                 artist.setName(results.getString(INDEX_ARTIST_NAME));
                 artists.add(artist);
             }
-
             return artists;
         } catch(SQLException e) {
             System.out.println("Query failed: " + e.getMessage());
+            return null;
+        }
+    }
+
+    public List<String> queryAlbumsForArtist(String artistName, int sortOrder) {
+        // SELECT albums.name FROM albums INNER JOIN artists ON albums.artist = artists._id
+        // WHERE artists.name = "Carole King" ORDER BY albums.name COLLATE NOCASE ASC
+        StringBuilder sb = new StringBuilder("SELECT ");
+        sb.append(TABLE_ALBUMS).append('.').append(COL_ALBUM_NAME);
+        sb.append(" FROM ");
+        sb.append(TABLE_ALBUMS);
+        sb.append(" INNER JOIN ");
+        sb.append(TABLE_ARTISTS);
+        sb.append(" ON ");
+        sb.append(TABLE_ALBUMS).append('.').append(COL_ALBUM_ARTIST);
+        sb.append(" = ");
+        sb.append(TABLE_ARTISTS).append('.').append(COL_ARTIST_ID);
+        sb.append(" WHERE ");
+        sb.append(TABLE_ARTISTS).append('.').append(COL_ARTIST_NAME);
+        sb.append(" = \"").append(artistName).append("\"");
+        if(sortOrder != ORDER_BY_NONE) {
+            sb.append(" ORDER BY ");
+            sb.append(TABLE_ALBUMS).append('.').append(COL_ALBUM_NAME);
+            sb.append(" COLLATE NOCASE ");
+            sb.append((sortOrder == ORDER_BY_DESC) ? "DESC" : "ASC");
         }
 
-        return null;
+        try(Statement statement = conn.createStatement();
+            ResultSet results = statement.executeQuery(sb.toString())) {
+            List<String> albums = new ArrayList<>();
+            while(results.next()) {
+                albums.add(results.getString(1));
+            }
+            return albums;
+        } catch(SQLException e) {
+            System.out.println("Query failed: " + e.getMessage());
+            return null;
+        }
     }
 }

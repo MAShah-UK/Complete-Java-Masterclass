@@ -92,9 +92,17 @@ public class Main {
         DataSource dataSource = new DataSource();
         dataSource.open();
 
+        System.out.println("List of artists: ");
         List<Artist> artists = dataSource.queryArtist(DataSource.ORDER_BY_ASC);
         for(Artist artist: artists) {
-            System.out.println("ID: " + artist.getId() + ", Name: " + artist.getName());
+            System.out.println("\tID: " + artist.getId() + ", Name: " + artist.getName());
+        }
+        System.out.println();
+
+        System.out.println("Albums by Iron Maiden: ");
+        List<String> albumsForArtist = dataSource.queryAlbumsForArtist("Iron Maiden", DataSource.ORDER_BY_ASC);
+        for (String album: albumsForArtist) {
+            System.out.println("\t" + album);
         }
 
         dataSource.close();
