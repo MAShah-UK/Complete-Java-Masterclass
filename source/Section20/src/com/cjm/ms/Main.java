@@ -2,6 +2,7 @@ package com.cjm.ms;
 
 import com.cjm.ms.model.Artist;
 import com.cjm.ms.model.DataSource;
+import com.cjm.ms.model.SongArtist;
 
 import java.sql.*;
 import java.util.List;
@@ -104,6 +105,19 @@ public class Main {
         for (String album: albumsForArtist) {
             System.out.println("\t" + album);
         }
+        System.out.println();
+
+        System.out.println("The song Heartless is by: ");
+        List<SongArtist> songArtists = dataSource.queryArtistsForSongs("Heartless", DataSource.ORDER_BY_ASC);
+        for(SongArtist songArtist: songArtists) {
+            System.out.println("\tName: " + songArtist.getArtistName() +
+                    ", Album: " + songArtist.getAlbumName() +
+                    ", Track: " + songArtist.getTrack());
+        }
+        System.out.println();
+
+        System.out.println("Get songs table metadata: ");
+        dataSource.querySongsMetadata();
 
         dataSource.close();
     }
