@@ -124,6 +124,19 @@ public class Main {
         System.out.println();
 
         dataSource.createViewForSongArtists();
+        System.out.println();
+
+        System.out.println("Go Your Own Way is by:");
+        songArtists = dataSource.querySongInfoView("Go Your Own Way");
+        if(songArtists.isEmpty()) {
+            System.out.println("Couldn't find the artist for the song.");
+        } else {
+            for(SongArtist artist: songArtists) {
+                System.out.println("\t Artist's name: " + artist.getArtistName() +
+                                " Album's name: " + artist.getAlbumName() +
+                                " Track number: " + artist.getTrack());
+            }
+        }
 
         dataSource.close();
     }

@@ -258,4 +258,28 @@ public class DataSource implements AutoCloseable {
             return false;
         }
     }
+
+    public List<SongArtist> querySongInfoView(String title) {
+        String sql = new StringBuilder()
+                .append("SELECT ").append(COL_ARTIST_NAME).append(", ").append(COL_SONG_ALBUM).append(", ")
+                .append(COL_SONG_TITLE)
+                .append(" FROM ").append(TABLE_ARTIST_SONG_VIEW)
+                .append(" WHERE ").append(COL_SONG_TITLE).append(" = \"").append(title).append("\"")
+                .toString();
+        try(Statement statement = conn.createStatement();
+            ResultSet results = statement.executeQuery(sql)) {
+            List<SongArtist> songArtists = new ArrayList<>();
+            while(results.next()) {
+                SongArtist songArtist = new SongArtist();
+                songArtist.setArtistName(results.getString(1));
+                songArtist.setAlbumName(results.getString(2));
+                songArtist.setTrack(results.getInt(3));
+                songArtists.add(songArtist);
+            }
+            return songArtists;
+        } catch(SQLException e) {
+            System.out.println("Query failed: " + e.getMessage());
+            return null;
+        }
+    }
 }
