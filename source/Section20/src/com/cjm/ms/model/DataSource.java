@@ -4,33 +4,35 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataSource {
+public class DataSource implements AutoCloseable {
     private static final String DB_NAME = "music.db";
     private static final String CONNECTION_STRING = "jdbc:sqlite:Data\\" + DB_NAME;
 
-    private static final String TABLE_ARTISTS = "artists";
-    private static final String COL_ARTIST_ID = "_id";
-    private static final String COL_ARTIST_NAME = "name";
-    private static final int INDEX_ARTIST_ID = 1;
-    private static final int INDEX_ARTIST_NAME = 2;
+    public static final String TABLE_ARTISTS = "artists";
+    public static final String COL_ARTIST_ID = "_id";
+    public static final String COL_ARTIST_NAME = "name";
+    public static final int INDEX_ARTIST_ID = 1;
+    public static final int INDEX_ARTIST_NAME = 2;
 
-    private static final String TABLE_ALBUMS = "albums";
-    private static final String COL_ALBUM_ID = "_id";
-    private static final String COL_ALBUM_NAME = "name";
-    private static final String COL_ALBUM_ARTIST = "artist";
-    private static final int INDEX_ALBUM_ID = 1;
-    private static final int INDEX_ALBUM_NAME = 2;
-    private static final int INDEX_ALBUM_ARTIST = 3;
+    public static final String TABLE_ALBUMS = "albums";
+    public static final String COL_ALBUM_ID = "_id";
+    public static final String COL_ALBUM_NAME = "name";
+    public static final String COL_ALBUM_ARTIST = "artist";
+    public static final int INDEX_ALBUM_ID = 1;
+    public static final int INDEX_ALBUM_NAME = 2;
+    public static final int INDEX_ALBUM_ARTIST = 3;
 
-    private static final String TABLE_SONGS = "songs";
-    private static final String COL_SONG_ID = "_id";
-    private static final String COL_SONG_TRACK = "track";
-    private static final String COL_SONG_TITLE = "title";
-    private static final String COL_SONG_ALBUM = "album";
-    private static final int INDEX_SONG_ID = 1;
-    private static final int INDEX_SONG_TRACK = 2;
-    private static final int INDEX_SONG_TITLE = 3;
-    private static final int INDEX_SONG_ALBUM = 4;
+    public static final String TABLE_SONGS = "songs";
+    public static final String COL_SONG_ID = "_id";
+    public static final String COL_SONG_TRACK = "track";
+    public static final String COL_SONG_TITLE = "title";
+    public static final String COL_SONG_ALBUM = "album";
+    public static final int INDEX_SONG_ID = 1;
+    public static final int INDEX_SONG_TRACK = 2;
+    public static final int INDEX_SONG_TITLE = 3;
+    public static final int INDEX_SONG_ALBUM = 4;
+
+    public static final String TABLE_ARTIST_SONG_VIEW = "artist_list";
 
     public static final int ORDER_BY_NONE = 1;
     public static final int ORDER_BY_ASC = 2;
@@ -47,6 +49,7 @@ public class DataSource {
         return conn != null;
     }
 
+    @Override
     public void close() {
         try {
             if(conn != null) {
@@ -124,6 +127,7 @@ public class DataSource {
         }
     }
 
+    // Practice working on SQL queries with basic joins and constraints.
     public List<String> queryAlbumsForArtist(String artistName, int sortOrder) {
         // SELECT albums.name FROM albums INNER JOIN artists ON albums.artist = artists._id
         // WHERE artists.name = "Carole King" ORDER BY albums.name COLLATE NOCASE ASC
@@ -160,6 +164,7 @@ public class DataSource {
         }
     }
 
+    // Practice working with complex SQL queries with multi-joins, constraints, and ordering.
     public List<SongArtist> queryArtistsForSongs(String songName, int sortOrder) {
         StringBuilder query = new StringBuilder()
                 .append("SELECT ").append(TABLE_ARTISTS).append('.').append(COL_ARTIST_NAME).append(", ")
@@ -198,6 +203,7 @@ public class DataSource {
         }
     }
 
+    // Practice getting column metadata.
     public void querySongsMetadata() {
         String sql = "SELECT * FROM " + TABLE_SONGS;
         try(Statement statement = conn.createStatement();
@@ -210,6 +216,46 @@ public class DataSource {
             }
         } catch(SQLException e) {
             System.out.println("Query failed: " + e.getMessage());
+        }
+    }
+
+    // Practice working with SQL functions.
+    public void getCount(String table) {
+        String sql = "SELECT COUNT(*) AS count, MIN(_id) AS min_id FROM " + table;
+        try(Statement statement = conn.createStatement();
+            ResultSet results = statement.executeQuery(sql)) {
+            int count = results.getInt("count");
+            int min = results.getInt("min_id");
+            System.out.format("Count = %d, Min = %d.", count, min);
+        } catch(SQLException e) {
+            System.out.println("Query failed: " + e.getMessage());
+        }
+    }
+
+    // Practice working with views.
+    public boolean createViewForSongArtists() {
+        String sql = new StringBuilder()
+                .append("CREATE VIEW IF NOT EXISTS ").append(TABLE_ARTIST_SONG_VIEW).append(" AS ")
+                .append("SELECT ").append(TABLE_ARTISTS).append('.').append(COL_ARTIST_NAME).append(", ")
+                .append(TABLE_ALBUMS).append('.').append(COL_ALBUM_NAME).append(" AS ").append(COL_SONG_ALBUM).append(", ")
+                .append(TABLE_SONGS).append('.').append(COL_SONG_TRACK).append(", ").append(TABLE_SONGS).append('.').append(COL_SONG_TITLE)
+                .append(" FROM ").append(TABLE_SONGS)
+                .append(" INNER JOIN ").append(TABLE_ALBUMS).append(" ON ")
+                .append(TABLE_SONGS).append('.').append(COL_SONG_ALBUM).append(" = ")
+                .append(TABLE_ALBUMS).append('.').append(COL_ALBUM_ID)
+                .append(" INNER JOIN ").append(TABLE_ARTISTS).append(" ON ")
+                .append(TABLE_ALBUMS).append('.').append(COL_ALBUM_ARTIST).append(" = ")
+                .append(TABLE_ARTISTS).append('.').append(COL_ARTIST_ID)
+                .append(" ORDER BY ").append(TABLE_ARTISTS).append('.').append(COL_ARTIST_NAME).append(", ")
+                .append(TABLE_ALBUMS).append('.').append(COL_ALBUM_NAME).append(", ")
+                .append(TABLE_SONGS).append('.').append(COL_SONG_TRACK).toString();
+
+        try(Statement statement = conn.createStatement()) {
+            statement.execute(sql);
+            return true;
+        } catch(SQLException e) {
+            System.out.println("Query failed: " + e.getMessage());
+            return false;
         }
     }
 }

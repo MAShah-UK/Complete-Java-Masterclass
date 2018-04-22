@@ -118,6 +118,12 @@ public class Main {
 
         System.out.println("Get songs table metadata: ");
         dataSource.querySongsMetadata();
+        System.out.println();
+
+        dataSource.getCount(DataSource.TABLE_SONGS);
+        System.out.println();
+
+        dataSource.createViewForSongArtists();
 
         dataSource.close();
     }
