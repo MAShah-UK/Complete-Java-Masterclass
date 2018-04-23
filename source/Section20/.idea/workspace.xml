@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="de6daf4e-eb37-42f1-baab-bc989f081a83" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/data/testjava.db" afterPath="$PROJECT_DIR$/data/testjava.db" />
-      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/model/DataSource.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/model/DataSource.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
