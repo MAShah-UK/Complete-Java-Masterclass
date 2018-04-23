@@ -6,6 +6,7 @@ import com.cjm.ms.model.SongArtist;
 
 import java.sql.*;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -126,8 +127,11 @@ public class Main {
         dataSource.createViewForSongArtists();
         System.out.println();
 
-        System.out.println("Go Your Own Way is by:");
-        songArtists = dataSource.querySongInfoView("Go Your Own Way");
+        Scanner sc = new Scanner(System.in);
+        // This is really bad. Allows SQL injection.
+        System.out.println("Enter a song title: ");
+        String title = sc.nextLine();
+        songArtists = dataSource.querySongInfoView(title);
         if(songArtists.isEmpty()) {
             System.out.println("Couldn't find the artist for the song.");
         } else {

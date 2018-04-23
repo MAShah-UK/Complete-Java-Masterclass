@@ -39,10 +39,18 @@ public class DataSource implements AutoCloseable {
     public static final int ORDER_BY_DESC = 3;
 
     private Connection conn;
+    private PreparedStatement querySongInfoView;
 
     public boolean open() {
         try {
             conn = DriverManager.getConnection(CONNECTION_STRING);
+
+            String queryViewSongInfoPrep = new StringBuilder()
+                    .append("SELECT ").append(COL_ARTIST_NAME).append(", ").append(COL_SONG_ALBUM).append(", ")
+                    .append(COL_SONG_TRACK)
+                    .append(" FROM ").append(TABLE_ARTIST_SONG_VIEW)
+                    .append(" WHERE ").append(" = ?").toString();
+            querySongInfoView = conn.prepareStatement(queryViewSongInfoPrep);
         } catch(SQLException e) {
             System.out.println("Couldn't connect to database: " + e.getMessage());
         }
@@ -52,6 +60,9 @@ public class DataSource implements AutoCloseable {
     @Override
     public void close() {
         try {
+            if(querySongInfoView != null) {
+                querySongInfoView.close();
+            }
             if(conn != null) {
                 conn.close();
             }
@@ -260,15 +271,10 @@ public class DataSource implements AutoCloseable {
     }
 
     public List<SongArtist> querySongInfoView(String title) {
-        String sql = new StringBuilder()
-                .append("SELECT ").append(COL_ARTIST_NAME).append(", ").append(COL_SONG_ALBUM).append(", ")
-                .append(COL_SONG_TITLE)
-                .append(" FROM ").append(TABLE_ARTIST_SONG_VIEW)
-                .append(" WHERE ").append(COL_SONG_TITLE).append(" = \"").append(title).append("\"")
-                .toString();
-        try(Statement statement = conn.createStatement();
-            ResultSet results = statement.executeQuery(sql)) {
+        try {
             List<SongArtist> songArtists = new ArrayList<>();
+            querySongInfoView.setString(1, title);
+            ResultSet results = querySongInfoView.executeQuery();
             while(results.next()) {
                 SongArtist songArtist = new SongArtist();
                 songArtist.setArtistName(results.getString(1));
