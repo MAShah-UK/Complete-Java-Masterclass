@@ -40,6 +40,11 @@ public class DataSource implements AutoCloseable {
 
     private Connection conn;
     private PreparedStatement querySongInfoView;
+    private PreparedStatement insertIntoArtists;
+    private PreparedStatement insertIntoAlbums;
+    private PreparedStatement insertIntoSongs;
+    private PreparedStatement queryArtist;
+    private PreparedStatement queryAlbum;
 
     public boolean open() {
         try {
@@ -51,6 +56,35 @@ public class DataSource implements AutoCloseable {
                     .append(" FROM ").append(TABLE_ARTIST_SONG_VIEW)
                     .append(" WHERE ").append(" = ?").toString();
             querySongInfoView = conn.prepareStatement(queryViewSongInfoPrep);
+
+            String insertArtist = new StringBuilder().append("INSERT INTO ")
+                    .append(TABLE_ARTISTS).append('(').append(COL_ARTIST_NAME).append(')')
+                    .append(" VALUES(?)")
+                    .toString();
+            // Returns the ID for the new entry.
+            insertIntoArtists = conn.prepareStatement(insertArtist, Statement.RETURN_GENERATED_KEYS);
+
+            String insertAlbum = new StringBuilder().append("INSERT INTO ").append(TABLE_ALBUMS)
+                    .append('(').append(COL_ALBUM_NAME).append(", ").append(COL_ALBUM_ARTIST).append(") VALUES(?, ?)")
+                    .toString();
+            insertIntoAlbums = conn.prepareStatement(insertAlbum, Statement.RETURN_GENERATED_KEYS);
+
+            String insertSong = new StringBuilder().append("INSERT INTO ").append(TABLE_SONGS)
+                    .append('(').append(COL_SONG_TRACK).append(", ").append(COL_SONG_TITLE).append(", ")
+                    .append(COL_SONG_ALBUM).append(") VALUES(?, ?, ?)").toString();
+            insertIntoSongs = conn.prepareStatement(insertSong, Statement.RETURN_GENERATED_KEYS);
+
+            String sqlQueryArtist = new StringBuilder()
+                    .append("SELECT ").append(COL_ARTIST_ID)
+                    .append(" FROM ").append(TABLE_ARTISTS)
+                    .append(" WHERE ").append(COL_ARTIST_NAME).append(" = ?").toString();
+            queryArtist = conn.prepareStatement(sqlQueryArtist);
+
+            String sqlQueryAlbum = new StringBuilder()
+                    .append("SELECT ").append(COL_ALBUM_ID)
+                    .append(" FROM ").append(TABLE_ALBUMS)
+                    .append(" WHERE ").append(COL_ALBUM_NAME).append(" = ?").toString();
+            queryAlbum = conn.prepareStatement(sqlQueryAlbum);
         } catch(SQLException e) {
             System.out.println("Couldn't connect to database: " + e.getMessage());
         }
@@ -62,6 +96,21 @@ public class DataSource implements AutoCloseable {
         try {
             if(querySongInfoView != null) {
                 querySongInfoView.close();
+            }
+            if(insertIntoArtists != null) {
+                insertIntoArtists.close();
+            }
+            if(insertIntoAlbums != null) {
+                insertIntoAlbums.close();
+            }
+            if(insertIntoSongs != null) {
+                insertIntoSongs.close();
+            }
+            if(queryArtist != null) {
+                queryArtist.close();
+            }
+            if(queryAlbum != null) {
+                queryAlbum.close();
             }
             if(conn != null) {
                 conn.close();
@@ -287,5 +336,9 @@ public class DataSource implements AutoCloseable {
             System.out.println("Query failed: " + e.getMessage());
             return null;
         }
+    }
+
+    public void ins() {
+
     }
 }

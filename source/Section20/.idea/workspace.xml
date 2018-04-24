@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de6daf4e-eb37-42f1-baab-bc989f081a83" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
+      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/model/DataSource.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/model/DataSource.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +32,8 @@
       <file leaf-file-name="DataSource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/model/DataSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="276" column="63" lean-forward="false" selection-start-line="276" selection-start-column="63" selection-end-line="276" selection-end-column="63" />
+            <state relative-caret-position="20">
+              <caret line="94" column="13" lean-forward="false" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#queryArtist#0;class#DataSource#0" expanded="false" />
@@ -532,8 +532,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/model/DataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="276" column="63" lean-forward="false" selection-start-line="276" selection-start-column="63" selection-end-line="276" selection-end-column="63" />
+        <state relative-caret-position="20">
+          <caret line="94" column="13" lean-forward="false" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#queryArtist#0;class#DataSource#0" expanded="false" />
