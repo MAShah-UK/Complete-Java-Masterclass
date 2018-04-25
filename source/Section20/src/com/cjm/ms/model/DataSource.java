@@ -1,5 +1,6 @@
 package com.cjm.ms.model;
 
+import javax.xml.transform.Result;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -338,7 +339,80 @@ public class DataSource implements AutoCloseable {
         }
     }
 
-    public void ins() {
+    private int insertArtist(String name) throws SQLException {
+        queryArtist.setString(1, name);
+        ResultSet results = queryArtist.executeQuery();
+        if(results.next()) {
+            return results.getInt(1);
+        } else {
+            // Insert the artist.
+            insertIntoArtists.setString(1, name);
+            int affectedRows = insertIntoArtists.executeUpdate();
+            if(affectedRows != 1) {
+                throw new SQLException("Couldn't insert artist.");
+            }
+            ResultSet generatedKeys = insertIntoArtists.getGeneratedKeys();
+            if(generatedKeys.next()) {
+                return generatedKeys.getInt(1);
+            } else {
+                throw new SQLException("Couldn't get _id for artist.");
+            }
+        }
+    }
 
+    private int insertAlbum(String name, int artistId) throws SQLException {
+        queryAlbum.setString(1, name);
+        ResultSet results = queryAlbum.executeQuery();
+        if(results.next()) {
+            return results.getInt(1);
+        } else {
+            // Insert the artist.
+            insertIntoAlbums.setString(1, name);
+            insertIntoAlbums.setInt(2, artistId);
+            int affectedRows = insertIntoAlbums.executeUpdate();
+            if(affectedRows != 1) {
+                throw new SQLException("Couldn't insert album.");
+            }
+            ResultSet generatedKeys = insertIntoAlbums.getGeneratedKeys();
+            if(generatedKeys.next()) {
+                return generatedKeys.getInt(1);
+            } else {
+                throw new SQLException("Couldn't get _id for album.");
+            }
+        }
+    }
+
+    private int insertSong(String title, String artist, String album, int track) {
+        try {
+            conn.setAutoCommit(false);
+
+            int artistId = insertArtist(artist);
+            int albumId = insertAlbum(album, artistId);
+            insertIntoSongs.setInt(1, track);
+            insertIntoSongs.setString(2, title);
+            insertIntoSongs.setInt(3, albumId);
+
+            int affectedRows = insertIntoSongs.executeUpdate();
+            if(affectedRows == 1) {
+                conn.commit();
+            } else {
+                throw new SQLException("Song insert failed.");
+            }
+        } catch(SQLException e) {
+            System.out.println("Insert song exception: " + e.getMessage());
+            try {
+                System.out.println("Performing rollback.");
+                conn.rollback();
+            } catch(SQLException e2) {
+                System.out.println("Couldn't rollback: " + e2.getMessage());
+            }
+        } finally {
+            try {
+                System.out.println("Resetting default commit behaviour.");
+                conn.setAutoCommit(true);
+            } catch(SQLException e) {
+                System.out.println("Couldn't reset auto-commit: " + e.getMessage());
+            }
+        }
     }
 }
