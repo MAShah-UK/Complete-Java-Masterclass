@@ -129,7 +129,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         // This is really bad. Allows SQL injection.
-        System.out.println("Enter a song title: ");
+        System.out.println("Enter a song title: "); // Go Your Own Way.
         String title = sc.nextLine();
         songArtists = dataSource.querySongInfoView(title);
         if(songArtists.isEmpty()) {
@@ -141,6 +141,8 @@ public class Main {
                                 " Track number: " + artist.getTrack());
             }
         }
+
+        dataSource.insertSong("Touch of Grey", "Grateful Dead", "In The Dark", 1);
 
         dataSource.close();
     }

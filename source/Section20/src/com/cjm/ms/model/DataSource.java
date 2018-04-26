@@ -382,8 +382,10 @@ public class DataSource implements AutoCloseable {
         }
     }
 
-    private int insertSong(String title, String artist, String album, int track) {
+    public void insertSong(String title, String artist, String album, int track) {
         try {
+            // Normally each SQL statement is treated as a transaction.
+            // By disabling auto-commit, we can treat groups of statements as transactions.
             conn.setAutoCommit(false);
 
             int artistId = insertArtist(artist);
@@ -398,7 +400,7 @@ public class DataSource implements AutoCloseable {
             } else {
                 throw new SQLException("Song insert failed.");
             }
-        } catch(SQLException e) {
+        } catch(Exception e) { // Catch all exceptions otherwise setAutoCommit(true) will save changes inappropriately.
             System.out.println("Insert song exception: " + e.getMessage());
             try {
                 System.out.println("Performing rollback.");
