@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dcf8d1c-1418-495c-bab2-808272efe1c8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Section14/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../Section14/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Section14/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../Section14/out/production/Section14/sample/sample.fxml" afterPath="$PROJECT_DIR$/../Section14/out/production/Section14/sample/sample.fxml" />
+      <change beforePath="$PROJECT_DIR$/../Section14/src/sample/Main.java" afterPath="$PROJECT_DIR$/../Section14/src/sample/Main.java" />
+      <change beforePath="$PROJECT_DIR$/../Section14/src/sample/sample.fxml" afterPath="$PROJECT_DIR$/../Section14/src/sample/sample.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -541,6 +542,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="514" column="22" lean-forward="false" selection-start-line="514" selection-start-column="22" selection-end-line="514" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -986,6 +988,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="514" column="22" lean-forward="false" selection-start-line="514" selection-start-column="22" selection-end-line="514" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
