@@ -29,7 +29,7 @@ Tim Buchalka covers various language fundamentals from the most basic concepts t
 * Section 17: Lambda expressions
 * Section 18: Regular expressions
 * Section 19: Debugging and unit testing
-* Section 20: Databases (50%)
+* Section 20: Databases (80%)
 * Section 21: Networking
 * Section 22: Java 9 module system
 * Section 23: Migrating Java projects to Java 9
