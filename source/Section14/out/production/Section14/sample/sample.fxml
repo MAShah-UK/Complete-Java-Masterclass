@@ -5,15 +5,31 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.layout.ColumnConstraints?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <columnConstraints>
-        <ColumnConstraints percentWidth="50.0"></ColumnConstraints>
-        <ColumnConstraints percentWidth="50.0"></ColumnConstraints>
-    </columnConstraints>
-    <Button text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
-    <Button text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
-    <Button text="Button Three" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-    <Button text="Really Long Button Four" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
-    <Button text="Button Five" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
-</GridPane>
+<!--<GridPane fx:controller="sample.Controller"-->
+          <!--xmlns:fx="http://javafx.com/fxml" alignment="top_center" hgap="10" vgap="10" gridLinesVisible="true">-->
+    <!--<padding>-->
+        <!--<Insets top="10"/>-->
+    <!--</padding>-->
+    <!--&lt;!&ndash;<columnConstraints>&ndash;&gt;-->
+        <!--&lt;!&ndash;<ColumnConstraints percentWidth="50.0"></ColumnConstraints>&ndash;&gt;-->
+        <!--&lt;!&ndash;<ColumnConstraints percentWidth="50.0"></ColumnConstraints>&ndash;&gt;-->
+    <!--&lt;!&ndash;</columnConstraints>&ndash;&gt;-->
+    <!--<Button text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"-->
+        <!--GridPane.halignment="RIGHT"/>-->
+    <!--<Button text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>-->
+    <!--<Button text="Button Three" GridPane.rowIndex="1" GridPane.columnIndex="0"/>-->
+    <!--<Button text="Button Five" GridPane.rowIndex="2" GridPane.columnIndex="0"/>-->
+    <!--<Button text="Really Long Button Four" GridPane.rowIndex="3" GridPane.columnIndex="0"-->
+        <!--GridPane.columnSpan="2"/>-->
+<!--</GridPane>-->
+<?import javafx.scene.layout.HBox?>
+<HBox fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="bottom_right"
+    style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed"
+    spacing="10">
+    <padding>
+        <Insets bottom="10" right="10"/>
+    </padding>
+    <Button text="Okay" prefWidth="90"/>
+    <Button text="Cancel" prefWidth="90"/>
+    <Button text="Help" prefWidth="90"/>
+</HBox>
