@@ -41,7 +41,7 @@ public class Main extends Application {
 //        root.getChildren().add(greeting);
 
         primaryStage.setTitle("Hello JavaFX");
-        primaryStage.setScene(new Scene(root, 500, 275));
+        primaryStage.setScene(new Scene(root, 800, 500));
         primaryStage.show();
     }
 
