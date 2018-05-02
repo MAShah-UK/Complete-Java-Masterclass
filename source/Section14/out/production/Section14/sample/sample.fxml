@@ -1,7 +1,23 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Button?>
-<GridPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
-    <Button text="Click Me" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="CENTER">
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="Click Me">
+    <graphic>
+        <ImageView>
+            <Image url="@/toolbarButtonGraphics/general/TipOfTheDay24.gif"/>
+        </ImageView>
+    </graphic>
+    </Button>
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="This is a label">
+        <graphic>
+            <ImageView>
+                <Image url="@/toolbarButtonGraphics/general/Information24.gif"/>
+            </ImageView>
+        </graphic>
+    </Label>
 </GridPane>
 
 <!--<?import javafx.scene.layout.StackPane?>-->
