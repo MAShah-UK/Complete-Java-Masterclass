@@ -1,7 +1,10 @@
 package com.cjm.ms.todolist;
 
 import com.cjm.ms.todolist.datamodel.TodoItem;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextArea;
@@ -18,6 +21,8 @@ public class Controller {
     private ListView<TodoItem> todoListView;
     @FXML
     private TextArea itemDetailsTextArea;
+    @FXML
+    private Label deadlineLabel;
 
     @FXML
     public void initialize() {
@@ -39,16 +44,24 @@ public class Controller {
         todoItems.add(item4);
         todoItems.add(item5);
 
+        todoListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<TodoItem>() {
+            @Override
+            public void changed(ObservableValue<? extends TodoItem> observable, TodoItem oldValue, TodoItem newValue) {
+                if(newValue != null) {
+                    TodoItem item = todoListView.getSelectionModel().getSelectedItem();
+                    itemDetailsTextArea.setText(item.getDetails());
+                }
+            }
+        });
+
         todoListView.getItems().setAll(todoItems);
         todoListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        todoListView.getSelectionModel().selectFirst();
     }
     @FXML
     public void handleClickListView() {
         TodoItem item = todoListView.getSelectionModel().getSelectedItem();
-        StringBuilder str = new StringBuilder();
-        str.append(item.getDetails());
-        str.append("\n\n\n\n");
-        str.append("Due date: ").append(item.getDeadline().toString());
-        itemDetailsTextArea.setText(str.toString());
+        itemDetailsTextArea.setText(item.getDetails());
+        deadlineLabel.setText(item.getDeadline().toString());
     }
 }
