@@ -7,6 +7,10 @@ public class TodoItem {
     private String details;
     private LocalDate deadline;
 
+    @Override
+    public String toString() {
+        return shortDescription;
+    }
     public TodoItem(String shortDescription, String details, LocalDate deadline) {
         this.shortDescription = shortDescription;
         this.details = details;
