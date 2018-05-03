@@ -1,4 +1,4 @@
-package sample;
+package com.cjm.hellojavafx;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -73,7 +73,6 @@ public class Controller {
         helloButton.setDisable(disableButtons);
         byeButton.setDisable(disableButtons);
     }
-
     @FXML
     public void handleChange() { // Automatically called when checkbox is interacted with.
         String postfix = clearCheckBox.isSelected() ? "checked" : "not checked";
