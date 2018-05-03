@@ -2,17 +2,9 @@ package sample;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.GridPane;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
-
-import java.awt.*;
 
 public class Main extends Application {
 
@@ -21,7 +13,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 
 //        // Equivalent to .fxml:
-//        <GridPane fx:controller="sample.Controller"
+//        <GridPane fx:controller="Controller"
 //                xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
 //            <Label text="Welcome to JavaFX!" textFill="blue">
 //                <font>
