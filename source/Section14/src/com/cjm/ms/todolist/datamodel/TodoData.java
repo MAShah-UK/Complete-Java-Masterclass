@@ -34,9 +34,9 @@ public class TodoData {
         return todoItems;
     }
 
-    public void setTodoItems(List<TodoItem> todoItems) {
-        this.todoItems = todoItems;
-    }
+//    public void setTodoItems(List<TodoItem> todoItems) {
+//        this.todoItems = todoItems;
+//    }
 
     public void loadTodoItems() throws IOException {
         todoItems = FXCollections.observableArrayList();
@@ -45,7 +45,7 @@ public class TodoData {
         String input;
         try(BufferedReader br = Files.newBufferedReader(path)) {
             while((input = br.readLine()) != null) {
-                String[] itemPieces = input.split('\t');
+                String[] itemPieces = input.split("\t");
                 String shortDescription = itemPieces[0];
                 String details = itemPieces[1];
                 String dateString = itemPieces[2];
