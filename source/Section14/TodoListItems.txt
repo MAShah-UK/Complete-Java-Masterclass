@@ -4,3 +4,4 @@ Finish design proposal for client	I promised Mike I'd email website mockups by F
 Pickup Doug at the train station	Doug's arriving on March 23 on the 5:00 train.	23-03-2016
 Pickup dry cleaning	The clothes should be ready by Wednesday.	20-04-2016
 New TodoItem Test	Testing to see if adding a new item to the todo list works as intended.	08-05-2018
+Due Tomorrow Cell Factory Highlight Test	The list view item for this entry should be blue.	09-05-2018
