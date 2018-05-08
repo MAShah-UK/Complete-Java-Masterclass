@@ -55,7 +55,6 @@ public class TodoData {
             }
         }
     }
-
     public void storeTodoItems() throws IOException {
         Path path = Paths.get(fileName);
         try(BufferedWriter bw = Files.newBufferedWriter(path)) {
@@ -69,5 +68,11 @@ public class TodoData {
                 bw.newLine();
             }
         }
+    }
+    public List<TodoItem> getTodoItem(TodoItem item) {
+        return todoItems;
+    }
+    public void addTodoItem(TodoItem item) {
+        todoItems.add(item);
     }
 }
