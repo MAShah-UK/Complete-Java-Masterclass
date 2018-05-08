@@ -1,6 +1,7 @@
 package com.cjm.ms.todolist.datamodel;
 
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,7 +12,6 @@ import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Iterator;
-import java.util.List;
 
 // Singleton class being used to read and write TodoItems to and from disk.
 // In actual application will use XML/database to store data.
@@ -19,7 +19,7 @@ import java.util.List;
 public class TodoData {
     private static TodoData instance = new TodoData();
     private static String fileName = "TodoListItems.txt";
-    private List<TodoItem> todoItems;
+    private ObservableList<TodoItem> todoItems;
     private DateTimeFormatter formatter;
 
     private TodoData() {
@@ -30,7 +30,7 @@ public class TodoData {
         return instance;
     }
 
-    public List<TodoItem> getTodoItems() {
+    public ObservableList<TodoItem> getTodoItems() {
         return todoItems;
     }
 
@@ -69,7 +69,7 @@ public class TodoData {
             }
         }
     }
-    public List<TodoItem> getTodoItem(TodoItem item) {
+    public ObservableList<TodoItem> getTodoItem(TodoItem item) {
         return todoItems;
     }
     public void addTodoItem(TodoItem item) {

@@ -79,18 +79,18 @@ public class Controller {
             System.out.println("Couldn't load the dialog: ");
             e.printStackTrace();
         }
+
         dialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
         dialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
+
         // Waits until user interacts with dialog.
         Optional<ButtonType> result = dialog.showAndWait();
         if(result.isPresent() && result.get() == ButtonType.OK) {
             DialogController controller = fxmlLoader.getController();
             TodoItem newItem = controller.processResults();
-            todoListView.getItems().setAll(TodoData.getInstance().getTodoItems());
+            // ListView is automatically updated since it has an ObservableArrayList.
+//            todoListView.setItems(TodoData.getInstance().getTodoItems());
             todoListView.getSelectionModel().select(newItem);
-            System.out.println("OK pressed.");
-        } else {
-            System.out.println("CANCEL pressed.");
         }
     }
     @FXML
