@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TodoListItems.txt" afterPath="$PROJECT_DIR$/TodoListItems.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Section14/com/cjm/ms/todolist/mainwindow.fxml" afterPath="$PROJECT_DIR$/out/production/Section14/com/cjm/ms/todolist/mainwindow.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cjm/ms/todolist/datamodel/TodoData.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/todolist/datamodel/TodoData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cjm/ms/todolist/mainwindow.fxml" afterPath="$PROJECT_DIR$/src/com/cjm/ms/todolist/mainwindow.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,15 +66,15 @@
     <splitter split-orientation="horizontal" split-proportion="0.49822694">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="439">
-                  <caret line="158" column="46" lean-forward="false" selection-start-line="158" selection-start-column="46" selection-end-line="158" selection-end-column="46" />
+                <state relative-caret-position="490">
+                  <caret line="150" column="37" lean-forward="false" selection-start-line="150" selection-start-column="37" selection-end-line="150" selection-end-column="37" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#3688#4443#0" expanded="true" />
-                    <element signature="e#4442#4443#0" expanded="true" />
+                    <element signature="e#3731#4486#0" expanded="true" />
+                    <element signature="e#4485#4486#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -81,8 +83,8 @@
           <file leaf-file-name="DialogController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/DialogController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+                <state relative-caret-position="408">
+                  <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -90,10 +92,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TodoData.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="TodoData.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/datamodel/TodoData.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
+                <state relative-caret-position="424">
                   <caret line="78" column="31" lean-forward="false" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -122,7 +124,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/Main.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="136">
@@ -132,14 +134,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="mainwindow.fxml" pinned="false" current-in-tab="false">
+          <file leaf-file-name="mainwindow.fxml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/mainwindow.fxml">
               <provider editor-type-id="JavaFX-Scene-Builder">
                 <state />
               </provider>
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="30" column="84" lean-forward="false" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
+                <state relative-caret-position="289">
+                  <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
                   <folding />
                 </state>
               </provider>
@@ -151,8 +153,8 @@
                 <state />
               </provider>
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="206">
-                  <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+                <state relative-caret-position="240">
+                  <caret line="22" column="95" lean-forward="false" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
                   <folding />
                 </state>
               </provider>
@@ -204,11 +206,11 @@
         <option value="$PROJECT_DIR$/src/todolist/Main.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/Main.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/DialogController.java" />
-        <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/todoItemDialog.fxml" />
-        <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/mainwindow.fxml" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/datamodel/TodoItem.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/datamodel/TodoData.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/todoItemDialog.fxml" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/mainwindow.fxml" />
       </list>
     </option>
   </component>
@@ -248,6 +250,11 @@
             <path>
               <item name="Section14" type="b2602c69:ProjectViewProjectNode" />
               <item name="Section14" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Section14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Section14" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Section14" type="b2602c69:ProjectViewProjectNode" />
@@ -463,12 +470,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2071535" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13496932" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17331289" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -498,13 +505,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/cjm/ms/todolist/datamodel/TodoData.java</url>
-          <line>47</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
@@ -546,8 +546,8 @@
           <caret line="40" column="2" lean-forward="true" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3688#4443#0" expanded="true" />
-            <element signature="e#4442#4443#0" expanded="true" />
+            <element signature="e#3731#4486#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -579,8 +579,8 @@
           <caret line="54" column="71" lean-forward="false" selection-start-line="54" selection-start-column="71" selection-end-line="54" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3688#4443#0" expanded="true" />
-            <element signature="e#4442#4443#0" expanded="true" />
+            <element signature="e#3731#4486#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -795,28 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/todoItemDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/mainwindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="30" column="84" lean-forward="false" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -849,31 +827,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/DialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/todoItemDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="158" column="46" lean-forward="false" selection-start-line="158" selection-start-column="46" selection-end-line="158" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3688#4443#0" expanded="true" />
-            <element signature="e#4442#4443#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="22" column="95" lean-forward="false" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/datamodel/TodoData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="424">
           <caret line="78" column="31" lean-forward="false" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -884,6 +851,39 @@
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2760#2761#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/DialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="150" column="37" lean-forward="false" selection-start-line="150" selection-start-column="37" selection-end-line="150" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3731#4486#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/mainwindow.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>

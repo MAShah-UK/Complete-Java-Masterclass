@@ -5,3 +5,4 @@ Pickup Doug at the train station	Doug's arriving on March 23 on the 5:00 train.	
 Pickup dry cleaning	The clothes should be ready by Wednesday.	20-04-2016
 New TodoItem Test	Testing to see if adding a new item to the todo list works as intended.	08-05-2018
 Due Tomorrow Cell Factory Highlight Test	The list view item for this entry should be blue.	09-05-2018
+Future Todo Item	Since this item is due far into the future, it's text should always appear black in the list view.	27-05-2050
