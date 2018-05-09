@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TodoListItems.txt" afterPath="$PROJECT_DIR$/TodoListItems.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Section14/com/cjm/ms/todolist/mainwindow.fxml" afterPath="$PROJECT_DIR$/out/production/Section14/com/cjm/ms/todolist/mainwindow.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cjm/ms/todolist/mainwindow.fxml" afterPath="$PROJECT_DIR$/src/com/cjm/ms/todolist/mainwindow.fxml" />
     </list>
@@ -69,12 +66,14 @@
           <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="490">
-                  <caret line="150" column="37" lean-forward="false" selection-start-line="150" selection-start-column="37" selection-end-line="150" selection-end-column="37" />
+                <state relative-caret-position="266">
+                  <caret line="185" column="12" lean-forward="true" selection-start-line="185" selection-start-column="12" selection-end-line="185" selection-end-column="12" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#3731#4486#0" expanded="true" />
-                    <element signature="e#4485#4486#0" expanded="true" />
+                    <element signature="e#3661#3662#0" expanded="true" />
+                    <element signature="e#3746#3747#0" expanded="true" />
+                    <element signature="e#4268#5023#0" expanded="true" />
+                    <element signature="e#5022#5023#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -140,8 +139,8 @@
                 <state />
               </provider>
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+                <state relative-caret-position="387">
+                  <caret line="41" column="111" lean-forward="false" selection-start-line="41" selection-start-column="111" selection-end-line="41" selection-end-column="111" />
                   <folding />
                 </state>
               </provider>
@@ -209,8 +208,8 @@
         <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/datamodel/TodoItem.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/datamodel/TodoData.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/todoItemDialog.fxml" />
-        <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/mainwindow.fxml" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java" />
       </list>
     </option>
   </component>
@@ -546,8 +545,10 @@
           <caret line="40" column="2" lean-forward="true" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3731#4486#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#3661#3662#0" expanded="true" />
+            <element signature="e#3746#3747#0" expanded="true" />
+            <element signature="e#4268#5023#0" expanded="true" />
+            <element signature="e#5022#5023#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -579,8 +580,10 @@
           <caret line="54" column="71" lean-forward="false" selection-start-line="54" selection-start-column="71" selection-end-line="54" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3731#4486#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#3661#3662#0" expanded="true" />
+            <element signature="e#3746#3747#0" expanded="true" />
+            <element signature="e#4268#5023#0" expanded="true" />
+            <element signature="e#5022#5023#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -864,26 +867,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="150" column="37" lean-forward="false" selection-start-line="150" selection-start-column="37" selection-end-line="150" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3731#4486#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/mainwindow.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+        <state relative-caret-position="387">
+          <caret line="41" column="111" lean-forward="false" selection-start-line="41" selection-start-column="111" selection-end-line="41" selection-end-column="111" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/todolist/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="185" column="12" lean-forward="true" selection-start-line="185" selection-start-column="12" selection-end-line="185" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3661#3662#0" expanded="true" />
+            <element signature="e#3746#3747#0" expanded="true" />
+            <element signature="e#4268#5023#0" expanded="true" />
+            <element signature="e#5022#5023#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
