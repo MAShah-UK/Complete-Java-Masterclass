@@ -1,7 +1,7 @@
 package com.cjm.ms.todolist;
 
-import com.cjm.ms.todolist.datamodel.TodoData;
 import com.cjm.ms.todolist.datamodel.TodoItem;
+import com.cjm.ms.todolist.datamodel.TodoData;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;

@@ -1,4 +1,4 @@
-package com.cjm.hellojavafx;
+package com.cjm.ms.hellojavafx;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
