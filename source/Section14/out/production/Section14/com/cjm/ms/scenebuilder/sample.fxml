@@ -22,7 +22,7 @@
       <Label fx:id="label" text="My Label" />
       <HBox spacing="5.0" GridPane.rowIndex="1">
          <children>
-            <Button mnemonicParsing="false" onAction="#handleAction" style="-fx-text-fill: white;" text="OK">
+            <Button mnemonicParsing="false" onAction="#handleAction" text="OK">
                <HBox.margin>
                   <Insets />
                </HBox.margin></Button>
