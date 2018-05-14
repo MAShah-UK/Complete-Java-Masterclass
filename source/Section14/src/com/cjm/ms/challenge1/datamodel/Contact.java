@@ -34,6 +34,17 @@ public class Contact {
         return Objects.hash(firstName, lastName, phoneNumber, notes);
     }
 
+    public Contact() {
+        this(null, null, null, null);
+    }
+
+    public Contact(String firstName, String lastName, String phoneNumber, String notes) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.notes = notes;
+    }
+
     public String getFirstName() {
         return firstName;
     }
