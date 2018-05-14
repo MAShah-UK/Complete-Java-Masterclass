@@ -20,7 +20,7 @@
             </items>
         </Menu>
     </MenuBar>
-    <TableView editable="true" VBox.vgrow="ALWAYS">
+    <TableView fx:id="contactsTableView" editable="true" VBox.vgrow="ALWAYS">
       <columns>
          <TableColumn text="First Name" />
          <TableColumn text="Last Name" />
