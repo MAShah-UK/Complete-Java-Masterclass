@@ -27,16 +27,21 @@ import java.io.InputStream;
 
 public class ContactData {
 
-    private static final String CONTACTS_FILE =
+    private static final ContactData instance = new ContactData();
+    private final String CONTACTS_FILE =
             "src/com/cjm/ms/challenge1/contacts.xml";
 
-    private static final String CONTACT = "contact";
-    private static final String FIRST_NAME = "first_name";
-    private static final String LAST_NAME = "last_name";
-    private static final String PHONE_NUMBER = "phone_number";
-    private static final String NOTES = "notes";
+    private final String CONTACT = "contact";
+    private final String FIRST_NAME = "first_name";
+    private final String LAST_NAME = "last_name";
+    private final String PHONE_NUMBER = "phone_number";
+    private final String NOTES = "notes";
 
     private ObservableList<Contact> contacts = FXCollections.observableArrayList();
+
+    public static ContactData getInstance() {
+        return instance;
+    }
 
     public ContactData() {
         // *** initialize the contacts list here ***
