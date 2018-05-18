@@ -2,6 +2,7 @@ package com.cjm.ms.challenge1;
 
 import com.cjm.ms.challenge1.datamodel.Contact;
 import com.cjm.ms.challenge1.datamodel.ContactData;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -23,5 +24,21 @@ public class MainWindowController {
 
         ContactData.getInstance().loadContacts();
         contactsTableView.setItems(ContactData.getInstance().getContacts());
+    }
+    @FXML
+    public void handleContactsNewMenuItem() {
+
+    }
+    @FXML
+    public void handleContactsEditMenuItem() {
+
+    }
+    @FXML
+    public void handleContactsDeleteMenuItem() {
+
+    }
+    @FXML
+    public void handeContactsExitMenuItem() {
+        Platform.exit();
     }
 }
