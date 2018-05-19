@@ -1,5 +1,6 @@
 package com.cjm.ms.challenge1;
 
+import com.cjm.ms.challenge1.datamodel.Contact;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -12,4 +13,11 @@ public class ContactInfoDialogController {
     private TextField phoneNumberTextField;
     @FXML
     private TextField noteTextField;
+
+    public Contact getContactInfo() {
+        return new Contact(firstNameTextField.getText(),
+                lastNameTextField.getText(),
+                phoneNumberTextField.getText(),
+                noteTextField.getText());
+    }
 }

@@ -8,15 +8,15 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cjm.ms.challenge1.MainWindowController">
+<VBox fx:id="mainWindowRoot" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cjm.ms.challenge1.MainWindowController">
     <MenuBar>
         <Menu text="Contacts">
             <items>
-                <MenuItem text="New" onAction=""/>
-                <MenuItem text="Edit" />
-                <MenuItem text="Delete" />
+                <MenuItem text="New" onAction="#handleContactsNewMenuItem"/>
+                <MenuItem text="Edit" onAction="#handleContactsEditMenuItem"/>
+                <MenuItem text="Delete" onAction="#handleContactsDeleteMenuItem"/>
                 <SeparatorMenuItem />
-                <MenuItem text="Exit" />
+                <MenuItem text="Exit" onAction="#handeContactsExitMenuItem"/>
             </items>
         </Menu>
     </MenuBar>

@@ -7,28 +7,18 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<DialogPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cjm.ms.challenge1.MainWindowController">
+<DialogPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cjm.ms.challenge1.ContactInfoDialogController">
    <content>
       <GridPane hgap="10.0" vgap="10.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
          <children>
-            <Label text="Label" />
-            <Label text="Label" GridPane.columnIndex="1" />
-            <Label text="Label" GridPane.columnIndex="2" />
-            <Label text="Label" GridPane.columnIndex="3" />
-            <TextField GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label text="First Name" />
+            <Label text="Last Name" GridPane.columnIndex="1" />
+            <Label text="Phone Number" GridPane.columnIndex="2" />
+            <Label text="Note" GridPane.columnIndex="3" />
+            <TextField fx:id="firstNameTextField" GridPane.rowIndex="1" />
+            <TextField fx:id="lastNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="phoneNumberTextField" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="noteTextField" GridPane.columnIndex="3" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </content>
