@@ -24,4 +24,10 @@
 	<phone_number>123-555-2222</phone_number>
 	<notes>Peep peep!</notes>
 </contact>
+<contact>
+	<first_name>Tweety</first_name>
+	<last_name>Bird</last_name>
+	<phone_number>123-555-9999</phone_number>
+	<notes>Chirp chirp1</notes>
+</contact>
 </contacts>

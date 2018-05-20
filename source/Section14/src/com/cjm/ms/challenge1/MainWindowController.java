@@ -19,9 +19,13 @@ public class MainWindowController {
     @FXML
     private VBox mainWindowRoot;
     @FXML
-    private TableView contactsTableView;
+    private TableView<Contact> contactsTableView;
+
+    private Dialog<ButtonType> contactInfoDialog;
+    private ContactInfoDialogController contactInfoDialogController;
 
     public void initialize() {
+        // Load contactsTableView data.
         ((TableColumn<Contact, String>) contactsTableView.getColumns().get(0))
                 .setCellValueFactory(new PropertyValueFactory<>("firstName"));
         ((TableColumn<Contact, String>) contactsTableView.getColumns().get(1))
@@ -30,43 +34,46 @@ public class MainWindowController {
                 .setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
         ((TableColumn<Contact, String>) contactsTableView.getColumns().get(3))
                 .setCellValueFactory(new PropertyValueFactory<>("notes"));
-
         ContactData.getInstance().loadContacts();
         contactsTableView.setItems(ContactData.getInstance().getContacts());
+
+        // Define ContactsInfo dialog.
+        contactInfoDialog = new Dialog<>();
+        //contactInfoDialog.initOwner(mainWindowRoot.getScene().getWindow());
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("ContactInfoDialog.fxml"));
+        try {
+            contactInfoDialog.getDialogPane().setContent(loader.load());
+        } catch(IOException e) {
+            System.out.println("Couldn't load the contactInfoDialog: ");
+            e.printStackTrace();
+        }
+        contactInfoDialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
+        contactInfoDialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
+        contactInfoDialogController = loader.getController();
     }
     @FXML
     public void handleContactsNewMenuItem() {
-        Dialog<ButtonType> dialog = new Dialog<>();
-        dialog.initOwner(mainWindowRoot.getScene().getWindow());
-        dialog.setTitle("Add New Contact");
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("ContactInfoDialog.fxml"));
-        try {
-            dialog.getDialogPane().setContent(fxmlLoader.load());
-        } catch(IOException e) {
-            System.out.println("Couldn't load the dialog: ");
-            e.printStackTrace();
-        }
-        dialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
-        dialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
-        Optional<ButtonType> result = dialog.showAndWait();
+        contactInfoDialog.setTitle("Add New Contact");
+
+        Optional<ButtonType> result = contactInfoDialog.showAndWait();
         if(result.isPresent() && result.get() == ButtonType.OK) {
-            ContactInfoDialogController controller = fxmlLoader.getController();
-            Contact newContact = controller.getContactInfo();
+            Contact newContact = contactInfoDialogController.getContactInfo();
             ContactData.getInstance().addContact(newContact);
             contactsTableView.getSelectionModel().select(newContact);
         }
     }
     @FXML
     public void handleContactsEditMenuItem() {
-
+        contactInfoDialog.setTitle("Edit Contact");
     }
     @FXML
     public void handleContactsDeleteMenuItem() {
-
+        Contact selected = contactsTableView.getSelectionModel().getSelectedItem();
+        ContactData.getInstance().deleteContact(selected);
     }
     @FXML
-    public void handeContactsExitMenuItem() {
+    public void handleContactsExitMenuItem() {
         Platform.exit();
     }
 }
