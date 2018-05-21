@@ -20,4 +20,11 @@ public class ContactInfoDialogController {
                 phoneNumberTextField.getText(),
                 noteTextField.getText());
     }
+
+    public void setContactInfo(Contact contact) {
+        firstNameTextField.setText(contact.getFirstName());
+        lastNameTextField.setText(contact.getLastName());
+        phoneNumberTextField.setText(contact.getPhoneNumber());
+        noteTextField.setText(contact.getNotes());
+    }
 }
