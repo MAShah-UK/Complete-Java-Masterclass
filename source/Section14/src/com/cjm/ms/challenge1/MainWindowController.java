@@ -27,14 +27,6 @@ public class MainWindowController {
 
     public void initialize() {
         // Load contactsTableView data.
-        ((TableColumn<Contact, String>) contactsTableView.getColumns().get(0))
-                .setCellValueFactory(new PropertyValueFactory<>("firstName"));
-        ((TableColumn<Contact, String>) contactsTableView.getColumns().get(1))
-                .setCellValueFactory(new PropertyValueFactory<>("lastName"));
-        ((TableColumn<Contact, String>) contactsTableView.getColumns().get(2))
-                .setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
-        ((TableColumn<Contact, String>) contactsTableView.getColumns().get(3))
-                .setCellValueFactory(new PropertyValueFactory<>("notes"));
         ContactData.getInstance().loadContacts();
         contactsTableView.setItems(ContactData.getInstance().getContacts());
         contactsTableView.getSelectionModel().selectFirst();
