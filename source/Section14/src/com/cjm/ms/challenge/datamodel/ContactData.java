@@ -1,4 +1,4 @@
-package com.cjm.ms.challenge1.datamodel;
+package com.cjm.ms.challenge.datamodel;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -29,7 +29,7 @@ public class ContactData {
 
     private static final ContactData instance = new ContactData();
     private final String CONTACTS_FILE =
-            "src/com/cjm/ms/challenge1/contacts.xml";
+            "src/com/cjm/ms/challenge/contacts.xml";
 
     private final String CONTACT = "contact";
     private final String FIRST_NAME = "first_name";

@@ -1,4 +1,4 @@
-package com.cjm.ms.challenge1.datamodel;
+package com.cjm.ms.challenge.datamodel;
 
 import javafx.beans.property.SimpleStringProperty;
 

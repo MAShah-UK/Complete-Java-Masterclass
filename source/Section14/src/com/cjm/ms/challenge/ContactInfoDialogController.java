@@ -1,6 +1,6 @@
-package com.cjm.ms.challenge1;
+package com.cjm.ms.challenge;
 
-import com.cjm.ms.challenge1.datamodel.Contact;
+import com.cjm.ms.challenge.datamodel.Contact;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 

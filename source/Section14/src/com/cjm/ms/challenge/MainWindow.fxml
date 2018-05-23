@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.cell.PropertyValueFactory?>
-<VBox fx:id="mainWindowRoot" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cjm.ms.challenge1.MainWindowController">
+<VBox fx:id="mainWindowRoot" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cjm.ms.challenge.MainWindowController">
     <MenuBar>
         <Menu text="Contacts">
             <items>

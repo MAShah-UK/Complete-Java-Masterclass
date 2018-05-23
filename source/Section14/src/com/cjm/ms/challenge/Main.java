@@ -1,6 +1,6 @@
-package com.cjm.ms.challenge1;
+package com.cjm.ms.challenge;
 
-import com.cjm.ms.challenge1.datamodel.ContactData;
+import com.cjm.ms.challenge.datamodel.ContactData;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
