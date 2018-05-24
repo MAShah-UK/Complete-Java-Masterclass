@@ -28,7 +28,6 @@ public class MainWindowController {
         // Load contactsTableView data.
         ContactData.getInstance().loadContacts();
         contactsTableView.setItems(ContactData.getInstance().getContacts());
-        contactsTableView.getSelectionModel().selectFirst();
 
         // Define ContactsInfo dialog.
         contactInfoDialog = new Dialog<>();
@@ -45,9 +44,10 @@ public class MainWindowController {
         contactInfoDialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
         contactInfoDialogController = loader.getController();
     }
-    public void showNoContactWarning() {
+    public void showNoContactSelectedWarning() {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("No Contact Selected");
+        alert.setHeaderText(null);
         alert.setContentText("Please select a contact to edit.");
         alert.showAndWait();
     }
@@ -57,15 +57,12 @@ public class MainWindowController {
         Contact selected = contactsTableView.getSelectionModel().getSelectedItem();
         if(selected != null) {
             contactInfoDialogController.setContactInfo(selected);
-
-            Optional<ButtonType> result = contactInfoDialog.showAndWait();
-            if(result.isPresent() && result.get() == ButtonType.OK) {
-                Contact newContact = contactInfoDialogController.getContactInfo();
-                ContactData.getInstance().addContact(newContact);
-                contactsTableView.getSelectionModel().select(newContact);
-            }
-        } else {
-            showNoContactWarning();
+        }
+        Optional<ButtonType> result = contactInfoDialog.showAndWait();
+        if(result.isPresent() && result.get() == ButtonType.OK) {
+            Contact newContact = contactInfoDialogController.getContactInfo();
+            ContactData.getInstance().addContact(newContact);
+            contactsTableView.getSelectionModel().select(newContact);
         }
     }
     @FXML
@@ -85,13 +82,25 @@ public class MainWindowController {
                 contacts.remove(tmp);
             }
         } else {
-            showNoContactWarning();
+            showNoContactSelectedWarning();
         }
     }
     @FXML
     public void handleContactsDeleteMenuItem() {
         Contact selected = contactsTableView.getSelectionModel().getSelectedItem();
-        ContactData.getInstance().deleteContact(selected);
+        if(selected != null) {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Delete Contact");
+            alert.setHeaderText(null);
+            alert.setContentText("Are you sure you want to delete contact: " +
+                    selected.getFirstName() + " " + selected.getLastName() + "?");
+            Optional<ButtonType> result = alert.showAndWait();
+            if(result.isPresent() && result.get() == ButtonType.OK) {
+                ContactData.getInstance().deleteContact(selected);
+            }
+        } else {
+            showNoContactSelectedWarning();
+        }
     }
     @FXML
     public void handleContactsExitMenuItem() {
