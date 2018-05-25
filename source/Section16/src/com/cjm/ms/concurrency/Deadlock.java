@@ -1,4 +1,4 @@
-package com.cjm.ms;
+package com.cjm.ms.concurrency;
 
 public class Deadlock {
     public static Object lock1 = new Object();

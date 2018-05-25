@@ -1,4 +1,4 @@
-package com.cjm.ms;
+package com.cjm.ms.concurrency;
 
 public class CountdownThread extends Thread {
     private Countdown cd;

@@ -1,12 +1,12 @@
-package com.cjm.ms;
+package com.cjm.ms.concurrency;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static com.cjm.ms.Colour.*;
-import static com.cjm.ms.CountdownThread.CallMethod.*;
+import static com.cjm.ms.concurrency.Colour.*;
+import static com.cjm.ms.concurrency.CountdownThread.CallMethod.*;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {

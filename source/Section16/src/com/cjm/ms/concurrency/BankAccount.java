@@ -1,4 +1,4 @@
-package com.cjm.ms;
+package com.cjm.ms.concurrency;
 
 // We could have two people using a joint bank account at the same time.
 // Create and start two threads that use the same BankAccount instance and an initial balance of $1000.00.

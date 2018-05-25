@@ -1,4 +1,4 @@
-package com.cjm.ms;
+package com.cjm.ms.concurrency;
 
 // Not guaranteed to work on other IDEs.
 public class Colour {

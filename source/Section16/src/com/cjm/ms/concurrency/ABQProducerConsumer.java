@@ -1,4 +1,4 @@
-package com.cjm.ms;
+package com.cjm.ms.concurrency;
 
 import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;

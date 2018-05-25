@@ -1,6 +1,6 @@
-package com.cjm.ms;
+package com.cjm.ms.concurrency;
 
-import static com.cjm.ms.Colour.ANSI_BLUE;
+import static com.cjm.ms.concurrency.Colour.ANSI_BLUE;
 
 public class AnotherThread extends Thread {
     @Override

@@ -1,4 +1,4 @@
-package com.cjm.ms;
+package com.cjm.ms.concurrency;
 
 // Challenge 8:
 // Spot and fix the problem.
