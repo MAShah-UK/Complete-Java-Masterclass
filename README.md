@@ -23,9 +23,9 @@ Tim Buchalka covers various language fundamentals from the most basic concepts t
 * ✓ Section 11: Generics
 * ✓ Section 12: Naming conventions and packages / static and final keywords
 * ✓ Section 13: Collections
-* Section 14: JavaFX
+* ✓ Section 14: JavaFX
 * Section 15: Basic input and output including java.util
-* Section 16: Concurrency (90%)
+* Section 16: Concurrency
 * Section 17: Lambda expressions
 * Section 18: Regular expressions
 * Section 19: Debugging and unit testing
