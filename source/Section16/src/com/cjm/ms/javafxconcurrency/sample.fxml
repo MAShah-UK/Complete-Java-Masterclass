@@ -12,7 +12,10 @@
           prefHeight="400.0" prefWidth="600.0" alignment="CENTER">
     <Button text="Get Employee Names" onAction="#buttonPressed"
             GridPane.rowIndex="0" GridPane.columnIndex="0" />
-    <ListView fx:id="listView" GridPane.rowIndex="1" GridPane.columnIndex="0" />
-    <ProgressBar fx:id="progressBar" GridPane.rowIndex="2" GridPane.columnIndex="0" />
-    <Label fx:id="progressLabel" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+    <ListView fx:id="listView"
+              GridPane.rowIndex="1" GridPane.columnIndex="0" />
+    <ProgressBar fx:id="progressBar" visible="false"
+                 GridPane.rowIndex="2" GridPane.columnIndex="0" />
+    <Label fx:id="progressLabel" visible="false"
+           GridPane.rowIndex="3" GridPane.columnIndex="0" />
 </GridPane>
