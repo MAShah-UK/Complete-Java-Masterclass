@@ -10,21 +10,22 @@ import static com.cjm.ms.concurrency.CountdownThread.CallMethod.*;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        //createThreads();
-        //createCountdown();
-        //createReaderWriter();
-        //createProducerConsumer();
-        //createExecSrv();
-        //createBlockingQueue();
-        //createDeadlock1();
-        //createDeadlock2();
-        //createStarvation();
-        //createFairLock();
-        //createLivelock();
+        createThreads();
+        createCountdown();
+        createReaderWriter();
+        createProducerConsumer();
+        createExecSrv();
+        createBlockingQueue();
+        createDeadlock1();
+        createDeadlock2();
+        createStarvation();
+        createFairLock();
+        createLivelock();
         createJointBankAccount();
         createBankAccounts();
-        createTutorStudentPair();
-        createTutorStudentPair2();
+        // The following methods deadlock.
+        //createTutorStudentPair();
+        //createTutorStudentPair2();
     }
 
     // Practice creating threads using various methods.
@@ -471,6 +472,8 @@ public class Main {
 
     // Practice working with threads via challenge 8.
     public static void createTutorStudentPair() throws InterruptedException {
+        System.out.println("\nBEGIN createTutorStudentPair");
+
         final Tutor tutor = new Tutor();
         final Student student = new Student(tutor);
         tutor.setStudent(student);
@@ -498,6 +501,8 @@ public class Main {
 
     // Practice working with threads via challenge 9.
     public static void createTutorStudentPair2() throws InterruptedException {
+        System.out.println("\nBEGIN createTutorStudentPair2");
+
         final NewTutor tutor = new NewTutor();
         final NewStudent student = new NewStudent(tutor);
         tutor.setStudent(student);
