@@ -45,6 +45,7 @@ public class DataSource implements AutoCloseable {
     private PreparedStatement insertIntoSongs;
     private PreparedStatement queryArtist;
     private PreparedStatement queryAlbum;
+    private PreparedStatement queryAlbumsByArtistId;
 
     private static DataSource instance = new DataSource(); // Thread safe.
 
@@ -99,6 +100,12 @@ public class DataSource implements AutoCloseable {
                     .append(" FROM ").append(TABLE_ALBUMS)
                     .append(" WHERE ").append(COL_ALBUM_NAME).append(" = ?").toString();
             queryAlbum = conn.prepareStatement(sqlQueryAlbum);
+
+            String sqlQueryAlbumsByArtistId = new StringBuilder()
+                    .append("SELECT * FROM ").append(TABLE_ALBUMS)
+                    .append(" WHERE ").append(COL_ALBUM_ARTIST).append(" = ?")
+                    .append(" ORDERBY ").append(COL_ALBUM_NAME).append(" COLLATE NOCASE").toString();
+            queryAlbumsByArtistId = conn.prepareStatement(sqlQueryAlbumsByArtistId);
         } catch(SQLException e) {
             System.out.println("Couldn't connect to database: " + e.getMessage());
         }
@@ -125,6 +132,9 @@ public class DataSource implements AutoCloseable {
             }
             if(queryAlbum != null) {
                 queryAlbum.close();
+            }
+            if(queryAlbumsByArtistId != null) {
+                queryAlbumsByArtistId.close();
             }
             if(conn != null) {
                 conn.close();

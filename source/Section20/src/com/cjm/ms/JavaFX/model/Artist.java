@@ -5,22 +5,22 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class Artist {
     // SimpleXProperty is required for data binding.
-    private SimpleIntegerProperty id;
-    private SimpleStringProperty name;
+    private SimpleIntegerProperty id = new SimpleIntegerProperty();
+    private SimpleStringProperty name = new SimpleStringProperty();
 
-    public SimpleIntegerProperty getId() {
-        return id;
+    public int getId() {
+        return id.get();
     }
 
-    public void setId(SimpleIntegerProperty id) {
-        this.id = id;
+    public void setId(int id) {
+        this.id.set(id);
     }
 
-    public SimpleStringProperty getName() {
-        return name;
+    public String getName() {
+        return name.get();
     }
 
-    public void setName(SimpleStringProperty name) {
-        this.name = name;
+    public void setName(String name) {
+        this.name.set(name);
     }
 }

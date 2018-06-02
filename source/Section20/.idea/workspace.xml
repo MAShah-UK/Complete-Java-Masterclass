@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de6daf4e-eb37-42f1-baab-bc989f081a83" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
-      <change beforePath="$PROJECT_DIR$/../Section14/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Section14/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/../Section14/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Section14/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Controller.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/main.fxml" afterPath="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/main.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/Artist.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/Artist.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/DataSource.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/DataSource.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,83 +16,105 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1259#1260#0" expanded="true" />
-                <element signature="e#1287#1288#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Artist.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/Artist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/main.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="20" column="60" lean-forward="false" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataSource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/DataSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="192" column="43" lean-forward="false" selection-start-line="192" selection-start-column="43" selection-end-line="192" selection-end-column="43" />
-              <folding>
-                <element signature="method#open#0;class#DataSource#0" expanded="false" />
-                <element signature="method#close#0;class#DataSource#0" expanded="false" />
-                <element signature="e#5646#5683#0" expanded="false" />
-                <element signature="e#7369#7460#0" expanded="false" />
-                <element signature="method#queryAlbumsForArtist#0;class#DataSource#0" expanded="false" />
-                <element signature="e#8291#8374#0" expanded="false" />
-                <element signature="method#querySongsMetadata#0;class#DataSource#0" expanded="false" />
-                <element signature="method#getCount#0;class#DataSource#0" expanded="false" />
-                <element signature="method#createViewForSongArtists#0;class#DataSource#0" expanded="false" />
-                <element signature="method#insertArtist#0;class#DataSource#0" expanded="false" />
-                <element signature="method#insertAlbum#0;class#DataSource#0" expanded="false" />
-                <element signature="method#insertSong#0;class#DataSource#0" expanded="false" />
-                <element signature="e#14479#14538#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="339">
+                  <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1392#1393#0" expanded="true" />
+                    <element signature="e#1420#1421#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Controller.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Artist.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/Artist.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.fxml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/main.fxml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="20" column="60" lean-forward="false" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+                  <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="JavaFX-Scene-Builder">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DataSource.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/DataSource.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="206">
+                  <caret line="107" column="82" lean-forward="false" selection-start-line="107" selection-start-column="82" selection-end-line="107" selection-end-column="82" />
+                  <folding>
+                    <element signature="e#6208#6245#0" expanded="false" />
+                    <element signature="e#7931#8022#0" expanded="false" />
+                    <element signature="method#queryAlbumsForArtist#0;class#DataSource#0" expanded="false" />
+                    <element signature="e#8853#8936#0" expanded="false" />
+                    <element signature="method#querySongsMetadata#0;class#DataSource#0" expanded="false" />
+                    <element signature="method#getCount#0;class#DataSource#0" expanded="false" />
+                    <element signature="method#createViewForSongArtists#0;class#DataSource#0" expanded="false" />
+                    <element signature="method#insertArtist#0;class#DataSource#0" expanded="false" />
+                    <element signature="method#insertAlbum#0;class#DataSource#0" expanded="false" />
+                    <element signature="method#insertSong#0;class#DataSource#0" expanded="false" />
+                    <element signature="e#15041#15100#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Artist.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/Artist.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#373#374#0" expanded="true" />
+                    <element signature="e#404#405#0" expanded="true" />
+                    <element signature="e#437#438#0" expanded="true" />
+                    <element signature="e#468#469#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -138,11 +156,11 @@
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Console/Main.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/sample.fxml" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/SongArtist.java" />
-        <option value="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/DataSource.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/main.fxml" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Main.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/Artist.java" />
-        <option value="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/main.fxml" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/DataSource.java" />
       </list>
     </option>
   </component>
@@ -247,8 +265,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -293,8 +313,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,13 +423,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.49784714" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.49784714" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.50215286" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32858595" sideWeight="0.507535" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858595" sideWeight="0.49461788" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32858595" sideWeight="0.49246502" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -451,12 +469,75 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/Artist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="60" lean-forward="false" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="192" column="43" lean-forward="false" selection-start-line="192" selection-start-column="43" selection-end-line="192" selection-end-column="43" />
+          <folding>
+            <element signature="e#6208#6245#0" expanded="false" />
+            <element signature="e#7931#8022#0" expanded="false" />
+            <element signature="method#queryAlbumsForArtist#0;class#DataSource#0" expanded="false" />
+            <element signature="e#8853#8936#0" expanded="false" />
+            <element signature="method#querySongsMetadata#0;class#DataSource#0" expanded="false" />
+            <element signature="method#getCount#0;class#DataSource#0" expanded="false" />
+            <element signature="method#createViewForSongArtists#0;class#DataSource#0" expanded="false" />
+            <element signature="method#insertArtist#0;class#DataSource#0" expanded="false" />
+            <element signature="method#insertAlbum#0;class#DataSource#0" expanded="false" />
+            <element signature="method#insertSong#0;class#DataSource#0" expanded="false" />
+            <element signature="e#15041#15100#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -487,19 +568,17 @@
         <state relative-caret-position="1309">
           <caret line="294" column="5" lean-forward="false" selection-start-line="294" selection-start-column="5" selection-end-line="294" selection-end-column="5" />
           <folding>
-            <element signature="method#open#0;class#DataSource#0" expanded="false" />
-            <element signature="method#close#0;class#DataSource#0" expanded="false" />
-            <element signature="e#5646#5683#0" expanded="false" />
-            <element signature="e#7369#7460#0" expanded="false" />
+            <element signature="e#6208#6245#0" expanded="false" />
+            <element signature="e#7931#8022#0" expanded="false" />
             <element signature="method#queryAlbumsForArtist#0;class#DataSource#0" expanded="false" />
-            <element signature="e#8291#8374#0" expanded="false" />
+            <element signature="e#8853#8936#0" expanded="false" />
             <element signature="method#querySongsMetadata#0;class#DataSource#0" expanded="false" />
             <element signature="method#getCount#0;class#DataSource#0" expanded="false" />
             <element signature="method#createViewForSongArtists#0;class#DataSource#0" expanded="false" />
             <element signature="method#insertArtist#0;class#DataSource#0" expanded="false" />
             <element signature="method#insertAlbum#0;class#DataSource#0" expanded="false" />
             <element signature="method#insertSong#0;class#DataSource#0" expanded="false" />
-            <element signature="e#14479#14538#0" expanded="false" />
+            <element signature="e#15041#15100#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -671,21 +750,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/Song.java" />
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/SongArtist.java" />
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.graphics/javafx/application/Application.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/main.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="340">
           <caret line="20" column="60" lean-forward="false" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
           <folding />
         </state>
@@ -694,24 +761,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/DataSource.java">
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="192" column="43" lean-forward="false" selection-start-line="192" selection-start-column="43" selection-end-line="192" selection-end-column="43" />
+        <state relative-caret-position="339">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="method#open#0;class#DataSource#0" expanded="false" />
-            <element signature="method#close#0;class#DataSource#0" expanded="false" />
-            <element signature="e#5646#5683#0" expanded="false" />
-            <element signature="e#7369#7460#0" expanded="false" />
-            <element signature="method#queryAlbumsForArtist#0;class#DataSource#0" expanded="false" />
-            <element signature="e#8291#8374#0" expanded="false" />
-            <element signature="method#querySongsMetadata#0;class#DataSource#0" expanded="false" />
-            <element signature="method#getCount#0;class#DataSource#0" expanded="false" />
-            <element signature="method#createViewForSongArtists#0;class#DataSource#0" expanded="false" />
-            <element signature="method#insertArtist#0;class#DataSource#0" expanded="false" />
-            <element signature="method#insertAlbum#0;class#DataSource#0" expanded="false" />
-            <element signature="method#insertSong#0;class#DataSource#0" expanded="false" />
-            <element signature="e#14479#14538#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -728,10 +785,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/JavaFX/model/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="107" column="82" lean-forward="false" selection-start-line="107" selection-start-column="82" selection-end-line="107" selection-end-column="82" />
+          <folding>
+            <element signature="e#6208#6245#0" expanded="false" />
+            <element signature="e#7931#8022#0" expanded="false" />
+            <element signature="method#queryAlbumsForArtist#0;class#DataSource#0" expanded="false" />
+            <element signature="e#8853#8936#0" expanded="false" />
+            <element signature="method#querySongsMetadata#0;class#DataSource#0" expanded="false" />
+            <element signature="method#getCount#0;class#DataSource#0" expanded="false" />
+            <element signature="method#createViewForSongArtists#0;class#DataSource#0" expanded="false" />
+            <element signature="method#insertArtist#0;class#DataSource#0" expanded="false" />
+            <element signature="method#insertAlbum#0;class#DataSource#0" expanded="false" />
+            <element signature="method#insertSong#0;class#DataSource#0" expanded="false" />
+            <element signature="e#15041#15100#0" expanded="false" />
           </folding>
         </state>
       </provider>
