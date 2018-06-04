@@ -104,7 +104,7 @@ public class DataSource implements AutoCloseable {
             String sqlQueryAlbumsByArtistId = new StringBuilder()
                     .append("SELECT * FROM ").append(TABLE_ALBUMS)
                     .append(" WHERE ").append(COL_ALBUM_ARTIST).append(" = ?")
-                    .append(" ORDERBY ").append(COL_ALBUM_NAME).append(" COLLATE NOCASE").toString();
+                    .append(" ORDER BY ").append(COL_ALBUM_NAME).append(" COLLATE NOCASE").toString();
             queryAlbumsByArtistId = conn.prepareStatement(sqlQueryAlbumsByArtistId);
         } catch(SQLException e) {
             System.out.println("Couldn't connect to database: " + e.getMessage());
@@ -207,6 +207,25 @@ public class DataSource implements AutoCloseable {
             return artists;
         } catch(SQLException e) {
             System.out.println("Query failed: " + e.getMessage());
+            return null;
+        }
+    }
+
+    public List<Album> queryAlbumsForArtistId(int id) {
+        try {
+            queryAlbumsByArtistId.setInt(1, id);
+            ResultSet results = queryAlbumsByArtistId.executeQuery();
+            List<Album> albums = new ArrayList<>();
+            while(results.next()) {
+                Album album = new Album();
+                album.setId(results.getInt(1));
+                album.setName(results.getString(2));
+                album.setArtistId(id);
+                albums.add(album);
+            }
+            return albums;
+        } catch(SQLException e) {
+            System.out.println("Query failed: " + e.getMessage() + ".");
             return null;
         }
     }

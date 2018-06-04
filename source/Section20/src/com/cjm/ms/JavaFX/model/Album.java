@@ -1,31 +1,34 @@
 package com.cjm.ms.JavaFX.model;
 
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+
 public class Album {
-    private int id;
-    private String name;
-    private int artistId;
+    private SimpleIntegerProperty id = new SimpleIntegerProperty();
+    private SimpleStringProperty name = new SimpleStringProperty();
+    private SimpleIntegerProperty artistId = new SimpleIntegerProperty();
 
     public int getId() {
-        return id;
+        return id.get();
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.id.set(id);
     }
 
     public String getName() {
-        return name;
+        return name.get();
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name.set(name);
     }
 
     public int getArtistId() {
-        return artistId;
+        return artistId.get();
     }
 
     public void setArtistId(int artistId) {
-        this.artistId = artistId;
+        this.artistId.set(artistId);
     }
 }
