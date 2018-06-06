@@ -144,7 +144,7 @@ public class DataSource implements AutoCloseable {
         }
     }
 
-    public List<Artist> queryArtist(int sortOrder) {
+    public List<Artist> queryArtists(int sortOrder) {
 //        Statement statement = null;
 //        ResultSet results = null;
 //        // Messy way of dealing with resources.
@@ -199,6 +199,12 @@ public class DataSource implements AutoCloseable {
             ResultSet results = statement.executeQuery(sb.toString())) {
             List<Artist> artists = new ArrayList<>();
             while(results.next()) {
+                try {
+                    // Simulate slow access to database.
+                    Thread.sleep(20);
+                } catch(InterruptedException e) {
+                    System.out.println("Interrupted: " + e.getMessage());
+                }
                 Artist artist = new Artist();
                 artist.setId(results.getInt(INDEX_ARTIST_ID));
                 artist.setName(results.getString(INDEX_ARTIST_NAME));
