@@ -46,6 +46,7 @@ public class DataSource implements AutoCloseable {
     private PreparedStatement queryArtist;
     private PreparedStatement queryAlbum;
     private PreparedStatement queryAlbumsByArtistId;
+    private PreparedStatement updateArtistName;
 
     private static DataSource instance = new DataSource(); // Thread safe.
 
@@ -69,7 +70,8 @@ public class DataSource implements AutoCloseable {
                     .append("SELECT ").append(COL_ARTIST_NAME).append(", ").append(COL_SONG_ALBUM).append(", ")
                     .append(COL_SONG_TRACK)
                     .append(" FROM ").append(TABLE_ARTIST_SONG_VIEW)
-                    .append(" WHERE ").append(COL_SONG_TITLE).append(" = ?").toString();
+                    .append(" WHERE ").append(COL_SONG_TITLE).append(" = ?")
+                    .toString();
             querySongInfoView = conn.prepareStatement(queryViewSongInfoPrep);
 
             String insertArtist = new StringBuilder().append("INSERT INTO ")
@@ -86,26 +88,37 @@ public class DataSource implements AutoCloseable {
 
             String insertSong = new StringBuilder().append("INSERT INTO ").append(TABLE_SONGS)
                     .append('(').append(COL_SONG_TRACK).append(", ").append(COL_SONG_TITLE).append(", ")
-                    .append(COL_SONG_ALBUM).append(") VALUES(?, ?, ?)").toString();
+                    .append(COL_SONG_ALBUM).append(") VALUES(?, ?, ?)")
+                    .toString();
             insertIntoSongs = conn.prepareStatement(insertSong, Statement.RETURN_GENERATED_KEYS);
 
             String sqlQueryArtist = new StringBuilder()
                     .append("SELECT ").append(COL_ARTIST_ID)
                     .append(" FROM ").append(TABLE_ARTISTS)
-                    .append(" WHERE ").append(COL_ARTIST_NAME).append(" = ?").toString();
+                    .append(" WHERE ").append(COL_ARTIST_NAME).append(" = ?")
+                    .toString();
             queryArtist = conn.prepareStatement(sqlQueryArtist);
 
             String sqlQueryAlbum = new StringBuilder()
                     .append("SELECT ").append(COL_ALBUM_ID)
                     .append(" FROM ").append(TABLE_ALBUMS)
-                    .append(" WHERE ").append(COL_ALBUM_NAME).append(" = ?").toString();
+                    .append(" WHERE ").append(COL_ALBUM_NAME).append(" = ?")
+                    .toString();
             queryAlbum = conn.prepareStatement(sqlQueryAlbum);
 
             String sqlQueryAlbumsByArtistId = new StringBuilder()
                     .append("SELECT * FROM ").append(TABLE_ALBUMS)
                     .append(" WHERE ").append(COL_ALBUM_ARTIST).append(" = ?")
-                    .append(" ORDER BY ").append(COL_ALBUM_NAME).append(" COLLATE NOCASE").toString();
+                    .append(" ORDER BY ").append(COL_ALBUM_NAME).append(" COLLATE NOCASE")
+                    .toString();
             queryAlbumsByArtistId = conn.prepareStatement(sqlQueryAlbumsByArtistId);
+
+            final String UPDATE_ARTIST_NAME = new StringBuilder()
+                    .append("UPDATE ").append(TABLE_ARTISTS)
+                    .append(" SET ").append(COL_ARTIST_NAME).append(" = ?")
+                    .append(" WHERE ").append(COL_ARTIST_ID).append(" = ?")
+                    .toString();
+            updateArtistName = conn.prepareStatement(UPDATE_ARTIST_NAME);
         } catch(SQLException e) {
             System.out.println("Couldn't connect to database: " + e.getMessage());
         }
@@ -135,6 +148,9 @@ public class DataSource implements AutoCloseable {
             }
             if(queryAlbumsByArtistId != null) {
                 queryAlbumsByArtistId.close();
+            }
+            if(updateArtistName != null) {
+                updateArtistName.close();
             }
             if(conn != null) {
                 conn.close();
@@ -369,6 +385,18 @@ public class DataSource implements AutoCloseable {
             } else {
                 throw new SQLException("Couldn't get _id for album.");
             }
+        }
+    }
+
+    public boolean updateArtistName(int id, String newName) {
+        try {
+            updateArtistName.setString(1, newName);
+            updateArtistName.setInt(2, id);
+            int affectedRecords = updateArtistName.executeUpdate();
+            return affectedRecords == 1;
+        } catch(SQLException e) {
+            System.out.println("Update failed: " + e.getMessage() + ".");
+            return false;
         }
     }
 

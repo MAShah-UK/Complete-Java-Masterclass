@@ -46,6 +46,26 @@ public class Controller {
         artistTable.itemsProperty().bind(task.valueProperty());
         new Thread(task).start();
     }
+    @FXML
+    public void updateArtists() {
+        // Normally would get the user's selection, but to save time and avoid writing
+        // a custom dialog to get user input, we're assuming they want rename
+        // the third element to AC/DC.
+        final Artist artist = (Artist) artistTable.getItems().get(2);
+        Task<Boolean> task = new Task<Boolean>() {
+            @Override
+            protected Boolean call() throws Exception {
+                return DataSource.getInstance().updateArtistName(artist.getId(), "AC/DC");
+            }
+        };
+        task.setOnSucceeded(e -> {
+            if(task.valueProperty().get()) {
+                artist.setName("AC/DC");
+                artistTable.refresh();
+            }
+        });
+        new Thread(task).start();
+    }
 }
 
 class GetAllArtistsTask extends Task {
