@@ -5,10 +5,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        divideLBYL(50, 0);
-        divideEAFP(50, 0);
-        getInt();
-        getIntLBYL();
+        System.out.println("The result of 50/0 is: ");
+        System.out.println(divideLBYL(50, 0));
+        System.out.println();
+
+        System.out.println("The result of 50/0 is: ");
+        System.out.println(divideEAFP(50, 0));
+        System.out.println();
+
+        System.out.println("User input:");
+        System.out.println(getInt());
+        System.out.println();
+
+        System.out.println("User input:");
+        System.out.println(getIntLBYL());
+        System.out.println();
+
+        System.out.println("User inputs:");
+        System.out.println(userDivide());
+        System.out.println();
     }
     /*
         Uses 'look before you leap' concept in which you ensure
@@ -47,7 +62,7 @@ public class Main {
         System.out.print("Enter an integer (validated, won't crash): ");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        for(char symbol : input) {
+        for(char symbol : input.toCharArray()) {
             if (!Character.isDigit(symbol)) {
                 System.out.println("Invalid input.");
                 return 0;
@@ -62,11 +77,26 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int value = 0;
         try {
-            int value = scanner.nextInt();
+            value = scanner.nextInt();
             System.out.println("Valid input.");
         } catch(InputMismatchException e) {
             System.out.println("Invalid input.");
         }
+        return value;
+    }
+    // Handles multiple exceptions.
+    private static double userDivide() {
+        double value = 0;
+        try {
+            double x = getInt();
+            double y = getInt();
+            value = x/y;
+        } catch(InputMismatchException e) {
+            System.out.println("Invalid input: Only digits are accepted.");
+        } catch(ArithmeticException e) {
+            System.out.println("Invalid input: Can't divide by zero.");
+        }
+        System.out.println("Valid input.");
         return value;
     }
 }
