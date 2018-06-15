@@ -22,7 +22,11 @@ public class Main {
         System.out.println();
 
         System.out.println("User inputs:");
-        System.out.println(userDivide());
+        try {
+            System.out.println(userDivide());
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
         System.out.println();
     }
     /*
@@ -95,10 +99,11 @@ public class Main {
                 double y = getInt();
                 value = x/y;
                 isValid = true;
-            } catch(InputMismatchException e) {
+            } catch(InputMismatchException e) { // Can catch multiple exceptions in one statement using |.
                 System.out.println("Invalid input: Only digits are accepted.");
             } catch(ArithmeticException e) {
-                System.out.println("Invalid input: Can't divide by zero.");
+                // Propagates exception to allow caller to deal with it.
+                throw new ArithmeticException("Invalid input: Can't divide by zero.");
             }
         }
         System.out.println("Valid input.");
