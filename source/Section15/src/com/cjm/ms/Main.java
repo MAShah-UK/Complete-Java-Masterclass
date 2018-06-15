@@ -87,14 +87,19 @@ public class Main {
     // Handles multiple exceptions.
     private static double userDivide() {
         double value = 0;
-        try {
-            double x = getInt();
-            double y = getInt();
-            value = x/y;
-        } catch(InputMismatchException e) {
-            System.out.println("Invalid input: Only digits are accepted.");
-        } catch(ArithmeticException e) {
-            System.out.println("Invalid input: Can't divide by zero.");
+        boolean isValid = false;
+        // Forces user to enter valid input.
+        while(!isValid) {
+            try {
+                double x = getInt();
+                double y = getInt();
+                value = x/y;
+                isValid = true;
+            } catch(InputMismatchException e) {
+                System.out.println("Invalid input: Only digits are accepted.");
+            } catch(ArithmeticException e) {
+                System.out.println("Invalid input: Can't divide by zero.");
+            }
         }
         System.out.println("Valid input.");
         return value;
