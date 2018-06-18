@@ -1,5 +1,7 @@
 package com.cjm.ms;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -8,6 +10,34 @@ import java.util.Set;
 public class Locations implements Map<Integer, Location> {
     private static Map<Integer, Location> locations = new HashMap<>();
 
+    public static void main(String[] args) {
+        FileWriter locFile = null;
+        try {
+            // Throws a checked exception which must be handled to avoid compilation errors.
+            // Will throw an IOException if 'locations.txt' exists as a directory.
+            locFile = new FileWriter("locations.txt");
+            for(Location location: locations.values()) {
+                locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
+            }
+            // Bad idea to close resources in try block. Might not run if exception is thrown.
+            // locFile.close();
+        } catch(IOException e) {
+            System.out.println("In catch block.");
+            e.printStackTrace();
+        } finally {
+            // Can have try-catch blocks within try-catch blocks.
+            try {
+                if (locFile != null) {
+                    System.out.println("Attempting to close locFile.");
+                    locFile.close();
+                }
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    // The static initializer block is the first code block to run when the class is loaded.
     static {
         Map<String, Integer> tempExit;
         locations.put(0, new Location(0, "You are sitting in front of a computer learning Java.", null));
