@@ -10,33 +10,6 @@ import java.util.Set;
 public class Locations implements Map<Integer, Location> {
     private static Map<Integer, Location> locations = new HashMap<>();
 
-    public static void main(String[] args) {
-        FileWriter locFile = null;
-        try {
-            // Throws a checked exception which must be handled to avoid compilation errors.
-            // Will throw an IOException if 'locations.txt' exists as a directory.
-            locFile = new FileWriter("locations.txt");
-            for(Location location: locations.values()) {
-                locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
-            }
-            // Bad idea to close resources in try block. Might not run if exception is thrown.
-            // locFile.close();
-        } catch(IOException e) {
-            System.out.println("In catch block.");
-            e.printStackTrace();
-        } finally {
-            // Can have try-catch blocks within try-catch blocks.
-            try {
-                if (locFile != null) {
-                    System.out.println("Attempting to close locFile.");
-                    locFile.close();
-                }
-            } catch(IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
     // The static initializer block is the first code block to run when the class is loaded.
     static {
         Map<String, Integer> tempExit;
@@ -68,7 +41,60 @@ public class Locations implements Map<Integer, Location> {
         locations.put(5, new Location(5, "You are in the forest.", tempExit));
     }
 
-    // Override methods, but call HashMap implementations of them.
+    public static void main(String[] args) throws IOException {
+//        // Original.
+//        FileWriter locFile = null;
+//        try {
+//            // Throws a checked exception which must be handled to avoid compilation errors.
+//            // Will throw an IOException if 'locations.txt' exists as a directory.
+//            locFile = new FileWriter("locations.txt");
+//            for(Location location: locations.values()) {
+//                locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
+//            }
+//            // Bad idea to close resources in try block. Might not run if exception is thrown.
+//            // locFile.close();
+//        } catch(IOException e) {
+//            System.out.println("In catch block.");
+//            e.printStackTrace();
+//        } finally {
+//            // Can have try-catch blocks within try-catch blocks.
+//            try {
+//                if (locFile != null) {
+//                    System.out.println("Attempting to close locFile.");
+//                    locFile.close();
+//                }
+//            } catch(IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+
+//        // After propagating IOException.
+//        FileWriter locFile = null;
+//        try {
+//            locFile = new FileWriter("locations.txt");
+//            for(Location location: locations.values()) {
+//                locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
+//            }
+//        } finally {
+//            if (locFile != null) {
+//                System.out.println("Attempting to close locFile.");
+//                locFile.close();
+//            }
+//        }
+
+        // After using try-with-resources statement.
+        // After propagating IOException, and using try-with-resources statement.
+        // Classes must implement AutoCloseable to do this.
+        // Multiple resources can be listed, use semicolons on all but the last.
+        // Java automatically calls the close method on each resource to release it.
+        try(FileWriter locFile = new FileWriter("locations.txt")) {
+            for(Location location: locations.values()) {
+                locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
+            }
+        }
+    }
+
+    // Override methods by redirecting them to the HashMap implementation.
 
     @Override
     public int size() {
