@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746f24a7-17d6-4699-8ebe-f8816175b077" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Locations.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Locations.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,7 +20,7 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
+                <state relative-caret-position="442">
                   <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -37,34 +38,33 @@
           <file leaf-file-name="Locations.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Locations.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="231">
-                  <caret line="96" column="73" lean-forward="false" selection-start-line="96" selection-start-column="73" selection-end-line="96" selection-end-column="73" />
+                <state relative-caret-position="352">
+                  <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="initializer##0;class#Locations#0" expanded="false" />
-                    <element signature="e#1613#1635#0" expanded="false" />
-                    <element signature="e#3995#3996#0" expanded="true" />
-                    <element signature="e#4034#4035#0" expanded="true" />
-                    <element signature="e#4080#4081#0" expanded="true" />
-                    <element signature="e#4122#4123#0" expanded="true" />
-                    <element signature="e#4182#4183#0" expanded="true" />
-                    <element signature="e#4231#4232#0" expanded="true" />
-                    <element signature="e#4295#4296#0" expanded="true" />
-                    <element signature="e#4348#4349#0" expanded="true" />
-                    <element signature="e#4401#4402#0" expanded="true" />
-                    <element signature="e#4442#4443#0" expanded="true" />
-                    <element signature="e#4512#4513#0" expanded="true" />
-                    <element signature="e#4560#4561#0" expanded="true" />
-                    <element signature="e#4616#4617#0" expanded="true" />
-                    <element signature="e#4660#4661#0" expanded="true" />
-                    <element signature="e#4794#4795#0" expanded="true" />
-                    <element signature="e#4827#4828#0" expanded="true" />
-                    <element signature="e#4877#4878#0" expanded="true" />
-                    <element signature="e#4918#4919#0" expanded="true" />
-                    <element signature="e#4976#4977#0" expanded="true" />
-                    <element signature="e#5017#5018#0" expanded="true" />
-                    <element signature="e#5086#5087#0" expanded="true" />
-                    <element signature="e#5129#5130#0" expanded="true" />
+                    <element signature="e#2554#2576#0" expanded="false" />
+                    <element signature="e#5305#5306#0" expanded="true" />
+                    <element signature="e#5344#5345#0" expanded="true" />
+                    <element signature="e#5390#5391#0" expanded="true" />
+                    <element signature="e#5432#5433#0" expanded="true" />
+                    <element signature="e#5492#5493#0" expanded="true" />
+                    <element signature="e#5541#5542#0" expanded="true" />
+                    <element signature="e#5605#5606#0" expanded="true" />
+                    <element signature="e#5658#5659#0" expanded="true" />
+                    <element signature="e#5711#5712#0" expanded="true" />
+                    <element signature="e#5752#5753#0" expanded="true" />
+                    <element signature="e#5822#5823#0" expanded="true" />
+                    <element signature="e#5870#5871#0" expanded="true" />
+                    <element signature="e#5926#5927#0" expanded="true" />
+                    <element signature="e#5970#5971#0" expanded="true" />
+                    <element signature="e#6104#6105#0" expanded="true" />
+                    <element signature="e#6137#6138#0" expanded="true" />
+                    <element signature="e#6187#6188#0" expanded="true" />
+                    <element signature="e#6228#6229#0" expanded="true" />
+                    <element signature="e#6286#6287#0" expanded="true" />
+                    <element signature="e#6327#6328#0" expanded="true" />
+                    <element signature="e#6396#6397#0" expanded="true" />
+                    <element signature="e#6439#6440#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -137,6 +137,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,10 +163,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,7 +271,6 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -293,6 +292,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -323,34 +323,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Locations.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="96" column="73" lean-forward="false" selection-start-line="96" selection-start-column="73" selection-end-line="96" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2554#2576#0" expanded="false" />
+            <element signature="e#5305#5306#0" expanded="true" />
+            <element signature="e#5344#5345#0" expanded="true" />
+            <element signature="e#5390#5391#0" expanded="true" />
+            <element signature="e#5432#5433#0" expanded="true" />
+            <element signature="e#5492#5493#0" expanded="true" />
+            <element signature="e#5541#5542#0" expanded="true" />
+            <element signature="e#5605#5606#0" expanded="true" />
+            <element signature="e#5658#5659#0" expanded="true" />
+            <element signature="e#5711#5712#0" expanded="true" />
+            <element signature="e#5752#5753#0" expanded="true" />
+            <element signature="e#5822#5823#0" expanded="true" />
+            <element signature="e#5870#5871#0" expanded="true" />
+            <element signature="e#5926#5927#0" expanded="true" />
+            <element signature="e#5970#5971#0" expanded="true" />
+            <element signature="e#6104#6105#0" expanded="true" />
+            <element signature="e#6137#6138#0" expanded="true" />
+            <element signature="e#6187#6188#0" expanded="true" />
+            <element signature="e#6228#6229#0" expanded="true" />
+            <element signature="e#6286#6287#0" expanded="true" />
+            <element signature="e#6327#6328#0" expanded="true" />
+            <element signature="e#6396#6397#0" expanded="true" />
+            <element signature="e#6439#6440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#divideLBYL#0;class#Main#0" expanded="false" />
+            <element signature="method#divideEAFP#0;class#Main#0" expanded="false" />
+            <element signature="method#getInt#0;class#Main#0" expanded="false" />
+            <element signature="method#getIntLBYL#0;class#Main#0" expanded="false" />
+            <element signature="method#getIntEAFP#0;class#Main#0" expanded="false" />
+            <element signature="method#userDivide#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Locations.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#Locations#0" expanded="false" />
-            <element signature="e#1613#1635#0" expanded="false" />
-            <element signature="e#3995#3996#0" expanded="true" />
-            <element signature="e#4034#4035#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
-            <element signature="e#4122#4123#0" expanded="true" />
-            <element signature="e#4182#4183#0" expanded="true" />
-            <element signature="e#4231#4232#0" expanded="true" />
-            <element signature="e#4295#4296#0" expanded="true" />
-            <element signature="e#4348#4349#0" expanded="true" />
-            <element signature="e#4401#4402#0" expanded="true" />
-            <element signature="e#4442#4443#0" expanded="true" />
-            <element signature="e#4512#4513#0" expanded="true" />
-            <element signature="e#4560#4561#0" expanded="true" />
-            <element signature="e#4616#4617#0" expanded="true" />
-            <element signature="e#4660#4661#0" expanded="true" />
-            <element signature="e#4794#4795#0" expanded="true" />
-            <element signature="e#4827#4828#0" expanded="true" />
-            <element signature="e#4877#4878#0" expanded="true" />
-            <element signature="e#4918#4919#0" expanded="true" />
-            <element signature="e#4976#4977#0" expanded="true" />
-            <element signature="e#5017#5018#0" expanded="true" />
-            <element signature="e#5086#5087#0" expanded="true" />
-            <element signature="e#5129#5130#0" expanded="true" />
+            <element signature="e#2554#2576#0" expanded="false" />
+            <element signature="e#5305#5306#0" expanded="true" />
+            <element signature="e#5344#5345#0" expanded="true" />
+            <element signature="e#5390#5391#0" expanded="true" />
+            <element signature="e#5432#5433#0" expanded="true" />
+            <element signature="e#5492#5493#0" expanded="true" />
+            <element signature="e#5541#5542#0" expanded="true" />
+            <element signature="e#5605#5606#0" expanded="true" />
+            <element signature="e#5658#5659#0" expanded="true" />
+            <element signature="e#5711#5712#0" expanded="true" />
+            <element signature="e#5752#5753#0" expanded="true" />
+            <element signature="e#5822#5823#0" expanded="true" />
+            <element signature="e#5870#5871#0" expanded="true" />
+            <element signature="e#5926#5927#0" expanded="true" />
+            <element signature="e#5970#5971#0" expanded="true" />
+            <element signature="e#6104#6105#0" expanded="true" />
+            <element signature="e#6137#6138#0" expanded="true" />
+            <element signature="e#6187#6188#0" expanded="true" />
+            <element signature="e#6228#6229#0" expanded="true" />
+            <element signature="e#6286#6287#0" expanded="true" />
+            <element signature="e#6327#6328#0" expanded="true" />
+            <element signature="e#6396#6397#0" expanded="true" />
+            <element signature="e#6439#6440#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -440,13 +496,7 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa15696.9689/Main.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2336.12334/Locations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="40" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2336.12334/Locations.java" />
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Location.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -457,7 +507,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="442">
           <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -475,7 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -483,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-299">
           <caret line="50" column="17" lean-forward="false" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -491,7 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -499,7 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="48" column="58" lean-forward="true" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -507,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="75" column="42" lean-forward="true" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -515,40 +560,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="51" column="40" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Locations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="96" column="73" lean-forward="false" selection-start-line="96" selection-start-column="73" selection-end-line="96" selection-end-column="73" />
+        <state relative-caret-position="352">
+          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#Locations#0" expanded="false" />
-            <element signature="e#1613#1635#0" expanded="false" />
-            <element signature="e#3995#3996#0" expanded="true" />
-            <element signature="e#4034#4035#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
-            <element signature="e#4122#4123#0" expanded="true" />
-            <element signature="e#4182#4183#0" expanded="true" />
-            <element signature="e#4231#4232#0" expanded="true" />
-            <element signature="e#4295#4296#0" expanded="true" />
-            <element signature="e#4348#4349#0" expanded="true" />
-            <element signature="e#4401#4402#0" expanded="true" />
-            <element signature="e#4442#4443#0" expanded="true" />
-            <element signature="e#4512#4513#0" expanded="true" />
-            <element signature="e#4560#4561#0" expanded="true" />
-            <element signature="e#4616#4617#0" expanded="true" />
-            <element signature="e#4660#4661#0" expanded="true" />
-            <element signature="e#4794#4795#0" expanded="true" />
-            <element signature="e#4827#4828#0" expanded="true" />
-            <element signature="e#4877#4878#0" expanded="true" />
-            <element signature="e#4918#4919#0" expanded="true" />
-            <element signature="e#4976#4977#0" expanded="true" />
-            <element signature="e#5017#5018#0" expanded="true" />
-            <element signature="e#5086#5087#0" expanded="true" />
-            <element signature="e#5129#5130#0" expanded="true" />
+            <element signature="e#2554#2576#0" expanded="false" />
+            <element signature="e#5305#5306#0" expanded="true" />
+            <element signature="e#5344#5345#0" expanded="true" />
+            <element signature="e#5390#5391#0" expanded="true" />
+            <element signature="e#5432#5433#0" expanded="true" />
+            <element signature="e#5492#5493#0" expanded="true" />
+            <element signature="e#5541#5542#0" expanded="true" />
+            <element signature="e#5605#5606#0" expanded="true" />
+            <element signature="e#5658#5659#0" expanded="true" />
+            <element signature="e#5711#5712#0" expanded="true" />
+            <element signature="e#5752#5753#0" expanded="true" />
+            <element signature="e#5822#5823#0" expanded="true" />
+            <element signature="e#5870#5871#0" expanded="true" />
+            <element signature="e#5926#5927#0" expanded="true" />
+            <element signature="e#5970#5971#0" expanded="true" />
+            <element signature="e#6104#6105#0" expanded="true" />
+            <element signature="e#6137#6138#0" expanded="true" />
+            <element signature="e#6187#6188#0" expanded="true" />
+            <element signature="e#6228#6229#0" expanded="true" />
+            <element signature="e#6286#6287#0" expanded="true" />
+            <element signature="e#6327#6328#0" expanded="true" />
+            <element signature="e#6396#6397#0" expanded="true" />
+            <element signature="e#6439#6440#0" expanded="true" />
           </folding>
         </state>
       </provider>
