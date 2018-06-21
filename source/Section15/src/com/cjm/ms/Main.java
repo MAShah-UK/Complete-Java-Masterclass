@@ -7,7 +7,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("BEGIN: Exceptions");
+        // Exceptions handling.
+        System.out.println("BEGIN: Exception handling");
 
         System.out.println("The result of 50/0 is: ");
         System.out.println(divideLBYL(50, 0));
@@ -33,7 +34,8 @@ public class Main {
         }
         System.out.println();
 
-        System.out.println("\nBEGIN: IO");
+        // IO.
+        System.out.println("BEGIN: IO");
 
         createAdventureGame();
     }
