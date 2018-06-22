@@ -8,31 +8,31 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Exceptions handling.
-        System.out.println("BEGIN: Exception handling");
-
-        System.out.println("The result of 50/0 is: ");
-        System.out.println(divideLBYL(50, 0));
-        System.out.println();
-
-        System.out.println("The result of 50/0 is: ");
-        System.out.println(divideEAFP(50, 0));
-        System.out.println();
-
-        System.out.println("User input:");
-        System.out.println(getInt());
-        System.out.println();
-
-        System.out.println("User input:");
-        System.out.println(getIntLBYL());
-        System.out.println();
-
-        System.out.println("User inputs:");
-        try {
-            System.out.println(userDivide());
-        } catch (ArithmeticException e) {
-            System.out.println(e.getMessage());
-        }
-        System.out.println();
+//        System.out.println("BEGIN: Exception handling");
+//
+//        System.out.println("The result of 50/0 is: ");
+//        System.out.println(divideLBYL(50, 0));
+//        System.out.println();
+//
+//        System.out.println("The result of 50/0 is: ");
+//        System.out.println(divideEAFP(50, 0));
+//        System.out.println();
+//
+//        System.out.println("User input:");
+//        System.out.println(getInt());
+//        System.out.println();
+//
+//        System.out.println("User input:");
+//        System.out.println(getIntLBYL());
+//        System.out.println();
+//
+//        System.out.println("User inputs:");
+//        try {
+//            System.out.println(userDivide());
+//        } catch (ArithmeticException e) {
+//            System.out.println(e.getMessage());
+//        }
+//        System.out.println();
 
         // IO.
         System.out.println("BEGIN: IO");
@@ -131,7 +131,7 @@ public class Main {
         vocabulary.put("WEST", "W");
         vocabulary.put("EAST", "E");
 
-        int loc = 1;
+        int loc = 64;
         while(true) {
             System.out.println(locations.get(loc).getDescription());
 
