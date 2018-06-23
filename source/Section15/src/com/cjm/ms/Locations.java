@@ -1,48 +1,13 @@
 package com.cjm.ms;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class Locations implements Map<Integer, Location> {
-    private static Map<Integer, Location> locations = new HashMap<>();
+    private static Map<Integer, Location> locations = new LinkedHashMap<>();
 
-    // The static initializer block is the first code block to run when the class is loaded.
-    static {
-        // Scanner automatically closes any data source it was using as long as the
-        // source implements Closeable - a subinterface of AutoCloseable.
-        try(Scanner scanner = new Scanner(new FileReader("locations_big.txt"))) {
-            scanner.useDelimiter(",");
-            while(scanner.hasNextLine()) {
-                int loc = scanner.nextInt();
-                scanner.skip(scanner.delimiter());
-                String description = scanner.nextLine();
-                System.out.println("Imported loc: " + loc + ": " + description);
-                Map<String, Integer> tempExit = new HashMap<>();
-                locations.put(loc, new Location(loc, description, tempExit));
-            }
-        } catch(IOException e) {
-            e.printStackTrace();
-        }
-        // Now read the exits.
-        try(BufferedReader dirFile = new BufferedReader(new FileReader("directions_big.txt"))) {
-            String input;
-            while((input = dirFile.readLine()) != null) {
-                String[] data = input.split(",");
-                int loc = Integer.parseInt(data[0]);
-                String direction = data[1];
-                int destination = Integer.parseInt(data[2]);
-
-                System.out.println(loc + ": " + direction + ": " + destination);
-                Location location = locations.get(loc);
-                location.addExit(direction, destination);
-            }
-        } catch(IOException e) {
-            e.printStackTrace();
-        }
-
+    public Locations() throws IOException {
+//        // Locations and directions data.
 //        Map<String, Integer> tempExit;
 //        locations.put(0, new Location(0, "You are sitting in front of a computer learning Java.", null));
 //
@@ -70,9 +35,7 @@ public class Locations implements Map<Integer, Location> {
 //        tempExit.put("S", 1);
 //        tempExit.put("W", 2);
 //        locations.put(5, new Location(5, "You are in the forest.", tempExit));
-    }
 
-    public static void main(String[] args) throws IOException {
 //        // Original.
 //        FileWriter locFile = null;
 //        try {
@@ -113,20 +76,55 @@ public class Locations implements Map<Integer, Location> {
 //            }
 //        }
 
-        // After using try-with-resources statement.
-        // After propagating IOException, and using try-with-resources statement.
-        // Classes must implement AutoCloseable to do this.
-        // Multiple resources can be listed, use semicolons on all but the last.
-        // Java automatically calls the close method on each resource to release it.
-        try(FileWriter locFile = new FileWriter("locations.txt");
-            FileWriter dirFile = new FileWriter("directions.txt")) {
+        // Loads locations and directions data.
+        // Scanner automatically closes any data source it was using as long as the
+        // source implements Closeable - a subinterface of AutoCloseable.
+        try(Scanner scanner = new Scanner(new BufferedReader(new FileReader("locations_big.txt")))) {
+            scanner.useDelimiter(",");
+            while(scanner.hasNext()) {
+                int loc = scanner.nextInt();
+                scanner.skip(scanner.delimiter());
+                String description = scanner.nextLine();
+                System.out.println("Imported loc: " + loc + ": " + description);
+
+                Map<String, Integer> tempExit = new HashMap<>();
+                locations.put(loc, new Location(loc, description, tempExit));
+            }
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+        try(BufferedReader dirFile = new BufferedReader(new FileReader("directions_big.txt"))) {
+            String input;
+            while((input = dirFile.readLine()) != null) {
+                String[] data = input.split(",");
+                int loc = Integer.parseInt(data[0]);
+                String direction = data[1];
+                int destination = Integer.parseInt(data[2]);
+                System.out.println(loc + ": " + direction + ": " + destination);
+
+                Location location = locations.get(loc);
+                location.addExit(direction, destination);
+            }
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+
+//        // Saves locations and directions data.
+//        // After using try-with-resources statement.
+//        // After propagating IOException, and using try-with-resources statement.
+//        // Classes must implement AutoCloseable to do this.
+//        // Multiple resources can be listed, use semicolons on all but the last.
+//        // Java automatically calls the close method on each resource to release it.
+        try(BufferedWriter locFile = new BufferedWriter(new FileWriter("locations.txt"));
+            BufferedWriter dirFile = new BufferedWriter(new FileWriter("directions.txt"))) {
             for(Location location: locations.values()) {
                 locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
                 for(String direction: location.getExits().keySet()) {
-                    dirFile.write(
-                            location.getLocationID() + "," +
-                            direction + "," +
-                            location.getExits().get(direction) + "\n");
+                    if(!direction.equalsIgnoreCase("Q")) {
+                        dirFile.write(location.getLocationID() + "," +
+                                direction + "," +
+                                location.getExits().get(direction) + '\n');
+                    }
                 }
             }
         }

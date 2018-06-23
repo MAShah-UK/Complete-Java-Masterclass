@@ -1,5 +1,6 @@
 package com.cjm.ms;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.Map;
@@ -120,7 +121,13 @@ public class Main {
         return value;
     }
     private static void createAdventureGame() {
-        Locations locations = new Locations();
+        Locations locations;
+        try {
+            locations = new Locations();
+        } catch(IOException e) {
+            e.printStackTrace();
+            return;
+        }
 
         Scanner scanner = new Scanner(System.in);
 
