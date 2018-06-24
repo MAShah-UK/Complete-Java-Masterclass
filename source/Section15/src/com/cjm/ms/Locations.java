@@ -109,21 +109,45 @@ public class Locations implements Map<Integer, Location> {
             e.printStackTrace();
         }
 
-//        // Saves locations and directions data.
+//        // Saves locations and directions data using BufferedWriter.
 //        // After using try-with-resources statement.
 //        // After propagating IOException, and using try-with-resources statement.
 //        // Classes must implement AutoCloseable to do this.
 //        // Multiple resources can be listed, use semicolons on all but the last.
 //        // Java automatically calls the close method on each resource to release it.
-        try(BufferedWriter locFile = new BufferedWriter(new FileWriter("locations.txt"));
-            BufferedWriter dirFile = new BufferedWriter(new FileWriter("directions.txt"))) {
+//        try(BufferedWriter locFile = new BufferedWriter(new FileWriter("locations.txt"));
+//            BufferedWriter dirFile = new BufferedWriter(new FileWriter("directions.txt"))) {
+//            for(Location location: locations.values()) {
+//                locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
+//                for(String direction: location.getExits().keySet()) {
+//                    if(!direction.equalsIgnoreCase("Q")) {
+//                        dirFile.write(location.getLocationID() + "," +
+//                                direction + "," +
+//                                location.getExits().get(direction) + '\n');
+//                    }
+//                }
+//            }
+//        }
+
+        // Saves locations and direction data using byte streams.
+        // Using .dat extension to make it clear that it's not a text file.
+        try(DataOutputStream locFile = new DataOutputStream(
+                new BufferedOutputStream(new FileOutputStream("locations.dat")))) {
             for(Location location: locations.values()) {
-                locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
-                for(String direction: location.getExits().keySet()) {
+                locFile.writeInt(location.getLocationID());
+                locFile.writeUTF(location.getDescription());
+                locFile.writeInt(location.getExits().size() - 1);
+                // Should be logged rather than output to console so that the log file can
+                // be used for debugging purposes.
+                System.out.println("Writing location " + location.getLocationID() + " : " +
+                                   location.getDescription());
+                System.out.println("Writing " + (location.getExits().size()-1) + " exits.");
+                for(String direction : location.getExits().keySet()) {
                     if(!direction.equalsIgnoreCase("Q")) {
-                        dirFile.write(location.getLocationID() + "," +
-                                direction + "," +
-                                location.getExits().get(direction) + '\n');
+                        System.out.println("\t\t" + direction + "," +
+                                           location.getExits().get(direction));
+                        locFile.writeUTF(direction);
+                        locFile.writeInt(location.getExits().get(direction));
                     }
                 }
             }
