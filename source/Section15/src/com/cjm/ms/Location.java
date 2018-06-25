@@ -8,7 +8,12 @@ import java.util.Map;
 /**
  * Created by dev on 8/12/2015.
  */
-public class Location {
+// Serialization allows saving objects to a file.
+public class Location implements Serializable {
+    // Runtime uses this to determine if the saved data is compatible with executable.
+    private long serialVersionUID = 1L;
+
+    // All fields are serializable.
     private final int locationID;
     private final String description;
     private final Map<String, Integer> exits;
