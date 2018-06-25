@@ -76,38 +76,38 @@ public class Locations implements Map<Integer, Location> {
 //            }
 //        }
 
-        // Loads locations and directions data.
-        // Scanner automatically closes any data source it was using as long as the
-        // source implements Closeable - a subinterface of AutoCloseable.
-        try(Scanner scanner = new Scanner(new BufferedReader(new FileReader("locations_big.txt")))) {
-            scanner.useDelimiter(",");
-            while(scanner.hasNext()) {
-                int loc = scanner.nextInt();
-                scanner.skip(scanner.delimiter());
-                String description = scanner.nextLine();
-                System.out.println("Imported loc: " + loc + ": " + description);
-
-                Map<String, Integer> tempExit = new HashMap<>();
-                locations.put(loc, new Location(loc, description, tempExit));
-            }
-        } catch(IOException e) {
-            e.printStackTrace();
-        }
-        try(BufferedReader dirFile = new BufferedReader(new FileReader("directions_big.txt"))) {
-            String input;
-            while((input = dirFile.readLine()) != null) {
-                String[] data = input.split(",");
-                int loc = Integer.parseInt(data[0]);
-                String direction = data[1];
-                int destination = Integer.parseInt(data[2]);
-                System.out.println(loc + ": " + direction + ": " + destination);
-
-                Location location = locations.get(loc);
-                location.addExit(direction, destination);
-            }
-        } catch(IOException e) {
-            e.printStackTrace();
-        }
+//        // Loads locations and directions data.
+//        // Scanner automatically closes any data source it was using as long as the
+//        // source implements Closeable - a subinterface of AutoCloseable.
+//        try(Scanner scanner = new Scanner(new BufferedReader(new FileReader("locations_big.txt")))) {
+//            scanner.useDelimiter(",");
+//            while(scanner.hasNext()) {
+//                int loc = scanner.nextInt();
+//                scanner.skip(scanner.delimiter());
+//                String description = scanner.nextLine();
+//                System.out.println("Imported loc: " + loc + ": " + description);
+//
+//                Map<String, Integer> tempExit = new HashMap<>();
+//                locations.put(loc, new Location(loc, description, tempExit));
+//            }
+//        } catch(IOException e) {
+//            e.printStackTrace();
+//        }
+//        try(BufferedReader dirFile = new BufferedReader(new FileReader("directions_big.txt"))) {
+//            String input;
+//            while((input = dirFile.readLine()) != null) {
+//                String[] data = input.split(",");
+//                int loc = Integer.parseInt(data[0]);
+//                String direction = data[1];
+//                int destination = Integer.parseInt(data[2]);
+//                System.out.println(loc + ": " + direction + ": " + destination);
+//
+//                Location location = locations.get(loc);
+//                location.addExit(direction, destination);
+//            }
+//        } catch(IOException e) {
+//            e.printStackTrace();
+//        }
 
 //        // Saves locations and directions data using BufferedWriter.
 //        // After using try-with-resources statement.
@@ -129,7 +129,37 @@ public class Locations implements Map<Integer, Location> {
 //            }
 //        }
 
-        // Saves locations and direction data using byte streams.
+        // Loads locations and directions data using byte streams.
+        try(DataInputStream locFile = new DataInputStream(
+                new BufferedInputStream(new FileInputStream("locations.dat")))) {
+//            // Execution exits the loop when an exception is thrown.
+//            while(true) {
+            boolean eof = false;
+            while(!eof) {
+                try {
+                    Map<String, Integer> exits = new LinkedHashMap<>();
+                    int locID = locFile.readInt();
+                    String description = locFile.readUTF();
+                    int numExits = locFile.readInt();
+                    System.out.println("Read location " + locID + " : " + description + ".");
+                    System.out.println("Found " + numExits + " exits.");
+                    for(int i = 0; i < numExits; i++) {
+                        String direction = locFile.readUTF();
+                        int destination = locFile.readInt();
+                        exits.put(direction, destination);
+                        System.out.println("\t\t" + direction + "," + description + ".");
+                    }
+                    locations.put(locID, new Location(locID, description, exits));
+                    // Exit loop when data source is empty.
+                } catch(EOFException e) {
+                    eof = true;
+                }
+            }
+        } catch(IOException e) {
+            System.out.println("IO Exception");
+        }
+
+        // Saves locations and directions data using byte streams.
         // Using .dat extension to make it clear that it's not a text file.
         try(DataOutputStream locFile = new DataOutputStream(
                 new BufferedOutputStream(new FileOutputStream("locations.dat")))) {
