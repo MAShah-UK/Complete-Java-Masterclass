@@ -199,10 +199,13 @@ public class Locations implements Map<Integer, Location> {
                     eof = true;
                 }
             }
+            // ICE is a subclass of IOE, so it must be handled first.
+        } catch(InvalidClassException e) {
+            System.out.println("InvalidClassException: " + e.getMessage() + ".");
         } catch(IOException e) {
-            System.out.println("IO Exception " + e.getMessage() + ".");
+            System.out.println("IOException: " + e.getMessage() + ".");
         } catch(ClassNotFoundException e) {
-            System.out.println("ClassNotFoundException " + e.getMessage() + ".");
+            System.out.println("ClassNotFoundException: " + e.getMessage() + ".");
         }
 
         // Saves locations and directions data using object streams / serialization.
@@ -212,6 +215,11 @@ public class Locations implements Map<Integer, Location> {
                 locFile.writeObject(location);
             }
         }
+
+        // 1. Bytes 0-3 will contain the number of locations.
+        // 2. Bytes 4-7 will contain the start offset of the locations section.
+        // 3. Bytes 8-1699 will contain the the index.
+        // 4. Bytes 1700-end will contain the location records.
     }
 
     // Override methods by redirecting them to the HashMap implementation.
