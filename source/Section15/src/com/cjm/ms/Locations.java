@@ -4,7 +4,9 @@ import java.io.*;
 import java.util.*;
 
 public class Locations implements Map<Integer, Location> {
-    private static Map<Integer, Location> locations = new LinkedHashMap<>();
+    private Map<Integer, Location> locations = new LinkedHashMap<>();
+    private Map<Integer, IndexRecord> index = new LinkedHashMap<>();
+    private RandomAccessFile ra;
 
     public Locations() throws IOException {
 //        // Locations and directions data.
@@ -184,42 +186,104 @@ public class Locations implements Map<Integer, Location> {
 //        }
 
         // Loads locations and directions data using object streams / serialization.
-        try(ObjectInputStream locFile = new ObjectInputStream(
-                new BufferedInputStream(new FileInputStream("locations.dat")))) {
-            boolean eof = false;
-            while(!eof) {
-                try {
-                    Location location = (Location) locFile.readObject();
-                    System.out.println("Read location " + location.getLocationID() +
-                            " : " + location.getDescription());
-                    System.out.println("Found " + location.getExits().size() + " exits.");
+//        try(ObjectInputStream locFile = new ObjectInputStream(
+//                new BufferedInputStream(new FileInputStream("locations.dat")))) {
+//            boolean eof = false;
+//            while(!eof) {
+//                try {
+//                    Location location = (Location) locFile.readObject();
+//                    System.out.println("Read location " + location.getLocationID() +
+//                            " : " + location.getDescription());
+//                    System.out.println("Found " + location.getExits().size() + " exits.");
+//
+//                    locations.put(location.getLocationID(), location);
+//                } catch(EOFException e) {
+//                    eof = true;
+//                }
+//            }
+//            // ICE is a subclass of IOE, so it must be handled first.
+//        } catch(InvalidClassException e) {
+//            System.out.println("InvalidClassException: " + e.getMessage() + ".");
+//        } catch(IOException e) {
+//            System.out.println("IOException: " + e.getMessage() + ".");
+//        } catch(ClassNotFoundException e) {
+//            System.out.println("ClassNotFoundException: " + e.getMessage() + ".");
+//        }
 
-                    locations.put(location.getLocationID(), location);
-                } catch(EOFException e) {
-                    eof = true;
-                }
-            }
-            // ICE is a subclass of IOE, so it must be handled first.
-        } catch(InvalidClassException e) {
-            System.out.println("InvalidClassException: " + e.getMessage() + ".");
-        } catch(IOException e) {
-            System.out.println("IOException: " + e.getMessage() + ".");
-        } catch(ClassNotFoundException e) {
-            System.out.println("ClassNotFoundException: " + e.getMessage() + ".");
-        }
-
-        // Saves locations and directions data using object streams / serialization.
-        try(ObjectOutputStream locFile = new ObjectOutputStream(
-                new BufferedOutputStream(new FileOutputStream("locations.dat")))) {
-            for(Location location: locations.values()) {
-                locFile.writeObject(location);
-            }
-        }
+//        // Saves locations and directions data using object streams / serialization.
+//        try(ObjectOutputStream locFile = new ObjectOutputStream(
+//                new BufferedOutputStream(new FileOutputStream("locations.dat")))) {
+//            for(Location location: locations.values()) {
+//                locFile.writeObject(location);
+//            }
+//        }
 
         // 1. Bytes 0-3 will contain the number of locations.
         // 2. Bytes 4-7 will contain the start offset of the locations section.
         // 3. Bytes 8-1699 will contain the the index.
         // 4. Bytes 1700-end will contain the location records.
+
+        // Loads locations and directions data using random access.
+        try {
+            ra = new RandomAccessFile("locations_rand.dat", "rwd");
+            int numLocations = ra.readInt();
+            long locationStartPoint = ra.readInt();
+
+            while(ra.getFilePointer() < locationStartPoint) {
+                int locationID = ra.readInt();
+                int locationStart = ra.readInt();
+                int locationLength = ra.readInt();
+
+                IndexRecord record = new IndexRecord(locationStart, locationLength);
+                index.put(locationID, record);
+            }
+        } catch(IOException e) {
+            System.out.println("IOException: " + e.getMessage() + ".");
+        }
+
+        // Saves locations and directions data using random access.
+        // File will stay open as long as file is open to load locations as needed.
+        // 'rwd' allows reads and writes, and ensures that writes are synchronous.
+        try(RandomAccessFile rao = new RandomAccessFile("locations_rand.dat", "rwd")) {
+            rao.writeInt(locations.size());
+            int indexSize = locations.size() * 3 * Integer.BYTES;
+            int locationStart = (int) (indexSize + rao.getFilePointer() + Integer.BYTES);
+            rao.writeInt(locationStart);
+
+            long indexStart = rao.getFilePointer();
+
+            int startPointer = locationStart;
+            rao.seek(startPointer);
+
+            for(Location location: locations.values()) {
+                rao.writeInt(location.getLocationID());
+                rao.writeUTF(location.getDescription());
+                StringBuilder builder = new StringBuilder();
+                for(String direction: location.getExits().keySet()) {
+                    if(!direction.equalsIgnoreCase("Q")) {
+                        builder.append(direction);
+                        builder.append(",");
+                        builder.append(location.getExits().get(direction));
+                        builder.append(",");
+                        // direction,locationID,direction,locationID
+                        // N,1,U,2
+                    }
+                }
+                rao.writeUTF(builder.toString());
+
+                IndexRecord record = new IndexRecord(startPointer,
+                        (int) (rao.getFilePointer() - startPointer));
+                index.put(location.getLocationID(), record);
+                startPointer = (int) rao.getFilePointer();
+            }
+
+            rao.seek(indexStart);
+            for(Integer locationID: index.keySet()) {
+                rao.writeInt(locationID);
+                rao.writeInt(index.get(locationID).getStartByte());
+                rao.writeInt(index.get(locationID).getLength());
+            }
+        }
     }
 
     // Override methods by redirecting them to the HashMap implementation.
