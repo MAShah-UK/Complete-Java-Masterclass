@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         // Exceptions handling.
 //        System.out.println("BEGIN: Exception handling");
 //
@@ -120,7 +120,7 @@ public class Main {
         System.out.println("Valid input.");
         return value;
     }
-    private static void createAdventureGame() {
+    private static void createAdventureGame() throws IOException {
         Locations locations;
         try {
             locations = new Locations();
@@ -138,15 +138,15 @@ public class Main {
         vocabulary.put("WEST", "W");
         vocabulary.put("EAST", "E");
 
-        int loc = 64;
+        Location currentLocation = locations.getLocation(1);
         while(true) {
-            System.out.println(locations.get(loc).getDescription());
+            System.out.println(currentLocation.getDescription());
 
-            if(loc == 0) {
+            if(currentLocation.getLocationID() == 0) {
                 break;
             }
 
-            Map<String, Integer> exits = locations.get(loc).getExits();
+            Map<String, Integer> exits = currentLocation.getExits();
             System.out.print("Available exits are ");
             for(String exit: exits.keySet()) {
                 System.out.print(exit + ", ");
@@ -165,11 +165,12 @@ public class Main {
             }
 
             if(exits.containsKey(direction)) {
-                loc = exits.get(direction);
-
+                currentLocation = locations.getLocation(currentLocation.getExits().get(direction));
             } else {
                 System.out.println("You cannot go in that direction");
             }
         }
+
+        locations.close();
     }
 }
