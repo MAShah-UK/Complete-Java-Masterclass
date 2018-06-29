@@ -1,6 +1,9 @@
 package com.cjm.ms;
 
 import java.io.*;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.*;
 
 public class Locations implements Map<Integer, Location> {
@@ -78,38 +81,38 @@ public class Locations implements Map<Integer, Location> {
 //            }
 //        }
 
-//        // Loads locations and directions data.
-//        // Scanner automatically closes any data source it was using as long as the
-//        // source implements Closeable - a subinterface of AutoCloseable.
-//        try(Scanner scanner = new Scanner(new BufferedReader(new FileReader("locations_big.txt")))) {
-//            scanner.useDelimiter(",");
-//            while(scanner.hasNext()) {
-//                int loc = scanner.nextInt();
-//                scanner.skip(scanner.delimiter());
-//                String description = scanner.nextLine();
-//                System.out.println("Imported loc: " + loc + ": " + description);
-//
-//                Map<String, Integer> tempExit = new HashMap<>();
-//                locations.put(loc, new Location(loc, description, tempExit));
-//            }
-//        } catch(IOException e) {
-//            e.printStackTrace();
-//        }
-//        try(BufferedReader dirFile = new BufferedReader(new FileReader("directions_big.txt"))) {
-//            String input;
-//            while((input = dirFile.readLine()) != null) {
-//                String[] data = input.split(",");
-//                int loc = Integer.parseInt(data[0]);
-//                String direction = data[1];
-//                int destination = Integer.parseInt(data[2]);
-//                System.out.println(loc + ": " + direction + ": " + destination);
-//
-//                Location location = locations.get(loc);
-//                location.addExit(direction, destination);
-//            }
-//        } catch(IOException e) {
-//            e.printStackTrace();
-//        }
+        // Loads locations and directions data.
+        // Scanner automatically closes any data source it was using as long as the
+        // source implements Closeable - a subinterface of AutoCloseable.
+        try(Scanner scanner = new Scanner(new BufferedReader(new FileReader("locations_big.txt")))) {
+            scanner.useDelimiter(",");
+            while(scanner.hasNext()) {
+                int loc = scanner.nextInt();
+                scanner.skip(scanner.delimiter());
+                String description = scanner.nextLine();
+                System.out.println("Imported loc: " + loc + ": " + description);
+
+                Map<String, Integer> tempExit = new HashMap<>();
+                locations.put(loc, new Location(loc, description, tempExit));
+            }
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+        try(BufferedReader dirFile = new BufferedReader(new FileReader("directions_big.txt"))) {
+            String input;
+            while((input = dirFile.readLine()) != null) {
+                String[] data = input.split(",");
+                int loc = Integer.parseInt(data[0]);
+                String direction = data[1];
+                int destination = Integer.parseInt(data[2]);
+                System.out.println(loc + ": " + direction + ": " + destination);
+
+                Location location = locations.get(loc);
+                location.addExit(direction, destination);
+            }
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
 
 //        // Saves locations and directions data using BufferedWriter.
 //        // After using try-with-resources statement.
@@ -218,29 +221,28 @@ public class Locations implements Map<Integer, Location> {
 //            }
 //        }
 
-        // 1. Bytes 0-3 will contain the number of locations.
-        // 2. Bytes 4-7 will contain the start offset of the locations section.
-        // 3. Bytes 8-1699 will contain the the index.
-        // 4. Bytes 1700-end will contain the location records.
-
-        // Loads locations and directions data using random access.
-        // Loads locations and directions data using random access.
-        try {
-            ra = new RandomAccessFile("locations_rand.dat", "rwd");
-            int numLocations = ra.readInt();
-            long locationStartPoint = ra.readInt();
-
-            while(ra.getFilePointer() < locationStartPoint) {
-                int locationID = ra.readInt();
-                int locationStart = ra.readInt();
-                int locationLength = ra.readInt();
-
-                IndexRecord record = new IndexRecord(locationStart, locationLength);
-                index.put(locationID, record);
-            }
-        } catch(IOException e) {
-            System.out.println("IOException: " + e.getMessage() + ".");
-        }
+//        // 1. Bytes 0-3 will contain the number of locations.
+//        // 2. Bytes 4-7 will contain the start offset of the locations section.
+//        // 3. Bytes 8-1699 will contain the the index.
+//        // 4. Bytes 1700-end will contain the location records.
+//
+//        // Loads locations and directions data using random access.
+//        try {
+//            ra = new RandomAccessFile("locations_rand.dat", "rwd");
+//            int numLocations = ra.readInt();
+//            long locationStartPoint = ra.readInt();
+//
+//            while(ra.getFilePointer() < locationStartPoint) {
+//                int locationID = ra.readInt();
+//                int locationStart = ra.readInt();
+//                int locationLength = ra.readInt();
+//
+//                IndexRecord record = new IndexRecord(locationStart, locationLength);
+//                index.put(locationID, record);
+//            }
+//        } catch(IOException e) {
+//            System.out.println("IOException: " + e.getMessage() + ".");
+//        }
 
 //        // Saves locations and directions data using random access.
 //        // File will stay open as long as file is open to load locations as needed.
@@ -285,8 +287,28 @@ public class Locations implements Map<Integer, Location> {
 //                rao.writeInt(index.get(locationID).getLength());
 //            }
 //        }
+
+        // Save locations and directions data using NIO.
+        Path locPath = FileSystems.getDefault().getPath("locations_big.txt");
+        Path dirPath = FileSystems.getDefault().getPath("directions_big.txt");
+        try (BufferedWriter locFile = Files.newBufferedWriter(locPath);
+             BufferedWriter dirFile = Files.newBufferedWriter(dirPath)) {
+            for(Location location: locations.values()) {
+                locFile.write(location.getLocationID() + "," +
+                        location.getDescription() + "\n");
+                for(String direction: location.getExits().keySet()) {
+                    if(!direction.equalsIgnoreCase("Q")) {
+                        dirFile.write(location.getLocationID() + "," + direction + "," +
+                        location.getExits().get(direction) + "\n");
+                    }
+                }
+            }
+        } catch(IOException e) {
+            System.out.println("IO Exception: " + e.getMessage() + ".");
+        }
     }
 
+    // Uses random access to load just the required location data.
     public Location getLocation(int locationID) throws IOException {
         IndexRecord record = index.get(locationID);
         ra.seek(record.getStartByte());
@@ -373,6 +395,8 @@ public class Locations implements Map<Integer, Location> {
     }
 
     public void close() throws IOException {
-        ra.close();
+        if (ra != null) {
+            ra.close();
+        }
     }
 }

@@ -138,7 +138,7 @@ public class Main {
         vocabulary.put("WEST", "W");
         vocabulary.put("EAST", "E");
 
-        Location currentLocation = locations.getLocation(1);
+        Location currentLocation = locations.get(64);
         while(true) {
             System.out.println(currentLocation.getDescription());
 
@@ -165,7 +165,7 @@ public class Main {
             }
 
             if(exits.containsKey(direction)) {
-                currentLocation = locations.getLocation(currentLocation.getExits().get(direction));
+                currentLocation = locations.get(currentLocation.getExits().get(direction));
             } else {
                 System.out.println("You cannot go in that direction");
             }
