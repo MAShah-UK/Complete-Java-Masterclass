@@ -84,35 +84,35 @@ public class Locations implements Map<Integer, Location> {
         // Loads locations and directions data.
         // Scanner automatically closes any data source it was using as long as the
         // source implements Closeable - a subinterface of AutoCloseable.
-        try(Scanner scanner = new Scanner(new BufferedReader(new FileReader("locations_big.txt")))) {
-            scanner.useDelimiter(",");
-            while(scanner.hasNext()) {
-                int loc = scanner.nextInt();
-                scanner.skip(scanner.delimiter());
-                String description = scanner.nextLine();
-                System.out.println("Imported loc: " + loc + ": " + description);
-
-                Map<String, Integer> tempExit = new HashMap<>();
-                locations.put(loc, new Location(loc, description, tempExit));
-            }
-        } catch(IOException e) {
-            e.printStackTrace();
-        }
-        try(BufferedReader dirFile = new BufferedReader(new FileReader("directions_big.txt"))) {
-            String input;
-            while((input = dirFile.readLine()) != null) {
-                String[] data = input.split(",");
-                int loc = Integer.parseInt(data[0]);
-                String direction = data[1];
-                int destination = Integer.parseInt(data[2]);
-                System.out.println(loc + ": " + direction + ": " + destination);
-
-                Location location = locations.get(loc);
-                location.addExit(direction, destination);
-            }
-        } catch(IOException e) {
-            e.printStackTrace();
-        }
+//        try(Scanner scanner = new Scanner(new BufferedReader(new FileReader("locations_big.txt")))) {
+//            scanner.useDelimiter(",");
+//            while(scanner.hasNext()) {
+//                int loc = scanner.nextInt();
+//                scanner.skip(scanner.delimiter());
+//                String description = scanner.nextLine();
+//                System.out.println("Imported loc: " + loc + ": " + description);
+//
+//                Map<String, Integer> tempExit = new HashMap<>();
+//                locations.put(loc, new Location(loc, description, tempExit));
+//            }
+//        } catch(IOException e) {
+//            e.printStackTrace();
+//        }
+//        try(BufferedReader dirFile = new BufferedReader(new FileReader("directions_big.txt"))) {
+//            String input;
+//            while((input = dirFile.readLine()) != null) {
+//                String[] data = input.split(",");
+//                int loc = Integer.parseInt(data[0]);
+//                String direction = data[1];
+//                int destination = Integer.parseInt(data[2]);
+//                System.out.println(loc + ": " + direction + ": " + destination);
+//
+//                Location location = locations.get(loc);
+//                location.addExit(direction, destination);
+//            }
+//        } catch(IOException e) {
+//            e.printStackTrace();
+//        }
 
 //        // Saves locations and directions data using BufferedWriter.
 //        // After using try-with-resources statement.
@@ -288,23 +288,75 @@ public class Locations implements Map<Integer, Location> {
 //            }
 //        }
 
-        // Save locations and directions data using NIO.
-        Path locPath = FileSystems.getDefault().getPath("locations_big.txt");
-        Path dirPath = FileSystems.getDefault().getPath("directions_big.txt");
-        try (BufferedWriter locFile = Files.newBufferedWriter(locPath);
-             BufferedWriter dirFile = Files.newBufferedWriter(dirPath)) {
-            for(Location location: locations.values()) {
-                locFile.write(location.getLocationID() + "," +
-                        location.getDescription() + "\n");
-                for(String direction: location.getExits().keySet()) {
-                    if(!direction.equalsIgnoreCase("Q")) {
-                        dirFile.write(location.getLocationID() + "," + direction + "," +
-                        location.getExits().get(direction) + "\n");
-                    }
+        // Loads locations and directions data using NIO. Everything above used IO.
+//        Path locPath = FileSystems.getDefault().getPath("locations_big.txt");
+//        Path dirPath = FileSystems.getDefault().getPath("directions_big.txt");
+//        try (Scanner scanner = new Scanner(Files.newBufferedReader(locPath))) {
+//            scanner.useDelimiter(",");
+//            while(scanner.hasNextLine()) {
+//                int loc = scanner.nextInt();
+//                scanner.skip(scanner.delimiter());
+//                String description = scanner.nextLine();
+//                System.out.println("Imported loc: " + loc + ": " + description + ".");
+//                locations.put(loc, new Location(loc, description, null));
+//            }
+//        } catch(IOException e) {
+//            System.out.println("IOException: " + e.getMessage() + ".");
+//        }
+//        try(BufferedReader dirFile = Files.newBufferedReader(dirPath)) {
+//            String input;
+//            while((input = dirFile.readLine()) != null) {
+//                String[] data = input.split(",");
+//                int loc = Integer.parseInt(data[0]);
+//                String direction = data[1];
+//                int destination = Integer.parseInt(data[2]);
+//                System.out.println(loc + ": " + direction + ": " + destination + ".");
+//                Location location = locations.get(loc);
+//                location.addExit(direction, destination);
+//            }
+//        } catch(IOException e) {
+//            System.out.println("IOException: " + e.getMessage() + ".");
+//        }
+//        // Save locations and directions data using NIO.
+//        try (BufferedWriter locFile = Files.newBufferedWriter(locPath);
+//             BufferedWriter dirFile = Files.newBufferedWriter(dirPath)) {
+//            for(Location location: locations.values()) {
+//                locFile.write(location.getLocationID() + "," +
+//                        location.getDescription() + "\n");
+//                for(String direction: location.getExits().keySet()) {
+//                    if(!direction.equalsIgnoreCase("Q")) {
+//                        dirFile.write(location.getLocationID() + "," + direction + "," +
+//                        location.getExits().get(direction) + "\n");
+//                    }
+//                }
+//            }
+//        } catch(IOException e) {
+//            System.out.println("IO Exception: " + e.getMessage() + ".");
+//        }
+
+        // Load locations and directions data using NIO serialisation.
+        Path locPath = FileSystems.getDefault().getPath("locations.dat");
+        try(ObjectInputStream locFile = new ObjectInputStream(
+                new BufferedInputStream(Files.newInputStream(locPath)))) {
+            boolean eof = false;
+            while(!eof) {
+                try {
+                    Location location = (Location) locFile.readObject();
+                    locations.put(location.getLocationID(), location);
+                } catch(EOFException e) {
+                    eof = true;
+                } catch(ClassNotFoundException e) {
+                    System.out.println("ClassNotFoundException: " + e.getMessage() + ".");
                 }
             }
-        } catch(IOException e) {
-            System.out.println("IO Exception: " + e.getMessage() + ".");
+        }
+        // Save locations and directions data using NIO serialisation.
+        try(ObjectOutputStream locFile = new ObjectOutputStream(
+                new BufferedOutputStream(Files.newOutputStream(locPath)))) {
+            // Can save and load the Map implementations directly since they implement Serializable.
+            for(Location location: locations.values()) {
+                locFile.writeObject(location);
+            }
         }
     }
 
