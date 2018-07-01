@@ -1,10 +1,15 @@
 package com.cjm.ms;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.InputMismatchException;
-import java.util.Map;
-import java.util.Scanner;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -36,9 +41,9 @@ public class Main {
 //        System.out.println();
 
         // IO.
-        System.out.println("BEGIN: IO");
-
-        createAdventureGame();
+//        System.out.println("BEGIN: IO");
+//        createAdventureGame();
+        func();
     }
     /*
         Uses 'look before you leap' concept in which you ensure
@@ -99,7 +104,7 @@ public class Main {
         }
         return value;
     }
-    // Handles multiple exceptions.
+    // Practice handling multiple exceptions.
     private static double userDivide() {
         double value = 0;
         boolean isValid = false;
@@ -120,6 +125,7 @@ public class Main {
         System.out.println("Valid input.");
         return value;
     }
+    // Practice working with input and output data using IO and NIO packages.
     private static void createAdventureGame() throws IOException {
         Locations locations;
         try {
@@ -172,5 +178,43 @@ public class Main {
         }
 
         locations.close();
+    }
+    // Practice working with input and output data using more of the NIO package.
+    private static void func() { // TODO: Rename.
+        try {
+//            FileInputStream file = new FileInputStream("data.txt");
+//            // FileChannel is input or output only depending on which FileXStream is used.
+//            FileChannel channel = file.getChannel(); // Input only.
+            // Write and read data using Files class.
+            Path dataPath = FileSystems.getDefault().getPath("data.txt");
+            Files.write(dataPath, "\nLine 7".getBytes(), StandardOpenOption.APPEND);
+            // Use Files to sequentially read or write data using NIO.
+            List<String> lines = Files.readAllLines(dataPath);
+            for(String line: lines) {
+                System.out.println(line);
+            }
+
+            // Write data using file channel.
+            FileOutputStream binFile = new FileOutputStream("data.dat");
+            FileChannel binChannel = binFile.getChannel();
+            byte[] outputBytes = "Hello World!".getBytes();
+            ByteBuffer buffer = ByteBuffer.wrap(outputBytes); // Resets position to 0.
+            binChannel.write(buffer);
+            binChannel.close(); // Should really use try-with-resources statement.
+
+            // Write integer data using file channel.
+            ByteBuffer intBuffer = ByteBuffer.allocate(Integer.BYTES);
+            intBuffer.putInt(245);
+            intBuffer.flip(); // Resets position to 0.
+            binChannel.write(intBuffer);
+
+            // Do it again, but overwrite the contents of the buffer first.
+            intBuffer.flip(); // Have to flip due to writing buffer contents.
+            intBuffer.putInt(-98765); // New integer value overwrites old integer value.
+            intBuffer.flip(); // Have to flip again since we wrote to the buffer.
+            binChannel.write(intBuffer);
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
     }
 }
