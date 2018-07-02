@@ -1,8 +1,8 @@
 package com.cjm.ms;
 
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.file.FileSystems;
@@ -43,7 +43,7 @@ public class Main {
         // IO.
 //        System.out.println("BEGIN: IO");
 //        createAdventureGame();
-        func();
+        moreNIO();
     }
     /*
         Uses 'look before you leap' concept in which you ensure
@@ -127,6 +127,8 @@ public class Main {
     }
     // Practice working with input and output data using IO and NIO packages.
     private static void createAdventureGame() throws IOException {
+        System.out.println("\nBEGIN: createAdventureGame");
+
         Locations locations;
         try {
             locations = new Locations();
@@ -180,14 +182,15 @@ public class Main {
         locations.close();
     }
     // Practice working with input and output data using more of the NIO package.
-    private static void func() { // TODO: Rename.
+    private static void moreNIO() {
+        System.out.println("\nBEGIN: moreNIO");
         try {
 //            FileInputStream file = new FileInputStream("data.txt");
 //            // FileChannel is input or output only depending on which FileXStream is used.
 //            FileChannel channel = file.getChannel(); // Input only.
             // Write and read data using Files class.
             Path dataPath = FileSystems.getDefault().getPath("data.txt");
-            Files.write(dataPath, "\nLine 7".getBytes(), StandardOpenOption.APPEND);
+            Files.write(dataPath, "\nLine x".getBytes(), StandardOpenOption.APPEND);
             // Use Files to sequentially read or write data using NIO.
             List<String> lines = Files.readAllLines(dataPath);
             for(String line: lines) {
@@ -200,7 +203,6 @@ public class Main {
             byte[] outputBytes = "Hello World!".getBytes();
             ByteBuffer buffer = ByteBuffer.wrap(outputBytes); // Resets position to 0.
             binChannel.write(buffer);
-            binChannel.close(); // Should really use try-with-resources statement.
 
             // Write integer data using file channel.
             ByteBuffer intBuffer = ByteBuffer.allocate(Integer.BYTES);
@@ -213,6 +215,47 @@ public class Main {
             intBuffer.putInt(-98765); // New integer value overwrites old integer value.
             intBuffer.flip(); // Have to flip again since we wrote to the buffer.
             binChannel.write(intBuffer);
+            binChannel.close(); // Should really use try-with-resources statement.
+
+            // Read data using IO.
+            RandomAccessFile raIO = new RandomAccessFile("data.dat", "rwd");
+            byte[] b = new byte[outputBytes.length];
+            raIO.read(b);
+            System.out.println(new String(b));
+
+            long int1 = raIO.readInt();
+            long int2 = raIO.readInt();
+            System.out.println(int1);
+            System.out.println(int2);
+            raIO.close();
+
+            // Read data using NIO.
+            RandomAccessFile raNIO = new RandomAccessFile("data.dat", "rwd");
+            FileChannel channel = raNIO.getChannel();
+            long numBytesRead = channel.read(buffer);
+            if(buffer.hasArray()) {
+                System.out.println("byte buffer = " + new String(buffer.array()));
+            }
+
+            // Absolute read.
+            intBuffer.flip();
+            numBytesRead = channel.read(intBuffer);
+            System.out.println(intBuffer.getInt(0));
+            intBuffer.flip();
+            numBytesRead = channel.read(intBuffer);
+            System.out.println(intBuffer.getInt(0));
+
+//            // Relative read.
+//            intBuffer.flip();
+//            numBytesRead = channel.read(intBuffer);
+//            intBuffer.flip();
+//            System.out.println(intBuffer.getInt());
+//            intBuffer.flip();
+//            numBytesRead = channel.read(intBuffer);
+//            intBuffer.flip();
+//            System.out.println(intBuffer.getInt());
+            channel.close();
+            raNIO.close();
         } catch(IOException e) {
             e.printStackTrace();
         }
