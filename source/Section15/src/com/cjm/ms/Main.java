@@ -215,7 +215,6 @@ public class Main {
             intBuffer.putInt(-98765); // New integer value overwrites old integer value.
             intBuffer.flip(); // Have to flip again since we wrote to the buffer.
             binChannel.write(intBuffer);
-            binChannel.close(); // Should really use try-with-resources statement.
 
             // Read data using IO.
             RandomAccessFile raIO = new RandomAccessFile("data.dat", "rwd");
@@ -237,6 +236,7 @@ public class Main {
                 System.out.println("byte buffer = " + new String(buffer.array()));
             }
 
+            // Use either absolute or relative. Using both will be confusing.
             // Absolute read.
             intBuffer.flip();
             numBytesRead = channel.read(intBuffer);
@@ -244,7 +244,6 @@ public class Main {
             intBuffer.flip();
             numBytesRead = channel.read(intBuffer);
             System.out.println(intBuffer.getInt(0));
-
 //            // Relative read.
 //            intBuffer.flip();
 //            numBytesRead = channel.read(intBuffer);
@@ -254,8 +253,41 @@ public class Main {
 //            numBytesRead = channel.read(intBuffer);
 //            intBuffer.flip();
 //            System.out.println(intBuffer.getInt());
+
+            // Write to large buffer.
+            buffer = ByteBuffer.allocate(100);
+            outputBytes = "Hello World".getBytes();
+            byte[] outputBytes2 = "Nice to meet you".getBytes();
+            buffer.put(outputBytes);
+            long int1Pos = outputBytes.length;
+            buffer.putInt(245);
+            long int2Pos = int1Pos + Integer.BYTES;
+            buffer.putInt(-98765);
+            buffer.put(outputBytes2);
+            long int3Pos = int2Pos + Integer.BYTES + outputBytes2.length;
+            buffer.putInt(1000);
+            // Equivalent:
+            // buffer.put(outputBytes).putInt(245).putInt(-98765).put(outputBytes2).putInt(1000);
+            buffer.flip();
+            binChannel.write(buffer);
+
+            ByteBuffer readBuffer = ByteBuffer.allocate(100);
+            channel.read(readBuffer);
+            readBuffer.flip();
+            byte[] inputString = new byte[outputBytes.length];
+            readBuffer.get(inputString);
+            System.out.println("inputString = " + new String(inputString));
+            System.out.println("int1 = " + readBuffer.getInt());
+            System.out.println("int2 = " + readBuffer.getInt());
+            byte[] inputString2 = new byte[outputBytes2.length];
+            readBuffer.get(inputString2);
+            System.out.println("inputString2 = " + new String(inputString2));
+            System.out.println("int3 = " + readBuffer.getInt());
+
             channel.close();
             raNIO.close();
+            binChannel.close();
+            binFile.close();
         } catch(IOException e) {
             e.printStackTrace();
         }
