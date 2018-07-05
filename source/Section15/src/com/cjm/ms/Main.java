@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
+import java.nio.channels.Pipe;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -43,7 +44,8 @@ public class Main {
         // IO.
 //        System.out.println("BEGIN: IO");
 //        createAdventureGame();
-        moreNIO();
+        // moreNIO();
+        usePipes();
     }
     /*
         Uses 'look before you leap' concept in which you ensure
@@ -181,7 +183,7 @@ public class Main {
 
         locations.close();
     }
-    // Practice working with input and output data using more of the NIO package.
+    // Practice working with data input and data output using more of the NIO package.
     private static void moreNIO() {
         System.out.println("\nBEGIN: moreNIO");
         try {
@@ -200,7 +202,7 @@ public class Main {
             // Write data using file channel.
             FileOutputStream binFile = new FileOutputStream("data.dat");
             FileChannel binChannel = binFile.getChannel();
-            byte[] outputBytes = "Hello World!".getBytes();
+            byte[] outputBytes = "Hello, World!".getBytes();
             ByteBuffer buffer = ByteBuffer.wrap(outputBytes); // Resets position to 0.
             binChannel.write(buffer);
 
@@ -256,7 +258,7 @@ public class Main {
 
             // Write to large buffer.
             buffer = ByteBuffer.allocate(100);
-            outputBytes = "Hello World".getBytes();
+            outputBytes = "Hello, World!".getBytes();
             byte[] outputBytes2 = "Nice to meet you".getBytes();
             buffer.put(outputBytes);
             long int1Pos = outputBytes.length;
@@ -289,6 +291,18 @@ public class Main {
             channel.read(readBuffer);
             readBuffer.flip();
             System.out.println("int1 = " + readBuffer.getInt());
+
+            // Copy file.
+            RandomAccessFile copyFile = new RandomAccessFile("datacopy.dat", "rw");
+            FileChannel copyChannel = copyFile.getChannel();
+            channel.position(0);
+            // Uses position relative to current position, rather than absolute position.
+            long numTransferred = copyChannel.transferFrom(channel, 0, channel.size());
+            // Identical.
+            // long numTransferred = channel.transferTo(0, channel.size(), copyChannel);
+            System.out.println("Num transferred = " + numBytesRead);
+
+            copyChannel.close();
 
             //
             byte[] outputString = "Hello, World!".getBytes();
@@ -340,6 +354,62 @@ public class Main {
             raNIO.close();
             binChannel.close();
             binFile.close();
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+    // Practice using pipes to send data from one thread to another.
+    private static void usePipes() {
+        System.out.println("\nBEGIN: usePipes");
+
+        try {
+            Pipe pipe = Pipe.open();
+
+            Runnable writer = new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Pipe.SinkChannel sinkChannel = pipe.sink();
+                        ByteBuffer buffer = ByteBuffer.allocate(56);
+                        for (int i=0; i<10; i++) {
+                            String currentTime = "The time is: " + System.currentTimeMillis();
+                            buffer.put(currentTime.getBytes());
+                            buffer.flip();
+                            while(buffer.hasRemaining()) {
+                                sinkChannel.write(buffer);
+                            }
+                            buffer.flip();
+                            Thread.sleep(100);
+                        }
+                    } catch(Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            };
+
+            Runnable reader = new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Pipe.SourceChannel sourceChannel = pipe.source();
+                        ByteBuffer buffer = ByteBuffer.allocate(56);
+                        for(int i=0; i<10; i++) {
+                            int bytesRead = sourceChannel.read(buffer);
+                            byte[] timeString = new byte[bytesRead];
+                            buffer.flip();
+                            buffer.get(timeString);
+                            System.out.println("Reader Thread: " + new String(timeString));
+                            buffer.flip();
+                            Thread.sleep(100);
+                        }
+                    } catch(Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            };
+
+            new Thread(writer).start();
+            new Thread(reader).start();
         } catch(IOException e) {
             e.printStackTrace();
         }

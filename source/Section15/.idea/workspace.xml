@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="746f24a7-17d6-4699-8ebe-f8816175b077" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/data.dat" afterPath="$PROJECT_DIR$/data.dat" />
       <change beforePath="$PROJECT_DIR$/data.txt" afterPath="$PROJECT_DIR$/data.txt" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
     </list>
@@ -21,8 +22,8 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="301" column="12" lean-forward="true" selection-start-line="301" selection-start-column="12" selection-end-line="301" selection-end-column="12" />
+                <state relative-caret-position="-194">
+                  <caret line="360" column="67" lean-forward="false" selection-start-line="360" selection-start-column="67" selection-end-line="360" selection-end-column="67" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#divideLBYL#0;class#Main#0" expanded="false" />
@@ -32,51 +33,27 @@
                     <element signature="method#getIntEAFP#0;class#Main#0" expanded="false" />
                     <element signature="method#userDivide#0;class#Main#0" expanded="false" />
                     <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
+                    <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Locations.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Locations.java">
+          <file leaf-file-name="data.dat" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data.dat">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="354" column="24" lean-forward="false" selection-start-line="354" selection-start-column="24" selection-end-line="354" selection-end-column="24" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#425#468#0" expanded="false" />
-                    <element signature="e#18606#18607#0" expanded="true" />
-                    <element signature="e#18645#18646#0" expanded="true" />
-                    <element signature="e#18691#18692#0" expanded="true" />
-                    <element signature="e#18733#18734#0" expanded="true" />
-                    <element signature="e#18793#18794#0" expanded="true" />
-                    <element signature="e#18842#18843#0" expanded="true" />
-                    <element signature="e#18906#18907#0" expanded="true" />
-                    <element signature="e#18959#18960#0" expanded="true" />
-                    <element signature="e#19012#19013#0" expanded="true" />
-                    <element signature="e#19053#19054#0" expanded="true" />
-                    <element signature="e#19123#19124#0" expanded="true" />
-                    <element signature="e#19171#19172#0" expanded="true" />
-                    <element signature="e#19227#19228#0" expanded="true" />
-                    <element signature="e#19271#19272#0" expanded="true" />
-                    <element signature="e#19405#19406#0" expanded="true" />
-                    <element signature="e#19438#19439#0" expanded="true" />
-                    <element signature="e#19488#19489#0" expanded="true" />
-                    <element signature="e#19529#19530#0" expanded="true" />
-                    <element signature="e#19587#19588#0" expanded="true" />
-                    <element signature="e#19628#19629#0" expanded="true" />
-                    <element signature="e#19697#19698#0" expanded="true" />
-                    <element signature="e#19740#19741#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="0">
+                  <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="data.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data.txt">
+          <file leaf-file-name="datacopy.dat" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/datacopy.dat">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -113,6 +90,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ra</find>
+      <find>hello</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,8 +138,6 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,6 +149,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,24 +260,24 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20956257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2716175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09257266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -320,101 +298,18 @@
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/cjm/ms/Main.java</url>
+          <line>340</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#divideLBYL#0;class#Main#0" expanded="false" />
-            <element signature="method#divideEAFP#0;class#Main#0" expanded="false" />
-            <element signature="method#getInt#0;class#Main#0" expanded="false" />
-            <element signature="method#getIntLBYL#0;class#Main#0" expanded="false" />
-            <element signature="method#getIntEAFP#0;class#Main#0" expanded="false" />
-            <element signature="method#userDivide#0;class#Main#0" expanded="false" />
-            <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Locations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#425#468#0" expanded="false" />
-            <element signature="e#18606#18607#0" expanded="true" />
-            <element signature="e#18645#18646#0" expanded="true" />
-            <element signature="e#18691#18692#0" expanded="true" />
-            <element signature="e#18733#18734#0" expanded="true" />
-            <element signature="e#18793#18794#0" expanded="true" />
-            <element signature="e#18842#18843#0" expanded="true" />
-            <element signature="e#18906#18907#0" expanded="true" />
-            <element signature="e#18959#18960#0" expanded="true" />
-            <element signature="e#19012#19013#0" expanded="true" />
-            <element signature="e#19053#19054#0" expanded="true" />
-            <element signature="e#19123#19124#0" expanded="true" />
-            <element signature="e#19171#19172#0" expanded="true" />
-            <element signature="e#19227#19228#0" expanded="true" />
-            <element signature="e#19271#19272#0" expanded="true" />
-            <element signature="e#19405#19406#0" expanded="true" />
-            <element signature="e#19438#19439#0" expanded="true" />
-            <element signature="e#19488#19489#0" expanded="true" />
-            <element signature="e#19529#19530#0" expanded="true" />
-            <element signature="e#19587#19588#0" expanded="true" />
-            <element signature="e#19628#19629#0" expanded="true" />
-            <element signature="e#19697#19698#0" expanded="true" />
-            <element signature="e#19740#19741#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#divideLBYL#0;class#Main#0" expanded="false" />
-            <element signature="method#divideEAFP#0;class#Main#0" expanded="false" />
-            <element signature="method#getInt#0;class#Main#0" expanded="false" />
-            <element signature="method#getIntLBYL#0;class#Main#0" expanded="false" />
-            <element signature="method#getIntEAFP#0;class#Main#0" expanded="false" />
-            <element signature="method#userDivide#0;class#Main#0" expanded="false" />
-            <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Locations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -472,6 +367,7 @@
             <element signature="method#getIntEAFP#0;class#Main#0" expanded="false" />
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
+            <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -533,6 +429,7 @@
             <element signature="method#getIntEAFP#0;class#Main#0" expanded="false" />
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
+            <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -594,6 +491,7 @@
             <element signature="method#getIntEAFP#0;class#Main#0" expanded="false" />
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
+            <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -611,6 +509,7 @@
             <element signature="method#getIntEAFP#0;class#Main#0" expanded="false" />
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
+            <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -628,6 +527,7 @@
             <element signature="method#getIntEAFP#0;class#Main#0" expanded="false" />
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
+            <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -766,17 +666,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa6820.20004/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/io/ObjectOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
@@ -812,17 +701,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data.txt">
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/nio/Buffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="341">
+          <caret line="478" column="0" lean-forward="false" selection-start-line="478" selection-start-column="0" selection-end-line="478" selection-end-column="0" />
+          <folding>
+            <element signature="e#15436#15437#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/nio/HeapByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Locations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="340">
           <caret line="354" column="24" lean-forward="false" selection-start-line="354" selection-start-column="24" selection-end-line="354" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -853,17 +752,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/nio/ByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="754" column="0" lean-forward="false" selection-start-line="754" selection-start-column="0" selection-end-line="754" selection-end-column="0" />
+          <folding>
+            <element signature="e#20426#20427#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/nio/channels/FileChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1046">
+          <caret line="690" column="25" lean-forward="false" selection-start-line="690" selection-start-column="25" selection-end-line="690" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1361#1362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacopy.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="301" column="12" lean-forward="true" selection-start-line="301" selection-start-column="12" selection-end-line="301" selection-end-column="12" />
+        <state relative-caret-position="-194">
+          <caret line="360" column="67" lean-forward="false" selection-start-line="360" selection-start-column="67" selection-end-line="360" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#divideLBYL#0;class#Main#0" expanded="false" />
@@ -873,6 +818,7 @@
             <element signature="method#getIntEAFP#0;class#Main#0" expanded="false" />
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
+            <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
