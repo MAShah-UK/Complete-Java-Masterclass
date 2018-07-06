@@ -1,5 +1,6 @@
 package com.cjm.ms;
 
+import java.io.BufferedReader;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -44,8 +45,9 @@ public class Main {
         // IO.
 //        System.out.println("BEGIN: IO");
 //        createAdventureGame();
-        // moreNIO();
-        usePipes();
+//         moreNIO();
+        // usePipes();
+        modifyFilesystem();
     }
     /*
         Uses 'look before you leap' concept in which you ensure
@@ -411,6 +413,38 @@ public class Main {
             new Thread(writer).start();
             new Thread(reader).start();
         } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+    // Practice working with the file system - copy, move, delete, etc.
+    private static void modifyFilesystem() {
+        System.out.println("\nBEGIN: modifyFilesystem");
+
+        Path wdPath = FileSystems.getDefault().getPath("WorkingDirectoryFile.txt");
+        printFile(wdPath);
+        System.out.println();
+
+        //Path subDirPath = FileSystems.getDefault().getPath("files\\SubdirectoryFile.txt");
+        // Equivalent:
+        Path subDirPath = FileSystems.getDefault().getPath("files", "SubdirectoryFile.txt");
+        printFile(subDirPath);
+        System.out.println();
+
+        // Path outTherePath = Paths.get(
+        // "D:\\Personal\\My Documents\\~Projects\\IntelliJ IDEA\\CompleteJavaMasterclass\\source\\OutThere.txt);
+        // Equivalent:
+        Path outTherePath = FileSystems.getDefault().getPath("..", "OutThere.txt");
+        printFile(outTherePath);
+        System.out.println();
+    }
+    private static void printFile(Path path) {
+        try (BufferedReader fileReader = Files.newBufferedReader(path)) {
+            String line;
+            while((line = fileReader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch(IOException e) {
+            System.out.println(e.getMessage());
             e.printStackTrace();
         }
     }

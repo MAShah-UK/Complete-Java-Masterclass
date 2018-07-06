@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746f24a7-17d6-4699-8ebe-f8816175b077" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/WorkingDirectoryFile.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/SubdirectoryFile.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/data.dat" afterPath="$PROJECT_DIR$/data.dat" />
-      <change beforePath="$PROJECT_DIR$/data.txt" afterPath="$PROJECT_DIR$/data.txt" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,8 +22,8 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-194">
-                  <caret line="360" column="67" lean-forward="false" selection-start-line="360" selection-start-column="67" selection-end-line="360" selection-end-column="67" />
+                <state relative-caret-position="323">
+                  <caret line="422" column="19" lean-forward="false" selection-start-line="422" selection-start-column="19" selection-end-line="422" selection-end-column="19" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#divideLBYL#0;class#Main#0" expanded="false" />
@@ -34,6 +34,7 @@
                     <element signature="method#userDivide#0;class#Main#0" expanded="false" />
                     <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
                     <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
+                    <element signature="method#usePipes#0;class#Main#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -109,6 +110,8 @@
         <option value="$PROJECT_DIR$/src/com/cjm/ms/IndexRecord.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Locations.java" />
         <option value="$PROJECT_DIR$/data.txt" />
+        <option value="$PROJECT_DIR$/WorkingDirectory.txt" />
+        <option value="$PROJECT_DIR$/files/Subdirectory.txt" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
       </list>
     </option>
@@ -136,8 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,12 +146,19 @@
               <item name="Section15" type="b2602c69:ProjectViewProjectNode" />
               <item name="Section15" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Section15" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Section15" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,7 +274,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2716175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2716175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -300,7 +308,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/cjm/ms/Main.java</url>
-          <line>340</line>
+          <line>342</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
@@ -310,50 +318,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Locations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#425#468#0" expanded="false" />
-            <element signature="e#18606#18607#0" expanded="true" />
-            <element signature="e#18645#18646#0" expanded="true" />
-            <element signature="e#18691#18692#0" expanded="true" />
-            <element signature="e#18733#18734#0" expanded="true" />
-            <element signature="e#18793#18794#0" expanded="true" />
-            <element signature="e#18842#18843#0" expanded="true" />
-            <element signature="e#18906#18907#0" expanded="true" />
-            <element signature="e#18959#18960#0" expanded="true" />
-            <element signature="e#19012#19013#0" expanded="true" />
-            <element signature="e#19053#19054#0" expanded="true" />
-            <element signature="e#19123#19124#0" expanded="true" />
-            <element signature="e#19171#19172#0" expanded="true" />
-            <element signature="e#19227#19228#0" expanded="true" />
-            <element signature="e#19271#19272#0" expanded="true" />
-            <element signature="e#19405#19406#0" expanded="true" />
-            <element signature="e#19438#19439#0" expanded="true" />
-            <element signature="e#19488#19489#0" expanded="true" />
-            <element signature="e#19529#19530#0" expanded="true" />
-            <element signature="e#19587#19588#0" expanded="true" />
-            <element signature="e#19628#19629#0" expanded="true" />
-            <element signature="e#19697#19698#0" expanded="true" />
-            <element signature="e#19740#19741#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -368,6 +332,7 @@
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
             <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
+            <element signature="method#usePipes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -430,6 +395,7 @@
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
             <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
+            <element signature="method#usePipes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -492,6 +458,7 @@
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
             <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
+            <element signature="method#usePipes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -510,6 +477,7 @@
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
             <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
+            <element signature="method#usePipes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -528,6 +496,7 @@
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
             <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
+            <element signature="method#usePipes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -705,9 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="478" column="0" lean-forward="false" selection-start-line="478" selection-start-column="0" selection-end-line="478" selection-end-column="0" />
-          <folding>
-            <element signature="e#15436#15437#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -715,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,9 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="754" column="0" lean-forward="false" selection-start-line="754" selection-start-column="0" selection-end-line="754" selection-end-column="0" />
-          <folding>
-            <element signature="e#20426#20427#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1046">
           <caret line="690" column="25" lean-forward="false" selection-start-line="690" selection-start-column="25" selection-end-line="690" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,10 +765,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/files/SubdirectoryFile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WorkingDirectoryFile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-194">
-          <caret line="360" column="67" lean-forward="false" selection-start-line="360" selection-start-column="67" selection-end-line="360" selection-end-column="67" />
+        <state relative-caret-position="323">
+          <caret line="422" column="19" lean-forward="false" selection-start-line="422" selection-start-column="19" selection-end-line="422" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#divideLBYL#0;class#Main#0" expanded="false" />
@@ -819,6 +795,7 @@
             <element signature="method#userDivide#0;class#Main#0" expanded="false" />
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
             <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
+            <element signature="method#usePipes#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
