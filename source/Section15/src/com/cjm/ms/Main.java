@@ -7,10 +7,7 @@ import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.Pipe;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
+import java.nio.file.*;
 import java.util.*;
 
 public class Main {
@@ -417,26 +414,6 @@ public class Main {
         }
     }
     // Practice working with the file system - copy, move, delete, etc.
-    private static void modifyFilesystem() {
-        System.out.println("\nBEGIN: modifyFilesystem");
-
-        Path wdPath = FileSystems.getDefault().getPath("WorkingDirectoryFile.txt");
-        printFile(wdPath);
-        System.out.println();
-
-        //Path subDirPath = FileSystems.getDefault().getPath("files\\SubdirectoryFile.txt");
-        // Equivalent:
-        Path subDirPath = FileSystems.getDefault().getPath("files", "SubdirectoryFile.txt");
-        printFile(subDirPath);
-        System.out.println();
-
-        // Path outTherePath = Paths.get(
-        // "D:\\Personal\\My Documents\\~Projects\\IntelliJ IDEA\\CompleteJavaMasterclass\\source\\OutThere.txt);
-        // Equivalent:
-        Path outTherePath = FileSystems.getDefault().getPath("..", "OutThere.txt");
-        printFile(outTherePath);
-        System.out.println();
-    }
     private static void printFile(Path path) {
         try (BufferedReader fileReader = Files.newBufferedReader(path)) {
             String line;
@@ -447,5 +424,35 @@ public class Main {
             System.out.println(e.getMessage());
             e.printStackTrace();
         }
+    }
+    private static void modifyFilesystem() {
+        System.out.println("\nBEGIN: modifyFilesystem");
+
+        Path wdPath = FileSystems.getDefault().getPath("WorkingDirectoryFile.txt");
+        printFile(wdPath);
+        System.out.println();
+
+        // Equivalent:
+        //Path subDirPath = FileSystems.getDefault().getPath("files\\SubdirectoryFile.txt");
+        //Path subDirPath = FileSystems.getDefault().getPath("files", "SubdirectoryFile.txt");
+        //Path subDirPath = FileSystems.getDefault().getpath(".", "files", "..", "files", "SubdirectoryFile.txt");
+        Path subDirPath = Paths.get(".", "files", "SubdirectoryFile.txt"); // '.' is working directory.
+        printFile(subDirPath);
+        System.out.println();
+
+        // Equivalent:
+        // Path outTherePath = Paths.get(
+        // "D:\\Personal\\My Documents\\~Projects\\IntelliJ IDEA\\CompleteJavaMasterclass\\source\\OutThere.txt");
+        // Path outTherePath = Paths.get("D:\\Personal\\My Documents\\~Projects\\IntelliJ IDEA\\",
+        // CompleteJavaMasterclass\\source\\OutThere.txt");
+        Path outTherePath = FileSystems.getDefault().getPath("..", "OutThere.txt");
+        printFile(outTherePath);
+        System.out.println();
+
+        Path tempDirectory = Paths.get(".");
+        System.out.println("Working directory: " + tempDirectory.toAbsolutePath());
+        tempDirectory = Paths.get(".", "files", "..", "files", "SubdirectoryFile.txt");
+        System.out.println("Temp directory: " + tempDirectory.toAbsolutePath());
+        System.out.println("After normalisation: " + tempDirectory.normalize().toAbsolutePath());
     }
 }
