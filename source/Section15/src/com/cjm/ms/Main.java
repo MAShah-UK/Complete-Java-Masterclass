@@ -463,16 +463,28 @@ public class Main {
 
         Path badPath2 = Paths.get("C:\\ThisDirectoryDoesNotExist");
 
-        // Copy file.
         try {
-            Path copyFile = FileSystems.getDefault().getPath("Examples", "file1copy.txt");
-            if(!Files.exists(copyFile)) {
-                Path sourceFile = FileSystems.getDefault().getPath("Examples", "file1.txt");
-                Files.copy(sourceFile, copyFile);
-            }
+            // Copy file.
+            Path source = FileSystems.getDefault().getPath("Examples", "file1.txt");
+            Path target = FileSystems.getDefault().getPath("Examples", "file1copy.txt");
+            Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
+            // Copy directory.
+            source = FileSystems.getDefault().getPath("Examples", "Dir1");
+            target = FileSystems.getDefault().getPath("Examples", "Dir1Copy");
+            Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
+            // Move file.
+            source = FileSystems.getDefault().getPath("Examples", "file1copy.txt");
+            target = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy.txt");
+            Files.move(source, target, StandardCopyOption.REPLACE_EXISTING);
+            // Rename file.
+            source = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy.txt");
+            target = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy_renamed.txt");
+            Files.move(source, target, StandardCopyOption.REPLACE_EXISTING);
+            // Delete file.
+            source = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy_renamed.txt");
+            Files.deleteIfExists(source);
         } catch(IOException e) {
             e.printStackTrace();
         }
-
     }
 }
