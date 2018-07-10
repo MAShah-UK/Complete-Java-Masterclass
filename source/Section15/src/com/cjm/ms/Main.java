@@ -447,6 +447,7 @@ public class Main {
         // CompleteJavaMasterclass\\source\\OutThere.txt");
         Path outTherePath = FileSystems.getDefault().getPath("..", "OutThere.txt");
         printFile(outTherePath);
+        System.out.println("Does file exist? " + Files.exists(outTherePath) + ".");
         System.out.println();
 
         Path tempDirectory = Paths.get(".");
@@ -454,5 +455,24 @@ public class Main {
         tempDirectory = Paths.get(".", "files", "..", "files", "SubdirectoryFile.txt");
         System.out.println("Temp directory: " + tempDirectory.toAbsolutePath());
         System.out.println("After normalisation: " + tempDirectory.normalize().toAbsolutePath());
+        System.out.println();
+
+        Path badFilePath = FileSystems.getDefault().getPath("ThisFileDoesNotExist.txt");
+        System.out.println("Bad path: " + badFilePath.toAbsolutePath());
+        System.out.println("Does file exist: " + Files.exists(badFilePath) + ".");
+
+        Path badPath2 = Paths.get("C:\\ThisDirectoryDoesNotExist");
+
+        // Copy file.
+        try {
+            Path copyFile = FileSystems.getDefault().getPath("Examples", "file1copy.txt");
+            if(!Files.exists(copyFile)) {
+                Path sourceFile = FileSystems.getDefault().getPath("Examples", "file1.txt");
+                Files.copy(sourceFile, copyFile);
+            }
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
