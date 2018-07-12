@@ -8,6 +8,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.Pipe;
 import java.nio.file.*;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.*;
 
 public class Main {
@@ -460,8 +461,7 @@ public class Main {
         Path badFilePath = FileSystems.getDefault().getPath("ThisFileDoesNotExist.txt");
         System.out.println("Bad path: " + badFilePath.toAbsolutePath());
         System.out.println("Does file exist: " + Files.exists(badFilePath) + ".");
-
-        Path badPath2 = Paths.get("C:\\ThisDirectoryDoesNotExist");
+        System.out.println();
 
         try {
             // Copy file.
@@ -481,8 +481,30 @@ public class Main {
             target = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy_renamed.txt");
             Files.move(source, target, StandardCopyOption.REPLACE_EXISTING);
             // Delete file.
-            source = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy_renamed.txt");
-            Files.deleteIfExists(source);
+            target = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy_renamed.txt");
+            Files.deleteIfExists(target);
+            // Create file and delete it.
+            target = FileSystems.getDefault().getPath("Examples", "file2.txt");
+            Files.createFile(target);
+            Files.delete(target);
+            // Create directory and delete it.
+            target = FileSystems.getDefault().getPath("Examples", "Dir4");
+            Files.createDirectory(target);
+            Files.delete(target);
+            // Create directories.
+            target = FileSystems.getDefault().getPath("Examples", "Dir2\\Dir3\\Dir4\\Dir5\\Dir6");
+            Files.createDirectories(target);
+            // Get file metadata.
+            target = FileSystems.getDefault().getPath("Examples", "Dir1\\file1.txt");
+            long size = Files.size(target);
+            System.out.println("file1 size: " + size);
+            System.out.println("file1 last modified: " + Files.getLastModifiedTime(target));
+            BasicFileAttributes attributes = Files.readAttributes(target, BasicFileAttributes.class);
+            System.out.println("file1 size: " + attributes.size());
+            System.out.println("file1 last modified: " + attributes.lastModifiedTime());
+            System.out.println("file1 created: " + attributes.creationTime());
+            System.out.println("file1 is directory? " + attributes.isDirectory());
+            System.out.println("file1 is file? " + attributes.isRegularFile());
         } catch(IOException e) {
             e.printStackTrace();
         }
