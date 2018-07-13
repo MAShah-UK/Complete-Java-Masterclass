@@ -465,37 +465,37 @@ public class Main {
 
         try {
             // Copy file.
-            Path source = FileSystems.getDefault().getPath("Examples", "file1.txt");
-            Path target = FileSystems.getDefault().getPath("Examples", "file1copy.txt");
+            Path source = Paths.get(".", "Examples", "file1.txt");
+            Path target = Paths.get(".", "Examples", "file1copy.txt");
             Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
             // Copy directory.
-            source = FileSystems.getDefault().getPath("Examples", "Dir1");
-            target = FileSystems.getDefault().getPath("Examples", "Dir1Copy");
+            source = Paths.get(".", "Examples", "Dir1");
+            target = Paths.get(".", "Examples", "Dir1Copy");
             Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
             // Move file.
-            source = FileSystems.getDefault().getPath("Examples", "file1copy.txt");
-            target = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy.txt");
+            source = Paths.get(".", "Examples", "file1copy.txt");
+            target = Paths.get(".", "Examples", "Dir1", "file1copy.txt");
             Files.move(source, target, StandardCopyOption.REPLACE_EXISTING);
             // Rename file.
-            source = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy.txt");
-            target = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy_renamed.txt");
+            source = Paths.get(".", "Examples", "Dir1", "file1copy.txt");
+            target = Paths.get(".", "Examples", "Dir1", "file1copy_renamed.txt");
             Files.move(source, target, StandardCopyOption.REPLACE_EXISTING);
             // Delete file.
-            target = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy_renamed.txt");
+            target = Paths.get(".", "Examples", "Dir1", "file1copy_renamed.txt");
             Files.deleteIfExists(target);
             // Create file and delete it.
-            target = FileSystems.getDefault().getPath("Examples", "file2.txt");
+            target = Paths.get(".", "Examples", "file2.txt");
             Files.createFile(target);
             Files.delete(target);
             // Create directory and delete it.
-            target = FileSystems.getDefault().getPath("Examples", "Dir4");
+            target = Paths.get(".", "Examples", "Dir4");
             Files.createDirectory(target);
             Files.delete(target);
             // Create directories.
-            target = FileSystems.getDefault().getPath("Examples", "Dir2\\Dir3\\Dir4\\Dir5\\Dir6");
+            target = Paths.get(".", "Examples", "Dir2\\Dir3\\Dir4\\Dir5\\Dir6");
             Files.createDirectories(target);
             // Get file metadata.
-            target = FileSystems.getDefault().getPath("Examples", "Dir1\\file1.txt");
+            target = Paths.get(".", "Examples", "Dir1\\file1.txt");
             long size = Files.size(target);
             System.out.println("file1 size: " + size);
             System.out.println("file1 last modified: " + Files.getLastModifiedTime(target));
@@ -505,6 +505,21 @@ public class Main {
             System.out.println("file1 created: " + attributes.creationTime());
             System.out.println("file1 is directory? " + attributes.isDirectory());
             System.out.println("file1 is file? " + attributes.isRegularFile());
+            System.out.println();
+            // Read directory contents, then filter for regular files only.
+            DirectoryStream.Filter<Path> filter = new DirectoryStream.Filter<Path>() {
+                public boolean accept(Path path) throws IOException {
+                    return Files.isRegularFile(path);
+                }
+            };
+            source = Paths.get(".", "Examples\\Dir2");
+            try(DirectoryStream<Path> contents = Files.newDirectoryStream(source, filter)) {
+                for(Path content: contents) {
+                    System.out.println(content.getFileName());
+                }
+            } catch(IOException | DirectoryIteratorException e) {
+                e.printStackTrace();
+            }
         } catch(IOException e) {
             e.printStackTrace();
         }
