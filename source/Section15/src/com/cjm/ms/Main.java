@@ -1,9 +1,6 @@
 package com.cjm.ms;
 
-import java.io.BufferedReader;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.RandomAccessFile;
+import java.io.*;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.Pipe;
@@ -520,8 +517,31 @@ public class Main {
             } catch(IOException | DirectoryIteratorException e) {
                 e.printStackTrace();
             }
+            System.out.println();
+            // Get system file separator.
+            String separator = File.separator; // Tip: Don't hardcode separator.
+            System.out.println("Separator is (method 1): " + separator);
+            separator = FileSystems.getDefault().getSeparator();
+            System.out.println("Separator is (method 2): " + separator);
+            String samplePath = "Examples/Dir2/file2.txt".replace('/', separator.charAt(0));
+            System.out.println("Sample path: " + samplePath);
+            System.out.println();
+            // Create temporary file.
+            try {
+                Path tempFile = Files.createTempFile("myapp", ".txt");
+                System.out.println("Temporary file path: " + tempFile.toAbsolutePath());
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
         } catch(IOException e) {
             e.printStackTrace();
+        }
+        System.out.println();
+        // Get system file stores, i.e. drives/volumes.
+        System.out.println("The following file stores are available:");
+        Iterable<FileStore> stores = FileSystems.getDefault().getFileStores();
+        for(FileStore store: stores) {
+            System.out.println(store);
         }
     }
 }

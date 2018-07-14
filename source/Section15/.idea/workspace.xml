@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746f24a7-17d6-4699-8ebe-f8816175b077" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Examples/Dir2/file3.txt" afterPath="$PROJECT_DIR$/Examples/Dir2/file3.dat" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,8 +19,8 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="333">
-                  <caret line="508" column="75" lean-forward="false" selection-start-line="508" selection-start-column="75" selection-end-line="508" selection-end-column="75" />
+                <state relative-caret-position="484">
+                  <caret line="543" column="38" lean-forward="false" selection-start-line="543" selection-start-column="38" selection-end-line="543" selection-end-column="38" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#divideLBYL#0;class#Main#0" expanded="false" />
@@ -315,7 +312,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/cjm/ms/Main.java</url>
-          <line>340</line>
+          <line>337</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
@@ -660,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="508" column="75" lean-forward="false" selection-start-line="508" selection-start-column="75" selection-end-line="508" selection-end-column="75" />
+        <state relative-caret-position="484">
+          <caret line="543" column="38" lean-forward="false" selection-start-line="543" selection-start-column="38" selection-end-line="543" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#divideLBYL#0;class#Main#0" expanded="false" />
