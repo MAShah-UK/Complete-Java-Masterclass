@@ -543,5 +543,14 @@ public class Main {
         for(FileStore store: stores) {
             System.out.println(store);
         }
+        System.out.println();
+        // Print all files and directories.
+        System.out.println("Walking tree for Dir2:");
+        Path dir2Path = FileSystems.getDefault().getPath("Examples" + File.separator + "Dir2");
+        try {
+            Files.walkFileTree(dir2Path, new PrintNames());
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
     }
 }
