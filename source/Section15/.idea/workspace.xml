@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746f24a7-17d6-4699-8ebe-f8816175b077" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/CopyFiles.java" />
+      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Examples/Dir4/Dir2Copy/Dir3/file1.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Examples/Dir4/Dir2Copy/Dir3/file2.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Examples/Dir4/Dir2Copy/file1.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Examples/Dir4/Dir2Copy/file2.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Examples/Dir4/Dir2Copy/file3.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data.txt" afterPath="$PROJECT_DIR$/data.txt" />
+      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/CopyFiles.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/CopyFiles.java" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,11 +25,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="532">
-                  <caret line="564" column="9" lean-forward="true" selection-start-line="564" selection-start-column="9" selection-end-line="564" selection-end-column="9" />
+                  <caret line="426" column="43" lean-forward="false" selection-start-line="426" selection-start-column="43" selection-end-line="426" selection-end-column="43" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#divideLBYL#0;class#Main#0" expanded="false" />
@@ -34,6 +41,13 @@
                     <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
                     <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
                     <element signature="method#usePipes#0;class#Main#0" expanded="false" />
+                    <element signature="method#printFile#0;class#Main#0" expanded="false" />
+                    <element signature="method#modifyFilesystem#0;class#Main#0" expanded="false" />
+                    <element signature="e#16647#16661#0" expanded="false" />
+                    <element signature="e#17139#17153#0" expanded="false" />
+                    <element signature="class#21045:21233" expanded="false" />
+                    <element signature="method#accept#0;class#21045:21233" expanded="false" />
+                    <element signature="e#23293#23338#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -42,21 +56,11 @@
           <file leaf-file-name="CopyFiles.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/CopyFiles.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="226">
-                  <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+                <state relative-caret-position="663">
+                  <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Path.java" pinned="false" current-in-tab="true">
-            <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/nio/file/Path.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="638">
-                  <caret line="504" column="9" lean-forward="false" selection-start-line="504" selection-start-column="9" selection-end-line="504" selection-end-column="9" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -157,17 +161,6 @@
               <item name="Section15" type="b2602c69:ProjectViewProjectNode" />
               <item name="Section15" type="462c0819:PsiDirectoryNode" />
               <item name="Examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Section15" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Section15" type="462c0819:PsiDirectoryNode" />
-              <item name="Examples" type="462c0819:PsiDirectoryNode" />
-              <item name="Dir2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Section15" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Section15" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Section15" type="b2602c69:ProjectViewProjectNode" />
@@ -675,10 +668,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/nio/file/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="504" column="9" lean-forward="false" selection-start-line="504" selection-start-column="9" selection-end-line="504" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/CopyFiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
-          <caret line="564" column="9" lean-forward="true" selection-start-line="564" selection-start-column="9" selection-end-line="564" selection-end-column="9" />
+          <caret line="426" column="43" lean-forward="false" selection-start-line="426" selection-start-column="43" selection-end-line="426" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#divideLBYL#0;class#Main#0" expanded="false" />
@@ -690,25 +701,14 @@
             <element signature="method#createAdventureGame#0;class#Main#0" expanded="false" />
             <element signature="method#moreNIO#0;class#Main#0" expanded="false" />
             <element signature="method#usePipes#0;class#Main#0" expanded="false" />
+            <element signature="method#printFile#0;class#Main#0" expanded="false" />
+            <element signature="method#modifyFilesystem#0;class#Main#0" expanded="false" />
+            <element signature="e#16647#16661#0" expanded="false" />
+            <element signature="e#17139#17153#0" expanded="false" />
+            <element signature="class#21045:21233" expanded="false" />
+            <element signature="method#accept#0;class#21045:21233" expanded="false" />
+            <element signature="e#23293#23338#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/CopyFiles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/nio/file/Path.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="504" column="9" lean-forward="false" selection-start-line="504" selection-start-column="9" selection-end-line="504" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>

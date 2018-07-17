@@ -11,37 +11,37 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         // Exceptions handling.
-//        System.out.println("BEGIN: Exception handling");
-//
-//        System.out.println("The result of 50/0 is: ");
-//        System.out.println(divideLBYL(50, 0));
-//        System.out.println();
-//
-//        System.out.println("The result of 50/0 is: ");
-//        System.out.println(divideEAFP(50, 0));
-//        System.out.println();
-//
-//        System.out.println("User input:");
-//        System.out.println(getInt());
-//        System.out.println();
-//
-//        System.out.println("User input:");
-//        System.out.println(getIntLBYL());
-//        System.out.println();
-//
-//        System.out.println("User inputs:");
-//        try {
-//            System.out.println(userDivide());
-//        } catch (ArithmeticException e) {
-//            System.out.println(e.getMessage());
-//        }
-//        System.out.println();
+        System.out.println("BEGIN: Exception handling");
+
+        System.out.println("The result of 50/0 is: ");
+        System.out.println(divideLBYL(50, 0));
+        System.out.println();
+
+        System.out.println("The result of 50/0 is: ");
+        System.out.println(divideEAFP(50, 0));
+        System.out.println();
+
+        System.out.println("User input:");
+        System.out.println(getInt());
+        System.out.println();
+
+        System.out.println("User input:");
+        System.out.println(getIntLBYL());
+        System.out.println();
+
+        System.out.println("User inputs:");
+        try {
+            System.out.println(userDivide());
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+        System.out.println();
 
         // IO.
-//        System.out.println("BEGIN: IO");
-//        createAdventureGame();
-//         moreNIO();
-        // usePipes();
+        System.out.println("BEGIN: IO");
+        createAdventureGame();
+        moreNIO();
+        usePipes();
         modifyFilesystem();
     }
     /*
@@ -334,18 +334,18 @@ public class Main {
             binChannel.write(ByteBuffer.wrap(outputString2));
 
             //
-            readBuffer = ByteBuffer.allocate(100);
-            channel.read(readBuffer);
-            readBuffer.flip();
-            byte[] inputString = new byte[outputBytes.length];
-            readBuffer.get(inputString);
-            System.out.println("inputString = " + new String(inputString));
-            System.out.println("int1 = " + readBuffer.getInt());
-            System.out.println("int2 = " + readBuffer.getInt());
-            byte[] inputString2 = new byte[outputBytes2.length];
-            readBuffer.get(inputString2);
-            System.out.println("inputString2 = " + new String(inputString2));
-            System.out.println("int3 = " + readBuffer.getInt());
+//            readBuffer = ByteBuffer.allocate(100);
+//            channel.read(readBuffer);
+//            readBuffer.flip();
+//            byte[] inputString = new byte[outputBytes.length];
+//            readBuffer.get(inputString);
+//            System.out.println("inputString = " + new String(inputString));
+//            System.out.println("int1 = " + readBuffer.getInt());
+//            System.out.println("int2 = " + readBuffer.getInt());
+//            byte[] inputString2 = new byte[outputBytes2.length];
+//            readBuffer.get(inputString2);
+//            System.out.println("inputString2 = " + new String(inputString2));
+//            System.out.println("int3 = " + readBuffer.getInt());
 
             channel.close();
             raNIO.close();
@@ -407,7 +407,8 @@ public class Main {
 
             new Thread(writer).start();
             new Thread(reader).start();
-        } catch(IOException e) {
+            Thread.sleep(1000);
+        } catch(IOException|InterruptedException e) {
             e.printStackTrace();
         }
     }
@@ -555,13 +556,45 @@ public class Main {
         }
         System.out.println();
 //        //Copy directories and delete them.
-        System.out.println("Copy directories:");
-        Path copyPath = FileSystems.getDefault().getPath("Examples" +
-                File.separator + "Dir4" + File.separator + "Dir2Copy");
-        try {
-            Files.walkFileTree(dir2Path, new CopyFiles(dir2Path, copyPath));
-        } catch(IOException e) {
-            e.printStackTrace();
+//        System.out.println("Copy directories:");
+//        Path copyPath = FileSystems.getDefault().getPath("Examples" +
+//                File.separator + "Dir4" + File.separator + "Dir2Copy");
+//        try {
+//            Files.walkFileTree(dir2Path, new CopyFiles(dir2Path, copyPath));
+//        } catch(IOException e) {
+//            e.printStackTrace();
+//        }
+        // Map IO to NIO.
+        File file = new File("Examples\\file.txt");
+        Path convertedPath = file.toPath();
+        System.out.println("convertedPath = " + convertedPath); // Convert IO to NIO.
+
+        File parent = new File("Examples");
+        File resolvedFile = new File(parent, "dir\\file.txt"); // Concatenate path using File and String.
+        System.out.println(resolvedFile.toPath());
+
+        resolvedFile = new File("Examples", "dir\\file.txt"); // Concatenate path using only String.
+        System.out.println(resolvedFile.toPath());
+
+        Path parentPath = Paths.get("Examples");
+        Path childRelativePath = Paths.get("dir\\file.txt");
+        System.out.println(parentPath.resolve(childRelativePath)); // Concatenate path using Path.
+
+        File workingDirectory = new File("").getAbsoluteFile(); // Empty path returns working directory.
+        System.out.println("Working directory: " + workingDirectory.getAbsolutePath());
+
+        System.out.println("Print Dir2 contents using list():");
+        File dir2File = new File(workingDirectory, "Examples\\Dir2");
+        String[] dir2Contents = dir2File.list();
+        for(int i=0; i<dir2Contents.length; i++) {
+            System.out.println("dir2Contents[" + i + "]: " + dir2Contents[i]);
+        }
+        System.out.println();
+
+        System.out.println("Print Dir2 contents using listFiles():");
+        File[] dir2Files = dir2File.listFiles();
+        for(int i=0; i<dir2Contents.length; i++) {
+            System.out.println("dir2Files[" + i + "]: " + dir2Files[i].getName());
         }
     }
 }
