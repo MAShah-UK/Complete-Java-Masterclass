@@ -486,8 +486,9 @@ public class Main {
             Files.delete(target);
             // Create directory and delete it.
             target = Paths.get(".", "Examples", "Dir4");
-            Files.createDirectory(target);
-            Files.delete(target);
+            if(Files.notExists(target)) {
+                Files.createDirectory(target);
+            }
             // Create directories.
             target = Paths.get(".", "Examples", "Dir2\\Dir3\\Dir4\\Dir5\\Dir6");
             Files.createDirectories(target);
@@ -549,6 +550,16 @@ public class Main {
         Path dir2Path = FileSystems.getDefault().getPath("Examples" + File.separator + "Dir2");
         try {
             Files.walkFileTree(dir2Path, new PrintNames());
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println();
+//        //Copy directories and delete them.
+        System.out.println("Copy directories:");
+        Path copyPath = FileSystems.getDefault().getPath("Examples" +
+                File.separator + "Dir4" + File.separator + "Dir2Copy");
+        try {
+            Files.walkFileTree(dir2Path, new CopyFiles(dir2Path, copyPath));
         } catch(IOException e) {
             e.printStackTrace();
         }
