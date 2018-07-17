@@ -1,0 +1,207 @@
+BEGIN: Exception handling
+The result of 50/0 is: 
+Can't divide by zero.
+0
+
+The result of 50/0 is: 
+Can't divide by zero.
+0
+
+User input:
+Enter an integer (no validation, might crash): 5
+5
+
+User input:
+Enter an integer (validated, won't crash): t
+Invalid input.
+0
+
+User inputs:
+Enter an integer (no validation, might crash): 6
+Enter an integer (no validation, might crash): 3
+Valid input.
+2.0
+
+BEGIN: IO
+
+BEGIN: createAdventureGame
+YOU ARE AT A COMPLEX JUNCTION. A LOW HANDS AND KNEES PASSAGE FROM THE NORTH JOINS A HIGHER CRAWL FROM THE EAST TO MAKE A WALKING PASSAGE GOING WEST. THERE IS ALSO A LARGE ROOM ABOVE. THE AIR IS DAMP HERE.
+Available exits are Q, U, W, N, E, 
+N
+YOU ARE IN A LARGE ROOM CARVED OUT OF SEDIMENTARY ROCK. THE FLOOR AND WALLS ARE LITTERED WITH BITS OF SHELLS IMBEDDED IN THE STONE. A SHALLOW PASSAGE PROCEEDS DOWNWARD, AND A SOMEWHAT STEEPER ONE LEADSUP. A LOW HANDS AND KNEES PASSAGE ENTERS FROM THE SOUTH.
+Available exits are Q, U, D, S, 
+s
+YOU ARE AT A COMPLEX JUNCTION. A LOW HANDS AND KNEES PASSAGE FROM THE NORTH JOINS A HIGHER CRAWL FROM THE EAST TO MAKE A WALKING PASSAGE GOING WEST. THERE IS ALSO A LARGE ROOM ABOVE. THE AIR IS DAMP HERE.
+Available exits are Q, U, W, N, E, 
+Q
+YOU ARE SITTING IN FRONT OF A COMPUTER LEARNING JAVA.
+
+BEGIN: moreNIO
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Line x
+Hello, World!
+245
+-98765
+byte buffer = Hello, World!
+1214606444
+1865162839
+int3 = -167772546
+int2 = -98765
+int1 = 245
+Num transferred = 4
+
+BEGIN: usePipes
+Reader Thread: The time is: 1531847071788
+Reader Thread: The time is: 1531847071890
+Reader Thread: The time is: 1531847071991
+Reader Thread: The time is: 1531847072091
+Reader Thread: The time is: 1531847072191
+Reader Thread: The time is: 1531847072291
+Reader Thread: The time is: 1531847072392
+Reader Thread: The time is: 1531847072493
+Reader Thread: The time is: 1531847072593
+Reader Thread: The time is: 1531847072693
+
+BEGIN: modifyFilesystem
+File within the working directory.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Ut suscipit eu lectus non volutpat.
+In consequat ac lacus vitae ornare.
+Vestibulum cursus urna tellus, vitae placerat elit euismod in.
+
+File within subdirectory.
+In consequat ac lacus vitae ornare.
+Vestibulum cursus urna tellus, vitae placerat elit euismod in.
+Aliquam at lobortis lacus.
+
+File in some random location on the file system.
+Quisque at pellentesque neque.
+Etiam mollis dolor et congue congue.
+Curabitur eleifend lecinia sapien, et dictum nibh.
+Integer id finibus ex, at gravida leo.
+Does file exist? true.
+
+Working directory: D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\.
+Temp directory: D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\.\files\..\files\SubdirectoryFile.txt
+After normalisation: D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\files\SubdirectoryFile.txt
+
+Bad path: D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\ThisFileDoesNotExist.txt
+Does file exist: false.
+
+file1 size: 154
+file1 last modified: 2018-07-06T02:07:02.006Z
+file1 size: 154
+file1 last modified: 2018-07-06T02:07:02.006Z
+file1 created: 2018-07-10T22:48:44.830183Z
+file1 is directory? false
+file1 is file? true
+
+file1.txt
+file2.txt
+file3.dat
+
+Separator is (method 1): \
+Separator is (method 2): \
+Sample path: Examples\Dir2\file2.txt
+
+Temporary file path: C:\Users\Cero\AppData\Local\Temp\myapp10492009281790403189.txt
+
+The following file stores are available:
+(C:)
+Data (D:)
+
+Walking tree for Dir2:
+D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\Examples\Dir2
+D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\Examples\Dir2\Dir3
+D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\Examples\Dir2\Dir3\Dir4
+D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\Examples\Dir2\Dir3\Dir4\Dir5
+D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\Examples\Dir2\Dir3\Dir4\Dir5\Dir6
+D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\Examples\Dir2\Dir3\file1.txt
+D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\Examples\Dir2\Dir3\file2.txt
+D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\Examples\Dir2\file1.txt
+D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\Examples\Dir2\file2.txt
+D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15\Examples\Dir2\file3.dat
+
+Copy directories:
+RelativizedPath = 
+Resolved path for copy = Examples\Dir4\Dir2Copy
+RelativizedPath = Dir3
+Resolved path for copy = Examples\Dir4\Dir2Copy\Dir3
+RelativizedPath = Dir3\Dir4
+Resolved path for copy = Examples\Dir4\Dir2Copy\Dir3\Dir4
+RelativizedPath = Dir3\Dir4\Dir5
+Resolved path for copy = Examples\Dir4\Dir2Copy\Dir3\Dir4\Dir5
+RelativizedPath = Dir3\Dir4\Dir5\Dir6
+Resolved path for copy = Examples\Dir4\Dir2Copy\Dir3\Dir4\Dir5\Dir6
+RelativizedPath = Dir3\file1.txt
+Resolved path for copy = Examples\Dir4\Dir2Copy\Dir3\file1.txt
+RelativizedPath = Dir3\file2.txt
+Resolved path for copy = Examples\Dir4\Dir2Copy\Dir3\file2.txt
+RelativizedPath = file1.txt
+Resolved path for copy = Examples\Dir4\Dir2Copy\file1.txt
+RelativizedPath = file2.txt
+Resolved path for copy = Examples\Dir4\Dir2Copy\file2.txt
+RelativizedPath = file3.dat
+Resolved path for copy = Examples\Dir4\Dir2Copy\file3.dat
+convertedPath = Examples\file.txt
+Examples\dir\file.txt
+Examples\dir\file.txt
+Examples\dir\file.txt
+Working directory: D:\Personal\My Documents\~Projects\IntelliJ IDEA\CompleteJavaMasterclass\source\Section15
+Print Dir2 contents using list():
+dir2Contents[0]: Dir3
+dir2Contents[1]: file1.txt
+dir2Contents[2]: file2.txt
+dir2Contents[3]: file3.dat
+
+Print Dir2 contents using listFiles():
+dir2Files[0]: Dir3
+dir2Files[1]: file1.txt
+dir2Files[2]: file2.txt
+dir2Files[3]: file3.dat
+
+Process finished with exit code 0
