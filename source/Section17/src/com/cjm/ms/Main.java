@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
         printMessage();
         sortEmployees();
+        concatStrings();
     }
     public static void printMessage() {
         System.out.println("BEGIN: printMessage");
@@ -29,7 +30,7 @@ public class Main {
         class CodeToRun implements Runnable {
             @Override
             public void run() {
-                System.out.println("1. Output to console from CodeToRun instance.");
+                System.out.println("Output to console from CodeToRun instance.\n");
             }
         }
         thread.exec( new Thread(new CodeToRun()) );
@@ -38,7 +39,7 @@ public class Main {
         thread.exec( new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    System.out.println("2. Output to console from anonymous class.");
+                    System.out.println("Output to console from anonymous class.\n");
                 }
             }) );
 
@@ -46,12 +47,18 @@ public class Main {
         // Only works when the interface has one abstract method as the compiler knows
         // which method the lambda is referring to.
         // An interface with one declared method is a functional interface.
-        thread.exec( new Thread(() -> System.out.println("3.1 Output to console from lambda.")) );
+        thread.exec( new Thread(() -> System.out.println("Output to console from lambda.\n")) );
 
         thread.exec( new Thread(() -> {
-            System.out.println("3.2 Second output to console from lambda.");
-            System.out.println("3.2 time the lambda contains multiple statements.");
+            System.out.println("Second output to console from lambda.");
+            System.out.println("time the lambda contains multiple statements.\n");
         }) );
+
+        // Use lambdas with one argument.
+        ConsoleOutput output = (msg) -> System.out.println(msg);
+        output.print("This message is from a lambda expression that requires one argument.");
+        output = msg -> System.out.println(msg); // Parenthesis not required for one argument.
+        output.print("This is another message from a lambda expression that requires one argument.");
     }
     public static void sortEmployees() {
         System.out.println("\nBEGIN: sortEmployees");
@@ -95,9 +102,48 @@ public class Main {
                 return employee1.getName().compareTo(employee2.getName());
             }
         });
-        System.out.print("List of employees sorted using Collections.sort(): ");
+        System.out.print("List of employees sorted using anonymous class: ");
         for(Employee employee: employees) {
             System.out.print(employee.getName() + ". ");
         }
+        System.out.println();
+        // Sort using lambda generated anonymous Comparator subclass.
+        Collections.sort(employees, (Employee employee1, Employee employee2) ->
+                employee1.getName().compareTo(employee2.getName()));
+        // Employee type can be inferred from employees parameter.
+        Collections.sort(employees, (employee1, employee2) ->
+                employee1.getName().compareTo(employee2.getName()));
+        System.out.print("List of employees sorted using lambdas: ");
+        for(Employee employee: employees) {
+            System.out.print(employee.getName() + ". ");
+        }
+        System.out.println();
     }
+    public static void concatStrings() {
+        System.out.println("\nBEGIN: concatStrings");
+
+        // Return data using anonymous class.
+        UpperConcat upperConcat = new UpperConcat() {
+            @Override
+            public String exec(String s1, String s2) {
+                return s1.toUpperCase() + s2.toUpperCase();
+            }
+        };
+        String concatString_anonymousClass = upperConcat.exec("Hello", "World");
+        System.out.println("'Hello' and 'World' UpperConcat using anonymous class: " +
+                concatString_anonymousClass);
+        // Return data using lambda expression.
+        upperConcat = (s1, s2) -> s1.toUpperCase() + s2.toUpperCase(); // Types inferred.
+        String concatString_lambda = upperConcat.exec("Hello", "World");
+        System.out.println("'Hello' and 'World' UpperConcat using lambda: " +
+                concatString_lambda);
+    }
+}
+
+interface ConsoleOutput {
+    void print(String message);
+}
+
+interface UpperConcat {
+    String exec(String s1, String s2);
 }
