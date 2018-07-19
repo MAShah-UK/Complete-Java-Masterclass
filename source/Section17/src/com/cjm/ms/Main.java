@@ -10,7 +10,9 @@ public class Main {
         printMessage();
         sortEmployees();
         concatStrings();
+        printNameAndNumbers();
     }
+    // Practice working with basic lambda expressions.
     public static void printMessage() {
         System.out.println("BEGIN: printMessage");
 
@@ -60,6 +62,7 @@ public class Main {
         output = msg -> System.out.println(msg); // Parenthesis not required for one argument.
         output.print("This is another message from a lambda expression that requires one argument.");
     }
+    // Practice using lambdas with argument lists.
     public static void sortEmployees() {
         System.out.println("\nBEGIN: sortEmployees");
 
@@ -119,6 +122,7 @@ public class Main {
         }
         System.out.println();
     }
+    // Practice returning data from lambdas.
     public static void concatStrings() {
         System.out.println("\nBEGIN: concatStrings");
 
@@ -134,9 +138,37 @@ public class Main {
                 concatString_anonymousClass);
         // Return data using lambda expression.
         upperConcat = (s1, s2) -> s1.toUpperCase() + s2.toUpperCase(); // Types inferred.
+        // Equivalent: upperConcat = (s1, s2) -> { return s1.toUpperCase()  + s2.toUpperCase(); };
         String concatString_lambda = upperConcat.exec("Hello", "World");
         System.out.println("'Hello' and 'World' UpperConcat using lambda: " +
                 concatString_lambda);
+    }
+    // Practice capturing local variables with lambdas.
+    public static void printNameAndNumbers() {
+        System.out.println("\nBEGIN: printNameAndNumbers");
+
+        final List<String> employeeNames = List.of("John Doe", "Jane Doe");
+        ConsoleOutput output = (message) -> System.out.println(employeeNames.get(0));
+        System.out.print("Employee name: ");
+        output.print("");
+
+        // employeeName = "Jane Doe";
+        // Compiler error because captures local variables must be marked final,
+        // or be effectively final.
+        // The same rule applies to anonymous classes.
+
+        // Valid because employeeName is effectively final as the reference is never changed.
+        System.out.print("Employee names: ");
+        for(String employeeName: employeeNames) {
+            output = (message) -> System.out.print(employeeName + ". ");
+            output.print("");
+        }
+        System.out.println();
+
+        // Alternate solution.
+        System.out.print("Employee names: ");
+        employeeNames.forEach((employee) -> System.out.print(employee + ". "));
+        System.out.println();
     }
 }
 
