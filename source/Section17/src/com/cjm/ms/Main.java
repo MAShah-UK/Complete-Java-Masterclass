@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +13,7 @@ public class Main {
         sortEmployees();
         concatStrings();
         printNameAndNumbers();
+        filterEmployees();
     }
     // Practice working with basic lambda expressions.
     public static void printMessage() {
@@ -65,27 +68,6 @@ public class Main {
     // Practice using lambdas with argument lists.
     public static void sortEmployees() {
         System.out.println("\nBEGIN: sortEmployees");
-
-        class Employee {
-            private String name;
-            private int age;
-            public Employee(String name, int age) {
-                this.name = name;
-                this.age = age;
-            }
-            public String getName() {
-                return name;
-            }
-            public void setName(String name) {
-                this.name = name;
-            }
-            public int getAge() {
-                return age;
-            }
-            public void setAge(int age) {
-                this.age = age;
-            }
-        }
 
         Employee john = new Employee("John Doe", 45);
         Employee jane = new Employee("Jane Doe", 43);
@@ -165,10 +147,67 @@ public class Main {
         }
         System.out.println();
 
-        // Alternate solution.
+        // Alternate solution: uses Consumer interface to take one argument and execute code with it.
         System.out.print("Employee names: ");
         employeeNames.forEach((employee) -> System.out.print(employee + ". "));
         System.out.println();
+    }
+    // Practice working with predicates.
+    public static void filterEmployees() {
+        System.out.println("\nBEGIN: filterEmployees");
+
+        class AgeFilter {
+            public <T> void exec(List<T> list, Predicate<T> filter, Consumer<T> action) {
+                list.forEach(data -> {
+                    if(filter.test(data)) {
+                        action.accept(data);
+                    }
+                });
+            }
+        }
+
+        Employee john = new Employee("John Doe", 45);
+        Employee jane = new Employee("Jane Doe", 43);
+        Employee jack = new Employee("Jack Doe", 25);
+        Employee jim = new Employee("Jim Doe", 23);
+
+        List<Employee> employees = new ArrayList<>();
+        employees.add(john);
+        employees.add(jane);
+        employees.add(jack);
+        employees.add(jim);
+
+        // Filter employees based on age.
+        // Predicates are used to execute code if certain conditions are met.
+        final Predicate<Employee> ageFilter = (employee) -> employee.getAge()>30;
+        System.out.print("The following employees are over the age of 30: ");
+        employees.forEach(employee -> {
+            if(ageFilter.test(employee)) {
+                System.out.print(employee.getName() + ". ");
+            }
+        });
+        System.out.println();
+    }
+}
+
+class Employee {
+    private String name;
+    private int age;
+    public Employee(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
     }
 }
 
