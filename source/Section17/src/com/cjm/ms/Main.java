@@ -157,6 +157,8 @@ public class Main {
         System.out.println("\nBEGIN: filterEmployees");
 
         class AgeFilter {
+            // Predicate is used to execute code if certain conditions are met.
+            // Consumer is used to execute code that doesn't require returning data.
             public <T> void exec(List<T> list, Predicate<T> filter, Consumer<T> action) {
                 list.forEach(data -> {
                     if(filter.test(data)) {
@@ -165,6 +167,7 @@ public class Main {
                 });
             }
         }
+        AgeFilter ageFilter = new AgeFilter();
 
         Employee john = new Employee("John Doe", 45);
         Employee jane = new Employee("Jane Doe", 43);
@@ -178,14 +181,25 @@ public class Main {
         employees.add(jim);
 
         // Filter employees based on age.
-        // Predicates are used to execute code if certain conditions are met.
-        final Predicate<Employee> ageFilter = (employee) -> employee.getAge()>30;
-        System.out.print("The following employees are over the age of 30: ");
-        employees.forEach(employee -> {
-            if(ageFilter.test(employee)) {
+        // Anonymous class version:
+        System.out.print("The following employees are over the age of 30 (using anon classes): ");
+        ageFilter.exec(employees, new Predicate<Employee>() {
+            @Override
+            public boolean test(Employee employee) {
+                return employee.getAge()>30;
+            }
+        }, new Consumer<Employee>() {
+            @Override
+            public void accept(Employee employee) {
                 System.out.print(employee.getName() + ". ");
             }
         });
+        System.out.println();
+        
+        System.out.print("The following employees are over the age of 30 (using lambdas): ");
+        ageFilter.exec(employees, // Type inference used to determine T as type Employee.
+                       employee -> employee.getAge()>30, // Condition.
+                       employee -> System.out.print(employee.getName() + ". ")); // Runs if condition is met.
         System.out.println();
     }
 }
