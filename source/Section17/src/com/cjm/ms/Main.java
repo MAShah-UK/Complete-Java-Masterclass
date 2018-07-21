@@ -1,11 +1,9 @@
 package com.cjm.ms;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +12,7 @@ public class Main {
         concatStrings();
         printNameAndNumbers();
         filterEmployees();
+        printRandomNumbers();
     }
     // Practice working with basic lambda expressions.
     public static void printMessage() {
@@ -152,7 +151,7 @@ public class Main {
         employeeNames.forEach((employee) -> System.out.print(employee + ". "));
         System.out.println();
     }
-    // Practice working with predicates.
+    // Practice working with Predicate.
     public static void filterEmployees() {
         System.out.println("\nBEGIN: filterEmployees");
 
@@ -209,6 +208,19 @@ public class Main {
         Predicate<Employee> ageUnder44 = employee -> employee.getAge()<44;
         Predicate<Employee> chainedPredicate = ageOver24.and(ageUnder44);
         ageFilter.exec(employees, chainedPredicate, printNameAge);
+        System.out.println();
+    }
+    // Practice working with Supplier.
+    public static void printRandomNumbers() {
+        System.out.println("\nBEGIN: printRandomNumbers");
+
+        Random random = new Random();
+        // Supplier requires zero arguments, but returns data.
+        Supplier<Integer> randomSupplier = () -> random.nextInt(1000);
+        System.out.print("10 random numbers: ");
+        for(int i=0; i<10; i++) {
+            System.out.print(randomSupplier.get() + ". ");
+        }
         System.out.println();
     }
 }
