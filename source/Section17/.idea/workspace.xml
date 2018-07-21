@@ -20,8 +20,8 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="444">
-                  <caret line="197" column="8" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="197" selection-end-column="8" />
+                <state relative-caret-position="624">
+                  <caret line="209" column="47" lean-forward="false" selection-start-line="209" selection-start-column="47" selection-end-line="209" selection-end-column="47" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#printMessage#0;class#Main#0" expanded="false" />
@@ -39,17 +39,15 @@
                     <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
                     <element signature="e#7815#7816#0" expanded="true" />
                     <element signature="e#7874#7875#0" expanded="true" />
-                    <element signature="e#7986#7987#0" expanded="true" />
-                    <element signature="e#8061#8062#0" expanded="true" />
                     <element signature="class#Employee#0" expanded="false" />
-                    <element signature="e#8709#8710#0" expanded="true" />
-                    <element signature="e#8736#8737#0" expanded="true" />
-                    <element signature="e#8775#8776#0" expanded="true" />
-                    <element signature="e#8807#8808#0" expanded="true" />
-                    <element signature="e#8833#8834#0" expanded="true" />
-                    <element signature="e#8859#8860#0" expanded="true" />
-                    <element signature="e#8893#8894#0" expanded="true" />
-                    <element signature="e#8923#8924#0" expanded="true" />
+                    <element signature="e#9315#9316#0" expanded="true" />
+                    <element signature="e#9342#9343#0" expanded="true" />
+                    <element signature="e#9381#9382#0" expanded="true" />
+                    <element signature="e#9413#9414#0" expanded="true" />
+                    <element signature="e#9439#9440#0" expanded="true" />
+                    <element signature="e#9465#9466#0" expanded="true" />
+                    <element signature="e#9499#9500#0" expanded="true" />
+                    <element signature="e#9529#9530#0" expanded="true" />
                     <element signature="class#ConsoleOutput#0" expanded="false" />
                     <element signature="class#UpperConcat#0" expanded="false" />
                   </folding>
@@ -80,19 +78,18 @@
                     <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
                     <element signature="e#4514#4515#0" expanded="true" />
                     <element signature="e#4588#4589#0" expanded="true" />
+                    <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
                     <element signature="e#7815#7816#0" expanded="true" />
                     <element signature="e#7874#7875#0" expanded="true" />
-                    <element signature="e#7986#7987#0" expanded="true" />
-                    <element signature="e#8061#8062#0" expanded="true" />
                     <element signature="class#Employee#0" expanded="false" />
-                    <element signature="e#8709#8710#0" expanded="true" />
-                    <element signature="e#8736#8737#0" expanded="true" />
-                    <element signature="e#8775#8776#0" expanded="true" />
-                    <element signature="e#8807#8808#0" expanded="true" />
-                    <element signature="e#8833#8834#0" expanded="true" />
-                    <element signature="e#8859#8860#0" expanded="true" />
-                    <element signature="e#8893#8894#0" expanded="true" />
-                    <element signature="e#8923#8924#0" expanded="true" />
+                    <element signature="e#9315#9316#0" expanded="true" />
+                    <element signature="e#9342#9343#0" expanded="true" />
+                    <element signature="e#9381#9382#0" expanded="true" />
+                    <element signature="e#9413#9414#0" expanded="true" />
+                    <element signature="e#9439#9440#0" expanded="true" />
+                    <element signature="e#9465#9466#0" expanded="true" />
+                    <element signature="e#9499#9500#0" expanded="true" />
+                    <element signature="e#9529#9530#0" expanded="true" />
                     <element signature="class#ConsoleOutput#0" expanded="false" />
                     <element signature="class#UpperConcat#0" expanded="false" />
                   </folding>
@@ -143,6 +140,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -166,8 +165,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,7 +251,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -305,17 +302,15 @@
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#7815#7816#0" expanded="true" />
             <element signature="e#7874#7875#0" expanded="true" />
-            <element signature="e#7986#7987#0" expanded="true" />
-            <element signature="e#8061#8062#0" expanded="true" />
             <element signature="class#Employee#0" expanded="false" />
-            <element signature="e#8709#8710#0" expanded="true" />
-            <element signature="e#8736#8737#0" expanded="true" />
-            <element signature="e#8775#8776#0" expanded="true" />
-            <element signature="e#8807#8808#0" expanded="true" />
-            <element signature="e#8833#8834#0" expanded="true" />
-            <element signature="e#8859#8860#0" expanded="true" />
-            <element signature="e#8893#8894#0" expanded="true" />
-            <element signature="e#8923#8924#0" expanded="true" />
+            <element signature="e#9315#9316#0" expanded="true" />
+            <element signature="e#9342#9343#0" expanded="true" />
+            <element signature="e#9381#9382#0" expanded="true" />
+            <element signature="e#9413#9414#0" expanded="true" />
+            <element signature="e#9439#9440#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#9499#9500#0" expanded="true" />
+            <element signature="e#9529#9530#0" expanded="true" />
             <element signature="class#ConsoleOutput#0" expanded="false" />
             <element signature="class#UpperConcat#0" expanded="false" />
           </folding>
@@ -343,17 +338,15 @@
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#7815#7816#0" expanded="true" />
             <element signature="e#7874#7875#0" expanded="true" />
-            <element signature="e#7986#7987#0" expanded="true" />
-            <element signature="e#8061#8062#0" expanded="true" />
             <element signature="class#Employee#0" expanded="false" />
-            <element signature="e#8709#8710#0" expanded="true" />
-            <element signature="e#8736#8737#0" expanded="true" />
-            <element signature="e#8775#8776#0" expanded="true" />
-            <element signature="e#8807#8808#0" expanded="true" />
-            <element signature="e#8833#8834#0" expanded="true" />
-            <element signature="e#8859#8860#0" expanded="true" />
-            <element signature="e#8893#8894#0" expanded="true" />
-            <element signature="e#8923#8924#0" expanded="true" />
+            <element signature="e#9315#9316#0" expanded="true" />
+            <element signature="e#9342#9343#0" expanded="true" />
+            <element signature="e#9381#9382#0" expanded="true" />
+            <element signature="e#9413#9414#0" expanded="true" />
+            <element signature="e#9439#9440#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#9499#9500#0" expanded="true" />
+            <element signature="e#9529#9530#0" expanded="true" />
             <element signature="class#ConsoleOutput#0" expanded="false" />
             <element signature="class#UpperConcat#0" expanded="false" />
           </folding>
@@ -381,17 +374,51 @@
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#7815#7816#0" expanded="true" />
             <element signature="e#7874#7875#0" expanded="true" />
-            <element signature="e#7986#7987#0" expanded="true" />
-            <element signature="e#8061#8062#0" expanded="true" />
             <element signature="class#Employee#0" expanded="false" />
-            <element signature="e#8709#8710#0" expanded="true" />
-            <element signature="e#8736#8737#0" expanded="true" />
-            <element signature="e#8775#8776#0" expanded="true" />
-            <element signature="e#8807#8808#0" expanded="true" />
-            <element signature="e#8833#8834#0" expanded="true" />
-            <element signature="e#8859#8860#0" expanded="true" />
-            <element signature="e#8893#8894#0" expanded="true" />
-            <element signature="e#8923#8924#0" expanded="true" />
+            <element signature="e#9315#9316#0" expanded="true" />
+            <element signature="e#9342#9343#0" expanded="true" />
+            <element signature="e#9381#9382#0" expanded="true" />
+            <element signature="e#9413#9414#0" expanded="true" />
+            <element signature="e#9439#9440#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#9499#9500#0" expanded="true" />
+            <element signature="e#9529#9530#0" expanded="true" />
+            <element signature="class#ConsoleOutput#0" expanded="false" />
+            <element signature="class#UpperConcat#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#printMessage#0;class#Main#0" expanded="false" />
+            <element signature="class#563:854" expanded="false" />
+            <element signature="class#966:1165" expanded="false" />
+            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
+            <element signature="class#1302:1493" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1478#1479#0" expanded="true" />
+            <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
+            <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
+            <element signature="e#4514#4515#0" expanded="true" />
+            <element signature="e#4588#4589#0" expanded="true" />
+            <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
+            <element signature="e#7815#7816#0" expanded="true" />
+            <element signature="e#7874#7875#0" expanded="true" />
+            <element signature="class#Employee#0" expanded="false" />
+            <element signature="e#9315#9316#0" expanded="true" />
+            <element signature="e#9342#9343#0" expanded="true" />
+            <element signature="e#9381#9382#0" expanded="true" />
+            <element signature="e#9413#9414#0" expanded="true" />
+            <element signature="e#9439#9440#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#9499#9500#0" expanded="true" />
+            <element signature="e#9529#9530#0" expanded="true" />
             <element signature="class#ConsoleOutput#0" expanded="false" />
             <element signature="class#UpperConcat#0" expanded="false" />
           </folding>
@@ -437,10 +464,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding>
+            <element signature="docComment;class#Predicate#0" expanded="false" />
+            <element signature="docComment;method#test#0;class#Predicate#0" expanded="false" />
+            <element signature="docComment;method#and#0;class#Predicate#0" expanded="false" />
+            <element signature="docComment;method#negate#0;class#Predicate#0" expanded="false" />
+            <element signature="docComment;method#or#0;class#Predicate#0" expanded="false" />
+            <element signature="method#or#0;class#Predicate#0" expanded="false" />
+            <element signature="docComment;method#isEqual#0;class#Predicate#0" expanded="false" />
+            <element signature="method#isEqual#0;class#Predicate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="197" column="8" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="197" selection-end-column="8" />
+        <state relative-caret-position="624">
+          <caret line="209" column="47" lean-forward="false" selection-start-line="209" selection-start-column="47" selection-end-line="209" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#printMessage#0;class#Main#0" expanded="false" />
@@ -458,17 +502,15 @@
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#7815#7816#0" expanded="true" />
             <element signature="e#7874#7875#0" expanded="true" />
-            <element signature="e#7986#7987#0" expanded="true" />
-            <element signature="e#8061#8062#0" expanded="true" />
             <element signature="class#Employee#0" expanded="false" />
-            <element signature="e#8709#8710#0" expanded="true" />
-            <element signature="e#8736#8737#0" expanded="true" />
-            <element signature="e#8775#8776#0" expanded="true" />
-            <element signature="e#8807#8808#0" expanded="true" />
-            <element signature="e#8833#8834#0" expanded="true" />
-            <element signature="e#8859#8860#0" expanded="true" />
-            <element signature="e#8893#8894#0" expanded="true" />
-            <element signature="e#8923#8924#0" expanded="true" />
+            <element signature="e#9315#9316#0" expanded="true" />
+            <element signature="e#9342#9343#0" expanded="true" />
+            <element signature="e#9381#9382#0" expanded="true" />
+            <element signature="e#9413#9414#0" expanded="true" />
+            <element signature="e#9439#9440#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#9499#9500#0" expanded="true" />
+            <element signature="e#9529#9530#0" expanded="true" />
             <element signature="class#ConsoleOutput#0" expanded="false" />
             <element signature="class#UpperConcat#0" expanded="false" />
           </folding>

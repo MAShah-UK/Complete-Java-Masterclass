@@ -182,24 +182,33 @@ public class Main {
 
         // Filter employees based on age.
         // Anonymous class version:
-        System.out.print("The following employees are over the age of 30 (using anon classes): ");
+        System.out.print("The following employees are over the age of 24 (using anon classes): ");
         ageFilter.exec(employees, new Predicate<Employee>() {
             @Override
             public boolean test(Employee employee) {
-                return employee.getAge()>30;
+                return employee.getAge()>24;
             }
         }, new Consumer<Employee>() {
             @Override
             public void accept(Employee employee) {
-                System.out.print(employee.getName() + ". ");
+                System.out.print(employee.getName() + " (" + employee.getAge() + ")" + ". ");;
             }
         });
         System.out.println();
-        
-        System.out.print("The following employees are over the age of 30 (using lambdas): ");
+        // Lambda version:
+        System.out.print("The following employees are over the age of 24 (using lambdas): ");
+        Predicate<Employee> ageOver24 = employee -> employee.getAge()>24;
+        Consumer<Employee> printNameAge = employee ->
+                System.out.print(employee.getName() + " (" + employee.getAge() + ")" + ". ");
         ageFilter.exec(employees, // Type inference used to determine T as type Employee.
-                       employee -> employee.getAge()>30, // Condition.
-                       employee -> System.out.print(employee.getName() + ". ")); // Runs if condition is met.
+                       ageOver24, // Condition.
+                       printNameAge); // Runs if condition is met.
+        System.out.println();
+        // Chain predicates to increase filtering capability.
+        System.out.print("The following employees are between 24 and 44 years of age: ");
+        Predicate<Employee> ageUnder44 = employee -> employee.getAge()<44;
+        Predicate<Employee> chainedPredicate = ageOver24.and(ageUnder44);
+        ageFilter.exec(employees, chainedPredicate, printNameAge);
         System.out.println();
     }
 }
