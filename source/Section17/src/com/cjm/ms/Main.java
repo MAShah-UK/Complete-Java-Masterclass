@@ -2,20 +2,34 @@ package com.cjm.ms;
 
 import java.util.*;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 public class Main {
+    private final List<Employee> employees = new ArrayList<>();
+
+    // Point of entry.
     public static void main(String[] args) {
-        printMessage();
-        sortEmployees();
-        concatStrings();
-        printNameAndNumbers();
-        filterEmployees();
-        printRandomNumbers();
+        Main main = new Main();
+
+        main.printMessage();
+        main.sortEmployees();
+        main.concatStrings();
+        main.printNameAndNumbers();
+        main.filterEmployees();
+        main.printRandomNumbers();
+        main.printNames();
+    }
+    // Initialise fields.
+    public Main() {
+        employees.add(new Employee("John Doe", 45));
+        employees.add(new Employee("Jane Doe", 43));
+        employees.add(new Employee("Jack Doe", 25));
+        employees.add(new Employee("Jim Doe", 23));
     }
     // Practice working with basic lambda expressions.
-    public static void printMessage() {
+    public void printMessage() {
         System.out.println("BEGIN: printMessage");
 
         class StartJoinThread {
@@ -65,19 +79,8 @@ public class Main {
         output.print("This is another message from a lambda expression that requires one argument.");
     }
     // Practice using lambdas with argument lists.
-    public static void sortEmployees() {
+    public void sortEmployees() {
         System.out.println("\nBEGIN: sortEmployees");
-
-        Employee john = new Employee("John Doe", 45);
-        Employee jane = new Employee("Jane Doe", 43);
-        Employee jack = new Employee("Jack Doe", 25);
-        Employee jim = new Employee("Jim Doe", 23);
-
-        List<Employee> employees = new ArrayList<>();
-        employees.add(john);
-        employees.add(jane);
-        employees.add(jack);
-        employees.add(jim);
 
         // Sort using anonymous Comparator subclass.
         Collections.sort(employees, new Comparator<Employee>() {
@@ -91,7 +94,7 @@ public class Main {
             System.out.print(employee.getName() + ". ");
         }
         System.out.println();
-        // Sort using lambda generated anonymous Comparator subclass.
+        // Sort using anonymous Comparator subclass - generated via lambda expression.
         Collections.sort(employees, (Employee employee1, Employee employee2) ->
                 employee1.getName().compareTo(employee2.getName()));
         // Employee type can be inferred from employees parameter.
@@ -104,7 +107,7 @@ public class Main {
         System.out.println();
     }
     // Practice returning data from lambdas.
-    public static void concatStrings() {
+    public void concatStrings() {
         System.out.println("\nBEGIN: concatStrings");
 
         // Return data using anonymous class.
@@ -125,11 +128,10 @@ public class Main {
                 concatString_lambda);
     }
     // Practice capturing local variables with lambdas.
-    public static void printNameAndNumbers() {
+    public void printNameAndNumbers() {
         System.out.println("\nBEGIN: printNameAndNumbers");
 
-        final List<String> employeeNames = List.of("John Doe", "Jane Doe");
-        ConsoleOutput output = (message) -> System.out.println(employeeNames.get(0));
+        ConsoleOutput output = (message) -> System.out.println(employees.get(0).getName());
         System.out.print("Employee name: ");
         output.print("");
 
@@ -140,19 +142,19 @@ public class Main {
 
         // Valid because employeeName is effectively final as the reference is never changed.
         System.out.print("Employee names: ");
-        for(String employeeName: employeeNames) {
-            output = (message) -> System.out.print(employeeName + ". ");
+        for(Employee employee: employees) {
+            output = (message) -> System.out.print(employee.getName() + ". ");
             output.print("");
         }
         System.out.println();
 
         // Alternate solution: uses Consumer interface to take one argument and execute code with it.
         System.out.print("Employee names: ");
-        employeeNames.forEach((employee) -> System.out.print(employee + ". "));
+        employees.forEach((employee) -> System.out.print(employee + ". "));
         System.out.println();
     }
-    // Practice working with Predicate.
-    public static void filterEmployees() {
+    // Practice working with the Predicate interface.
+    public void filterEmployees() {
         System.out.println("\nBEGIN: filterEmployees");
 
         class AgeFilter {
@@ -210,8 +212,8 @@ public class Main {
         ageFilter.exec(employees, chainedPredicate, printNameAge);
         System.out.println();
     }
-    // Practice working with Supplier.
-    public static void printRandomNumbers() {
+    // Practice working with the Supplier interface.
+    public void printRandomNumbers() {
         System.out.println("\nBEGIN: printRandomNumbers");
 
         Random random = new Random();
@@ -220,6 +222,32 @@ public class Main {
         System.out.print("10 random numbers: ");
         for(int i=0; i<10; i++) {
             System.out.print(randomSupplier.get() + ". ");
+        }
+        System.out.println();
+    }
+    // Practice working with the Function interface.
+    public void printNames() {
+        System.out.println("\nBEGIN: printNames");
+
+        // Function is used to write methods that take one input and produce an output.
+        // The first type parameter maps to the input, the second maps to the output.
+        Function<Employee, String> extractFirstName = employee ->
+                employee.getName().substring(0, employee.getName().indexOf(' '));
+        System.out.print("Each employee's first name is: ");
+        for(Employee employee: employees) {
+            String firstName = extractFirstName.apply(employee);
+            System.out.print(firstName + ". ");
+        }
+        System.out.println();
+
+        // Function objects can be chained with other Function objects, as long as
+        // the output of the first function matches the input of the second.
+        Function<String, String> capitalise = str -> str.toUpperCase();
+        Function<Employee, String> capitaliseName = extractFirstName.andThen(capitalise);
+        System.out.print("Each employee's capitalised first name is: ");
+        for(Employee employee: employees) {
+            String firstName = capitaliseName.apply(employee);
+            System.out.print(firstName + ". ");
         }
         System.out.println();
     }
