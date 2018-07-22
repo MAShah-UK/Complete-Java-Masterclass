@@ -1,10 +1,7 @@
 package com.cjm.ms;
 
 import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
+import java.util.function.*;
 
 public class Main {
     private final List<Employee> employees = new ArrayList<>();
@@ -225,7 +222,7 @@ public class Main {
         }
         System.out.println();
     }
-    // Practice working with the Function interface.
+    // Practice working with the Function and BiFunction interfaces.
     public void printNames() {
         System.out.println("\nBEGIN: printNames");
 
@@ -248,6 +245,19 @@ public class Main {
         for(Employee employee: employees) {
             String firstName = capitaliseName.apply(employee);
             System.out.print(firstName + ". ");
+        }
+        System.out.println();
+
+        // BiFunction is like Function, but requires two arguments.
+        Function<Employee, String> extractSurname = employee ->
+                employee.getName().substring(employee.getName().indexOf(" ") + 1);
+        BiFunction<String, String, String> getFullName = (str1, str2) -> str1 + " " + str2;
+        System.out.print("Each employee's full name is: ");
+        for(Employee employee: employees) {
+            String firstName = extractFirstName.apply(employee);
+            String surname = extractSurname.apply(employee);
+            String fullName = getFullName.apply(firstName, surname);
+            System.out.print(fullName + ". ");
         }
         System.out.println();
     }
