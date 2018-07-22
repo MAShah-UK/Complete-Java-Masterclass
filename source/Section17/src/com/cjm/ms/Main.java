@@ -18,6 +18,7 @@ public class Main {
         main.printRandomNumbers();
         main.printNames();
         main.addIntegers();
+        main.streamEmployees();
     }
     // Initialise fields.
     public Main() {
@@ -269,6 +270,20 @@ public class Main {
         UnaryOperator<Integer> incrementByFive = value -> value + 5;
         System.out.println("Inputting 10 into the incrementByFive lambda results in: " +
                 incrementByFive.apply(10));
+    }
+    // Practice working with Stream.
+    public void streamEmployees() {
+        System.out.println("\nBEGIN: streamEmployees");
+
+        System.out.print("Employees that start with 'JA' include: ");
+        employees
+                .stream()
+                .map(Employee::getName) // employee -> employee.getName()
+                .map(String::toUpperCase) // string -> string.toUpperCase()
+                .filter(string -> string.startsWith("JA"))
+                .sorted()
+                .forEach(string -> System.out.print(string + ". "));
+        System.out.println();
     }
 }
 
