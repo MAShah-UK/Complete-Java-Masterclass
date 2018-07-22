@@ -17,6 +17,7 @@ public class Main {
         main.filterEmployees();
         main.printRandomNumbers();
         main.printNames();
+        main.addIntegers();
     }
     // Initialise fields.
     public Main() {
@@ -260,6 +261,14 @@ public class Main {
             System.out.print(fullName + ". ");
         }
         System.out.println();
+    }
+    // Practice working with the UnaryOperator interface.
+    public void addIntegers() {
+        System.out.println("\nBEGIN: addIntegers");
+
+        UnaryOperator<Integer> incrementByFive = value -> value + 5;
+        System.out.println("Inputting 10 into the incrementByFive lambda results in: " +
+                incrementByFive.apply(10));
     }
 }
 
