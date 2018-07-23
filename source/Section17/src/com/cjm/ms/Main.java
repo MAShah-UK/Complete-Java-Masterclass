@@ -2,6 +2,7 @@ package com.cjm.ms;
 
 import java.util.*;
 import java.util.function.*;
+import java.util.stream.Stream;
 
 public class Main {
     private final List<Employee> employees = new ArrayList<>();
@@ -275,15 +276,46 @@ public class Main {
     public void streamEmployees() {
         System.out.println("\nBEGIN: streamEmployees");
 
-        System.out.print("Employees that start with 'JA' include: ");
+        Consumer<String> printDelimited = (String str) -> System.out.print(str + ". ");
+
+        System.out.print("Employee names that start with 'JA' include: ");
         employees
                 .stream()
                 .map(Employee::getName) // employee -> employee.getName()
                 .map(String::toUpperCase) // string -> string.toUpperCase()
                 .filter(string -> string.startsWith("JA"))
                 .sorted()
-                .forEach(string -> System.out.print(string + ". "));
+                .forEach(printDelimited);
         System.out.println();
+
+        /*
+        // Source for Stream. The source can be a collection, array, or an IO channel.
+        employees
+                // Returns a Stream that contains all the items in the list, in the same order.
+                .stream()
+                // Returns a Stream that contains the name of each employee.
+                // Map always returns same number of items.
+                .map(Employee::getName)
+                // Returns a Stream that contains each name in upper case.
+                .map(String::toUpperCase)
+                // Returns a Stream in which items match the Predicate's constraints (returns true).
+                // Filter returns same items or less compared to input Stream.
+                .filter(string -> string.startsWith("JA"))
+                // Returns Stream with natural ordering.
+                // Sorted always returns the same number of items, but can change ordering.
+                .sorted()
+                // Performs an action for each item.
+                // forEach is a terminal operation as it has a non-Stream return type.
+                .forEach(string -> System.out.print(string + ". "));
+        */
+        Stream<String> ioNumberStream = Stream.of("I26", "I17", "I29", "071");
+        Stream<String> inNumberStream = Stream.of("N40", "N36", "I26", "I17", "I29");
+        Stream<String> ionNumberStream = Stream.concat(ioNumberStream, inNumberStream);
+        System.out.print("Unique elements: ");
+        System.out.println(ionNumberStream
+                .distinct()
+                .peek(printDelimited) // Like forEach, but not a terminal operation.
+                .count() + " (count).");
     }
 }
 

@@ -19,39 +19,47 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="356">
-                  <caret line="284" column="17" lean-forward="false" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="17" />
+                <state relative-caret-position="390">
+                  <caret line="317" column="37" lean-forward="false" selection-start-line="317" selection-start-column="37" selection-end-line="317" selection-end-column="37" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#Main#0;class#Main#0" expanded="false" />
                     <element signature="method#printMessage#0;class#Main#0" expanded="false" />
-                    <element signature="class#953:1244" expanded="false" />
-                    <element signature="method#exec#0;class#953:1244" expanded="false" />
-                    <element signature="class#1356:1555" expanded="false" />
-                    <element signature="class#1692:1883" expanded="false" />
-                    <element signature="e#1897#1960#0" expanded="false" />
-                    <element signature="e#2306#2479#0" expanded="false" />
+                    <element signature="class#985:1276" expanded="false" />
+                    <element signature="method#exec#0;class#985:1276" expanded="false" />
+                    <element signature="class#1388:1587" expanded="false" />
+                    <element signature="class#1724:1915" expanded="false" />
+                    <element signature="e#1929#1992#0" expanded="false" />
+                    <element signature="e#2338#2511#0" expanded="false" />
                     <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
-                    <element signature="class#3122:3340" expanded="false" />
-                    <element signature="method#compare#0;class#3122:3340" expanded="false" />
+                    <element signature="class#3154:3372" expanded="false" />
+                    <element signature="method#compare#0;class#3154:3372" expanded="false" />
                     <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
-                    <element signature="class#4431:4607" expanded="false" />
+                    <element signature="class#4463:4639" expanded="false" />
                     <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
-                    <element signature="e#5584#5613#0" expanded="false" />
+                    <element signature="e#5616#5645#0" expanded="false" />
                     <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
-                    <element signature="class#6536:7002" expanded="false" />
-                    <element signature="method#exec#0;class#6536:7002" expanded="false" />
-                    <element signature="e#6838#6976#0" expanded="false" />
-                    <element signature="e#7444#7477#0" expanded="false" />
-                    <element signature="class#7651:7818" expanded="false" />
-                    <element signature="class#7824:8039" expanded="false" />
-                    <element signature="method#accept#0;class#7824:8039" expanded="false" />
+                    <element signature="class#6568:7034" expanded="false" />
+                    <element signature="method#exec#0;class#6568:7034" expanded="false" />
+                    <element signature="e#6870#7008#0" expanded="false" />
+                    <element signature="e#7476#7509#0" expanded="false" />
+                    <element signature="class#7683:7850" expanded="false" />
+                    <element signature="class#7856:8071" expanded="false" />
+                    <element signature="method#accept#0;class#7856:8071" expanded="false" />
                     <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
                     <element signature="method#printNames#0;class#Main#0" expanded="false" />
-                    <element signature="e#10307#10381#0" expanded="false" />
+                    <element signature="e#10339#10413#0" expanded="false" />
                     <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
                     <element signature="class#Employee#0" expanded="false" />
                     <element signature="method#Employee#0;class#Employee#0" expanded="false" />
+                    <element signature="e#14481#14482#0" expanded="true" />
+                    <element signature="e#14508#14509#0" expanded="true" />
+                    <element signature="e#14547#14548#0" expanded="true" />
+                    <element signature="e#14579#14580#0" expanded="true" />
+                    <element signature="e#14605#14606#0" expanded="true" />
+                    <element signature="e#14631#14632#0" expanded="true" />
+                    <element signature="e#14665#14666#0" expanded="true" />
+                    <element signature="e#14695#14696#0" expanded="true" />
                     <element signature="class#ConsoleOutput#0" expanded="false" />
                     <element signature="class#UpperConcat#0" expanded="false" />
                   </folding>
@@ -67,26 +75,46 @@
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
-                  <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+                  <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1446#1447#0" expanded="true" />
-                    <element signature="e#1544#1545#0" expanded="true" />
-                    <element signature="e#1765#1766#0" expanded="true" />
-                    <element signature="e#1868#1869#0" expanded="true" />
-                    <element signature="e#4522#4523#0" expanded="true" />
-                    <element signature="e#4596#4597#0" expanded="true" />
-                    <element signature="e#7748#7749#0" expanded="true" />
-                    <element signature="e#7807#7808#0" expanded="true" />
+                    <element signature="method#Main#0;class#Main#0" expanded="false" />
+                    <element signature="method#printMessage#0;class#Main#0" expanded="false" />
+                    <element signature="class#985:1276" expanded="false" />
+                    <element signature="method#exec#0;class#985:1276" expanded="false" />
+                    <element signature="class#1388:1587" expanded="false" />
+                    <element signature="class#1724:1915" expanded="false" />
+                    <element signature="e#1929#1992#0" expanded="false" />
+                    <element signature="e#2338#2511#0" expanded="false" />
+                    <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
+                    <element signature="class#3154:3372" expanded="false" />
+                    <element signature="method#compare#0;class#3154:3372" expanded="false" />
+                    <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
+                    <element signature="class#4463:4639" expanded="false" />
+                    <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
+                    <element signature="e#5616#5645#0" expanded="false" />
+                    <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
+                    <element signature="class#6568:7034" expanded="false" />
+                    <element signature="method#exec#0;class#6568:7034" expanded="false" />
+                    <element signature="e#6870#7008#0" expanded="false" />
+                    <element signature="e#7476#7509#0" expanded="false" />
+                    <element signature="class#7683:7850" expanded="false" />
+                    <element signature="class#7856:8071" expanded="false" />
+                    <element signature="method#accept#0;class#7856:8071" expanded="false" />
+                    <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
+                    <element signature="method#printNames#0;class#Main#0" expanded="false" />
+                    <element signature="e#10339#10413#0" expanded="false" />
+                    <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
                     <element signature="class#Employee#0" expanded="false" />
-                    <element signature="e#12718#12719#0" expanded="true" />
-                    <element signature="e#12745#12746#0" expanded="true" />
-                    <element signature="e#12784#12785#0" expanded="true" />
-                    <element signature="e#12816#12817#0" expanded="true" />
-                    <element signature="e#12842#12843#0" expanded="true" />
-                    <element signature="e#12868#12869#0" expanded="true" />
-                    <element signature="e#12902#12903#0" expanded="true" />
-                    <element signature="e#12932#12933#0" expanded="true" />
+                    <element signature="method#Employee#0;class#Employee#0" expanded="false" />
+                    <element signature="e#14481#14482#0" expanded="true" />
+                    <element signature="e#14508#14509#0" expanded="true" />
+                    <element signature="e#14547#14548#0" expanded="true" />
+                    <element signature="e#14579#14580#0" expanded="true" />
+                    <element signature="e#14605#14606#0" expanded="true" />
+                    <element signature="e#14631#14632#0" expanded="true" />
+                    <element signature="e#14665#14666#0" expanded="true" />
+                    <element signature="e#14695#14696#0" expanded="true" />
                     <element signature="class#ConsoleOutput#0" expanded="false" />
                     <element signature="class#UpperConcat#0" expanded="false" />
                   </folding>
@@ -142,9 +170,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,50 +191,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ms" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Section17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Section17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 9 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="Section17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 9 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Section17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 9 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Section17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 9 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Section17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 9 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="function" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,33 +320,41 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#printMessage#0;class#Main#0" expanded="false" />
-            <element signature="class#953:1244" expanded="false" />
-            <element signature="method#exec#0;class#953:1244" expanded="false" />
-            <element signature="class#1356:1555" expanded="false" />
-            <element signature="class#1692:1883" expanded="false" />
-            <element signature="e#1897#1960#0" expanded="false" />
-            <element signature="e#2306#2479#0" expanded="false" />
+            <element signature="class#985:1276" expanded="false" />
+            <element signature="method#exec#0;class#985:1276" expanded="false" />
+            <element signature="class#1388:1587" expanded="false" />
+            <element signature="class#1724:1915" expanded="false" />
+            <element signature="e#1929#1992#0" expanded="false" />
+            <element signature="e#2338#2511#0" expanded="false" />
             <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#3122:3340" expanded="false" />
-            <element signature="method#compare#0;class#3122:3340" expanded="false" />
+            <element signature="class#3154:3372" expanded="false" />
+            <element signature="method#compare#0;class#3154:3372" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
-            <element signature="class#4431:4607" expanded="false" />
+            <element signature="class#4463:4639" expanded="false" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
-            <element signature="e#5584#5613#0" expanded="false" />
+            <element signature="e#5616#5645#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#6536:7002" expanded="false" />
-            <element signature="method#exec#0;class#6536:7002" expanded="false" />
-            <element signature="e#6838#6976#0" expanded="false" />
-            <element signature="e#7444#7477#0" expanded="false" />
-            <element signature="class#7651:7818" expanded="false" />
-            <element signature="class#7824:8039" expanded="false" />
-            <element signature="method#accept#0;class#7824:8039" expanded="false" />
+            <element signature="class#6568:7034" expanded="false" />
+            <element signature="method#exec#0;class#6568:7034" expanded="false" />
+            <element signature="e#6870#7008#0" expanded="false" />
+            <element signature="e#7476#7509#0" expanded="false" />
+            <element signature="class#7683:7850" expanded="false" />
+            <element signature="class#7856:8071" expanded="false" />
+            <element signature="method#accept#0;class#7856:8071" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
             <element signature="method#printNames#0;class#Main#0" expanded="false" />
-            <element signature="e#10307#10381#0" expanded="false" />
+            <element signature="e#10339#10413#0" expanded="false" />
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="class#Employee#0" expanded="false" />
             <element signature="method#Employee#0;class#Employee#0" expanded="false" />
+            <element signature="e#14481#14482#0" expanded="true" />
+            <element signature="e#14508#14509#0" expanded="true" />
+            <element signature="e#14547#14548#0" expanded="true" />
+            <element signature="e#14579#14580#0" expanded="true" />
+            <element signature="e#14605#14606#0" expanded="true" />
+            <element signature="e#14631#14632#0" expanded="true" />
+            <element signature="e#14665#14666#0" expanded="true" />
+            <element signature="e#14695#14696#0" expanded="true" />
             <element signature="class#ConsoleOutput#0" expanded="false" />
             <element signature="class#UpperConcat#0" expanded="false" />
           </folding>
@@ -372,33 +369,41 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#printMessage#0;class#Main#0" expanded="false" />
-            <element signature="class#953:1244" expanded="false" />
-            <element signature="method#exec#0;class#953:1244" expanded="false" />
-            <element signature="class#1356:1555" expanded="false" />
-            <element signature="class#1692:1883" expanded="false" />
-            <element signature="e#1897#1960#0" expanded="false" />
-            <element signature="e#2306#2479#0" expanded="false" />
+            <element signature="class#985:1276" expanded="false" />
+            <element signature="method#exec#0;class#985:1276" expanded="false" />
+            <element signature="class#1388:1587" expanded="false" />
+            <element signature="class#1724:1915" expanded="false" />
+            <element signature="e#1929#1992#0" expanded="false" />
+            <element signature="e#2338#2511#0" expanded="false" />
             <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#3122:3340" expanded="false" />
-            <element signature="method#compare#0;class#3122:3340" expanded="false" />
+            <element signature="class#3154:3372" expanded="false" />
+            <element signature="method#compare#0;class#3154:3372" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
-            <element signature="class#4431:4607" expanded="false" />
+            <element signature="class#4463:4639" expanded="false" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
-            <element signature="e#5584#5613#0" expanded="false" />
+            <element signature="e#5616#5645#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#6536:7002" expanded="false" />
-            <element signature="method#exec#0;class#6536:7002" expanded="false" />
-            <element signature="e#6838#6976#0" expanded="false" />
-            <element signature="e#7444#7477#0" expanded="false" />
-            <element signature="class#7651:7818" expanded="false" />
-            <element signature="class#7824:8039" expanded="false" />
-            <element signature="method#accept#0;class#7824:8039" expanded="false" />
+            <element signature="class#6568:7034" expanded="false" />
+            <element signature="method#exec#0;class#6568:7034" expanded="false" />
+            <element signature="e#6870#7008#0" expanded="false" />
+            <element signature="e#7476#7509#0" expanded="false" />
+            <element signature="class#7683:7850" expanded="false" />
+            <element signature="class#7856:8071" expanded="false" />
+            <element signature="method#accept#0;class#7856:8071" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
             <element signature="method#printNames#0;class#Main#0" expanded="false" />
-            <element signature="e#10307#10381#0" expanded="false" />
+            <element signature="e#10339#10413#0" expanded="false" />
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="class#Employee#0" expanded="false" />
             <element signature="method#Employee#0;class#Employee#0" expanded="false" />
+            <element signature="e#14481#14482#0" expanded="true" />
+            <element signature="e#14508#14509#0" expanded="true" />
+            <element signature="e#14547#14548#0" expanded="true" />
+            <element signature="e#14579#14580#0" expanded="true" />
+            <element signature="e#14605#14606#0" expanded="true" />
+            <element signature="e#14631#14632#0" expanded="true" />
+            <element signature="e#14665#14666#0" expanded="true" />
+            <element signature="e#14695#14696#0" expanded="true" />
             <element signature="class#ConsoleOutput#0" expanded="false" />
             <element signature="class#UpperConcat#0" expanded="false" />
           </folding>
@@ -413,33 +418,41 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#printMessage#0;class#Main#0" expanded="false" />
-            <element signature="class#953:1244" expanded="false" />
-            <element signature="method#exec#0;class#953:1244" expanded="false" />
-            <element signature="class#1356:1555" expanded="false" />
-            <element signature="class#1692:1883" expanded="false" />
-            <element signature="e#1897#1960#0" expanded="false" />
-            <element signature="e#2306#2479#0" expanded="false" />
+            <element signature="class#985:1276" expanded="false" />
+            <element signature="method#exec#0;class#985:1276" expanded="false" />
+            <element signature="class#1388:1587" expanded="false" />
+            <element signature="class#1724:1915" expanded="false" />
+            <element signature="e#1929#1992#0" expanded="false" />
+            <element signature="e#2338#2511#0" expanded="false" />
             <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#3122:3340" expanded="false" />
-            <element signature="method#compare#0;class#3122:3340" expanded="false" />
+            <element signature="class#3154:3372" expanded="false" />
+            <element signature="method#compare#0;class#3154:3372" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
-            <element signature="class#4431:4607" expanded="false" />
+            <element signature="class#4463:4639" expanded="false" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
-            <element signature="e#5584#5613#0" expanded="false" />
+            <element signature="e#5616#5645#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#6536:7002" expanded="false" />
-            <element signature="method#exec#0;class#6536:7002" expanded="false" />
-            <element signature="e#6838#6976#0" expanded="false" />
-            <element signature="e#7444#7477#0" expanded="false" />
-            <element signature="class#7651:7818" expanded="false" />
-            <element signature="class#7824:8039" expanded="false" />
-            <element signature="method#accept#0;class#7824:8039" expanded="false" />
+            <element signature="class#6568:7034" expanded="false" />
+            <element signature="method#exec#0;class#6568:7034" expanded="false" />
+            <element signature="e#6870#7008#0" expanded="false" />
+            <element signature="e#7476#7509#0" expanded="false" />
+            <element signature="class#7683:7850" expanded="false" />
+            <element signature="class#7856:8071" expanded="false" />
+            <element signature="method#accept#0;class#7856:8071" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
             <element signature="method#printNames#0;class#Main#0" expanded="false" />
-            <element signature="e#10307#10381#0" expanded="false" />
+            <element signature="e#10339#10413#0" expanded="false" />
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="class#Employee#0" expanded="false" />
             <element signature="method#Employee#0;class#Employee#0" expanded="false" />
+            <element signature="e#14481#14482#0" expanded="true" />
+            <element signature="e#14508#14509#0" expanded="true" />
+            <element signature="e#14547#14548#0" expanded="true" />
+            <element signature="e#14579#14580#0" expanded="true" />
+            <element signature="e#14605#14606#0" expanded="true" />
+            <element signature="e#14631#14632#0" expanded="true" />
+            <element signature="e#14665#14666#0" expanded="true" />
+            <element signature="e#14695#14696#0" expanded="true" />
             <element signature="class#ConsoleOutput#0" expanded="false" />
             <element signature="class#UpperConcat#0" expanded="false" />
           </folding>
@@ -454,33 +467,41 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#printMessage#0;class#Main#0" expanded="false" />
-            <element signature="class#953:1244" expanded="false" />
-            <element signature="method#exec#0;class#953:1244" expanded="false" />
-            <element signature="class#1356:1555" expanded="false" />
-            <element signature="class#1692:1883" expanded="false" />
-            <element signature="e#1897#1960#0" expanded="false" />
-            <element signature="e#2306#2479#0" expanded="false" />
+            <element signature="class#985:1276" expanded="false" />
+            <element signature="method#exec#0;class#985:1276" expanded="false" />
+            <element signature="class#1388:1587" expanded="false" />
+            <element signature="class#1724:1915" expanded="false" />
+            <element signature="e#1929#1992#0" expanded="false" />
+            <element signature="e#2338#2511#0" expanded="false" />
             <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#3122:3340" expanded="false" />
-            <element signature="method#compare#0;class#3122:3340" expanded="false" />
+            <element signature="class#3154:3372" expanded="false" />
+            <element signature="method#compare#0;class#3154:3372" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
-            <element signature="class#4431:4607" expanded="false" />
+            <element signature="class#4463:4639" expanded="false" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
-            <element signature="e#5584#5613#0" expanded="false" />
+            <element signature="e#5616#5645#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#6536:7002" expanded="false" />
-            <element signature="method#exec#0;class#6536:7002" expanded="false" />
-            <element signature="e#6838#6976#0" expanded="false" />
-            <element signature="e#7444#7477#0" expanded="false" />
-            <element signature="class#7651:7818" expanded="false" />
-            <element signature="class#7824:8039" expanded="false" />
-            <element signature="method#accept#0;class#7824:8039" expanded="false" />
+            <element signature="class#6568:7034" expanded="false" />
+            <element signature="method#exec#0;class#6568:7034" expanded="false" />
+            <element signature="e#6870#7008#0" expanded="false" />
+            <element signature="e#7476#7509#0" expanded="false" />
+            <element signature="class#7683:7850" expanded="false" />
+            <element signature="class#7856:8071" expanded="false" />
+            <element signature="method#accept#0;class#7856:8071" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
             <element signature="method#printNames#0;class#Main#0" expanded="false" />
-            <element signature="e#10307#10381#0" expanded="false" />
+            <element signature="e#10339#10413#0" expanded="false" />
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="class#Employee#0" expanded="false" />
             <element signature="method#Employee#0;class#Employee#0" expanded="false" />
+            <element signature="e#14481#14482#0" expanded="true" />
+            <element signature="e#14508#14509#0" expanded="true" />
+            <element signature="e#14547#14548#0" expanded="true" />
+            <element signature="e#14579#14580#0" expanded="true" />
+            <element signature="e#14605#14606#0" expanded="true" />
+            <element signature="e#14631#14632#0" expanded="true" />
+            <element signature="e#14665#14666#0" expanded="true" />
+            <element signature="e#14695#14696#0" expanded="true" />
             <element signature="class#ConsoleOutput#0" expanded="false" />
             <element signature="class#UpperConcat#0" expanded="false" />
           </folding>
@@ -495,33 +516,90 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#printMessage#0;class#Main#0" expanded="false" />
-            <element signature="class#953:1244" expanded="false" />
-            <element signature="method#exec#0;class#953:1244" expanded="false" />
-            <element signature="class#1356:1555" expanded="false" />
-            <element signature="class#1692:1883" expanded="false" />
-            <element signature="e#1897#1960#0" expanded="false" />
-            <element signature="e#2306#2479#0" expanded="false" />
+            <element signature="class#985:1276" expanded="false" />
+            <element signature="method#exec#0;class#985:1276" expanded="false" />
+            <element signature="class#1388:1587" expanded="false" />
+            <element signature="class#1724:1915" expanded="false" />
+            <element signature="e#1929#1992#0" expanded="false" />
+            <element signature="e#2338#2511#0" expanded="false" />
             <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#3122:3340" expanded="false" />
-            <element signature="method#compare#0;class#3122:3340" expanded="false" />
+            <element signature="class#3154:3372" expanded="false" />
+            <element signature="method#compare#0;class#3154:3372" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
-            <element signature="class#4431:4607" expanded="false" />
+            <element signature="class#4463:4639" expanded="false" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
-            <element signature="e#5584#5613#0" expanded="false" />
+            <element signature="e#5616#5645#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#6536:7002" expanded="false" />
-            <element signature="method#exec#0;class#6536:7002" expanded="false" />
-            <element signature="e#6838#6976#0" expanded="false" />
-            <element signature="e#7444#7477#0" expanded="false" />
-            <element signature="class#7651:7818" expanded="false" />
-            <element signature="class#7824:8039" expanded="false" />
-            <element signature="method#accept#0;class#7824:8039" expanded="false" />
+            <element signature="class#6568:7034" expanded="false" />
+            <element signature="method#exec#0;class#6568:7034" expanded="false" />
+            <element signature="e#6870#7008#0" expanded="false" />
+            <element signature="e#7476#7509#0" expanded="false" />
+            <element signature="class#7683:7850" expanded="false" />
+            <element signature="class#7856:8071" expanded="false" />
+            <element signature="method#accept#0;class#7856:8071" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
             <element signature="method#printNames#0;class#Main#0" expanded="false" />
-            <element signature="e#10307#10381#0" expanded="false" />
+            <element signature="e#10339#10413#0" expanded="false" />
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="class#Employee#0" expanded="false" />
             <element signature="method#Employee#0;class#Employee#0" expanded="false" />
+            <element signature="e#14481#14482#0" expanded="true" />
+            <element signature="e#14508#14509#0" expanded="true" />
+            <element signature="e#14547#14548#0" expanded="true" />
+            <element signature="e#14579#14580#0" expanded="true" />
+            <element signature="e#14605#14606#0" expanded="true" />
+            <element signature="e#14631#14632#0" expanded="true" />
+            <element signature="e#14665#14666#0" expanded="true" />
+            <element signature="e#14695#14696#0" expanded="true" />
+            <element signature="class#ConsoleOutput#0" expanded="false" />
+            <element signature="class#UpperConcat#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#printMessage#0;class#Main#0" expanded="false" />
+            <element signature="class#985:1276" expanded="false" />
+            <element signature="method#exec#0;class#985:1276" expanded="false" />
+            <element signature="class#1388:1587" expanded="false" />
+            <element signature="class#1724:1915" expanded="false" />
+            <element signature="e#1929#1992#0" expanded="false" />
+            <element signature="e#2338#2511#0" expanded="false" />
+            <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
+            <element signature="class#3154:3372" expanded="false" />
+            <element signature="method#compare#0;class#3154:3372" expanded="false" />
+            <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
+            <element signature="class#4463:4639" expanded="false" />
+            <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
+            <element signature="e#5616#5645#0" expanded="false" />
+            <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
+            <element signature="class#6568:7034" expanded="false" />
+            <element signature="method#exec#0;class#6568:7034" expanded="false" />
+            <element signature="e#6870#7008#0" expanded="false" />
+            <element signature="e#7476#7509#0" expanded="false" />
+            <element signature="class#7683:7850" expanded="false" />
+            <element signature="class#7856:8071" expanded="false" />
+            <element signature="method#accept#0;class#7856:8071" expanded="false" />
+            <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
+            <element signature="method#printNames#0;class#Main#0" expanded="false" />
+            <element signature="e#10339#10413#0" expanded="false" />
+            <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
+            <element signature="class#Employee#0" expanded="false" />
+            <element signature="method#Employee#0;class#Employee#0" expanded="false" />
+            <element signature="e#14481#14482#0" expanded="true" />
+            <element signature="e#14508#14509#0" expanded="true" />
+            <element signature="e#14547#14548#0" expanded="true" />
+            <element signature="e#14579#14580#0" expanded="true" />
+            <element signature="e#14605#14606#0" expanded="true" />
+            <element signature="e#14631#14632#0" expanded="true" />
+            <element signature="e#14665#14666#0" expanded="true" />
+            <element signature="e#14695#14696#0" expanded="true" />
             <element signature="class#ConsoleOutput#0" expanded="false" />
             <element signature="class#UpperConcat#0" expanded="false" />
           </folding>
@@ -571,16 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-          <folding>
-            <element signature="docComment;class#Predicate#0" expanded="false" />
-            <element signature="docComment;method#test#0;class#Predicate#0" expanded="false" />
-            <element signature="docComment;method#and#0;class#Predicate#0" expanded="false" />
-            <element signature="docComment;method#negate#0;class#Predicate#0" expanded="false" />
-            <element signature="docComment;method#or#0;class#Predicate#0" expanded="false" />
-            <element signature="method#or#0;class#Predicate#0" expanded="false" />
-            <element signature="docComment;method#isEqual#0;class#Predicate#0" expanded="false" />
-            <element signature="method#isEqual#0;class#Predicate#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -596,59 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="136" column="37" lean-forward="false" selection-start-line="136" selection-start-column="37" selection-end-line="136" selection-end-column="37" />
-          <folding>
-            <element signature="docComment;class#List#0" expanded="false" />
-            <element signature="docComment;method#size#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#isEmpty#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#contains#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#iterator#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#toArray#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#toArray#1;class#List#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#remove#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#containsAll#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#addAll#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#addAll#1;class#List#0" expanded="false" />
-            <element signature="docComment;method#removeAll#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#retainAll#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#replaceAll#0;class#List#0" expanded="false" />
-            <element signature="method#replaceAll#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#sort#0;class#List#0" expanded="false" />
-            <element signature="method#sort#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#equals#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#hashCode#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#get#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#set#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#add#1;class#List#0" expanded="false" />
-            <element signature="docComment;method#remove#1;class#List#0" expanded="false" />
-            <element signature="docComment;method#indexOf#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#lastIndexOf#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#listIterator#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#listIterator#1;class#List#0" expanded="false" />
-            <element signature="docComment;method#subList#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#spliterator#0;class#List#0" expanded="false" />
-            <element signature="method#spliterator#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#0;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#1;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#2;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#3;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#4;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#5;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#6;class#List#0" expanded="false" />
-            <element signature="method#of#6;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#7;class#List#0" expanded="false" />
-            <element signature="method#of#7;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#8;class#List#0" expanded="false" />
-            <element signature="method#of#8;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#9;class#List#0" expanded="false" />
-            <element signature="method#of#9;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#10;class#List#0" expanded="false" />
-            <element signature="method#of#10;class#List#0" expanded="false" />
-            <element signature="docComment;method#of#11;class#List#0" expanded="false" />
-            <element signature="e#44135#44147#0" expanded="false" />
-            <element signature="method#of#11;class#List#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,152 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="159" column="5" lean-forward="true" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
-          <folding>
-            <element signature="docComment;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;field#DEFAULT_CAPACITY#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;field#EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;field#DEFAULTCAPACITY_EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;field#elementData#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;field#size#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#ArrayList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#ArrayList#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#ArrayList#1;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#ArrayList#2;class#ArrayList#0" expanded="false" />
-            <element signature="method#ArrayList#2;class#ArrayList#0" expanded="false" />
-            <element signature="e#6828#6892#0" expanded="false" />
-            <element signature="docComment;method#trimToSize#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#trimToSize#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;field#MAX_ARRAY_SIZE#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#grow#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#grow#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#newCapacity#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#newCapacity#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#hugeCapacity#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#size#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#isEmpty#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#contains#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#indexOf#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#indexOf#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#clone#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#clone#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#toArray#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#toArray#1;class#ArrayList#0" expanded="false" />
-            <element signature="method#toArray#1;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#get#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#get#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#set#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#set#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#add#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#add#1;class#ArrayList#0" expanded="false" />
-            <element signature="method#add#1;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#add#2;class#ArrayList#0" expanded="false" />
-            <element signature="method#add#2;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#remove#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#remove#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#remove#1;class#ArrayList#0" expanded="false" />
-            <element signature="method#remove#1;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#fastRemove#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#fastRemove#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#clear#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#addAll#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#addAll#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#addAll#1;class#ArrayList#0" expanded="false" />
-            <element signature="method#addAll#1;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#removeRange#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#removeRange#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#shiftTailOverGap#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#shiftTailOverGap#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#outOfBoundsMsg#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#outOfBoundsMsg#1;class#ArrayList#0" expanded="false" />
-            <element signature="method#outOfBoundsMsg#1;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#removeAll#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#retainAll#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#batchRemove#0;class#ArrayList#0" expanded="false" />
-            <element signature="e#28223#28284#0" expanded="false" />
-            <element signature="docComment;method#writeObject#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#writeObject#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#readObject#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#readObject#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#listIterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#listIterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#listIterator#1;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#iterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;class#Itr#0;class#ArrayList#0" expanded="false" />
-            <element signature="class#Itr#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#next#0;class#Itr#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#remove#0;class#Itr#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#forEachRemaining#0;class#Itr#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#checkForComodification#0;class#Itr#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;class#ListItr#0;class#ArrayList#0" expanded="false" />
-            <element signature="class#ListItr#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#ListItr#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#previous#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#set#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#add#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#subList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#subList#0;class#ArrayList#0" expanded="false" />
-            <element signature="class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#SubList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#SubList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#SubList#1;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#SubList#1;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#set#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#get#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#size#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#add#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#remove#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#removeRange#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#addAll#1;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#batchRemove#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#removeIf#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#listIterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="class#41666:45943" expanded="false" />
-            <element signature="method#next#0;class#41666:45943" expanded="false" />
-            <element signature="method#previous#0;class#41666:45943" expanded="false" />
-            <element signature="method#forEachRemaining#0;class#41666:45943" expanded="false" />
-            <element signature="method#remove#0;class#41666:45943" expanded="false" />
-            <element signature="method#set#0;class#41666:45943" expanded="false" />
-            <element signature="method#add#0;class#41666:45943" expanded="false" />
-            <element signature="method#checkForComodification#0;class#41666:45943" expanded="false" />
-            <element signature="method#subList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#rangeCheckForAdd#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#checkForComodification#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#updateSizeAndModCount#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#spliterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
-            <element signature="class#47082:50162" expanded="false" />
-            <element signature="method#getFence#0;class#47082:50162" expanded="false" />
-            <element signature="method#trySplit#0;class#47082:50162" expanded="false" />
-            <element signature="method#tryAdvance#0;class#47082:50162" expanded="false" />
-            <element signature="method#forEachRemaining#0;class#47082:50162" expanded="false" />
-            <element signature="docComment;method#forEach#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#forEach#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#spliterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#getFence#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#trySplit#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#tryAdvance#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#forEachRemaining#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#removeIf#0;class#ArrayList#0" expanded="false" />
-            <element signature="docComment;method#removeIf#1;class#ArrayList#0" expanded="false" />
-            <element signature="method#removeIf#1;class#ArrayList#0" expanded="false" />
-            <element signature="e#57115#57180#0" expanded="false" />
-            <element signature="method#replaceAll#0;class#ArrayList#0" expanded="false" />
-            <element signature="e#58652#58661#0" expanded="false" />
-            <element signature="method#sort#0;class#ArrayList#0" expanded="false" />
-            <element signature="method#checkInvariants#0;class#ArrayList#0" expanded="false" />
-            <element signature="e#59007#59027#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,41 +693,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4399">
+          <caret line="387" column="14" lean-forward="false" selection-start-line="387" selection-start-column="14" selection-end-line="387" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="284" column="17" lean-forward="false" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="17" />
+        <state relative-caret-position="390">
+          <caret line="317" column="37" lean-forward="false" selection-start-line="317" selection-start-column="37" selection-end-line="317" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#printMessage#0;class#Main#0" expanded="false" />
-            <element signature="class#953:1244" expanded="false" />
-            <element signature="method#exec#0;class#953:1244" expanded="false" />
-            <element signature="class#1356:1555" expanded="false" />
-            <element signature="class#1692:1883" expanded="false" />
-            <element signature="e#1897#1960#0" expanded="false" />
-            <element signature="e#2306#2479#0" expanded="false" />
+            <element signature="class#985:1276" expanded="false" />
+            <element signature="method#exec#0;class#985:1276" expanded="false" />
+            <element signature="class#1388:1587" expanded="false" />
+            <element signature="class#1724:1915" expanded="false" />
+            <element signature="e#1929#1992#0" expanded="false" />
+            <element signature="e#2338#2511#0" expanded="false" />
             <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#3122:3340" expanded="false" />
-            <element signature="method#compare#0;class#3122:3340" expanded="false" />
+            <element signature="class#3154:3372" expanded="false" />
+            <element signature="method#compare#0;class#3154:3372" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
-            <element signature="class#4431:4607" expanded="false" />
+            <element signature="class#4463:4639" expanded="false" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
-            <element signature="e#5584#5613#0" expanded="false" />
+            <element signature="e#5616#5645#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
-            <element signature="class#6536:7002" expanded="false" />
-            <element signature="method#exec#0;class#6536:7002" expanded="false" />
-            <element signature="e#6838#6976#0" expanded="false" />
-            <element signature="e#7444#7477#0" expanded="false" />
-            <element signature="class#7651:7818" expanded="false" />
-            <element signature="class#7824:8039" expanded="false" />
-            <element signature="method#accept#0;class#7824:8039" expanded="false" />
+            <element signature="class#6568:7034" expanded="false" />
+            <element signature="method#exec#0;class#6568:7034" expanded="false" />
+            <element signature="e#6870#7008#0" expanded="false" />
+            <element signature="e#7476#7509#0" expanded="false" />
+            <element signature="class#7683:7850" expanded="false" />
+            <element signature="class#7856:8071" expanded="false" />
+            <element signature="method#accept#0;class#7856:8071" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
             <element signature="method#printNames#0;class#Main#0" expanded="false" />
-            <element signature="e#10307#10381#0" expanded="false" />
+            <element signature="e#10339#10413#0" expanded="false" />
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="class#Employee#0" expanded="false" />
             <element signature="method#Employee#0;class#Employee#0" expanded="false" />
+            <element signature="e#14481#14482#0" expanded="true" />
+            <element signature="e#14508#14509#0" expanded="true" />
+            <element signature="e#14547#14548#0" expanded="true" />
+            <element signature="e#14579#14580#0" expanded="true" />
+            <element signature="e#14605#14606#0" expanded="true" />
+            <element signature="e#14631#14632#0" expanded="true" />
+            <element signature="e#14665#14666#0" expanded="true" />
+            <element signature="e#14695#14696#0" expanded="true" />
             <element signature="class#ConsoleOutput#0" expanded="false" />
             <element signature="class#UpperConcat#0" expanded="false" />
           </folding>
