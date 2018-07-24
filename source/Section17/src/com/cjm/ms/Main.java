@@ -348,6 +348,47 @@ public class Main {
                 .ifPresent((Employee e) ->
                         System.out.println(e.getName() + " (" + e.getAge() + ")."));
     }
+    // Challenge 1: Replace the anonymous inner class with a lambda equivalent.
+    public void challenge1() {
+        System.out.println("\nBEGIN: challenge1");
+
+        // Anonymous inner class.
+        System.out.print("Anonymous class: ");
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                String myString = "Let's split this up into an array";
+                String[] parts = myString.split(" ");
+                for(String part: parts) {
+                    System.out.print(part + ". ");
+                }
+                System.out.println();
+            }
+        };
+        StartJoinThread.exec(runnable);
+
+        // My solution.
+        System.out.print("My solution: ");
+        runnable = () -> {
+            String myString = "Let's split this up into an array";
+            Stream.of(myString.split(" "))
+                    .forEach((String s) -> System.out.print(s + ". "));
+            System.out.println();
+        };
+        StartJoinThread.exec(runnable);
+
+        // Course solution.
+        System.out.print("Course solution: ");
+        runnable = () -> {
+            String myString = "Let's split this up into an array";
+            String[] parts = myString.split(" ");
+            for(String part: parts) {
+                System.out.print(part + ". ");
+            }
+            System.out.println();
+        };
+        StartJoinThread.exec(runnable);
+    }
 }
 
 

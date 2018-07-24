@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b178803-89a7-4bd9-ab57-cf2a20b46beb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/ConsoleOutput.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Department.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Employee.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/StartJoinThread.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/cjm/ms/UpperConcat.java" />
-      <change beforePath="$PROJECT_DIR$/../../notes/Notes.docx" afterPath="$PROJECT_DIR$/../../notes/Notes.docx" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,8 +19,8 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="613">
-                  <caret line="349" column="5" lean-forward="false" selection-start-line="349" selection-start-column="5" selection-end-line="349" selection-end-column="5" />
+                <state relative-caret-position="424">
+                  <caret line="390" column="5" lean-forward="false" selection-start-line="390" selection-start-column="5" selection-end-line="390" selection-end-column="5" />
                   <folding>
                     <element signature="method#Main#0;class#Main#0" expanded="false" />
                     <element signature="method#printMessage#0;class#Main#0" expanded="false" />
@@ -41,6 +34,8 @@
                     <element signature="method#compare#0;class#2902:3120" expanded="false" />
                     <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
                     <element signature="class#4211:4387" expanded="false" />
+                    <element signature="e#4302#4303#0" expanded="true" />
+                    <element signature="e#4376#4377#0" expanded="true" />
                     <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
                     <element signature="e#5364#5393#0" expanded="false" />
                     <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
@@ -49,6 +44,8 @@
                     <element signature="e#6618#6756#0" expanded="false" />
                     <element signature="e#7224#7257#0" expanded="false" />
                     <element signature="class#7431:7598" expanded="false" />
+                    <element signature="e#7528#7529#0" expanded="true" />
+                    <element signature="e#7587#7588#0" expanded="true" />
                     <element signature="class#7604:7819" expanded="false" />
                     <element signature="method#accept#0;class#7604:7819" expanded="false" />
                     <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
@@ -58,6 +55,7 @@
                     <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
                     <element signature="e#14163#14246#0" expanded="false" />
                     <element signature="e#15391#15467#0" expanded="false" />
+                    <element signature="method#challenge1#0;class#Main#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -321,6 +319,8 @@
             <element signature="method#compare#0;class#2902:3120" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
             <element signature="class#4211:4387" expanded="false" />
+            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#5364#5393#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
@@ -329,6 +329,8 @@
             <element signature="e#6618#6756#0" expanded="false" />
             <element signature="e#7224#7257#0" expanded="false" />
             <element signature="class#7431:7598" expanded="false" />
+            <element signature="e#7528#7529#0" expanded="true" />
+            <element signature="e#7587#7588#0" expanded="true" />
             <element signature="class#7604:7819" expanded="false" />
             <element signature="method#accept#0;class#7604:7819" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
@@ -338,6 +340,7 @@
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
+            <element signature="method#challenge1#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -359,6 +362,8 @@
             <element signature="method#compare#0;class#2902:3120" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
             <element signature="class#4211:4387" expanded="false" />
+            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#5364#5393#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
@@ -367,6 +372,8 @@
             <element signature="e#6618#6756#0" expanded="false" />
             <element signature="e#7224#7257#0" expanded="false" />
             <element signature="class#7431:7598" expanded="false" />
+            <element signature="e#7528#7529#0" expanded="true" />
+            <element signature="e#7587#7588#0" expanded="true" />
             <element signature="class#7604:7819" expanded="false" />
             <element signature="method#accept#0;class#7604:7819" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
@@ -376,6 +383,7 @@
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
+            <element signature="method#challenge1#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -397,6 +405,8 @@
             <element signature="method#compare#0;class#2902:3120" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
             <element signature="class#4211:4387" expanded="false" />
+            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#5364#5393#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
@@ -405,6 +415,8 @@
             <element signature="e#6618#6756#0" expanded="false" />
             <element signature="e#7224#7257#0" expanded="false" />
             <element signature="class#7431:7598" expanded="false" />
+            <element signature="e#7528#7529#0" expanded="true" />
+            <element signature="e#7587#7588#0" expanded="true" />
             <element signature="class#7604:7819" expanded="false" />
             <element signature="method#accept#0;class#7604:7819" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
@@ -414,6 +426,7 @@
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
+            <element signature="method#challenge1#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -435,6 +448,8 @@
             <element signature="method#compare#0;class#2902:3120" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
             <element signature="class#4211:4387" expanded="false" />
+            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#5364#5393#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
@@ -443,6 +458,8 @@
             <element signature="e#6618#6756#0" expanded="false" />
             <element signature="e#7224#7257#0" expanded="false" />
             <element signature="class#7431:7598" expanded="false" />
+            <element signature="e#7528#7529#0" expanded="true" />
+            <element signature="e#7587#7588#0" expanded="true" />
             <element signature="class#7604:7819" expanded="false" />
             <element signature="method#accept#0;class#7604:7819" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
@@ -452,6 +469,7 @@
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
+            <element signature="method#challenge1#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -473,6 +491,8 @@
             <element signature="method#compare#0;class#2902:3120" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
             <element signature="class#4211:4387" expanded="false" />
+            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#5364#5393#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
@@ -481,6 +501,8 @@
             <element signature="e#6618#6756#0" expanded="false" />
             <element signature="e#7224#7257#0" expanded="false" />
             <element signature="class#7431:7598" expanded="false" />
+            <element signature="e#7528#7529#0" expanded="true" />
+            <element signature="e#7587#7588#0" expanded="true" />
             <element signature="class#7604:7819" expanded="false" />
             <element signature="method#accept#0;class#7604:7819" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
@@ -490,6 +512,7 @@
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
+            <element signature="method#challenge1#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -511,6 +534,8 @@
             <element signature="method#compare#0;class#2902:3120" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
             <element signature="class#4211:4387" expanded="false" />
+            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#5364#5393#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
@@ -519,6 +544,8 @@
             <element signature="e#6618#6756#0" expanded="false" />
             <element signature="e#7224#7257#0" expanded="false" />
             <element signature="class#7431:7598" expanded="false" />
+            <element signature="e#7528#7529#0" expanded="true" />
+            <element signature="e#7587#7588#0" expanded="true" />
             <element signature="class#7604:7819" expanded="false" />
             <element signature="method#accept#0;class#7604:7819" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
@@ -528,6 +555,7 @@
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
+            <element signature="method#challenge1#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -549,6 +577,8 @@
             <element signature="method#compare#0;class#2902:3120" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
             <element signature="class#4211:4387" expanded="false" />
+            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#5364#5393#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
@@ -557,6 +587,8 @@
             <element signature="e#6618#6756#0" expanded="false" />
             <element signature="e#7224#7257#0" expanded="false" />
             <element signature="class#7431:7598" expanded="false" />
+            <element signature="e#7528#7529#0" expanded="true" />
+            <element signature="e#7587#7588#0" expanded="true" />
             <element signature="class#7604:7819" expanded="false" />
             <element signature="method#accept#0;class#7604:7819" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
@@ -566,6 +598,7 @@
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
+            <element signature="method#challenge1#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -776,8 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="349" column="5" lean-forward="false" selection-start-line="349" selection-start-column="5" selection-end-line="349" selection-end-column="5" />
+        <state relative-caret-position="424">
+          <caret line="390" column="5" lean-forward="false" selection-start-line="390" selection-start-column="5" selection-end-line="390" selection-end-column="5" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#printMessage#0;class#Main#0" expanded="false" />
@@ -791,6 +824,8 @@
             <element signature="method#compare#0;class#2902:3120" expanded="false" />
             <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
             <element signature="class#4211:4387" expanded="false" />
+            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
             <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
             <element signature="e#5364#5393#0" expanded="false" />
             <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
@@ -799,6 +834,8 @@
             <element signature="e#6618#6756#0" expanded="false" />
             <element signature="e#7224#7257#0" expanded="false" />
             <element signature="class#7431:7598" expanded="false" />
+            <element signature="e#7528#7529#0" expanded="true" />
+            <element signature="e#7587#7588#0" expanded="true" />
             <element signature="class#7604:7819" expanded="false" />
             <element signature="method#accept#0;class#7604:7819" expanded="false" />
             <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
@@ -808,6 +845,7 @@
             <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
+            <element signature="method#challenge1#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
