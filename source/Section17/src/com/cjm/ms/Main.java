@@ -2,6 +2,8 @@ package com.cjm.ms;
 
 import java.util.*;
 import java.util.function.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Main {
@@ -20,6 +22,8 @@ public class Main {
         main.printNames();
         main.addIntegers();
         main.streamEmployees();
+        main.challenge1();
+        main.challenge2();
     }
     // Initialise fields.
     public Main() {
@@ -32,18 +36,6 @@ public class Main {
     public void printMessage() {
         System.out.println("BEGIN: printMessage");
 
-        class StartJoinThread {
-            public void exec(Thread thread) {
-                thread.start();
-                try {
-                    thread.join();
-                } catch(InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-        StartJoinThread thread = new StartJoinThread();
-
         // Create Runnable subclass instance.
         class CodeToRun implements Runnable {
             @Override
@@ -51,26 +43,26 @@ public class Main {
                 System.out.println("Output to console from CodeToRun instance.\n");
             }
         }
-        thread.exec( new Thread(new CodeToRun()) );
+        StartJoinThread.exec(new CodeToRun());
 
         // Create anonymous Runnable subclass.
-        thread.exec( new Thread(new Runnable() {
+        StartJoinThread.exec(new Runnable() {
                 @Override
                 public void run() {
                     System.out.println("Output to console from anonymous class.\n");
                 }
-            }) );
+            });
 
         // Use lambda expression to create anonymous Runnable subclass.
         // Only works when the interface has one abstract method as the compiler knows
         // which method the lambda is referring to.
         // An interface with one declared method is a functional interface.
-        thread.exec( new Thread(() -> System.out.println("Output to console from lambda.\n")) );
+        StartJoinThread.exec(() -> System.out.println("Output to console from lambda.\n"));
 
-        thread.exec( new Thread(() -> {
+        StartJoinThread.exec(() -> {
             System.out.println("Second output to console from lambda.");
             System.out.println("time the lambda contains multiple statements.\n");
-        }) );
+        });
 
         // Use lambdas with one argument.
         ConsoleOutput output = (msg) -> System.out.println(msg);
@@ -278,9 +270,9 @@ public class Main {
 
         Consumer<String> printDelimited = (String str) -> System.out.print(str + ". ");
 
+        // Print employee names beginning with 'JA'.
         System.out.print("Employee names that start with 'JA' include: ");
-        employees
-                .stream()
+        employees.stream()
                 .map(Employee::getName) // employee -> employee.getName()
                 .map(String::toUpperCase) // string -> string.toUpperCase()
                 .filter(string -> string.startsWith("JA"))
@@ -308,6 +300,30 @@ public class Main {
                 // forEach is a terminal operation as it has a non-Stream return type.
                 .forEach(string -> System.out.print(string + ". "));
         */
+
+        // Print names of employees from different Lists.
+        Department accounting = new Department("Accounting");
+        accounting.addEmployee(employees.get(0));
+
+        Department humanResources = new Department("Human Resources");
+        employees.stream()
+                .skip(1)
+                .forEach(humanResources::addEmployee);
+
+        List<Department> departments = new ArrayList<>();
+        departments.add(accounting);
+        departments.add(humanResources);
+
+        System.out.print("Employees from all departments: ");
+        departments.stream()
+                // Concatenates sub-Streams from the current Stream, i.e. the employees sub-Streams
+                // within the current department Stream.
+                .flatMap(department -> department.getEmployees().stream())
+                .map(Employee::toString)
+                .forEach(printDelimited);
+        System.out.println();
+
+        // Stream.of(): generates Stream. Stream.concat() concatenates Streams.
         Stream<String> ioNumberStream = Stream.of("I26", "I17", "I29", "071");
         Stream<String> inNumberStream = Stream.of("N40", "N36", "I26", "I17", "I29");
         Stream<String> ionNumberStream = Stream.concat(ioNumberStream, inNumberStream);
@@ -316,34 +332,23 @@ public class Main {
                 .distinct()
                 .peek(printDelimited) // Like forEach, but not a terminal operation.
                 .count() + " (count).");
+
+        // Can alternatively store the result of Stream operations using Stream.collect().
+        List<String> allEmployees = departments.stream()
+                .flatMap(department -> department.getEmployees().stream())
+                .map(Employee::toString)
+                .collect(Collectors.toList());
+
+        // Reduce compares the entire Stream, two items at a time. It returns what's
+        // remaining at the end.
+        System.out.print("The youngest employee is: ");
+        departments.stream()
+                .flatMap(department -> department.getEmployees().stream())
+                .reduce((Employee e1, Employee e2) -> e1.getAge() < e2.getAge() ? e1 : e2)
+                .ifPresent((Employee e) ->
+                        System.out.println(e.getName() + " (" + e.getAge() + ")."));
     }
 }
 
-class Employee {
-    private String name;
-    private int age;
-    public Employee(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
-}
 
-interface ConsoleOutput {
-    void print(String message);
-}
 
-interface UpperConcat {
-    String exec(String s1, String s2);
-}
