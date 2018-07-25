@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Main {
-    private final List<Employee> employees = new ArrayList<>();
+    private final List<Employee> employees;
 
     // Point of entry.
     public static void main(String[] args) {
@@ -22,15 +22,18 @@ public class Main {
         main.printNames();
         main.addIntegers();
         main.streamEmployees();
+
         main.challenge1();
-        main.challenge2();
+        main.challenge2to5();
     }
     // Initialise fields.
     public Main() {
-        employees.add(new Employee("John Doe", 45));
-        employees.add(new Employee("Jane Doe", 43));
-        employees.add(new Employee("Jack Doe", 25));
-        employees.add(new Employee("Jim Doe", 23));
+        employees = Arrays.asList(
+            new Employee("John Doe", 45),
+            new Employee("Jane Doe", 43),
+            new Employee("Jack Doe", 25),
+            new Employee("Jim Doe", 23)
+        );
     }
     // Practice working with basic lambda expressions.
     public void printMessage() {
@@ -348,11 +351,12 @@ public class Main {
                 .ifPresent((Employee e) ->
                         System.out.println(e.getName() + " (" + e.getAge() + ")."));
     }
-    // Challenge 1: Replace the anonymous inner class with a lambda equivalent.
+
+    // Course section challenges.
     public void challenge1() {
         System.out.println("\nBEGIN: challenge1");
 
-        // Anonymous inner class.
+        // Challenge 1: Replace the anonymous inner class with a lambda equivalent.
         System.out.print("Class: ");
         Runnable runnable = new Runnable() {
             @Override
@@ -389,16 +393,15 @@ public class Main {
         };
         StartJoinThread.exec(runnable);
     }
-    // Challenge 2: Replace the class/method with a lambda equivalent.
-    public void challenge2() {
-        System.out.println("\nBEGIN: challenge2");
+    public void challenge2to5() {
+        System.out.println("\nBEGIN: challenge2to5");
 
         String originalString = "Hello, this is the original String.";
         System.out.println("Every other character for the given String is as follows:");
         System.out.println("Original String: " + originalString);
 
-        // Method to convert to lambda equivalent.
         class everySecondChar {
+            // Challenge 2: Method to convert to lambda equivalent.
             public String exec(String source) {
                 StringBuilder returnValue = new StringBuilder();
                 for (int i = 0; i < source.length(); i++) {
@@ -408,20 +411,27 @@ public class Main {
                 }
                 return returnValue.toString();
             }
+            // Challenge 4.
+            public String exec(Function<String, String> function, String input) {
+                return function.apply(input);
+            }
         }
-        System.out.println("Class: " + new everySecondChar().exec(originalString));
+        String output = new everySecondChar().exec(originalString);
+        System.out.println("Class: " + output);
 
-        // My solution. Probably more efficient to not use Streams like this, but good practice.
-        Function<String, String> myLambda = (String source) -> IntStream
+        // Challenge 2: My solution.
+        // Probably more efficient to not use Streams like this, but good practice.
+        UnaryOperator<String> myLambda = (String source) -> IntStream
                     .range(0, source.length())
                     .filter((int i) -> i % 2 == 1)
                     .mapToObj((int i) -> String.valueOf(source.toCharArray()[i]))
                     .reduce((String a, String b) -> a + b)
                     .get();
-        System.out.println("My solution: " + myLambda.apply(originalString));
+        output = myLambda.apply(originalString); // Challenge 3: Execute lambda.
+        System.out.println("My C2 solution: " + output);
 
-        // Course solution.
-        UnaryOperator<String> courseLambda = (String s) -> {
+        // Challenge 2: Course solution.
+        Function<String, String> courseLambda = (String s) -> {
             StringBuilder returnValue = new StringBuilder();
             for(int i = 0; i < s.length(); i++) {
                 if(i % 2 == 1) {
@@ -430,8 +440,14 @@ public class Main {
             }
             return returnValue.toString();
         };
-        System.out.println("Course solution: " + courseLambda.apply(originalString));
+        output = courseLambda.apply(originalString); // Challenge 3.
+        System.out.println("Course C2 solution: " + output);
+
+        // Challenge 4: Pass lambda into method.
+        output = new everySecondChar().exec(myLambda, originalString); // Challenge 5: Return result.
+        System.out.println("My C4 solution: " + output);
     }
+
 }
 
 
