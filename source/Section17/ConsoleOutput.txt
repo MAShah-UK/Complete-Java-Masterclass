@@ -1,0 +1,71 @@
+BEGIN: printMessage
+Output to console from CodeToRun instance.
+
+Output to console from anonymous class.
+
+Output to console from lambda.
+
+Second output to console from lambda.
+time the lambda contains multiple statements.
+
+This message is from a lambda expression that requires one argument.
+This is another message from a lambda expression that requires one argument.
+
+BEGIN: sortEmployees
+List of employees sorted using anonymous class: Jack Doe. Jane Doe. Jim Doe. John Doe. 
+List of employees sorted using lambdas: Jack Doe. Jane Doe. Jim Doe. John Doe. 
+
+BEGIN: concatStrings
+'Hello' and 'World' UpperConcat using anonymous class: HELLOWORLD
+'Hello' and 'World' UpperConcat using lambda: HELLOWORLD
+
+BEGIN: printNameAndNumbers
+Employee name: Jack Doe
+Employee names: Jack Doe. Jane Doe. Jim Doe. John Doe. 
+Employee names: Jack Doe. Jane Doe. Jim Doe. John Doe. 
+
+BEGIN: filterEmployees
+The following employees are over the age of 24 (using anon classes): John Doe (45). Jane Doe (43). Jack Doe (25). 
+The following employees are over the age of 24 (using lambdas): John Doe (45). Jane Doe (43). Jack Doe (25). 
+The following employees are between 24 and 44 years of age: Jane Doe (43). Jack Doe (25). 
+
+BEGIN: printRandomNumbers
+10 random numbers: 406. 448. 701. 828. 876. 259. 522. 198. 480. 485. 
+
+BEGIN: printNames
+Each employee's first name is: Jack. Jane. Jim. John. 
+Each employee's capitalised first name is: JACK. JANE. JIM. JOHN. 
+Each employee's full name is: Jack Doe. Jane Doe. Jim Doe. John Doe. 
+
+BEGIN: addIntegers
+Inputting 10 into the incrementByFive lambda results in: 15
+
+BEGIN: streamEmployees
+Employee names that start with 'JA' include: JACK DOE. JANE DOE. 
+Employees from all departments: Jack Doe. Jane Doe. Jim Doe. John Doe. 
+Unique elements: I26. I17. I29. 071. N40. N36. 6 (count).
+The youngest employee is: Jim Doe (23).
+
+BEGIN: challenge1
+Class: Let's. split. this. up. into. an. array. 
+My solution: Let's. split. this. up. into. an. array. 
+Course solution: Let's. split. this. up. into. an. array. 
+
+BEGIN: challenge2to5
+Every other character for the given String is as follows:
+Original String: Hello, this is the original String.
+Class: el,ti steoiia tig
+My C2 solution: el,ti steoiia tig
+Course C2 solution: el,ti steoiia tig
+My C4 solution: el,ti steoiia tig
+
+BEGIN: challenge6to7
+Result of calling Supplier.get(): I love Java!
+
+BEGIN: challenge8to14
+List of top names in 2015: Amelia. Olivia. emily. Isla. Ava. oliver. Jack. Charlie. harry. Jacob. 
+My sorted solution: Amelia. Ava. Charlie. Emily. Harry. Isla. Jack. Jacob. Oliver. Olivia. 
+Course sorted solution: Amelia. Ava. Charlie. Emily. Harry. Isla. Jack. Jacob. Oliver. Olivia. 
+The number of names beginning with 'A': 2
+
+Process finished with exit code 0
