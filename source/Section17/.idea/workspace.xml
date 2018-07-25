@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b178803-89a7-4bd9-ab57-cf2a20b46beb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,7 +21,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="424">
-                  <caret line="390" column="5" lean-forward="false" selection-start-line="390" selection-start-column="5" selection-end-line="390" selection-end-column="5" />
+                  <caret line="392" column="29" lean-forward="false" selection-start-line="392" selection-start-column="29" selection-end-line="392" selection-end-column="29" />
                   <folding>
                     <element signature="method#Main#0;class#Main#0" expanded="false" />
                     <element signature="method#printMessage#0;class#Main#0" expanded="false" />
@@ -56,6 +57,8 @@
                     <element signature="e#14163#14246#0" expanded="false" />
                     <element signature="e#15391#15467#0" expanded="false" />
                     <element signature="method#challenge1#0;class#Main#0" expanded="false" />
+                    <element signature="method#challenge2#0;class#Main#0" expanded="false" />
+                    <element signature="e#18851#19148#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -65,7 +68,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/StartJoinThread.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="85">
-                  <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+                  <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -78,18 +81,36 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-306">
+                <state relative-caret-position="0">
                   <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1246#1247#0" expanded="true" />
-                    <element signature="e#1344#1345#0" expanded="true" />
+                    <element signature="method#Main#0;class#Main#0" expanded="false" />
+                    <element signature="method#printMessage#0;class#Main#0" expanded="false" />
+                    <element signature="class#1156:1355" expanded="false" />
                     <element signature="e#1557#1558#0" expanded="true" />
                     <element signature="e#1660#1661#0" expanded="true" />
+                    <element signature="e#1687#1750#0" expanded="false" />
+                    <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
+                    <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
                     <element signature="e#4302#4303#0" expanded="true" />
                     <element signature="e#4376#4377#0" expanded="true" />
+                    <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
+                    <element signature="e#5364#5393#0" expanded="false" />
+                    <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
+                    <element signature="class#6316:6782" expanded="false" />
+                    <element signature="method#exec#0;class#6316:6782" expanded="false" />
+                    <element signature="e#6618#6756#0" expanded="false" />
+                    <element signature="e#7224#7257#0" expanded="false" />
                     <element signature="e#7528#7529#0" expanded="true" />
                     <element signature="e#7587#7588#0" expanded="true" />
+                    <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
+                    <element signature="method#printNames#0;class#Main#0" expanded="false" />
+                    <element signature="e#9506#9585#0" expanded="false" />
+                    <element signature="e#10087#10161#0" expanded="false" />
+                    <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
+                    <element signature="e#14163#14246#0" expanded="false" />
+                    <element signature="e#15391#15467#0" expanded="false" />
+                    <element signature="method#challenge1#0;class#Main#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -182,10 +203,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,6 +323,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/StartJoinThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -341,6 +370,8 @@
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
             <element signature="method#challenge1#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge2#0;class#Main#0" expanded="false" />
+            <element signature="e#18851#19148#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -384,6 +415,8 @@
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
             <element signature="method#challenge1#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge2#0;class#Main#0" expanded="false" />
+            <element signature="e#18851#19148#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -427,6 +460,8 @@
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
             <element signature="method#challenge1#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge2#0;class#Main#0" expanded="false" />
+            <element signature="e#18851#19148#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -470,6 +505,8 @@
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
             <element signature="method#challenge1#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge2#0;class#Main#0" expanded="false" />
+            <element signature="e#18851#19148#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -513,6 +550,8 @@
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
             <element signature="method#challenge1#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge2#0;class#Main#0" expanded="false" />
+            <element signature="e#18851#19148#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -556,6 +595,8 @@
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
             <element signature="method#challenge1#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge2#0;class#Main#0" expanded="false" />
+            <element signature="e#18851#19148#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -599,6 +640,53 @@
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
             <element signature="method#challenge1#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge2#0;class#Main#0" expanded="false" />
+            <element signature="e#18851#19148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#printMessage#0;class#Main#0" expanded="false" />
+            <element signature="class#1156:1355" expanded="false" />
+            <element signature="class#1484:1675" expanded="false" />
+            <element signature="e#1557#1558#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
+            <element signature="e#1687#1750#0" expanded="false" />
+            <element signature="method#sortEmployees#0;class#Main#0" expanded="false" />
+            <element signature="class#2902:3120" expanded="false" />
+            <element signature="method#compare#0;class#2902:3120" expanded="false" />
+            <element signature="method#concatStrings#0;class#Main#0" expanded="false" />
+            <element signature="class#4211:4387" expanded="false" />
+            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
+            <element signature="method#printNameAndNumbers#0;class#Main#0" expanded="false" />
+            <element signature="e#5364#5393#0" expanded="false" />
+            <element signature="method#filterEmployees#0;class#Main#0" expanded="false" />
+            <element signature="class#6316:6782" expanded="false" />
+            <element signature="method#exec#0;class#6316:6782" expanded="false" />
+            <element signature="e#6618#6756#0" expanded="false" />
+            <element signature="e#7224#7257#0" expanded="false" />
+            <element signature="class#7431:7598" expanded="false" />
+            <element signature="e#7528#7529#0" expanded="true" />
+            <element signature="e#7587#7588#0" expanded="true" />
+            <element signature="class#7604:7819" expanded="false" />
+            <element signature="method#accept#0;class#7604:7819" expanded="false" />
+            <element signature="method#printRandomNumbers#0;class#Main#0" expanded="false" />
+            <element signature="method#printNames#0;class#Main#0" expanded="false" />
+            <element signature="e#9506#9585#0" expanded="false" />
+            <element signature="e#10087#10161#0" expanded="false" />
+            <element signature="method#addIntegers#0;class#Main#0" expanded="false" />
+            <element signature="e#14163#14246#0" expanded="false" />
+            <element signature="e#15391#15467#0" expanded="false" />
+            <element signature="method#challenge1#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge2#0;class#Main#0" expanded="false" />
+            <element signature="e#18851#19148#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -668,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,9 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="method#Employee#0;class#Employee#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,7 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,9 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -712,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="136" column="38" lean-forward="false" selection-start-line="136" selection-start-column="38" selection-end-line="136" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,10 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="580" column="30" lean-forward="true" selection-start-line="580" selection-start-column="30" selection-end-line="580" selection-end-column="30" />
-          <folding>
-            <element signature="e#26813#26814#0" expanded="false" />
-            <element signature="e#26878#26879#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -731,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="68" column="39" lean-forward="false" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,23 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="242" column="4" lean-forward="false" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="4" />
-          <folding>
-            <element signature="docComment;class#Collector#0" expanded="false" />
-            <element signature="docComment;method#supplier#0;class#Collector#0" expanded="false" />
-            <element signature="docComment;method#accumulator#0;class#Collector#0" expanded="false" />
-            <element signature="docComment;method#combiner#0;class#Collector#0" expanded="false" />
-            <element signature="docComment;method#finisher#0;class#Collector#0" expanded="false" />
-            <element signature="docComment;method#characteristics#0;class#Collector#0" expanded="false" />
-            <element signature="docComment;method#of#0;class#Collector#0" expanded="false" />
-            <element signature="method#of#0;class#Collector#0" expanded="false" />
-            <element signature="docComment;method#of#1;class#Collector#0" expanded="false" />
-            <element signature="method#of#1;class#Collector#0" expanded="false" />
-            <element signature="docComment;class#Characteristics#0;class#Collector#0" expanded="false" />
-            <element signature="class#Characteristics#0;class#Collector#0" expanded="false" />
-            <element signature="docComment;field#CONCURRENT#0;class#Characteristics#0;class#Collector#0" expanded="false" />
-            <element signature="docComment;field#UNORDERED#0;class#Characteristics#0;class#Collector#0" expanded="false" />
-            <element signature="docComment;field#IDENTITY_FINISH#0;class#Characteristics#0;class#Collector#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="518" column="23" lean-forward="false" selection-start-line="518" selection-start-column="23" selection-end-line="518" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -779,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="274" column="29" lean-forward="false" selection-start-line="274" selection-start-column="29" selection-end-line="274" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,7 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="69" column="54" lean-forward="true" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,14 +849,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/StartJoinThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -810,7 +863,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
-          <caret line="390" column="5" lean-forward="false" selection-start-line="390" selection-start-column="5" selection-end-line="390" selection-end-column="5" />
+          <caret line="392" column="29" lean-forward="false" selection-start-line="392" selection-start-column="29" selection-end-line="392" selection-end-column="29" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#printMessage#0;class#Main#0" expanded="false" />
@@ -846,6 +899,8 @@
             <element signature="e#14163#14246#0" expanded="false" />
             <element signature="e#15391#15467#0" expanded="false" />
             <element signature="method#challenge1#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge2#0;class#Main#0" expanded="false" />
+            <element signature="e#18851#19148#0" expanded="false" />
           </folding>
         </state>
       </provider>

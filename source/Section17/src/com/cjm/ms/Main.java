@@ -353,7 +353,7 @@ public class Main {
         System.out.println("\nBEGIN: challenge1");
 
         // Anonymous inner class.
-        System.out.print("Anonymous class: ");
+        System.out.print("Class: ");
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
@@ -388,6 +388,49 @@ public class Main {
             System.out.println();
         };
         StartJoinThread.exec(runnable);
+    }
+    // Challenge 2: Replace the class/method with a lambda equivalent.
+    public void challenge2() {
+        System.out.println("\nBEGIN: challenge2");
+
+        String originalString = "Hello, this is the original String.";
+        System.out.println("Every other character for the given String is as follows:");
+        System.out.println("Original String: " + originalString);
+
+        // Method to convert to lambda equivalent.
+        class everySecondChar {
+            public String exec(String source) {
+                StringBuilder returnValue = new StringBuilder();
+                for (int i = 0; i < source.length(); i++) {
+                    if(i % 2 == 1) {
+                        returnValue.append(source.charAt(i));
+                    }
+                }
+                return returnValue.toString();
+            }
+        }
+        System.out.println("Class: " + new everySecondChar().exec(originalString));
+
+        // My solution. Probably more efficient to not use Streams like this, but good practice.
+        Function<String, String> myLambda = (String source) -> IntStream
+                    .range(0, source.length())
+                    .filter((int i) -> i % 2 == 1)
+                    .mapToObj((int i) -> String.valueOf(source.toCharArray()[i]))
+                    .reduce((String a, String b) -> a + b)
+                    .get();
+        System.out.println("My solution: " + myLambda.apply(originalString));
+
+        // Course solution.
+        UnaryOperator<String> courseLambda = (String s) -> {
+            StringBuilder returnValue = new StringBuilder();
+            for(int i = 0; i < s.length(); i++) {
+                if(i % 2 == 1) {
+                    returnValue.append(s.charAt(i));
+                }
+            }
+            return returnValue.toString();
+        };
+        System.out.println("Course solution: " + courseLambda.apply(originalString));
     }
 }
 
