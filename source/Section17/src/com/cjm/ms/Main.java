@@ -25,6 +25,7 @@ public class Main {
 
         main.challenge1();
         main.challenge2to5();
+        main.challenge6to7();
     }
     // Initialise fields.
     public Main() {
@@ -447,7 +448,15 @@ public class Main {
         output = new everySecondChar().exec(myLambda, originalString); // Challenge 5: Return result.
         System.out.println("My C4 solution: " + output);
     }
+    public void challenge6to7() {
+        System.out.println("\nBEGIN: challenge6to7");
 
+        // Challenge 6: Map lambda to Supplier interface which returns "I love Java!". Store result.
+        Supplier<String> iLoveJava = () -> "I love Java!";
+        // Challenge 7: Use Supplier to assign the result to a String variable.
+        String supplierResult = iLoveJava.get();
+        System.out.println("Result of calling Supplier.get(): " + supplierResult);
+    }
 }
 
 
