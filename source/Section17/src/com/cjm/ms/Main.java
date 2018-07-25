@@ -26,6 +26,7 @@ public class Main {
         main.challenge1();
         main.challenge2to5();
         main.challenge6to7();
+        main.challenge8to14();
     }
     // Initialise fields.
     public Main() {
@@ -456,6 +457,78 @@ public class Main {
         // Challenge 7: Use Supplier to assign the result to a String variable.
         String supplierResult = iLoveJava.get();
         System.out.println("Result of calling Supplier.get(): " + supplierResult);
+    }
+    public void challenge8to14() {
+        System.out.println("\nBEGIN: challenge8to14");
+
+        // Challenge 8.1: Given an interface, how can we tell whether a lambda expression can be
+        // mapped to it?
+        // - There can only be one abstract method at most - functional interface.
+        // - Non-abstract methods with default implementations are allowed.
+        // - Abstract methods defined by Object are allowed since they have default implementations
+        //   during inheritance by the anonymous class since all classes extend Object.
+
+        // Challenge 8.2: Can we use a lambda expression to represent a Callable interface?
+        // - Yes, since it's a functional interface.
+        // - The lambda will be of the form (arg) -> (no return).
+
+        // Challenge 8.3: Can we use a lambda expression to represent a Comparator interface?
+        // - Yes, since it's a functional interface.
+        // - Although it has many methods, they have default implements, so the lambda won't
+        //   map to them.
+        // - The lambda will be of the form (arg1, arg2) -> (return arg).
+
+        // Challenge 9: Print list in sorted order with first letter capitalised.
+        Consumer<String> printDelimited = (String str) -> System.out.print(str + ". ");
+
+        List<String> topNames2015 = Arrays.asList(
+                "Amelia", "Olivia", "emily", "Isla", "Ava",
+                "oliver", "Jack", "Charlie", "harry", "Jacob"
+        );
+        System.out.print("List of top names in 2015: ");
+        topNames2015.forEach(printDelimited);
+        System.out.println();
+
+        // Challenge 9 and 11 my solution.
+        System.out.print("My sorted solution: ");
+        topNames2015.stream()
+                .map((String name) -> {
+                    char[] letters = name.toCharArray();
+                    letters[0] = Character.toUpperCase(name.charAt(0));
+                    return String.valueOf(letters);
+                })
+                .sorted() //.sorted(String::compareTo) // Challenge 10: Use method references.
+                .forEach(printDelimited);
+        System.out.println();
+
+        // Challenge 9 and 11 course solution:
+        System.out.print("Course sorted solution: ");
+        topNames2015
+                .stream()
+                .map(name -> name.substring(0, 1).toUpperCase() + name.substring(1))
+                .sorted(String::compareTo)
+                .forEach(printDelimited);
+        System.out.println();
+
+        // Challenge 12: Print number of names beginning with 'A'.
+        System.out.print("The number of names beginning with 'A': ");
+        long count = topNames2015
+                .stream()
+                .filter((String name) -> Character.toUpperCase(name.toCharArray()[0]) == 'A')
+                .count();
+        System.out.println(count);
+
+        // Challenge 13: What will the following code print to the console?
+        // topNames2015
+        //      .stream()
+        //      .map(name -> name.substring(0, 1).toUpperCase() + name.substring(1))
+        //      .peek(System.out::println)
+        //      .sorted(String::compareTo)
+        //      .count(); // Challenge 14: Add terminal operation to run chain.
+        // My answer: It will print the unsorted names with the first letter capitalised.
+        // Then it will sort the names.
+        // Course answer: It does nothing because there needs to be a terminal operation
+        // to evaluate the chain.
     }
 }
 
