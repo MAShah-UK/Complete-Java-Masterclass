@@ -1,12 +1,16 @@
 package com.cjm.ms;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Main {
     private String string = "abcDeeeF3eD30Feef abcD30";
 
     public static void main(String[] args) {
         Main main = new Main();
         main.basicRegEx();
-        main.basicRegEx2();
+        main.quantifiers();
+        main.patternMatcher();
     }
     // Practice regex with string literals, character sets, and boundary matchers.
     public void basicRegEx() {
@@ -66,9 +70,9 @@ public class Main {
         regex = string.replaceAll("D30$", "_");
         System.out.println("'D30$' boundary matcher regex result: " + regex);
     }
-    // Practice
-    public void basicRegEx2() {
-        System.out.println("\nBEGIN: basicRegEx2");
+    // Practice regex with quantifiers.
+    public void quantifiers() {
+        System.out.println("\nBEGIN: quantifiers");
 
         System.out.println("Original string: " + string + "\n");
 
@@ -88,5 +92,45 @@ public class Main {
         // To specify a minimum use {n,}.
         regex = string.replaceAll("e{2,}", "_");
         System.out.println("'e{2,}' quantifier regex result: " + regex);
+    }
+    // Practice using Pattern and Matcher.
+    public void patternMatcher() {
+        System.out.println("\nBEGIN: patternMatcher");
+
+        String html = "<h1>My Heading</h1>" +
+                "<h2>Sub-heading</h2>" +
+                "<p>This is a paragraph about something.</p>" +
+                "<p>This is another paragraph about something else.</p>" +
+                "<h2>Summary</h2>" +
+                "<p>Here is the summary.</p>";
+
+        String h2Regex = "<h2>";
+        // Compiles patterns to be used with various strings.
+        Pattern pattern = Pattern.compile(h2Regex);
+        // Stores results of pattern matching in Matcher.
+        Matcher matcher = pattern.matcher(html);
+        // find() stores starting and ending indices for the next match
+        // every time it's called.
+        while(matcher.find()) {
+            int start = matcher.start();
+            int end = matcher.end();
+            System.out.println("[start index] " + start + " [end index] " + end);
+        }
+        System.out.println();
+
+        // The parenthesis denote a separate group.
+        // There are three groups.
+        // The first and third will always contain <h2> and </h2> respectively.
+        // The second group will contain the text between those tags.
+        // The ? is a lazy quantifier that stops the * from matching up to the
+        // second </h2> from the first <h2>.
+        String h2GroupsRegex = "(<h2>)(.*?)(</h2>)";
+        pattern = Pattern.compile(h2GroupsRegex);
+        matcher = pattern.matcher(html);
+        while(matcher.find()) {
+            // Uses 1-based index.
+            String text = matcher.group(2);
+            System.out.println("The second group contains: " + text);
+        }
     }
 }
