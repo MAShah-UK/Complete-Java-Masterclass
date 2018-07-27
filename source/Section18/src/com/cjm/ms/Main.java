@@ -11,6 +11,7 @@ public class Main {
         main.basicRegEx();
         main.quantifiers();
         main.patternMatcher();
+        main.challenge1to6();
     }
     // Practice regex with string literals, character sets, and boundary matchers.
     public void basicRegEx() {
@@ -132,5 +133,76 @@ public class Main {
             String text = matcher.group(2);
             System.out.println("The second group contains: " + text);
         }
+    }
+
+    // Practice regex via challenges.
+    public static void matchRegex(
+            String[] strings, String regex, boolean useStringMatcher) {
+        if (useStringMatcher) {
+            for (String string: strings) {
+                System.out.println("[string]: " + string + " [regex]: " + regex +
+                        " [match]: " + string.matches(regex));
+            }
+        } else {
+            Pattern pattern = Pattern.compile(regex);
+            Matcher matcher;
+            for(String string: strings) {
+                matcher = pattern.matcher(string);
+                System.out.println("[string]: " + string + " [regex]: " + regex +
+                        " [match]: " + matcher.matches());
+            }
+        }
+        System.out.println();
+    }
+    public static void applyRegex(String[] strings, String regex, String replace) {
+        System.out.println("[regex]: " + regex);
+        for(String string: strings) {
+            System.out.println("[string]: " + string);
+            String result = string.replaceAll(regex, replace);
+            System.out.println("[result]: " + result);
+        }
+        System.out.println();
+    }
+    public void challenge1to6() {
+        System.out.println("\nBEGIN: challenge1to6");
+
+        String[] strings;
+        String regex, replace;
+
+        // Challenge 1: Write the regex that matches the following.
+        strings = new String[]{"I want a bike."};
+        regex = "I want a bike.";
+        matchRegex(strings, regex, true);
+
+        // Challenge 2: Write the regex that matches the following.
+        strings = new String[]{
+                "I want a bike.",
+                "I want a ball."
+        };
+        regex = "^I want a.*";
+        matchRegex(strings, regex, true);
+
+        // Challenge 3: Call Matcher.matches().
+        strings = new String[]{
+                "I want a bike.",
+                "I want a ball."
+        };
+        regex = "^I want a.*";
+        matchRegex(strings, regex, false);
+
+        // Challenge 4: Replace blanks with underscores.
+        strings = new String[]{"Replace all blanks with underscores."};
+        regex = " ";
+        replace = "_";
+        applyRegex(strings, regex, replace);
+
+        // Challenge 5: Match the following string.
+        strings = new String[]{"aaabcccccdddefffg"};
+        regex = "[a-g]*"; // or {abcdefg]* or .*
+        matchRegex(strings, regex, true);
+
+        // Challenge 6: Match ONLY the string in challenge 5.
+        regex =  "^a{3}bc{5}d{3}ef{3}g$"; // or aaabcccccdddefffg
+        matchRegex(strings, regex, true);
     }
 }
