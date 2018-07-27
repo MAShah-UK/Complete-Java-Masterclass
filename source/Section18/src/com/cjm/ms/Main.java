@@ -12,6 +12,7 @@ public class Main {
         main.quantifiers();
         main.patternMatcher();
         main.challenge1to6();
+        main.challenge7();
     }
     // Practice regex with string literals, character sets, and boundary matchers.
     public void basicRegEx() {
@@ -163,6 +164,20 @@ public class Main {
         }
         System.out.println();
     }
+    public static void extractGroups(String[] strings, String regex) {
+        Pattern pattern = Pattern.compile(regex);
+        for(String string: strings) {
+            System.out.println("[string]: " + string);
+            Matcher matcher = pattern.matcher(string);
+            while(matcher.find()) {
+                System.out.println("[group]: " + matcher.group(1) +
+                                   // Challenge 10: Output indices.
+                                   " [start]: " + matcher.start() +
+                                   " [end]: " + matcher.end());
+            }
+        }
+        System.out.println();
+    }
     public void challenge1to6() {
         System.out.println("\nBEGIN: challenge1to6");
 
@@ -204,5 +219,35 @@ public class Main {
         // Challenge 6: Match ONLY the string in challenge 5.
         regex =  "^a{3}bc{5}d{3}ef{3}g$"; // or aaabcccccdddefffg
         matchRegex(strings, regex, true);
+    }
+    public void challenge7() {
+        System.out.println("BEGIN: challenge7");
+
+        String[] strings;
+        String regex;
+
+        // Challenge 7: Use regex to match strings the begin with
+        // a set of letters, followed by a period, followed by a set of numbers.
+        strings = new String[]{
+                "abcd.135", // true
+                "kjisl.22", // true
+                "f5.12a" // false
+        };
+        regex = "^[a-zA-Z]+\\.[0-9]+$";
+        matchRegex(strings, regex, true);
+
+        // Challenge 8: Modify challenge 7 to use groups to capture all substrings
+        // that match the given pattern.
+        strings = new String[]{"abcd.135uvqz.7tzik.999"};
+        regex = "([a-zA-Z]+\\.[0-9]+)";
+        extractGroups(strings, regex);
+
+        // Challenge 9: Modify challenge 8 to capture all substrings from the
+        // following string.
+        strings = new String[]{"abcd.135\tuvqz.7\ttzik.999\n"};
+        regex = "([a-zA-Z]+\\.[0-9]+)";
+        extractGroups(strings, regex);
+
+                
     }
 }
