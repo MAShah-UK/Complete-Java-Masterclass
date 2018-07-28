@@ -12,7 +12,8 @@ public class Main {
         main.quantifiers();
         main.patternMatcher();
         main.challenge1to6();
-        main.challenge7();
+        main.challenge7to11();
+        main.challenge12();
     }
     // Practice regex with string literals, character sets, and boundary matchers.
     public void basicRegEx() {
@@ -220,8 +221,8 @@ public class Main {
         regex =  "^a{3}bc{5}d{3}ef{3}g$"; // or aaabcccccdddefffg
         matchRegex(strings, regex, true);
     }
-    public void challenge7() {
-        System.out.println("BEGIN: challenge7");
+    public void challenge7to11() {
+        System.out.println("BEGIN: challenge7to11");
 
         String[] strings;
         String regex;
@@ -248,6 +249,26 @@ public class Main {
         regex = "([a-zA-Z]+\\.[0-9]+)";
         extractGroups(strings, regex);
 
-                
+        // Challenge 11: Extract the points from the string.
+        strings = new String[]{"{0, 2}, {0, 5}, {1, 3}, {x, y}, {2, 4}"};
+        regex = "(\\{[0-9]+, [0-9]+\\})"; // Make numbers into another group to extract them directly.
+        extractGroups(strings, regex);
+    }
+    public void challenge12() {
+        System.out.println("BEGIN: challenge12");
+
+        String[] strings;
+        String regex;
+
+        // Challenge 12: Use regex to match 5-digit US zip code.
+        strings = new String[]{
+            "11111",    // true
+            "12345",    // true
+            "123456",   // false
+            "123ab",    // false
+            "123 45"    // false
+        };
+        regex = "^[0-9]{5}$";
+        matchRegex(strings, regex, true);
     }
 }
