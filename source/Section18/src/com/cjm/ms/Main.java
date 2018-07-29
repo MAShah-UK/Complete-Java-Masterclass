@@ -13,7 +13,7 @@ public class Main {
         main.patternMatcher();
         main.challenge1to6();
         main.challenge7to11();
-        main.challenge12();
+        main.challenge12to14();
     }
     // Practice regex with string literals, character sets, and boundary matchers.
     public void basicRegEx() {
@@ -254,8 +254,8 @@ public class Main {
         regex = "(\\{[0-9]+, [0-9]+\\})"; // Make numbers into another group to extract them directly.
         extractGroups(strings, regex);
     }
-    public void challenge12() {
-        System.out.println("BEGIN: challenge12");
+    public void challenge12to14() {
+        System.out.println("BEGIN: challenge12to14");
 
         String[] strings;
         String regex;
@@ -269,6 +269,19 @@ public class Main {
             "123 45"    // false
         };
         regex = "^[0-9]{5}$";
+        matchRegex(strings, regex, true);
+
+        // Challenge 13 and 14: US zip codes can be followed by a hyphen and four other digits.
+        strings = new String[]{
+                "11111",        // true
+                "12345",        // true
+                "123456",       // false
+                "123ab",        // false
+                "123 45",       // false
+                "11111-1111",   // true
+                "12345-9231"    // true
+        };
+        regex = "^([0-9]{5})(-[0-9]{4})?$";
         matchRegex(strings, regex, true);
     }
 }

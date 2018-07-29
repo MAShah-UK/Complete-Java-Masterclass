@@ -1,0 +1,85 @@
+BEGIN: characterClass
+Original string: abcDeeeF3eD30Feef abcD30
+
+'abcD' string literal regex result: _eeeF3eD30Feef _30
+'.' character class regex result: ________________________
+'[Ff]' character class regex result: abcDeee_3eD30_ee_ abcD30
+'[a-z]' character class regex result: ___D___F3_D30F___ ___D30
+'[^0-9]' character class regex result: ________3__30_________30
+'^abcD' boundary matcher regex result: _eeeF3eD30Feef abcD30
+Does '^abcD' match the string? false
+'^hello' boundary matcher regex result: abcDeeeF3eD30Feef abcD30
+'D30$' boundary matcher regex result: abcDeeeF3eD30Feef abc_
+
+BEGIN: quantifiers
+Original string: abcDeeeF3eD30Feef abcD30
+
+'De*F' quantifier regex result: abc_3eD30Feef abcD30
+'cDe+' quantifier regex result: abcD_F3_D30F_f abcD30
+'e{3}' quantifier regex result: abcD_F3eD30Feef abcD30
+'e{2,3}' quantifier regex result: abcD_F3eD30F_f abcD30
+'e{2,}' quantifier regex result: abcD_F3eD30F_f abcD30
+
+BEGIN: patternMatcher
+[start index] 19 [end index] 23
+[start index] 136 [end index] 140
+
+The second group contains: Sub-heading
+The second group contains: Summary
+
+BEGIN: challenge1to6
+[string]: I want a bike. [regex]: I want a bike. [match]: true
+
+[string]: I want a bike. [regex]: ^I want a.* [match]: true
+[string]: I want a ball. [regex]: ^I want a.* [match]: true
+
+[string]: I want a bike. [regex]: ^I want a.* [match]: true
+[string]: I want a ball. [regex]: ^I want a.* [match]: true
+
+[regex]:  
+[string]: Replace all blanks with underscores.
+[result]: Replace_all_blanks_with_underscores.
+
+[string]: aaabcccccdddefffg [regex]: [a-g]* [match]: true
+
+[string]: aaabcccccdddefffg [regex]: ^a{3}bc{5}d{3}ef{3}g$ [match]: true
+
+BEGIN: challenge7to11
+[string]: abcd.135 [regex]: ^[a-zA-Z]+\.[0-9]+$ [match]: true
+[string]: kjisl.22 [regex]: ^[a-zA-Z]+\.[0-9]+$ [match]: true
+[string]: f5.12a [regex]: ^[a-zA-Z]+\.[0-9]+$ [match]: false
+
+[string]: abcd.135uvqz.7tzik.999
+[group]: abcd.135 [start]: 0 [end]: 8
+[group]: uvqz.7 [start]: 8 [end]: 14
+[group]: tzik.999 [start]: 14 [end]: 22
+
+[string]: abcd.135	uvqz.7	tzik.999
+
+[group]: abcd.135 [start]: 0 [end]: 8
+[group]: uvqz.7 [start]: 9 [end]: 15
+[group]: tzik.999 [start]: 16 [end]: 24
+
+[string]: {0, 2}, {0, 5}, {1, 3}, {x, y}, {2, 4}
+[group]: {0, 2} [start]: 0 [end]: 6
+[group]: {0, 5} [start]: 8 [end]: 14
+[group]: {1, 3} [start]: 16 [end]: 22
+[group]: {2, 4} [start]: 32 [end]: 38
+
+BEGIN: challenge12to14
+[string]: 11111 [regex]: ^[0-9]{5}$ [match]: true
+[string]: 12345 [regex]: ^[0-9]{5}$ [match]: true
+[string]: 123456 [regex]: ^[0-9]{5}$ [match]: false
+[string]: 123ab [regex]: ^[0-9]{5}$ [match]: false
+[string]: 123 45 [regex]: ^[0-9]{5}$ [match]: false
+
+[string]: 11111 [regex]: ^([0-9]{5})(-[0-9]{4})?$ [match]: true
+[string]: 12345 [regex]: ^([0-9]{5})(-[0-9]{4})?$ [match]: true
+[string]: 123456 [regex]: ^([0-9]{5})(-[0-9]{4})?$ [match]: false
+[string]: 123ab [regex]: ^([0-9]{5})(-[0-9]{4})?$ [match]: false
+[string]: 123 45 [regex]: ^([0-9]{5})(-[0-9]{4})?$ [match]: false
+[string]: 11111-1111 [regex]: ^([0-9]{5})(-[0-9]{4})?$ [match]: true
+[string]: 12345-9231 [regex]: ^([0-9]{5})(-[0-9]{4})?$ [match]: true
+
+
+Process finished with exit code 0

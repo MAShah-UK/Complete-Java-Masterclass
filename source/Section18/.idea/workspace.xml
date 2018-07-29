@@ -17,8 +17,8 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="270" column="27" lean-forward="false" selection-start-line="270" selection-start-column="27" selection-end-line="270" selection-end-column="27" />
+                <state relative-caret-position="527">
+                  <caret line="256" column="16" lean-forward="false" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#basicRegEx#0;class#Main#0" expanded="false" />
@@ -29,6 +29,7 @@
                     <element signature="method#extractGroups#0;class#Main#0" expanded="false" />
                     <element signature="method#challenge1to6#0;class#Main#0" expanded="false" />
                     <element signature="method#challenge7to11#0;class#Main#0" expanded="false" />
+                    <element signature="method#challenge12to14#0;class#Main#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -37,19 +38,22 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="455">
-                  <caret line="253" column="63" lean-forward="false" selection-start-line="253" selection-start-column="63" selection-end-line="253" selection-end-column="63" />
+                <state relative-caret-position="510">
+                  <caret line="223" column="33" lean-forward="false" selection-start-line="223" selection-start-column="33" selection-end-line="223" selection-end-column="33" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#basicRegEx#0;class#Main#0" expanded="false" />
                     <element signature="method#quantifiers#0;class#Main#0" expanded="false" />
                     <element signature="method#patternMatcher#0;class#Main#0" expanded="false" />
+                    <element signature="method#matchRegex#0;class#Main#0" expanded="false" />
                     <element signature="method#applyRegex#0;class#Main#0" expanded="false" />
+                    <element signature="method#extractGroups#0;class#Main#0" expanded="false" />
                     <element signature="method#challenge1to6#0;class#Main#0" expanded="false" />
+                    <element signature="method#challenge7to11#0;class#Main#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -92,10 +96,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,7 +114,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last.edited.regexp" value="LOL eeweweLOL" />
+    <property name="last.edited.regexp" value="hihehihihe" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -184,7 +188,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1974" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -200,6 +203,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10818084" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858595" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -211,7 +215,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -243,6 +246,7 @@
             <element signature="method#extractGroups#0;class#Main#0" expanded="false" />
             <element signature="method#challenge1to6#0;class#Main#0" expanded="false" />
             <element signature="method#challenge7to11#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge12to14#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -261,18 +265,15 @@
             <element signature="method#extractGroups#0;class#Main#0" expanded="false" />
             <element signature="method#challenge1to6#0;class#Main#0" expanded="false" />
             <element signature="method#challenge7to11#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge12to14#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/StringBuilder.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/regex/Matcher.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.696/Main.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="270" column="27" lean-forward="false" selection-start-line="270" selection-start-column="27" selection-end-line="270" selection-end-column="27" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#basicRegEx#0;class#Main#0" expanded="false" />
@@ -283,6 +284,30 @@
             <element signature="method#extractGroups#0;class#Main#0" expanded="false" />
             <element signature="method#challenge1to6#0;class#Main#0" expanded="false" />
             <element signature="method#challenge7to11#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge12to14#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/StringBuilder.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/regex/Matcher.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.696/Main.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/String.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="256" column="16" lean-forward="false" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#basicRegEx#0;class#Main#0" expanded="false" />
+            <element signature="method#quantifiers#0;class#Main#0" expanded="false" />
+            <element signature="method#patternMatcher#0;class#Main#0" expanded="false" />
+            <element signature="method#matchRegex#0;class#Main#0" expanded="false" />
+            <element signature="method#applyRegex#0;class#Main#0" expanded="false" />
+            <element signature="method#extractGroups#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge1to6#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge7to11#0;class#Main#0" expanded="false" />
+            <element signature="method#challenge12to14#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
