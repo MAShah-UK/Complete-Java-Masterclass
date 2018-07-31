@@ -3,6 +3,14 @@ package com.cjm.ms;
 public class Main {
 
     public static void main(String[] args) {
+        Main main = new Main();
+        main.basicDebugging();
+        main.bankAccount();
+    }
+    // Practice basic debugging concepts.
+    public void basicDebugging() {
+        System.out.println("BEGIN: basicDebugging");
+
         StringUtilities utilities = new StringUtilities();
 
         // Used debugger and its UI, breakpoints, watches, and watchpoints.
@@ -16,5 +24,11 @@ public class Main {
         // Used smart step into
         String str = "abcdefg";
         String result = utilities.upperAndPrefix(utilities.addSuffix(str));
+    }
+    // Practice unit testing via JUnit.
+    public void bankAccount() {
+        System.out.println("\nBEGIN: bankAccount");
+
+
     }
 }
