@@ -1,5 +1,7 @@
 package com.cjm.ms;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,32 +12,45 @@ import static org.junit.jupiter.api.Assertions.*;
 - You can run all test cases by clicking on the arrow next to the class name.
  */
 class BankAccountTest {
-    // Marks a test method. These methods are automatically
+    private BankAccount account;
+
+    // @BeforeAll marks a method that runs before any test case to initialise
+    // test environment. The method must be static.
+    // @BeforeEach marks a method that runs before each test case.
+    @BeforeEach
+    public void setup() {
+        account = new BankAccount("John", "Doe", 1000.00);
+        System.out.println("Running tests...");
+    }
+    // @Test marks a test method. These methods are automatically
     // called at runtime. Test methods must be public void.
     @Test
     public void getBalance_deposit() { // Test cases should be descriptive.
         // Assertions.fail() automatically fails the test case.
         // fail("This test has yet to be implemented.");
-        BankAccount account = new BankAccount("John", "Doe", 1000.00);
+        //BankAccount account = new BankAccount("John", "Doe", 1000.00);
         account.deposit(200.00, true);
         assertEquals(1200.00, account.getBalance(), 0.001);
     }
     @Test
     public void getBalance_withdraw() {
-        BankAccount account = new BankAccount("John", "Doe", 1000.00);
+        // Every method is instantiating a BankAccount instance.
+        // To reduce code duplication it should be moved to
+        // an @Before method that sets up the test environment.
+        // BankAccount account = new BankAccount("John", "Doe", 1000.00);
         account.withdraw(200.00, true);
         assertEquals(800.00, account.getBalance(), 0.001);
     }
     @Test
     void isChecking_true() {
-        BankAccount account = new BankAccount("John", "Doe", 1000.00);
+        // BankAccount account = new BankAccount("John", "Doe", 1000.00);
         // Boolean specific version of assertEquals().
         assertTrue(account.isChecking());
     }
     @Test
     public void deposit() {
         // fail("This test has yet to be implemented.");
-        BankAccount account = new BankAccount("John", "Doe", 1000.00);
+        // BankAccount account = new BankAccount("John", "Doe", 1000.00);
         double balance = account.deposit(200.00, true);
         // Assertions add constraints to specify what constitutes a pass.
         // In this case 1200 = balance.
