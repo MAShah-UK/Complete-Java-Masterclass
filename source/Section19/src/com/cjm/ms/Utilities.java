@@ -17,18 +17,25 @@ public class Utilities {
     }
 
     // Remove pairs of the same character that are adjacent,
-    // by removing one occurence of the character.
+    // by removing one occurrence of the character.
     // ABBCDEEF > ABCDEF, ABCBDEEF > ABCBDEF
     public String removePairs(String source) {
-        if(source.length() < 2) {
+        // Challenge 2: Why is this method failing the test?
+        if(source == null || source.length() < 2) {
             return source;
         }
         StringBuilder builder = new StringBuilder();
         char[] string = source.toCharArray();
-        for(int i = 0; i < string.length; i++) {
-            if(string[i] != string[i++]) {
-                builder.append(string[i]);
+        int maxIdx = string.length-1;
+        for(int i = 0; i < maxIdx; i++) {
+            // if(string[i] != string[i++]) { // Bug: Compares to self.
+            builder.append(string[i]);
+            if(string[i] == string[i+1]) {
+                i++;
             }
+        }
+        if(string[maxIdx-1] != string[maxIdx]) {
+            builder.append(string[maxIdx]);
         }
         return builder.toString();
     }
