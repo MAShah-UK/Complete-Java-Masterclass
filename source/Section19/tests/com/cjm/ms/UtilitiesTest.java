@@ -3,14 +3,24 @@ package com.cjm.ms;
 // Challenge 1: Create JUnit test class for Utilities. Don't add testing code.
 // each test should fail as it's just a placeholder.
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+import java.util.stream.Stream;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class UtilitiesTest {
-    private Utilities utilities = new Utilities();
+    // Challenge 9: Stop instantiating Utilities in every test case.
+    private Utilities utilities;
+
+    @BeforeEach
+    public void beforeEach() {
+        utilities = new Utilities();
+    }
 
     public void everyNthChar(String input, int n, String expectedOutput) {
         char[] actualOuput = utilities.everyNthChar(input.toCharArray(), n);
@@ -67,15 +77,33 @@ public class UtilitiesTest {
         removePairs("ABCCABDEEF", "ABCABDEF");
     }
 
-    public void converter(int a, int b, int expectedOutput) {
-        int actualOutput = utilities.converter(a, b);
-        assertEquals(expectedOutput, actualOutput);
+    public static Stream<Arguments> removePairs_args() {
+        return Stream.of(
+                Arguments.of("ABCDEFF", "ABCDEF"),
+                Arguments.of("AB88EFFG", "AB8EFG"),
+                Arguments.of("112233445566", "123456"),
+                Arguments.of("ZYZQQB", "ZYZQB")
+        );
     }
+    @ParameterizedTest
+    @MethodSource("removePairs_args")
+    public void converter_multi(String input, String expectedOutput) {
+        removePairs(input, expectedOutput);
+    }
+
     @Test
     public void converter_a10b5() {
         // Challenge 7: Test the converter method.
-        converter(10, 5, 300);
+        // a = 10, b = 5, output = 300
+        assertEquals(300, utilities.converter(10, 5));
     }
+    @Test
+    public void converter_a10b0() {
+        // Challenge 8: Test the converter method.
+        // a = 10, b = 0, output = ArithmeticException.
+        assertThrows(ArithmeticException.class, () -> utilities.converter(10, 0));
+    }
+
 
     public void nullIfOddLength(String input, String expectedOutput) {
         String actualOutput = utilities.nullIfOddLength(input);

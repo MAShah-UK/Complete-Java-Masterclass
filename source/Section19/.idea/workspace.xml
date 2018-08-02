@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18efe82a-790b-4c53-826c-c2d3c8ff0f85" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/cjm/ms/Utilities.java" afterPath="$PROJECT_DIR$/src/com/cjm/ms/Utilities.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_params_5_2_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Section19.iml" afterPath="$PROJECT_DIR$/Section19.iml" />
+      <change beforePath="$PROJECT_DIR$/tests/com/cjm/ms/BankAccountTest.java" afterPath="$PROJECT_DIR$/tests/com/cjm/ms/BankAccountTest.java" />
       <change beforePath="$PROJECT_DIR$/tests/com/cjm/ms/UtilitiesTest.java" afterPath="$PROJECT_DIR$/tests/com/cjm/ms/UtilitiesTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,8 +35,8 @@
           <file leaf-file-name="UtilitiesTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/com/cjm/ms/UtilitiesTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="424">
-                  <caret line="75" column="50" lean-forward="false" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
+                <state relative-caret-position="508">
+                  <caret line="79" column="55" lean-forward="false" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#everyNthChar#0;class#UtilitiesTest#0" expanded="false" />
@@ -46,7 +49,11 @@
                     <element signature="method#removePairs_uniqueSequenceOdd#0;class#UtilitiesTest#0" expanded="false" />
                     <element signature="method#removePairs_adjacentPairsOnly#0;class#UtilitiesTest#0" expanded="false" />
                     <element signature="method#removePairs_nonAdjacentPairs#0;class#UtilitiesTest#0" expanded="false" />
-                    <element signature="method#converter#0;class#UtilitiesTest#0" expanded="false" />
+                    <element signature="method#removePairs_args#0;class#UtilitiesTest#0" expanded="false" />
+                    <element signature="e#3044#3045#0" expanded="true" />
+                    <element signature="e#3094#3095#0" expanded="true" />
+                    <element signature="method#converter_a10b5#0;class#UtilitiesTest#0" expanded="false" />
+                    <element signature="method#converter_a10b0#0;class#UtilitiesTest#0" expanded="false" />
                     <element signature="method#nullIfOddLength#0;class#UtilitiesTest#0" expanded="false" />
                     <element signature="method#nullIfOddLength_odd#0;class#UtilitiesTest#0" expanded="false" />
                     <element signature="method#nullIfOddLength_even#0;class#UtilitiesTest#0" expanded="false" />
@@ -119,11 +126,12 @@
         <option value="$PROJECT_DIR$/src/com/cjm/ms/BankAccountTest.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Main.java" />
         <option value="$PROJECT_DIR$/src/com/cjm/ms/Utilities.java" />
+        <option value="$PROJECT_DIR$/tests/com/cjm/ms/BankAccountTest.java" />
         <option value="$PROJECT_DIR$/tests/com/cjm/ms/UtilitiesTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1974" />
     <option name="y" value="-8" />
     <option name="width" value="1874" />
@@ -184,6 +192,11 @@
               <item name="Section19" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="Section19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -192,7 +205,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/JTransforms-3.1-sources.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -224,7 +237,57 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UtilitiesTest.converter_a10b5">
+  <component name="RunManager" selected="JUnit.UtilitiesTest">
+    <configuration name="BankAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cjm.ms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Section19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.cjm.ms" />
+      <option name="MAIN_CLASS_NAME" value="com.cjm.ms.BankAccountTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="BankAccountTest.dummyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cjm.ms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Section19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.cjm.ms" />
+      <option name="MAIN_CLASS_NAME" value="com.cjm.ms.BankAccountTest" />
+      <option name="METHOD_NAME" value="dummyTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="UtilitiesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -250,7 +313,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="UtilitiesTest.converter_a10b5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UtilitiesTest.converter_a10b0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.cjm.ms.*" />
@@ -262,7 +325,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.cjm.ms" />
       <option name="MAIN_CLASS_NAME" value="com.cjm.ms.UtilitiesTest" />
-      <option name="METHOD_NAME" value="converter_a10b5" />
+      <option name="METHOD_NAME" value="converter_a10b0" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -275,7 +338,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="UtilitiesTest.everyNthChar_nOverLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UtilitiesTest.converter_multi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.cjm.ms.*" />
@@ -287,57 +350,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.cjm.ms" />
       <option name="MAIN_CLASS_NAME" value="com.cjm.ms.UtilitiesTest" />
-      <option name="METHOD_NAME" value="everyNthChar_nOverLength" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="UtilitiesTest.nullIfOddLength_even" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.cjm.ms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Section19" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.cjm.ms" />
-      <option name="MAIN_CLASS_NAME" value="com.cjm.ms.UtilitiesTest" />
-      <option name="METHOD_NAME" value="nullIfOddLength_even" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="UtilitiesTest.nullIfOddLength_odd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.cjm.ms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Section19" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.cjm.ms" />
-      <option name="MAIN_CLASS_NAME" value="com.cjm.ms.UtilitiesTest" />
-      <option name="METHOD_NAME" value="nullIfOddLength_odd" />
+      <option name="METHOD_NAME" value="converter_multi(java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -366,19 +379,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.everyNthChar_nOverLength" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.nullIfOddLength_odd" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.nullIfOddLength_even" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UtilitiesTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.converter_a10b5" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UtilitiesTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.converter_a10b0" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest.dummyTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.converter_multi" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.converter_a10b5" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UtilitiesTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.nullIfOddLength_even" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.nullIfOddLength_odd" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.everyNthChar_nOverLength" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UtilitiesTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.converter_multi" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountTest.dummyTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UtilitiesTest.converter_a10b0" />
       </list>
     </recent_temporary>
   </component>
@@ -399,40 +412,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UtilitiesTest - 2018.08.02 at 17h 47m 34s.xml">
+    <history-entry file="BankAccountTest - 2018.08.02 at 18h 10m 33s.xml">
+      <configuration name="BankAccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTest - 2018.08.02 at 18h 10m 58s.xml">
+      <configuration name="BankAccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTest_dummyTest - 2018.08.02 at 18h 10m 21s.xml">
+      <configuration name="BankAccountTest.dummyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTest_dummyTest - 2018.08.02 at 18h 10m 28s.xml">
+      <configuration name="BankAccountTest.dummyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitiesTest - 2018.08.02 at 17h 56m 29s.xml">
       <configuration name="UtilitiesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitiesTest - 2018.08.02 at 18h 22m 19s.xml">
+      <configuration name="UtilitiesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitiesTest_converter_a10b0 - 2018.08.02 at 17h 54m 35s.xml">
+      <configuration name="UtilitiesTest.converter_a10b0" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UtilitiesTest_converter_a10b5 - 2018.08.02 at 17h 50m 49s.xml">
       <configuration name="UtilitiesTest.converter_a10b5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UtilitiesTest_everyNthChar_hello - 2018.08.02 at 17h 42m 45s.xml">
-      <configuration name="UtilitiesTest.everyNthChar_hello" configurationId="JUnit" />
+    <history-entry file="UtilitiesTest_converter_multi - 2018.08.02 at 18h 21m 17s.xml">
+      <configuration name="UtilitiesTest.converter_multi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UtilitiesTest_everyNthChar_hello - 2018.08.02 at 17h 43m 10s.xml">
-      <configuration name="UtilitiesTest.everyNthChar_hello" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilitiesTest_everyNthChar_nOverLength - 2018.08.02 at 17h 44m 42s.xml">
-      <configuration name="UtilitiesTest.everyNthChar_nOverLength" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilitiesTest_nullIfOddLength_even - 2018.08.02 at 17h 47m 31s.xml">
-      <configuration name="UtilitiesTest.nullIfOddLength_even" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilitiesTest_nullIfOddLength_odd - 2018.08.02 at 17h 47m 29s.xml">
-      <configuration name="UtilitiesTest.nullIfOddLength_odd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilitiesTest_removePairs_adjacentPairsOnly - 2018.08.02 at 17h 43m 27s.xml">
-      <configuration name="UtilitiesTest.removePairs_adjacentPairsOnly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilitiesTest_removePairs_shortString - 2018.08.02 at 17h 37m 08s.xml">
-      <configuration name="UtilitiesTest.removePairs_shortString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilitiesTest_removePairs_uniqueSequence - 2018.08.02 at 17h 37m 53s.xml">
-      <configuration name="UtilitiesTest.removePairs_uniqueSequence" configurationId="JUnit" />
+    <history-entry file="UtilitiesTest_converter_multi - 2018.08.02 at 18h 21m 58s.xml">
+      <configuration name="UtilitiesTest.converter_multi" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1974" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="1974" y="-8" width="1874" height="1096" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -932,22 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/com/cjm/ms/BankAccountTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="54" column="9" lean-forward="false" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding>
-            <element signature="method#beforeEach#0;class#BankAccountTest#0" expanded="false" />
-            <element signature="method#getBalance_deposit#0;class#BankAccountTest#0" expanded="false" />
-            <element signature="e#1157#1193#0" expanded="false" />
-            <element signature="method#getBalance_withdraw#0;class#BankAccountTest#0" expanded="false" />
-            <element signature="method#isChecking_true#0;class#BankAccountTest#0" expanded="false" />
-            <element signature="method#deposit#0;class#BankAccountTest#0" expanded="false" />
-            <element signature="e#2173#2221#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cjm/ms/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -961,10 +957,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/com/cjm/ms/BankAccountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="75" column="9" lean-forward="false" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding>
+            <element signature="method#beforeEach#0;class#BankAccountTest#0" expanded="false" />
+            <element signature="method#getBalance_deposit#0;class#BankAccountTest#0" expanded="false" />
+            <element signature="e#1157#1193#0" expanded="false" />
+            <element signature="method#getBalance_withdraw#0;class#BankAccountTest#0" expanded="false" />
+            <element signature="method#isChecking_true#0;class#BankAccountTest#0" expanded="false" />
+            <element signature="method#deposit#0;class#BankAccountTest#0" expanded="false" />
+            <element signature="e#2173#2221#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/com/cjm/ms/UtilitiesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="75" column="50" lean-forward="false" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
+        <state relative-caret-position="508">
+          <caret line="79" column="55" lean-forward="false" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#everyNthChar#0;class#UtilitiesTest#0" expanded="false" />
@@ -977,7 +989,11 @@
             <element signature="method#removePairs_uniqueSequenceOdd#0;class#UtilitiesTest#0" expanded="false" />
             <element signature="method#removePairs_adjacentPairsOnly#0;class#UtilitiesTest#0" expanded="false" />
             <element signature="method#removePairs_nonAdjacentPairs#0;class#UtilitiesTest#0" expanded="false" />
-            <element signature="method#converter#0;class#UtilitiesTest#0" expanded="false" />
+            <element signature="method#removePairs_args#0;class#UtilitiesTest#0" expanded="false" />
+            <element signature="e#3044#3045#0" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="method#converter_a10b5#0;class#UtilitiesTest#0" expanded="false" />
+            <element signature="method#converter_a10b0#0;class#UtilitiesTest#0" expanded="false" />
             <element signature="method#nullIfOddLength#0;class#UtilitiesTest#0" expanded="false" />
             <element signature="method#nullIfOddLength_odd#0;class#UtilitiesTest#0" expanded="false" />
             <element signature="method#nullIfOddLength_even#0;class#UtilitiesTest#0" expanded="false" />
@@ -1042,7 +1058,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1050,7 +1065,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>JTransforms-3.1-with-dependencies</last-edited>
+          <last-edited>org.junit.jupiter:junit-jupiter-params:5.2.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

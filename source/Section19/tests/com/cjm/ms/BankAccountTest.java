@@ -73,15 +73,13 @@ class BankAccountTest {
         double balance = account.withdraw(600.00, true);
         assertEquals(400.00, balance, 0.01);
     }
-    /*
-    @Test
+    @Test @Disabled
     public void dummyTest() {
         // Can run this test case independently by clicking on the arrow next to the
         // test method. As such tests should run independent to other test cases.
         // assertEquals() passes if the arguments are equal, otherwise it fails.
         assertEquals(20, 21); // Fails because 20 != 21.
     }
-    */
     // @AfterAll marks a method that runs after all test cases to release resources.
     @AfterAll
     public static void afterAll() {
