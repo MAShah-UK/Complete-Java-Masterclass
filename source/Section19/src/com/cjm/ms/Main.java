@@ -5,7 +5,6 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
         main.basicDebugging();
-        main.bankAccount();
     }
     // Practice basic debugging concepts.
     public void basicDebugging() {
@@ -24,11 +23,5 @@ public class Main {
         // Used smart step into
         String str = "abcdefg";
         String result = utilities.upperAndPrefix(utilities.addSuffix(str));
-    }
-    // Practice unit testing via JUnit.
-    public void bankAccount() {
-        System.out.println("\nBEGIN: bankAccount");
-
-
     }
 }

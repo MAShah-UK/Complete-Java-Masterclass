@@ -1,8 +1,7 @@
 package com.cjm.ms;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.function.Executable;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,14 +12,20 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class BankAccountTest {
     private BankAccount account;
+    private static int count;
 
     // @BeforeAll marks a method that runs before any test case to initialise
     // test environment. The method must be static.
+    @BeforeAll
+    public static void beforeAll() {
+        System.out.println("This method executes once, before all test cases. Count: " + count);
+        count++;
+    }
     // @BeforeEach marks a method that runs before each test case.
     @BeforeEach
-    public void setup() {
+    public void beforeEach() {
         account = new BankAccount("John", "Doe", 1000.00);
-        System.out.println("Running tests...");
+        System.out.println("Running test...");
     }
     // @Test marks a test method. These methods are automatically
     // called at runtime. Test methods must be public void.
@@ -57,8 +62,16 @@ class BankAccountTest {
         assertEquals(1200.00, balance, 0.001);
     }
     @Test
-    public void withdraw() {
-        fail("This test has yet to be implemented.");
+    public void withdraw_ATM() {
+        // This will throw an exception, but that is intended functionality and
+        // should pass the test.
+        Executable exec = () -> account.withdraw(600.00, false);
+        assertThrows(IllegalArgumentException.class, exec);
+    }
+    @Test
+    public void withdraw_branch() {
+        double balance = account.withdraw(600.00, true);
+        assertEquals(400.00, balance, 0.01);
     }
     /*
     @Test
@@ -69,4 +82,16 @@ class BankAccountTest {
         assertEquals(20, 21); // Fails because 20 != 21.
     }
     */
+    // @AfterAll marks a method that runs after all test cases to release resources.
+    @AfterAll
+    public static void afterAll() {
+        System.out.println("This method executes once, after all test cases. Count: " + count);
+        count++;
+    }
+    // @AfterEach marks a method that runs after each test case.
+    @AfterEach
+    public void afterEach() {
+        System.out.println("Count: " + count);
+        count++;
+    }
 }

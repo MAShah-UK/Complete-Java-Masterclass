@@ -38,6 +38,10 @@ public class BankAccount {
     // branch: true  - transaction at branch with teller.
     //         false - transaction at an ATM.
     public double withdraw(double amount, boolean branch) {
+        if(!branch && amount > 500.00) {
+            // Unchecked exception.
+            throw new IllegalArgumentException();
+        }
         balance -= amount;
         return balance;
     }
