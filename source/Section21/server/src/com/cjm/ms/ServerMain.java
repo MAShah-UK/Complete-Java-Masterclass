@@ -1,9 +1,6 @@
 package com.cjm.ms;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -16,17 +13,28 @@ public class ServerMain {
             System.out.println("Waiting for client to connect...");
             // Blocks until client connects to server.
             Socket socket = serverSocket.accept();
-            socket.
-            BufferedReader input = new BufferedReader(
+            System.out.println("Client connected: " + socket.getInetAddress());
+
+            BufferedReader receiver = new BufferedReader(
                     new InputStreamReader(socket.getInputStream()));
-            PrintWriter output = new PrintWriter(socket.getOutputStream(), true);
+            BufferedWriter sender = new BufferedWriter(
+                    new OutputStreamWriter(socket.getOutputStream()));
+
             while(true) {
+                System.out.println();
+                System.out.println("Waiting for client message.");
                 // Blocks until server receives message.
-                String echoString = input.readLine();
-                if(echoString.equals("exit")) {
+                String message = receiver.readLine();
+                System.out.println("Received message: " + message);
+                if(message.equals("exit")) {
                     break;
                 }
-                output.println("Echo from server: " + echoString);
+
+                System.out.println("Sending server acknowledgement.");
+                // Can call PrintWriter.println() to do it in one line.
+                sender.write("From server: " + message);
+                sender.newLine();
+                sender.flush();
             }
         } catch(IOException e) {
             System.out.println("Server exception: " + e.getMessage());

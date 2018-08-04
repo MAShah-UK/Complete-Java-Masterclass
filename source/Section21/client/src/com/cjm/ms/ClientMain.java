@@ -1,9 +1,6 @@
 package com.cjm.ms;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
 
@@ -14,23 +11,25 @@ public class ClientMain {
         // Can be loopback address ("localhost"/"127.0.0.1"), LAN address (192.x.x.x)
         // or Internet address (x.x.x.x).
         try(Socket socket = new Socket("localhost", 5000)) {
-            BufferedReader echoes = new BufferedReader(
+            BufferedReader receiver = new BufferedReader(
                     new InputStreamReader(socket.getInputStream()));
-            PrintWriter stringToEcho = new PrintWriter(socket.getOutputStream(), true);
+            BufferedWriter sender = new BufferedWriter(
+                    new OutputStreamWriter(socket.getOutputStream()));
 
             Scanner scanner = new Scanner(System.in);
-            String echoString;
-            String response;
-
+            String userInput;
             do {
-                System.out.println("Enter string to be echoed: ");
-                echoString = scanner.nextLine();
-                stringToEcho.println(echoString);
-                if(!echoString.equals("exit")) {
-                    response = echoes.readLine();
-                    System.out.println(response);
+                System.out.println();
+                System.out.print("Enter string to send: ");
+                userInput = scanner.nextLine();
+                // Can call PrintWriter.println() to do it in one line.
+                sender.write(userInput + "\n");
+                sender.flush();
+                if(!userInput.equals("exit")) {
+                    String message = receiver.readLine();
+                    System.out.println(message);
                 }
-            } while(!echoString.equals("exit"));
+            } while(!userInput.equals("exit"));
         } catch(IOException e) {
             System.out.println("Client error: " + e.getMessage());
         }
