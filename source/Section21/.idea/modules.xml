@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Section21.iml" filepath="$PROJECT_DIR$/.idea/Section21.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server_multipleClients/server_multipleClients.iml" filepath="$PROJECT_DIR$/server_multipleClients/server_multipleClients.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server_singleClient/server_singleClient.iml" filepath="$PROJECT_DIR$/server_singleClient/server_singleClient.iml" />
     </modules>
   </component>
 </project>

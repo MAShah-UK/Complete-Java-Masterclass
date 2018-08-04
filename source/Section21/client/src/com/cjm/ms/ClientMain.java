@@ -26,6 +26,7 @@ public class ClientMain {
                 sender.write(userInput + "\n");
                 sender.flush();
                 if(!userInput.equals("exit")) {
+                    // Blocks until client receives message.
                     String message = receiver.readLine();
                     System.out.println(message);
                 }
