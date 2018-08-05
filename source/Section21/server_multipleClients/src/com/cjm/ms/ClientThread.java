@@ -1,24 +1,25 @@
 package com.cjm.ms;
 
 import java.io.*;
-import java.net.ServerSocket;
+
 import java.net.Socket;
 
 public class ClientThread extends Thread {
     private static int instances = 0;
-    private ServerSocket server;
+    private Socket client;
+    private int clientId;
+    private String address;
+    private Executable onClientDisconnect;
 
     @Override
     public synchronized void run() {
+        clientId = ++instances;
+        address = client.getInetAddress().toString();
+
+        System.out.println("Client connected:" +
+                " [id]: " + clientId +
+                " [address]: " + address);
         try {
-            Socket client = server.accept();
-            final int clientId = ++instances;
-            final String address = client.getInetAddress().toString();
-
-            System.out.println("Client connected:" +
-                    " [id]: " + clientId +
-                    " [address]: " + address);
-
             BufferedReader receiver = new BufferedReader(
                     new InputStreamReader(client.getInputStream()));
             BufferedWriter sender = new BufferedWriter(
@@ -27,13 +28,11 @@ public class ClientThread extends Thread {
             while(true) {
                 String message = receiver.readLine();
                 if(message.equals("exit")) {
-                    SynchConsole.println("Client disconnected:" +
-                            " [id]: " + clientId +
-                            " [address]: " + address);
+                    clientDisconnected("Exit message received.");
                     break;
                 }
                 SynchConsole.println("Message received:" +
-                        " [id]: " + (clientId + "/" + instances) +
+                        " [id]: " + clientId +
                         " [address]: " + address +
                         " [message]: " + message);
                 sender.write("Server received: " + message);
@@ -41,11 +40,30 @@ public class ClientThread extends Thread {
                 sender.flush();
             }
         } catch(IOException e) {
-            System.out.println("Server error: " + e.getMessage());
+            clientDisconnected("Server error: " + e.getMessage() + ".");
         }
     }
 
-    public ClientThread(ServerSocket server) {
-        this.server = server;
+    public ClientThread(Socket client) {
+        this.client = client;
+    }
+
+    public static int getInstances() {
+        return instances;
+    }
+
+    public void setOnClientDisconnect(Executable onClientDisconnect) {
+        this.onClientDisconnect = onClientDisconnect;
+    }
+
+    public void clientDisconnected(String reason) {
+        instances--;
+        SynchConsole.println("Client disconnected:" +
+                " [id]: " + clientId +
+                " [address]: " + address +
+                " [reason]: " + reason);
+        if(onClientDisconnect != null) {
+            onClientDisconnect.run();
+        }
     }
 }
