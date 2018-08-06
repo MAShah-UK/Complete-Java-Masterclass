@@ -3,10 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Section21.iml" filepath="$PROJECT_DIR$/.idea/Section21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCPClient/TCPClient.iml" filepath="$PROJECT_DIR$/TCPClient/TCPClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/TCPServer_multipleClients/TCPServer_multipleClients.iml" filepath="$PROJECT_DIR$/TCPServer_multipleClients/TCPServer_multipleClients.iml" />
       <module fileurl="file://$PROJECT_DIR$/TCPServer_singleClient/TCPServer_singleClient.iml" filepath="$PROJECT_DIR$/TCPServer_singleClient/TCPServer_singleClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UDPClient/UDPClient.iml" filepath="$PROJECT_DIR$/UDPClient/UDPClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/UDPServer_singleClient/UDPServer_singleClient.iml" filepath="$PROJECT_DIR$/UDPServer_singleClient/UDPServer_singleClient.iml" />
-      <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
     </modules>
   </component>
 </project>
