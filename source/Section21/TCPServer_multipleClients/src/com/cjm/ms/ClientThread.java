@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class ClientThread extends Thread {
     private static int instances = 0;
-    private Socket client;
+    private final Socket client;
     private int clientId;
     private String address;
     private Executable onClientDisconnect;
@@ -19,7 +19,7 @@ public class ClientThread extends Thread {
         System.out.println("Client connected:" +
                 " [id]: " + clientId +
                 " [address]: " + address);
-        try {
+        try(client) {
             BufferedReader receiver = new BufferedReader(
                     new InputStreamReader(client.getInputStream()));
             BufferedWriter sender = new BufferedWriter(
