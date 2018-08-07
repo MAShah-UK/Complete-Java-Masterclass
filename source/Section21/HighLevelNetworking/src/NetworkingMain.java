@@ -1,7 +1,8 @@
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.*;
 
 public class NetworkingMain {
     public static void main(String[] args) {
@@ -19,6 +20,9 @@ public class NetworkingMain {
 
         main.resolveURI("http://username:password@myserver.com:5000",
                 "/catalogue/phones?os=android#samsung");
+        main.relativizeURI("http://username:password@myserver.com:5000",
+                "http://username:password@myserver.com:5000/catalogue/phones?os=android#samsung");
+        main.readURL("http://example.org");
     }
     // Practice working with URIs.
     public void printURIComponents(String uriString) {
@@ -44,11 +48,12 @@ public class NetworkingMain {
         try {
             URL url = new URI(uriString).toURL();
             System.out.println("URL is: " + url);
-
         } catch(MalformedURLException e) {
             System.out.println("MalformedURLException: " + e.getMessage());
         } catch(URISyntaxException e) {
             System.out.println("URISyntaxException: " + e.getMessage());
+        } catch(IllegalArgumentException e) {
+            System.out.println("IllegalArgumentException: " + e.getMessage());
         }
     }
     // Practice resolving/combining URIs.
@@ -61,6 +66,42 @@ public class NetworkingMain {
             System.out.println("Resolved URI: " + resolvedURI);
         } catch(URISyntaxException e) {
             System.out.println("URISyntaxException: " + e.getMessage());
+        }
+    }
+    // Practice extracting the relative URI.
+    public void relativizeURI(String base, String absolute) {
+        System.out.println("\nBEGIN: relativizeURI");
+        try {
+            URI baseURI = new URI(base);
+            URI absoluteURI = new URI(absolute);
+            URI relativizedURI = baseURI.relativize(absoluteURI);
+            System.out.println("Relativized URI: " + relativizedURI);
+        } catch(URISyntaxException e) {
+            System.out.println("URISyntaxException: " + e.getMessage());
+        }
+    }
+    // Practice reading from an URL.
+    public void readURL(String urlString) {
+        System.out.println("\nBEGIN: readURL target " + urlString);
+        try {
+            URL url = new URL(urlString);
+            BufferedReader reader = new BufferedReader(
+                    new InputStreamReader(url.openStream()));
+            while(reader.ready()) {
+                System.out.println(reader.readLine());
+            }
+            reader.close();
+            /*
+            URL.openStream() is a shortcut for:
+            URLConnection connection = url.openConnection();
+            connection.setDoOutput(true); // Configure, then connect.
+            connection.connect();
+            connection.getInputStream(); // BufferedReader...
+             */
+        } catch(MalformedURLException e) {
+            System.out.println("MalformedURLException: " + e.getMessage());
+        } catch(IOException e) {
+            System.out.println("IOException: " + e.getMessage());
         }
     }
 }

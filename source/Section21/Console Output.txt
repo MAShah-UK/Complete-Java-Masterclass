@@ -1,0 +1,17 @@
+Waiting for clients to connect...
+
+Client connected: [id]: 1 [address]: /127.0.0.1
+Client connected: [id]: 2 [address]: /127.0.0.1
+Client connected: [id]: 3 [address]: /127.0.0.1
+Message received: [id]: 1 [address]: /127.0.0.1 [message]: Hi, I am client 1.
+Message received: [id]: 2 [address]: /127.0.0.1 [message]: Hi client 1, I am client 2.
+Message received: [id]: 3 [address]: /127.0.0.1 [message]: Hi clients, I am client 3.
+Message received: [id]: 1 [address]: /127.0.0.1 [message]: It was nice to meet you all, I must be going now, the tea is getting cold.
+Client disconnected: [id]: 1 [address]: /127.0.0.1 [reason]: Exit message received.
+Message received: [id]: 2 [address]: /127.0.0.1 [message]: Seems like client 1 typed the exit command, I'll just close myself improperly. Toodles.
+Client disconnected: [id]: 2 [address]: /127.0.0.1 [reason]: Server error: Connection reset.
+Message received: [id]: 3 [address]: /127.0.0.1 [message]: Well I guess it's just me now... to be or not to be... not to be it is. Bye.
+Client disconnected: [id]: 3 [address]: /127.0.0.1 [reason]: Exit message received.
+All clients disconnected. Closing server.
+
+Process finished with exit code 0
