@@ -5,7 +5,6 @@ module academy.learnprogramming.common {
     requires java.sql;
     requires javafx.controls;
 
-    exports academy.learnprogramming.ui to javafx.graphics, javafx.fxml;
-    opens academy.learnprogramming.ui to javafx.fxml;
+    exports academy.learnprogramming.common;
     opens academy.learnprogramming.common to javafx.base;
 }

@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Section23.iml" filepath="$PROJECT_DIR$/.idea/Section23.iml" />
       <module fileurl="file://$PROJECT_DIR$/academy.learnprogramming.common/academy.learnprogramming.common.iml" filepath="$PROJECT_DIR$/academy.learnprogramming.common/academy.learnprogramming.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/academy.learnprogramming.db/academy.learnprogramming.db.iml" filepath="$PROJECT_DIR$/academy.learnprogramming.db/academy.learnprogramming.db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/academy.learnprogramming.ui/academy.learnprogramming.ui.iml" filepath="$PROJECT_DIR$/academy.learnprogramming.ui/academy.learnprogramming.ui.iml" />
     </modules>
   </component>
 </project>
