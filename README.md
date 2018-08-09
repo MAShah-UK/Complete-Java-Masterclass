@@ -3,9 +3,10 @@
   * Windows
 * **Tools**
   * Java 8/9
-  * IntelliJ IDEA 2017
+  * IntelliJ IDEA 2017/2018
 * **Sources**
   * [Udemy: Complete Java Masterclass](https://www.udemy.com/java-the-complete-java-developer-course/learn/v4/content)
+  * [Udemy: Certificate](https://www.udemy.com/certificate/UC-5KVB3JUG/)
   * [My course notes](https://github.com/MAShah-UK/CompleteJavaMasterclass/blob/master/notes/Notes.docx)
 
 ## Course Content
@@ -28,9 +29,9 @@ Tim Buchalka covers various language fundamentals from the most basic concepts t
 * ✓ Section 16: Concurrency
 * ✓ Section 17: Lambda expressions
 * ✓ Section 18: Regular expressions
-* Section 19: Debugging and unit testing
+* ✓ Section 19: Debugging and unit testing
 * ✓ Section 20: Databases
-* Section 21: Networking
-* Section 22: Java 9 module system
-* Section 23: Migrating Java projects to Java 9
-* Section 24: Bonus material
+* ✓ Section 21: Networking
+* ✓ Section 22: Java 9 module system
+* ✓ Section 23: Migrating Java projects to Java 9
+* ✓ Section 24: Bonus material
