@@ -5,7 +5,7 @@
   * Java 8/9
   * IntelliJ IDEA 2017/2018
 * **Sources**
-  * [Udemy: Complete Java Masterclass](https://www.udemy.com/java-the-complete-java-developer-course/learn/v4/content)
+  * [Udemy: Complete Java Masterclass](https://www.udemy.com/java-the-complete-java-developer-course/)
   * [Udemy: Certificate](https://www.udemy.com/certificate/UC-5KVB3JUG/)
   * [My course notes](https://github.com/MAShah-UK/CompleteJavaMasterclass/blob/master/notes/Notes.docx)
 
