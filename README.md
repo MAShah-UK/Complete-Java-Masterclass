@@ -1,16 +1,14 @@
 ## Project Info
-* **Platform**
-  * Windows
-* **Tools**
-  * Java 8/9
+* **Technology Stack**
+  * Windows 10
   * IntelliJ IDEA 2017/2018
+  * Java 9
 * **Sources**
   * [Udemy: Complete Java Masterclass](https://www.udemy.com/java-the-complete-java-developer-course/)
   * [Udemy: Certificate](https://www.udemy.com/certificate/UC-5KVB3JUG/)
   * [My course notes](https://github.com/MAShah-UK/CompleteJavaMasterclass/blob/master/notes/Notes.docx)
 
 ## Course Content
-Tim Buchalka covers various language fundamentals from the most basic concepts to the most difficult concepts:
 * ✓ Section 1: Introduction
 * ✓ Section 2: Setup
 * ✓ Section 3: First steps
