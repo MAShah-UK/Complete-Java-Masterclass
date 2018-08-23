@@ -5,7 +5,6 @@
   * Java 9
 * **Sources**
   * [Udemy: Complete Java Masterclass](https://www.udemy.com/java-the-complete-java-developer-course/)
-  * [Udemy: Certificate](https://www.udemy.com/certificate/UC-5KVB3JUG/)
 ## Course Content
 * ✓ Section 1: Introduction
 * ✓ Section 2: Setup
